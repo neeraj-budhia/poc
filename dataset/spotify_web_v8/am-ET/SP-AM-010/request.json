@@ -1,0 +1,359 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-AM-010:10-settings",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Amharic (am-ET)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "settings.title": {
+        "desc": "Settings",
+        "bbox_base": [
+          119,
+          50,
+          356,
+          118
+        ],
+        "bbox_head": [
+          119,
+          50,
+          391,
+          118
+        ],
+        "text_head": "ቅንብሮች",
+        "match": "stable_id"
+      },
+      "settings.sec.account": {
+        "desc": "Account",
+        "bbox_base": [
+          48,
+          210,
+          1032,
+          270
+        ],
+        "bbox_head": [
+          48,
+          210,
+          1032,
+          270
+        ],
+        "text_head": "መለያ",
+        "match": "stable_id"
+      },
+      "settings.plan": {
+        "desc": "Premium Individual",
+        "bbox_base": [
+          48,
+          306,
+          1032,
+          360
+        ],
+        "bbox_head": [
+          48,
+          306,
+          1032,
+          360
+        ],
+        "text_head": "Premium ግለሰብ",
+        "match": "stable_id"
+      },
+      "settings.plan.sub": {
+        "desc": "Your plan renews on November 14, 2026 for $11.99.",
+        "bbox_base": [
+          48,
+          366,
+          1032,
+          415
+        ],
+        "bbox_head": [
+          48,
+          366,
+          1032,
+          415
+        ],
+        "text_head": "ዕቅድዎ November 14, 2026 ላይ በ$5.49 ይታደሳል።",
+        "match": "stable_id"
+      },
+      "settings.sec.playback": {
+        "desc": "Playback",
+        "bbox_base": [
+          48,
+          481,
+          1032,
+          541
+        ],
+        "bbox_head": [
+          48,
+          481,
+          1032,
+          541
+        ],
+        "text_head": "መልሶ ማጫወት",
+        "match": "stable_id"
+      },
+      "settings.crossfade": {
+        "desc": "Crossfade",
+        "bbox_base": [
+          48,
+          577,
+          898,
+          631
+        ],
+        "bbox_head": [
+          48,
+          577,
+          739,
+          631
+        ],
+        "text_head": "ክሮስፌድ",
+        "match": "stable_id"
+      },
+      "settings.crossfade.sub": {
+        "desc": "Allows you to crossfade between songs",
+        "bbox_base": [
+          48,
+          637,
+          898,
+          685
+        ],
+        "bbox_head": [
+          48,
+          637,
+          739,
+          734
+        ],
+        "text_head": "በዘፈኖች መካከል ክሮስፌድ እንዲያደርጉ ያስችልዎታል",
+        "match": "stable_id"
+      },
+      "settings.crossfade.val": {
+        "desc": "5 sec",
+        "bbox_base": [
+          934,
+          607,
+          1032,
+          655
+        ],
+        "bbox_head": [
+          775,
+          631,
+          1032,
+          679
+        ],
+        "text_head": "{count} ሰከንድ",
+        "match": "stable_id"
+      },
+      "settings.gapless": {
+        "desc": "Gapless playback",
+        "bbox_base": [
+          48,
+          739,
+          876,
+          793
+        ],
+        "bbox_head": [
+          48,
+          788,
+          876,
+          842
+        ],
+        "text_head": "ያለክፍተት ማጫወት",
+        "match": "stable_id"
+      },
+      "settings.explicit": {
+        "desc": "Allow explicit content",
+        "bbox_base": [
+          48,
+          847,
+          876,
+          901
+        ],
+        "bbox_head": [
+          48,
+          896,
+          876,
+          950
+        ],
+        "text_head": "ለአዋቂዎች የሆነ ይዘትን ፍቀድ",
+        "match": "stable_id"
+      },
+      "settings.explicit.sub": {
+        "desc": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+        "bbox_base": [
+          48,
+          907,
+          876,
+          1004
+        ],
+        "bbox_head": [
+          48,
+          956,
+          876,
+          1053
+        ],
+        "text_head": "ለአዋቂዎች የሆነ ይዘትን ለማጫወት ያብሩ። እንዲህ ያለው ይዘት በE መለያ ምልክት ይደረግበታል።",
+        "match": "stable_id"
+      },
+      "settings.sec.data": {
+        "desc": "Data saving and offline",
+        "bbox_base": [
+          48,
+          1070,
+          1032,
+          1130
+        ],
+        "bbox_head": [
+          48,
+          1119,
+          1032,
+          1179
+        ],
+        "text_head": "የውሂብ ቁጠባ እና ከመስመር ውጭ",
+        "match": "stable_id"
+      },
+      "settings.datasaver": {
+        "desc": "Data Saver",
+        "bbox_base": [
+          48,
+          1166,
+          876,
+          1220
+        ],
+        "bbox_head": [
+          48,
+          1215,
+          246,
+          1269
+        ],
+        "text_head": "ውሂብ ቆጣቢ",
+        "match": "stable_id"
+      },
+      "settings.datasaver.sub": {
+        "desc": "Sets your music quality to low and disables canvas.",
+        "bbox_base": [
+          48,
+          1226,
+          876,
+          1323
+        ],
+        "bbox_head": [
+          48,
+          1275,
+          876,
+          1372
+        ],
+        "text_head": "የሙዚቃ ጥራትዎን ዝቅ ያደርጋል እና Canvasን ያሰናክላል።",
+        "match": "stable_id"
+      },
+      "settings.storage": {
+        "desc": "Storage",
+        "bbox_base": [
+          48,
+          1371,
+          1032,
+          1425
+        ],
+        "bbox_head": [
+          48,
+          1420,
+          1032,
+          1474
+        ],
+        "text_head": "ማከማቻ",
+        "match": "stable_id"
+      },
+      "settings.storage.sub": {
+        "desc": "1.2 GB used • 48.6 GB free",
+        "bbox_base": [
+          48,
+          1431,
+          1032,
+          1480
+        ],
+        "bbox_head": [
+          48,
+          1480,
+          1032,
+          1528
+        ],
+        "text_head": "1.2 GB ጥቅም ላይ ውሏል • 48.6 GB ነፃ",
+        "match": "stable_id"
+      },
+      "settings.language": {
+        "desc": "App language",
+        "bbox_base": [
+          48,
+          1528,
+          865,
+          1582
+        ],
+        "bbox_head": [
+          48,
+          1576,
+          875,
+          1630
+        ],
+        "text_head": "የመተግበሪያ ቋንቋ",
+        "match": "stable_id"
+      },
+      "settings.language.val": {
+        "desc": "English",
+        "bbox_base": [
+          901,
+          1531,
+          1032,
+          1579
+        ],
+        "bbox_head": [
+          911,
+          1580,
+          1032,
+          1628
+        ],
+        "text_head": "አማርኛ",
+        "match": "stable_id"
+      },
+      "settings.logout": {
+        "desc": "Log out",
+        "bbox_base": [
+          48,
+          1648,
+          283,
+          1738
+        ],
+        "bbox_head": [
+          48,
+          1696,
+          233,
+          1786
+        ],
+        "text_head": "ውጣ",
+        "match": "stable_id"
+      },
+      "settings.version": {
+        "desc": "Version 9.0.82.512",
+        "bbox_base": [
+          48,
+          1768,
+          1032,
+          1807
+        ],
+        "bbox_head": [
+          48,
+          1816,
+          1032,
+          1856
+        ],
+        "text_head": "ስሪት 9.0.82.512",
+        "match": "stable_id"
+      }
+    }
+  }
+}

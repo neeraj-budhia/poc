@@ -1,0 +1,206 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TA-006:06-now-playing",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Tamil (ta-IN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "np.playingfrom": {
+        "desc": "Playing from playlist",
+        "bbox_base": [
+          326,
+          30,
+          731,
+          66
+        ],
+        "bbox_head": [
+          315,
+          30,
+          741,
+          72
+        ],
+        "text_head": "பிளேலிஸ்ட்டிலிருந்து இயக்கப்படுகிறது",
+        "match": "stable_id"
+      },
+      "np.source": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          326,
+          72,
+          731,
+          117
+        ],
+        "bbox_head": [
+          315,
+          78,
+          741,
+          123
+        ],
+        "text_head": "Discover Weekly",
+        "match": "stable_id"
+      },
+      "np.title": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          48,
+          1167,
+          601,
+          1239
+        ],
+        "bbox_head": [
+          48,
+          1173,
+          601,
+          1245
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "np.artist": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          48,
+          1245,
+          601,
+          1299
+        ],
+        "bbox_head": [
+          48,
+          1251,
+          601,
+          1305
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "np.elapsed": {
+        "desc": "1:24",
+        "bbox_base": [
+          48,
+          1371,
+          115,
+          1410
+        ],
+        "bbox_head": [
+          48,
+          1377,
+          115,
+          1416
+        ],
+        "text_head": "1:24",
+        "match": "stable_id"
+      },
+      "np.remaining": {
+        "desc": "-3:08",
+        "bbox_base": [
+          943,
+          1371,
+          1032,
+          1410
+        ],
+        "bbox_head": [
+          943,
+          1377,
+          1032,
+          1416
+        ],
+        "text_head": "-3:08",
+        "match": "stable_id"
+      },
+      "np.devices": {
+        "desc": "Devices available",
+        "bbox_base": [
+          48,
+          1656,
+          340,
+          1701
+        ],
+        "bbox_head": [
+          48,
+          1392,
+          411,
+          1440
+        ],
+        "text_head": "கிடைக்கும் சாதனங்கள்",
+        "match": "stable_id"
+      },
+      "np.share": {
+        "desc": "Share",
+        "bbox_base": [
+          934,
+          1656,
+          1032,
+          1701
+        ],
+        "bbox_head": [
+          960,
+          1662,
+          1032,
+          1710
+        ],
+        "text_head": "பகிர்",
+        "match": "stable_id"
+      },
+      "np.lyrics.header": {
+        "desc": "Lyrics preview",
+        "bbox_base": [
+          90,
+          1779,
+          990,
+          1830
+        ],
+        "bbox_head": [
+          90,
+          1788,
+          990,
+          1890
+        ],
+        "text_head": "à®ªà®¾à®Ÿà®²à¯� à®µà®°à®¿à®•à®³à¯� à®®à¯�à®©à¯�à®©à¯‹à®Ÿà¯�à®Ÿà®®à¯�",
+        "match": "stable_id"
+      },
+      "np.lyrics.line1": {
+        "desc": "Have you got colour in your cheeks?",
+        "bbox_base": [
+          90,
+          1848,
+          990,
+          1902
+        ],
+        "bbox_head": [
+          90,
+          1908,
+          990,
+          1962
+        ],
+        "text_head": "Have you got colour in your cheeks?",
+        "match": "stable_id"
+      },
+      "np.lyrics.line2": {
+        "desc": "Do you ever get the feeling that you can't shift the tide",
+        "bbox_base": [
+          90,
+          1902,
+          990,
+          2010
+        ],
+        "bbox_head": [
+          90,
+          1962,
+          990,
+          2070
+        ],
+        "text_head": "Do you ever get the feeling that you can't shift the tide",
+        "match": "stable_id"
+      }
+    }
+  }
+}

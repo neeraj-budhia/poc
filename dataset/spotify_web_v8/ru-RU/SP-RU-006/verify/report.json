@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-006",
+  "language": "ru-RU",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "8",
+      "element_id": "np.share",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Share",
+      "target_text": "Share"
+    },
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Playing from playlist",
+      "target_text": "□□□□□□□□□□□□□□□ □□ □□□□□□□□□"
+    },
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Devices available",
+      "target_text": "Доступные устройства"
+    }
+  ]
+}

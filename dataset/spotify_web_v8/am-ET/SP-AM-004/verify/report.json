@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-AM-004",
+  "language": "am-ET",
+  "screen": "04-playlist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "3",
+      "element_id": "playlist.madefor",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Made for Neeraj",
+      "target_text": "áˆˆNeeraj á‹¨á‰°áˆ°áˆ«"
+    },
+    {
+      "box": "4",
+      "element_id": "playlist.meta",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 7px < font-size 12px, glyph tops/bottoms cut",
+      "base_text": "30 songs, about 2 hr 5 min",
+      "target_text": "30 ዘፈኖች፣ በግምት 2 ሰዓት 5 ደቂቃ"
+    },
+    {
+      "box": "13",
+      "element_id": "playlist.updated",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Updated 6 days ago",
+      "target_text": "ከ{count} ቀናት በፊት ተዘምኗል"
+    }
+  ]
+}

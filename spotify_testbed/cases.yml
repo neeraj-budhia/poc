@@ -23,13 +23,6 @@ cases:
   lang: vi-VN
   screen: 02-search
   defects:
-  - element: search.cat.madeforyou
-    kind: raw_key
-    category: TR
-    subcategory: Raw resource key rendered
-    check: text
-    text: search.cat.madeforyou
-    report: The raw resource key 'search.cat.madeforyou' is shown instead of 'Dành cho bạn'.
   - element: search.title
     kind: clip_v
     category: LY
@@ -44,17 +37,17 @@ cases:
     check: clipped
     op: clip_h
     report: '''Sự kiện trực tiếp'' is cut off mid-word by its container (no ellipsis).'
-- id: SP-VI-003
-  lang: vi-VN
-  screen: 03-search-results
-  defects:
-  - element: tab.library
+  - element: search.cat.music
     kind: mojibake
     category: GL
     subcategory: Encoding error (mojibake)
     check: text
-    text: ThÆ° viá»‡n
-    report: Text is garbled by an encoding error instead of 'Thư viện'.
+    text: Nháº¡c
+    report: Text is garbled by an encoding error instead of 'Nhạc'.
+- id: SP-VI-003
+  lang: vi-VN
+  screen: 03-search-results
+  defects:
   - element: results.r4.sub
     kind: overlap
     category: LY
@@ -62,99 +55,106 @@ cases:
     check: overlap
     op: overlap
     report: '''Danh sách phát • Spotify'' overlaps the text element above it.'
-  - element: results.chip.playlists
+  - element: results.seeall
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''Danh sách phát'' is cut off mid-word by its container (no ellipsis).'
-- id: SP-VI-004
-  lang: vi-VN
-  screen: 04-playlist
-  defects:
-  - element: playlist.btn.save
-    kind: ellipsis
-    category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''Lưu'' is truncated with an ellipsis.'
-  - element: playlist.updated
+    report: '''Xem tất cả bài hát'' is cut off mid-word by its container (no ellipsis).'
+  - element: tab.library
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □a cap nhat 6 ngay truoc
-    report: Characters render as empty boxes (missing font glyphs) instead of 'Đã cập nhật 6 ngày trước'.
-- id: SP-VI-005
+    text: Th□ vi□n
+    report: Characters render as empty boxes (missing font glyphs) instead of 'Thư viện'.
+- id: SP-VI-004
   lang: vi-VN
-  screen: 05-premium
+  screen: 04-playlist
   defects:
-  - element: premium.hero.title
+  - element: playlist.meta
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: Dùng thử {count} tháng gói Premium với giá 0 ₫
-    report: An unresolved '{count}' placeholder is shown instead of the number ('Dùng thử 1 tháng gói Premium với giá 0 ₫').
-  - element: tab.library
-    kind: untranslated
-    category: TR
-    subcategory: Untranslated string
-    check: text
-    text: Your Library
-    report: '''Your Library'' is shown in English instead of ''Thư viện''.'
-  - element: premium.plan.family.name
+    text: '{count} bài hát, khoảng 2 giờ 5 phút'
+    report: An unresolved placeholder ('{count} bài hát, khoảng 2 giờ 5 phút') is shown instead of the value ('30 bài hát, khoảng 2 giờ 5 phút').
+  - element: playlist.updated
     kind: clip_v
     category: LY
     subcategory: Vertical clipping (glyph tops/bottoms cut)
     check: clipped_v
     op: clip_v
-    report: The tops/bottoms of the glyphs in 'Gia đình' are clipped by a too-small line box.
-- id: SP-VI-006
+    report: The tops/bottoms of the glyphs in 'Đã cập nhật 6 ngày trước' are clipped by a too-small line box.
+- id: SP-VI-005
   lang: vi-VN
-  screen: 06-now-playing
+  screen: 05-premium
   defects:
-  - element: np.devices
+  - element: premium.cta.trial
     kind: offscreen
     category: LY
     subcategory: Text runs off-screen
     check: offscreen
     op: offscreen
-    report: '''Có thiết bị khả dụng'' runs off the edge of the screen.'
-  - element: np.playingfrom
-    kind: clip_v
+    report: '''Dùng thử miễn phí 1 tháng'' runs off the edge of the screen.'
+  - element: premium.plan.individual.feat
+    kind: clip_h
     category: LY
-    subcategory: Vertical clipping (glyph tops/bottoms cut)
-    check: clipped_v
-    op: clip_v
-    report: The tops/bottoms of the glyphs in 'Đang phát từ danh sách phát' are clipped by a too-small line box.
-  - element: np.share
+    subcategory: Truncation / clipping
+    check: clipped
+    op: clip_h
+    report: '''1 tài khoản Premium'' is cut off mid-word by its container (no ellipsis).'
+  - element: premium.plan.family.price
+    kind: format
+    category: FMT
+    subcategory: Number / date / currency not localized
+    check: text
+    text: $19.99 / tháng
+    report: Number/date/currency uses the US format ('$19.99 / tháng') instead of the local one ('95.000 ₫ / tháng').
+- id: SP-VI-006
+  lang: vi-VN
+  screen: 06-now-playing
+  defects:
+  - element: np.devices
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: Share
-    report: '''Share'' is shown in English instead of ''Chia sẻ''.'
-- id: SP-VI-007
-  lang: vi-VN
-  screen: 07-lyrics
-  defects:
-  - element: lyrics.credit
+    text: Devices available
+    report: '''Devices available'' is shown in English instead of ''Có thiết bị khả dụng''.'
+  - element: np.share
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: lyrics.credit
-    report: The raw resource key 'lyrics.credit' is shown instead of 'Lời bài hát do Musixmatch cung cấp'.
-  - element: lyrics.share
+    text: np.share
+    report: The raw resource key 'np.share' is shown instead of 'Chia sẻ'.
+  - element: np.playingfrom
     kind: ellipsis
     category: LY
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''Chia sẻ'' is truncated with an ellipsis.'
+    report: '''Đang phát từ danh sách phát'' is truncated with an ellipsis.'
+- id: SP-VI-007
+  lang: vi-VN
+  screen: 07-lyrics
+  defects:
+  - element: lyrics.song
+    kind: raw_key
+    category: TR
+    subcategory: Raw resource key rendered
+    check: text
+    text: lyrics.song
+    report: The raw resource key 'lyrics.song' is shown instead of 'Do I Wanna Know?'.
+  - element: lyrics.translate
+    kind: ellipsis
+    category: LY
+    subcategory: Truncation / ellipsis
+    check: clipped
+    op: ellipsis
+    report: '''Hiện bản dịch'' is truncated with an ellipsis.'
 - id: SP-VI-008
   lang: vi-VN
   screen: 08-library
@@ -166,49 +166,49 @@ cases:
     check: offscreen
     op: offscreen
     report: '''Podcast và chương trình'' runs off the edge of the screen.'
-  - element: library.add.podcasts
-    kind: clip_h
-    category: LY
-    subcategory: Truncation / clipping
-    check: clipped
-    op: clip_h
-    report: '''Thêm podcast và chương trình'' is cut off mid-word by its container (no ellipsis).'
-  - element: library.sort.recents
+  - element: library.episodes.title
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: ⇅ Recents
-    report: '''⇅ Recents'' is shown in English instead of ''⇅ Gần đây''.'
+    text: Your Episodes
+    report: '''Your Episodes'' is shown in English instead of ''Tập của bạn''.'
+  - element: library.add.artists
+    kind: clip_v
+    category: LY
+    subcategory: Vertical clipping (glyph tops/bottoms cut)
+    check: clipped_v
+    op: clip_v
+    report: The tops/bottoms of the glyphs in 'Thêm nghệ sĩ' are clipped by a too-small line box.
 - id: SP-VI-009
   lang: vi-VN
   screen: 09-artist
   defects:
+  - element: artist.sec.popular
+    kind: untranslated
+    category: TR
+    subcategory: Untranslated string
+    check: text
+    text: Popular
+    report: '''Popular'' is shown in English instead of ''Phổ biến''.'
   - element: artist.listeners
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: '{count}.812.331 người nghe hằng tháng'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('24.812.331 người nghe hằng tháng').
-  - element: artist.sec.popular
-    kind: tofu
-    category: GL
-    subcategory: Missing glyphs (tofu boxes)
-    check: text
-    text: Pho bien
-    report: Characters render as empty boxes (missing font glyphs) instead of 'Phổ biến'.
+    text: '{count} người nghe hằng tháng'
+    report: An unresolved placeholder ('{count} người nghe hằng tháng') is shown instead of the value ('24.812.331 người nghe hằng tháng').
 - id: SP-VI-010
   lang: vi-VN
   screen: 10-settings
   defects:
-  - element: settings.storage.sub
-    kind: format
-    category: FMT
-    subcategory: Number / date / currency not localized
+  - element: settings.crossfade
+    kind: tofu
+    category: GL
+    subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: Đã dùng 1.2 GB • Còn trống 48.6 GB
-    report: Number/date/currency uses the US format ('Đã dùng 1.2 GB • Còn trống 48.6 GB') instead of the local one ('Đã dùng 1,2 GB • Còn trống 48,6 GB').
+    text: Chuy□n ti□p bài hát
+    report: Characters render as empty boxes (missing font glyphs) instead of 'Chuyển tiếp bài hát'.
 - id: SP-VI-C01
   lang: vi-VN
   screen: 01-home
@@ -242,13 +242,13 @@ cases:
   lang: ur
   screen: 02-search
   defects:
-  - element: search.cat.newreleases
+  - element: search.cat.workout
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''نئی ریلیزز'' is cut off mid-word by its container (no ellipsis).'
+    report: '''ورزش'' is cut off mid-word by its container (no ellipsis).'
   - element: search.cat.madeforyou
     kind: ellipsis
     category: LY
@@ -267,31 +267,31 @@ cases:
   lang: ur
   screen: 03-search-results
   defects:
-  - element: results.chip.songs
+  - element: results.r1.title
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: results.chip.songs
-    report: The raw resource key 'results.chip.songs' is shown instead of 'گانے'.
-  - element: results.seeall
+    text: results.r1.title
+    report: The raw resource key 'results.r1.title' is shown instead of 'Arctic Monkeys'.
+  - element: results.chip.playlists
     kind: ellipsis
     category: LY
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''تمام گانے دیکھیں'' is truncated with an ellipsis.'
+    report: '''پلے لسٹس'' is truncated with an ellipsis.'
 - id: SP-UR-004
   lang: ur
   screen: 04-playlist
   defects:
-  - element: playlist.btn.download
+  - element: playlist.updated
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: Download
-    report: '''Download'' is shown in English instead of ''ڈاؤن لوڈ کریں''.'
+    text: Updated 6 days ago
+    report: '''Updated 6 days ago'' is shown in English instead of ''6 دن پہلے اپ ڈیٹ ہوئی''.'
   - element: playlist.meta
     kind: clip_v
     category: LY
@@ -299,31 +299,24 @@ cases:
     check: clipped_v
     op: clip_v
     report: The tops/bottoms of the glyphs in '30 گانے، تقریباً 2 گھنٹے 5 منٹ' are clipped by a too-small line box.
-  - element: playlist.updated
-    kind: mojibake
-    category: GL
-    subcategory: Encoding error (mojibake)
-    check: text
-    text: 6 Ø¯Ù† Ù¾Û�Ù„Û’ Ø§Ù¾ ÚˆÛŒÙ¹ Û�ÙˆØ¦ÛŒ
-    report: Text is garbled by an encoding error instead of '6 دن پہلے اپ ڈیٹ ہوئی'.
-- id: SP-UR-005
-  lang: ur
-  screen: 05-premium
-  defects:
-  - element: premium.cta.trial
+  - element: playlist.madefor
     kind: offscreen
     category: LY
     subcategory: Text runs off-screen
     check: offscreen
     op: offscreen
-    report: '''1 مہینے کے لیے مفت آزمائیں'' runs off the edge of the screen.'
-  - element: premium.plan.individual.name
+    report: '''Neeraj کے لیے تیار کردہ'' runs off the edge of the screen.'
+- id: SP-UR-005
+  lang: ur
+  screen: 05-premium
+  defects:
+  - element: premium.title
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: premium.plan.individual.name
-    report: The raw resource key 'premium.plan.individual.name' is shown instead of 'انفرادی'.
+    text: premium.title
+    report: The raw resource key 'premium.title' is shown instead of 'Premium'.
   - element: premium.plan.duo.feat
     kind: overlap
     category: LY
@@ -331,24 +324,31 @@ cases:
     check: overlap
     op: overlap
     report: '''2 Premium اکاؤنٹس'' overlaps the text element above it.'
+  - element: premium.plan.family.feat
+    kind: placeholder
+    category: TR
+    subcategory: Unresolved placeholder
+    check: text
+    text: زیادہ سے زیادہ {count} Premium اکاؤنٹس
+    report: An unresolved placeholder ('زیادہ سے زیادہ {count} Premium اکاؤنٹس') is shown instead of the value ('زیادہ سے زیادہ 6 Premium اکاؤنٹس').
 - id: SP-UR-006
   lang: ur
   screen: 06-now-playing
   defects:
-  - element: np.share
+  - element: np.devices
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: Share
-    report: '''Share'' is shown in English instead of ''شیئر کریں''.'
-  - element: np.devices
+    text: Devices available
+    report: '''Devices available'' is shown in English instead of ''آلات دستیاب ہیں''.'
+  - element: np.share
     kind: offscreen
     category: LY
     subcategory: Text runs off-screen
     check: offscreen
     op: offscreen
-    report: '''آلات دستیاب ہیں'' runs off the edge of the screen.'
+    report: '''شیئر کریں'' runs off the edge of the screen.'
 - id: SP-UR-007
   lang: ur
   screen: 07-lyrics
@@ -367,13 +367,13 @@ cases:
     check: text
     text: □□□□□ □□ □□□□□ □□□
     report: Characters render as empty boxes (missing font glyphs) instead of 'مسئلے کی اطلاع دیں'.
-  - element: lyrics.credit
+  - element: lyrics.share
     kind: mojibake
     category: GL
     subcategory: Encoding error (mojibake)
     check: text
-    text: Ø¨ÙˆÙ„ Musixmatch Ú©ÛŒ Ø¬Ø§Ù†Ø¨ Ø³Û’ Ù�Ø±Ø§Û�Ù… Ú©Ø±Ø¯Û�
-    report: Text is garbled by an encoding error instead of 'بول Musixmatch کی جانب سے فراہم کردہ'.
+    text: Ø´ÛŒØ¦Ø± Ú©Ø±ÛŒÚº
+    report: Text is garbled by an encoding error instead of 'شیئر کریں'.
 - id: SP-UR-008
   lang: ur
   screen: 08-library
@@ -385,20 +385,20 @@ cases:
     check: clipped
     op: clip_h
     report: '''محفوظ اور ڈاؤن لوڈ کردہ اقساط'' is cut off mid-word by its container (no ellipsis).'
-  - element: library.add.artists
+  - element: library.liked.title
     kind: clip_v
     category: LY
     subcategory: Vertical clipping (glyph tops/bottoms cut)
     check: clipped_v
     op: clip_v
-    report: The tops/bottoms of the glyphs in 'فنکار شامل کریں' are clipped by a too-small line box.
+    report: The tops/bottoms of the glyphs in 'پسندیدہ گانے' are clipped by a too-small line box.
   - element: library.liked.sub
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
     text: 📌 پلے لسٹ • {count} گانے
-    report: An unresolved '{count}' placeholder is shown instead of the number ('📌 پلے لسٹ • 248 گانے').
+    report: An unresolved placeholder ('📌 پلے لسٹ • {count} گانے') is shown instead of the value ('📌 پلے لسٹ • 248 گانے').
 - id: SP-UR-009
   lang: ur
   screen: 09-artist
@@ -421,20 +421,21 @@ cases:
   lang: ur
   screen: 10-settings
   defects:
-  - element: settings.storage.sub
-    kind: placeholder
-    category: TR
-    subcategory: Unresolved placeholder
+  - element: settings.crossfade.val
+    kind: mojibake
+    category: GL
+    subcategory: Encoding error (mojibake)
     check: text
-    text: '{count}.2 GB استعمال شدہ • 48.6 GB خالی'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('1.2 GB استعمال شدہ • 48.6 GB خالی').
+    text: 5 Ø³ÛŒÚ©Ù†Úˆ
+    report: Text is garbled by an encoding error instead of '5 سیکنڈ'.
   - element: settings.plan.sub
     kind: format
     category: FMT
     subcategory: Number / date / currency not localized
     check: text
-    text: آپ کا پلان November 14, 2026 کو $11.99 میں تجدید ہو جائے گا۔
-    report: Number/date/currency uses the US format ('آپ کا پلان November 14, 2026 کو $11.99 میں تجدید ہو جائے گا۔') instead of the local one ('آپ کا پلان 14 نومبر 2026 کو Rs 349 میں تجدید ہو جائے گا۔').
+    text: آپ کے پلان کی تجدید November 14, 2026 کو $11.99 میں ہو جائے گی۔
+    report: Number/date/currency uses the US format ('آپ کے پلان کی تجدید November 14, 2026 کو $11.99 میں ہو جائے گی۔') instead of the local one ('آپ کے پلان کی تجدید 14 نومبر 2026 کو Rs 349 میں ہو جائے
+      گی۔').
   - element: settings.title
     kind: clip_v
     category: LY
@@ -463,7 +464,7 @@ cases:
     subcategory: RTL not mirrored
     check: direction
     op: rtl_ltr
-    report: '''השירים שהכי אהבת השנה, ארוזים יחד.'' is left-aligned / LTR inside the right-to-left layout.'
+    report: '''השירים שהכי אהבת השנה, כולם במקום אחד.'' is left-aligned / LTR inside the right-to-left layout.'
   - element: home.card2.title
     kind: offscreen
     category: LY
@@ -482,13 +483,13 @@ cases:
     check: direction
     op: rtl_ltr
     report: '''עיון בהכול'' is left-aligned / LTR inside the right-to-left layout.'
-  - element: search.cat.newreleases
+  - element: search.sec.start
     kind: mojibake
     category: GL
     subcategory: Encoding error (mojibake)
     check: text
-    text: ×™×¦×�×• ×œ×�×—×¨×•× ×”
-    report: Text is garbled by an encoding error instead of 'יצאו לאחרונה'.
+    text: ×œ×”×ª×—×™×œ ×œ×’×œ×•×©
+    report: Text is garbled by an encoding error instead of 'להתחיל לגלוש'.
 - id: SP-HE-003
   lang: he-IL
   screen: 03-search-results
@@ -507,31 +508,31 @@ cases:
     check: clipped_v
     op: clip_v
     report: The tops/bottoms of the glyphs in 'אמן' are clipped by a too-small line box.
-  - element: results.seeall
+  - element: results.chip.playlists
     kind: ellipsis
     category: LY
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''הצגת כל השירים'' is truncated with an ellipsis.'
+    report: '''פלייליסטים'' is truncated with an ellipsis.'
 - id: SP-HE-004
   lang: he-IL
   screen: 04-playlist
   defects:
-  - element: playlist.updated
+  - element: playlist.meta
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: עודכן לפני {count} ימים
-    report: An unresolved '{count}' placeholder is shown instead of the number ('עודכן לפני 6 ימים').
-  - element: playlist.meta
+    text: '{count} שירים, בערך 2 שעות ו-5 דקות'
+    report: An unresolved placeholder ('{count} שירים, בערך 2 שעות ו-5 דקות') is shown instead of the value ('30 שירים, בערך 2 שעות ו-5 דקות').
+  - element: playlist.btn.save
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''30 שירים, בערך 2 שעות ו-5 דקות'' is cut off mid-word by its container (no ellipsis).'
+    report: '''שמירה'' is cut off mid-word by its container (no ellipsis).'
   - element: playlist.madefor
     kind: offscreen
     category: LY
@@ -550,24 +551,24 @@ cases:
     check: overlap
     op: overlap
     report: '''2 חשבונות Premium'' overlaps the text element above it.'
-  - element: premium.hero.title
+  - element: premium.plan.individual.name
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □□□ □□□□ □□ Premium □-0 ₪
-    report: Characters render as empty boxes (missing font glyphs) instead of 'נסו חודש של Premium ב-0 ₪'.
+    text: □□□□
+    report: Characters render as empty boxes (missing font glyphs) instead of 'יחיד'.
 - id: SP-HE-006
   lang: he-IL
   screen: 06-now-playing
   defects:
-  - element: np.elapsed
+  - element: np.lyrics.header
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: np.elapsed
-    report: The raw resource key 'np.elapsed' is shown instead of '1:24'.
+    text: np.lyrics.header
+    report: The raw resource key 'np.lyrics.header' is shown instead of 'תצוגה מקדימה של מילות השיר'.
   - element: np.devices
     kind: overlap
     category: LY
@@ -575,24 +576,24 @@ cases:
     check: overlap
     op: overlap
     report: '''מכשירים זמינים'' overlaps the text element above it.'
-  - element: np.share
+  - element: np.playingfrom
     kind: mojibake
     category: GL
     subcategory: Encoding error (mojibake)
     check: text
-    text: ×©×™×ª×•×£
-    report: Text is garbled by an encoding error instead of 'שיתוף'.
+    text: ×ž×•×©×ž×¢ ×ž×¤×œ×™×™×œ×™×¡×˜
+    report: Text is garbled by an encoding error instead of 'מושמע מפלייליסט'.
 - id: SP-HE-007
   lang: he-IL
   screen: 07-lyrics
   defects:
-  - element: lyrics.share
+  - element: lyrics.translate
     kind: ellipsis
     category: LY
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''שיתוף'' is truncated with an ellipsis.'
+    report: '''הצגת תרגום'' is truncated with an ellipsis.'
   - element: lyrics.credit
     kind: rtl_ltr
     category: LY
@@ -600,31 +601,31 @@ cases:
     check: direction
     op: rtl_ltr
     report: '''מילות השיר באדיבות Musixmatch'' is left-aligned / LTR inside the right-to-left layout.'
-  - element: lyrics.translate
+  - element: lyrics.l2
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: lyrics.translate
-    report: The raw resource key 'lyrics.translate' is shown instead of 'הצגת תרגום'.
+    text: lyrics.l2
+    report: The raw resource key 'lyrics.l2' is shown instead of 'Do you ever get the feeling that you can't shift the tide'.
 - id: SP-HE-008
   lang: he-IL
   screen: 08-library
   defects:
-  - element: library.artist1.sub
+  - element: library.pl1.sub
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: Artist
-    report: '''Artist'' is shown in English instead of ''אמן''.'
-  - element: library.add.artists
+    text: Playlist • Neeraj
+    report: '''Playlist • Neeraj'' is shown in English instead of ''פלייליסט • Neeraj''.'
+  - element: library.liked.title
     kind: clip_v
     category: LY
     subcategory: Vertical clipping (glyph tops/bottoms cut)
     check: clipped_v
     op: clip_v
-    report: The tops/bottoms of the glyphs in 'הוספת אמנים' are clipped by a too-small line box.
+    report: The tops/bottoms of the glyphs in 'שירים שאהבתי' are clipped by a too-small line box.
 - id: SP-HE-009
   lang: he-IL
   screen: 09-artist
@@ -643,24 +644,24 @@ cases:
     check: clipped
     op: clip_h
     report: '''24,812,331 מאזינים חודשיים'' is cut off mid-word by its container (no ellipsis).'
-  - element: artist.follow
+  - element: artist.sec.release
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: Follow
-    report: '''Follow'' is shown in English instead of ''מעקב''.'
+    text: Latest release
+    report: '''Latest release'' is shown in English instead of ''ההוצאה האחרונה''.'
 - id: SP-HE-010
   lang: he-IL
   screen: 10-settings
   defects:
-  - element: settings.storage.sub
+  - element: settings.crossfade.val
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: '{count}.2 GB בשימוש • 48.6 GB פנויים'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('1.2 GB בשימוש • 48.6 GB פנויים').
+    text: '{count} שנ׳'
+    report: An unresolved placeholder ('{count} שנ׳') is shown instead of the value ('5 שנ׳').
   - element: settings.plan.sub
     kind: format
     category: FMT
@@ -776,13 +777,6 @@ cases:
     check: offscreen
     op: offscreen
     report: '''Попробовать бесплатно 1 месяц'' runs off the edge of the screen.'
-  - element: premium.plan.individual.price
-    kind: mojibake
-    category: GL
-    subcategory: Encoding error (mojibake)
-    check: text
-    text: 299Â â‚½ Ð² Ð¼ÐµÑ�Ñ�Ñ†
-    report: Text is garbled by an encoding error instead of '299 ₽ в месяц'.
   - element: tab.library
     kind: raw_key
     category: TR
@@ -790,6 +784,13 @@ cases:
     check: text
     text: tab.library
     report: The raw resource key 'tab.library' is shown instead of 'Моя медиатека'.
+  - element: premium.plan.family.feat
+    kind: placeholder
+    category: TR
+    subcategory: Unresolved placeholder
+    check: text
+    text: До {count} аккаунтов Premium
+    report: An unresolved placeholder ('До {count} аккаунтов Premium') is shown instead of the value ('До 6 аккаунтов Premium').
 - id: SP-RU-006
   lang: ru-RU
   screen: 06-now-playing
@@ -801,63 +802,63 @@ cases:
     check: text
     text: Share
     report: '''Share'' is shown in English instead of ''Поделиться''.'
-  - element: np.devices
-    kind: overlap
-    category: LY
-    subcategory: Overlapping text
-    check: overlap
-    op: overlap
-    report: '''Доступные устройства'' overlaps the text element above it.'
-  - element: np.lyrics.header
+  - element: np.playingfrom
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □□□□□□□□ □□□□□□
-    report: Characters render as empty boxes (missing font glyphs) instead of 'Фрагмент текста'.
-- id: SP-RU-007
-  lang: ru-RU
-  screen: 07-lyrics
-  defects:
-  - element: lyrics.translate
-    kind: clip_v
-    category: LY
-    subcategory: Vertical clipping (glyph tops/bottoms cut)
-    check: clipped_v
-    op: clip_v
-    report: The tops/bottoms of the glyphs in 'Показать перевод' are clipped by a too-small line box.
-  - element: lyrics.share
-    kind: untranslated
-    category: TR
-    subcategory: Untranslated string
-    check: text
-    text: Share
-    report: '''Share'' is shown in English instead of ''Поделиться''.'
-- id: SP-RU-008
-  lang: ru-RU
-  screen: 08-library
-  defects:
-  - element: library.liked.sub
-    kind: placeholder
-    category: TR
-    subcategory: Unresolved placeholder
-    check: text
-    text: 📌 Плейлист • {count} треков
-    report: An unresolved '{count}' placeholder is shown instead of the number ('📌 Плейлист • 248 треков').
-  - element: library.episodes.sub
+    text: □□□□□□□□□□□□□□□ □□ □□□□□□□□□
+    report: Characters render as empty boxes (missing font glyphs) instead of 'Воспроизводится из плейлиста'.
+  - element: np.devices
     kind: ellipsis
     category: LY
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''Сохранённые и скачанные выпуски'' is truncated with an ellipsis.'
-  - element: library.chip.playlists
+    report: '''Доступные устройства'' is truncated with an ellipsis.'
+- id: SP-RU-007
+  lang: ru-RU
+  screen: 07-lyrics
+  defects:
+  - element: lyrics.credit
+    kind: mojibake
+    category: GL
+    subcategory: Encoding error (mojibake)
+    check: text
+    text: Ð¢ÐµÐºÑ�Ñ‚ Ð¿Ñ€ÐµÐ´Ð¾Ñ�Ñ‚Ð°Ð²Ð»ÐµÐ½ Musixmatch
+    report: Text is garbled by an encoding error instead of 'Текст предоставлен Musixmatch'.
+  - element: lyrics.report
     kind: offscreen
     category: LY
     subcategory: Text runs off-screen
     check: offscreen
     op: offscreen
-    report: '''Плейлисты'' runs off the edge of the screen.'
+    report: '''Сообщить о проблеме'' runs off the edge of the screen.'
+- id: SP-RU-008
+  lang: ru-RU
+  screen: 08-library
+  defects:
+  - element: library.liked.sub
+    kind: overlap
+    category: LY
+    subcategory: Overlapping text
+    check: overlap
+    op: overlap
+    report: '''📌 Плейлист • 248 треков'' overlaps the text element above it.'
+  - element: library.album1.sub
+    kind: untranslated
+    category: TR
+    subcategory: Untranslated string
+    check: text
+    text: Album • Tame Impala
+    report: '''Album • Tame Impala'' is shown in English instead of ''Альбом • Tame Impala''.'
+  - element: library.title
+    kind: clip_v
+    category: LY
+    subcategory: Vertical clipping (glyph tops/bottoms cut)
+    check: clipped_v
+    op: clip_v
+    report: The tops/bottoms of the glyphs in 'Моя медиатека' are clipped by a too-small line box.
 - id: SP-RU-009
   lang: ru-RU
   screen: 09-artist
@@ -867,33 +868,33 @@ cases:
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: '{count} 812 331 слушатель за месяц'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('24 812 331 слушатель за месяц').
-  - element: artist.p1.plays
+    text: '{count} слушатель за месяц'
+    report: An unresolved placeholder ('{count} слушатель за месяц') is shown instead of the value ('24 812 331 слушатель за месяц').
+  - element: artist.p3.plays
     kind: format
     category: FMT
     subcategory: Number / date / currency not localized
     check: text
-    text: 2,104,553,201
-    report: Number/date/currency uses the US format ('2,104,553,201') instead of the local one ('2 104 553 201').
+    text: 301,227,560
+    report: Number/date/currency uses the US format ('301,227,560') instead of the local one ('301 227 560').
 - id: SP-RU-010
   lang: ru-RU
   screen: 10-settings
   defects:
-  - element: settings.plan.sub
+  - element: settings.storage.sub
     kind: format
     category: FMT
     subcategory: Number / date / currency not localized
     check: text
-    text: Ваша подписка будет продлена November 14, 2026 за ₽299.
-    report: Number/date/currency uses the US format ('Ваша подписка будет продлена November 14, 2026 за ₽299.') instead of the local one ('Ваша подписка будет продлена 14 ноября 2026 г. за 299 ₽.').
-  - element: settings.language
-    kind: ellipsis
+    text: 'Использовано: 1.2 GB • Свободно: 48.6 GB'
+    report: 'Number/date/currency uses the US format (''Использовано: 1.2 GB • Свободно: 48.6 GB'') instead of the local one (''Использовано: 1,2 ГБ • Свободно: 48,6 ГБ'').'
+  - element: settings.datasaver.sub
+    kind: overlap
     category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''Язык приложения'' is truncated with an ellipsis.'
+    subcategory: Overlapping text
+    check: overlap
+    op: overlap
+    report: '''Устанавливает низкое качество музыки и отключает Canvas.'' overlaps the text element above it.'
 - id: SP-RU-C01
   lang: ru-RU
   screen: 04-playlist
@@ -922,61 +923,61 @@ cases:
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''放鬆氛圍'' is truncated with an ellipsis.'
+    report: '''Chill Vibes'' is truncated with an ellipsis.'
 - id: SP-ZH-002
   lang: zh-TW
   screen: 02-search
   defects:
-  - element: search.placeholder
-    kind: offscreen
-    category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''你想播放什麼內容？'' runs off the edge of the screen.'
-  - element: tab.library
+  - element: search.cat.charts
     kind: mojibake
     category: GL
     subcategory: Encoding error (mojibake)
     check: text
-    text: ä½ çš„éŸ³æ¨‚åº«
-    report: Text is garbled by an encoding error instead of '你的音樂庫'.
-  - element: search.cat.madeforyou
+    text: æŽ’è¡Œæ¦œ
+    report: Text is garbled by an encoding error instead of '排行榜'.
+  - element: search.cat.newreleases
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''為你打造'' is cut off mid-word by its container (no ellipsis).'
-- id: SP-ZH-003
-  lang: zh-TW
-  screen: 03-search-results
-  defects:
-  - element: results.chip.albums
+    report: '''最新發行'' is cut off mid-word by its container (no ellipsis).'
+  - element: tab.search
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
     text: □□
-    report: Characters render as empty boxes (missing font glyphs) instead of '專輯'.
-  - element: results.r4.sub
+    report: Characters render as empty boxes (missing font glyphs) instead of '搜尋'.
+- id: SP-ZH-003
+  lang: zh-TW
+  screen: 03-search-results
+  defects:
+  - element: results.r2.sub
     kind: overlap
     category: LY
     subcategory: Overlapping text
     check: overlap
     op: overlap
-    report: '''播放清單 • Spotify'' overlaps the text element above it.'
+    report: '''歌曲 • Arctic Monkeys'' overlaps the text element above it.'
+  - element: results.r5.sub
+    kind: untranslated
+    category: TR
+    subcategory: Untranslated string
+    check: text
+    text: Song • Arctic Monkeys
+    report: '''Song • Arctic Monkeys'' is shown in English instead of ''歌曲 • Arctic Monkeys''.'
 - id: SP-ZH-004
   lang: zh-TW
   screen: 04-playlist
   defects:
-  - element: playlist.meta
-    kind: offscreen
-    category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''30 首歌曲，約 2 小時 5 分鐘'' runs off the edge of the screen.'
+  - element: playlist.desc
+    kind: raw_key
+    category: TR
+    subcategory: Raw resource key rendered
+    check: text
+    text: playlist.desc
+    report: The raw resource key 'playlist.desc' is shown instead of '每週為你精選的新鮮音樂合輯。盡情享受為你挑選的新音樂和冷門好歌。每週一更新。'.
   - element: playlist.updated
     kind: clip_v
     category: LY
@@ -984,74 +985,60 @@ cases:
     check: clipped_v
     op: clip_v
     report: The tops/bottoms of the glyphs in '6 天前更新' are clipped by a too-small line box.
-  - element: playlist.btn.download
-    kind: untranslated
-    category: TR
-    subcategory: Untranslated string
-    check: text
-    text: Download
-    report: '''Download'' is shown in English instead of ''下載''.'
+  - element: playlist.btn.save
+    kind: clip_h
+    category: LY
+    subcategory: Truncation / clipping
+    check: clipped
+    op: clip_h
+    report: '''儲存'' is cut off mid-word by its container (no ellipsis).'
 - id: SP-ZH-005
   lang: zh-TW
   screen: 05-premium
   defects:
-  - element: premium.plan.family.feat
+  - element: premium.hero.sub
+    kind: overlap
+    category: LY
+    subcategory: Overlapping text
+    check: overlap
+    op: overlap
+    report: '''之後每月只要 NT$149。可隨時取消。'' overlaps the text element above it.'
+  - element: premium.plan.individual.feat
+    kind: ellipsis
+    category: LY
+    subcategory: Truncation / ellipsis
+    check: clipped
+    op: ellipsis
+    report: '''1 個 Premium 帳戶'' is truncated with an ellipsis.'
+  - element: premium.plan.family.price
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: premium.plan.family.feat
-    report: The raw resource key 'premium.plan.family.feat' is shown instead of '最多 6 個 Premium 帳戶'.
-  - element: premium.hero.title
-    kind: clip_v
-    category: LY
-    subcategory: Vertical clipping (glyph tops/bottoms cut)
-    check: clipped_v
-    op: clip_v
-    report: The tops/bottoms of the glyphs in '以 NT$0 試用 Premium 1 個月' are clipped by a too-small line box.
-  - element: premium.legal
-    kind: format
-    category: FMT
-    subcategory: Number / date / currency not localized
-    check: text
-    text: 適用相關條款。優惠於 October 31, 2026 結束。僅限個人方案。
-    report: Number/date/currency uses the US format ('適用相關條款。優惠於 October 31, 2026 結束。僅限個人方案。') instead of the local one ('適用相關條款。優惠於 2026年10月31日結束。僅限個人方案。').
+    text: premium.plan.family.price
+    report: The raw resource key 'premium.plan.family.price' is shown instead of 'NT$268 / 月'.
 - id: SP-ZH-006
   lang: zh-TW
   screen: 06-now-playing
   defects:
-  - element: np.devices
+  - element: np.playingfrom
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''有可用的裝置'' is cut off mid-word by its container (no ellipsis).'
-  - element: np.elapsed
-    kind: raw_key
-    category: TR
-    subcategory: Raw resource key rendered
-    check: text
-    text: np.elapsed
-    report: The raw resource key 'np.elapsed' is shown instead of '1:24'.
-- id: SP-ZH-007
-  lang: zh-TW
-  screen: 07-lyrics
-  defects:
-  - element: lyrics.share
-    kind: clip_h
-    category: LY
-    subcategory: Truncation / clipping
-    check: clipped
-    op: clip_h
-    report: '''分享'' is cut off mid-word by its container (no ellipsis).'
-  - element: lyrics.report
+    report: '''正在從播放清單播放'' is cut off mid-word by its container (no ellipsis).'
+  - element: np.share
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: Report a problem
-    report: '''Report a problem'' is shown in English instead of ''回報問題''.'
+    text: Share
+    report: '''Share'' is shown in English instead of ''分享''.'
+- id: SP-ZH-007
+  lang: zh-TW
+  screen: 07-lyrics
+  defects:
   - element: lyrics.translate
     kind: tofu
     category: GL
@@ -1059,31 +1046,38 @@ cases:
     check: text
     text: □□□□
     report: Characters render as empty boxes (missing font glyphs) instead of '顯示翻譯'.
+  - element: lyrics.report
+    kind: offscreen
+    category: LY
+    subcategory: Text runs off-screen
+    check: offscreen
+    op: offscreen
+    report: '''回報問題'' runs off the edge of the screen.'
 - id: SP-ZH-008
   lang: zh-TW
   screen: 08-library
   defects:
-  - element: library.artist1.sub
-    kind: overlap
+  - element: library.chip.podcasts
+    kind: offscreen
     category: LY
-    subcategory: Overlapping text
-    check: overlap
-    op: overlap
-    report: '''藝人'' overlaps the text element above it.'
+    subcategory: Text runs off-screen
+    check: offscreen
+    op: offscreen
+    report: '''Podcast 和節目'' runs off the edge of the screen.'
+  - element: library.title
+    kind: clip_v
+    category: LY
+    subcategory: Vertical clipping (glyph tops/bottoms cut)
+    check: clipped_v
+    op: clip_v
+    report: The tops/bottoms of the glyphs in '你的音樂庫' are clipped by a too-small line box.
   - element: library.liked.sub
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
     text: 📌 播放清單 • {count} 首歌曲
-    report: An unresolved '{count}' placeholder is shown instead of the number ('📌 播放清單 • 248 首歌曲').
-  - element: library.chip.podcasts
-    kind: ellipsis
-    category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''Podcast 和節目'' is truncated with an ellipsis.'
+    report: An unresolved placeholder ('📌 播放清單 • {count} 首歌曲') is shown instead of the value ('📌 播放清單 • 248 首歌曲').
 - id: SP-ZH-009
   lang: zh-TW
   screen: 09-artist
@@ -1093,8 +1087,8 @@ cases:
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: '{count},812,331 位每月聽眾'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('24,812,331 位每月聽眾').
+    text: '{count} 位每月聽眾'
+    report: An unresolved placeholder ('{count} 位每月聽眾') is shown instead of the value ('24,812,331 位每月聽眾').
 - id: SP-ZH-010
   lang: zh-TW
   screen: 10-settings
@@ -1106,20 +1100,6 @@ cases:
     check: text
     text: 你的方案將於 November 14, 2026 續訂，費用為 $11.99。
     report: Number/date/currency uses the US format ('你的方案將於 November 14, 2026 續訂，費用為 $11.99。') instead of the local one ('你的方案將於 2026年11月14日續訂，費用為 NT$149。').
-  - element: settings.language
-    kind: tofu
-    category: GL
-    subcategory: Missing glyphs (tofu boxes)
-    check: text
-    text: □□□□□□
-    report: Characters render as empty boxes (missing font glyphs) instead of '應用程式語言'.
-  - element: settings.crossfade.sub
-    kind: overlap
-    category: LY
-    subcategory: Overlapping text
-    check: overlap
-    op: overlap
-    report: '''讓歌曲之間淡入淡出'' overlaps the text element above it.'
 - id: SP-ZH-C01
   lang: zh-TW
   screen: 05-premium
@@ -1142,67 +1122,60 @@ cases:
     check: clipped_v
     op: clip_v
     report: The tops/bottoms of the glyphs in '좋은 저녁이에요' are clipped by a too-small line box.
-  - element: home.tile.discover
-    kind: raw_key
-    category: TR
-    subcategory: Raw resource key rendered
-    check: text
-    text: home.tile.discover
-    report: The raw resource key 'home.tile.discover' is shown instead of 'Discover Weekly'.
-- id: SP-KO-002
-  lang: ko-KR
-  screen: 02-search
-  defects:
-  - element: search.cat.hiphop
+  - element: home.card2.sub
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □□□□□□
-    report: Characters render as empty boxes (missing font glyphs) instead of '힙합'.
-  - element: search.cat.live
-    kind: offscreen
-    category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''라이브 이벤트'' runs off the edge of the screen.'
-- id: SP-KO-003
+    text: □□ □□ □□□ □□□ □□ □□□□.
+    report: Characters render as empty boxes (missing font glyphs) instead of '올해 가장 사랑한 곡들을 한데 모았어요.'.
+- id: SP-KO-002
   lang: ko-KR
-  screen: 03-search-results
+  screen: 02-search
   defects:
-  - element: results.chip.playlists
+  - element: tab.library
+    kind: raw_key
+    category: TR
+    subcategory: Raw resource key rendered
+    check: text
+    text: tab.library
+    report: The raw resource key 'tab.library' is shown instead of '내 라이브러리'.
+  - element: search.cat.workout
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''플레이리스트'' is cut off mid-word by its container (no ellipsis).'
-  - element: results.r2.sub
+    report: '''운동'' is cut off mid-word by its container (no ellipsis).'
+- id: SP-KO-003
+  lang: ko-KR
+  screen: 03-search-results
+  defects:
+  - element: results.r3.sub
     kind: mojibake
     category: GL
     subcategory: Encoding error (mojibake)
     check: text
-    text: ê³¡ â€¢ Arctic Monkeys
-    report: Text is garbled by an encoding error instead of '곡 • Arctic Monkeys'.
-  - element: results.r5.sub
+    text: ì•¨ë²” â€¢ Arctic Monkeys â€¢ 2013
+    report: Text is garbled by an encoding error instead of '앨범 • Arctic Monkeys • 2013'.
+  - element: tab.library
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □□□ • Arctic Monkeys
-    report: Characters render as empty boxes (missing font glyphs) instead of '곡 • Arctic Monkeys'.
-- id: SP-KO-004
-  lang: ko-KR
-  screen: 04-playlist
-  defects:
-  - element: playlist.desc
+    text: □ □□□□□
+    report: Characters render as empty boxes (missing font glyphs) instead of '내 라이브러리'.
+  - element: results.r4.sub
     kind: overlap
     category: LY
     subcategory: Overlapping text
     check: overlap
     op: overlap
-    report: '''매주 새로운 음악으로 채워지는 나만의 믹스테이프. 회원님을 위해 엄선한 신곡과 숨은 명곡을 즐겨 보세요. 매주 월요일에 업데이트됩니다.'' overlaps the text element above it.'
+    report: '''플레이리스트 • Spotify'' overlaps the text element above it.'
+- id: SP-KO-004
+  lang: ko-KR
+  screen: 04-playlist
+  defects:
   - element: playlist.updated
     kind: clip_v
     category: LY
@@ -1210,56 +1183,64 @@ cases:
     check: clipped_v
     op: clip_v
     report: The tops/bottoms of the glyphs in '6일 전 업데이트됨' are clipped by a too-small line box.
-  - element: playlist.btn.save
-    kind: untranslated
-    category: TR
-    subcategory: Untranslated string
-    check: text
-    text: Save
-    report: '''Save'' is shown in English instead of ''저장하기''.'
-- id: SP-KO-005
-  lang: ko-KR
-  screen: 05-premium
-  defects:
-  - element: tab.library
-    kind: offscreen
-    category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''내 라이브러리'' runs off the edge of the screen.'
-  - element: premium.plan.duo.price
-    kind: format
-    category: FMT
-    subcategory: Number / date / currency not localized
-    check: text
-    text: 월 $16.99
-    report: Number/date/currency uses the US format ('월 $16.99') instead of the local one ('월 ₩16,350').
-- id: SP-KO-006
-  lang: ko-KR
-  screen: 06-now-playing
-  defects:
-  - element: np.playingfrom
-    kind: clip_h
-    category: LY
-    subcategory: Truncation / clipping
-    check: clipped
-    op: clip_h
-    report: '''플레이리스트에서 재생 중'' is cut off mid-word by its container (no ellipsis).'
-  - element: np.share
+  - element: playlist.madefor
     kind: ellipsis
     category: LY
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''공유하기'' is truncated with an ellipsis.'
-  - element: np.artist
+    report: '''Neeraj님을 위해 제작됨'' is truncated with an ellipsis.'
+  - element: playlist.desc
+    kind: untranslated
+    category: TR
+    subcategory: Untranslated string
+    check: text
+    text: Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.
+    report: '''Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.'' is shown in English instead of ''매주 새로운 음악으로 채워지는 나만의 믹스테이프. 회원님을 위해 엄선한 신곡과 숨은 명곡을
+      즐겨 보세요. 매주 월요일에 업데이트됩니다.''.'
+- id: SP-KO-005
+  lang: ko-KR
+  screen: 05-premium
+  defects:
+  - element: premium.plan.family.feat
+    kind: offscreen
+    category: LY
+    subcategory: Text runs off-screen
+    check: offscreen
+    op: offscreen
+    report: '''Premium 계정 최대 6개'' runs off the edge of the screen.'
+  - element: premium.hero.sub
+    kind: format
+    category: FMT
+    subcategory: Number / date / currency not localized
+    check: text
+    text: 이후 월 $11.99. 언제든지 해지할 수 있습니다.
+    report: Number/date/currency uses the US format ('이후 월 $11.99. 언제든지 해지할 수 있습니다.') instead of the local one ('이후 월 ₩10,900. 언제든지 해지할 수 있습니다.').
+- id: SP-KO-006
+  lang: ko-KR
+  screen: 06-now-playing
+  defects:
+  - element: np.share
+    kind: clip_h
+    category: LY
+    subcategory: Truncation / clipping
+    check: clipped
+    op: clip_h
+    report: '''공유하기'' is cut off mid-word by its container (no ellipsis).'
+  - element: np.playingfrom
+    kind: ellipsis
+    category: LY
+    subcategory: Truncation / ellipsis
+    check: clipped
+    op: ellipsis
+    report: '''플레이리스트에서 재생 중'' is truncated with an ellipsis.'
+  - element: np.source
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: np.artist
-    report: The raw resource key 'np.artist' is shown instead of 'Arctic Monkeys'.
+    text: np.source
+    report: The raw resource key 'np.source' is shown instead of 'Discover Weekly'.
 - id: SP-KO-007
   lang: ko-KR
   screen: 07-lyrics
@@ -1271,6 +1252,13 @@ cases:
     check: text
     text: Show translation
     report: '''Show translation'' is shown in English instead of ''번역 보기''.'
+  - element: lyrics.report
+    kind: offscreen
+    category: LY
+    subcategory: Text runs off-screen
+    check: offscreen
+    op: offscreen
+    report: '''문제 신고하기'' runs off the edge of the screen.'
   - element: lyrics.credit
     kind: mojibake
     category: GL
@@ -1278,13 +1266,6 @@ cases:
     check: text
     text: Musixmatchì—�ì„œ ê°€ì‚¬ ì œê³µ
     report: Text is garbled by an encoding error instead of 'Musixmatch에서 가사 제공'.
-  - element: lyrics.share
-    kind: ellipsis
-    category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''공유하기'' is truncated with an ellipsis.'
 - id: SP-KO-008
   lang: ko-KR
   screen: 08-library
@@ -1302,25 +1283,25 @@ cases:
     subcategory: Unresolved placeholder
     check: text
     text: 📌 플레이리스트 • {count}곡
-    report: An unresolved '{count}' placeholder is shown instead of the number ('📌 플레이리스트 • 248곡').
+    report: An unresolved placeholder ('📌 플레이리스트 • {count}곡') is shown instead of the value ('📌 플레이리스트 • 248곡').
 - id: SP-KO-009
   lang: ko-KR
   screen: 09-artist
   defects:
-  - element: artist.latest.sub
+  - element: artist.seemore
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: October 17, 2025 • Album
-    report: '''October 17, 2025 • Album'' is shown in English instead of ''2025년 10월 17일 • 앨범''.'
+    text: See more
+    report: '''See more'' is shown in English instead of ''더 보기''.'
   - element: artist.listeners
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: 월별 청취자 {count},812,331명
-    report: An unresolved '{count}' placeholder is shown instead of the number ('월별 청취자 24,812,331명').
+    text: 월별 청취자 {count}명
+    report: An unresolved placeholder ('월별 청취자 {count}명') is shown instead of the value ('월별 청취자 24,812,331명').
 - id: SP-KO-010
   lang: ko-KR
   screen: 10-settings
@@ -1332,20 +1313,20 @@ cases:
     check: text
     text: November 14, 2026에 $11.99로 요금제가 갱신됩니다.
     report: Number/date/currency uses the US format ('November 14, 2026에 $11.99로 요금제가 갱신됩니다.') instead of the local one ('2026년 11월 14일에 ₩10,900으로 요금제가 갱신됩니다.').
-  - element: settings.language
-    kind: ellipsis
+  - element: settings.logout
+    kind: raw_key
+    category: TR
+    subcategory: Raw resource key rendered
+    check: text
+    text: settings.logout
+    report: The raw resource key 'settings.logout' is shown instead of '로그아웃'.
+  - element: settings.explicit.sub
+    kind: overlap
     category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''앱 언어'' is truncated with an ellipsis.'
-  - element: settings.datasaver
-    kind: clip_h
-    category: LY
-    subcategory: Truncation / clipping
-    check: clipped
-    op: clip_h
-    report: '''데이터 절약 모드'' is cut off mid-word by its container (no ellipsis).'
+    subcategory: Overlapping text
+    check: overlap
+    op: overlap
+    report: '''청소년 유해 콘텐츠를 재생하려면 켜세요. 청소년 유해 콘텐츠에는 19 태그가 표시됩니다.'' overlaps the text element above it.'
 - id: SP-KO-C01
   lang: ko-KR
   screen: 06-now-playing
@@ -1361,124 +1342,110 @@ cases:
     check: text
     text: Your Top Songs 2026
     report: '''Your Top Songs 2026'' is shown in English instead of ''உங்கள் சிறந்த பாடல்கள் 2026''.'
-  - element: home.tile.liked
-    kind: offscreen
+  - element: home.sec.madeforyou
+    kind: clip_v
     category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''விரும்பிய பாடல்கள்'' runs off the edge of the screen.'
+    subcategory: Vertical clipping (glyph tops/bottoms cut)
+    check: clipped_v
+    op: clip_v
+    report: The tops/bottoms of the glyphs in 'உங்களுக்காக உருவாக்கப்பட்டது' are clipped by a too-small line box.
 - id: SP-TA-002
   lang: ta-IN
   screen: 02-search
   defects:
   - element: search.cat.workout
-    kind: mojibake
-    category: GL
-    subcategory: Encoding error (mojibake)
-    check: text
-    text: à®‰à®Ÿà®±à¯�à®ªà®¯à®¿à®±à¯�à®šà®¿
-    report: Text is garbled by an encoding error instead of 'உடற்பயிற்சி'.
-  - element: search.cat.hiphop
-    kind: untranslated
-    category: TR
-    subcategory: Untranslated string
-    check: text
-    text: Hip-Hop
-    report: '''Hip-Hop'' is shown in English instead of ''ஹிப்-ஹாப்''.'
-  - element: search.sec.start
-    kind: clip_v
-    category: LY
-    subcategory: Vertical clipping (glyph tops/bottoms cut)
-    check: clipped_v
-    op: clip_v
-    report: The tops/bottoms of the glyphs in 'உலாவத் தொடங்குங்கள்' are clipped by a too-small line box.
-- id: SP-TA-003
-  lang: ta-IN
-  screen: 03-search-results
-  defects:
-  - element: results.chip.artists
     kind: raw_key
     category: TR
     subcategory: Raw resource key rendered
     check: text
-    text: results.chip.artists
-    report: The raw resource key 'results.chip.artists' is shown instead of 'கலைஞர்கள்'.
-  - element: results.chip.playlists
+    text: search.cat.workout
+    report: The raw resource key 'search.cat.workout' is shown instead of 'உடற்பயிற்சி'.
+  - element: search.placeholder
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''பிளேலிஸ்ட்கள்'' is cut off mid-word by its container (no ellipsis).'
-  - element: results.seeall
+    report: '''எதைக் கேட்க விரும்புகிறீர்கள்?'' is cut off mid-word by its container (no ellipsis).'
+  - element: search.cat.live
     kind: ellipsis
     category: LY
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''எல்லாப் பாடல்களையும் காட்டு'' is truncated with an ellipsis.'
-- id: SP-TA-004
+    report: '''நேரலை நிகழ்வுகள்'' is truncated with an ellipsis.'
+- id: SP-TA-003
   lang: ta-IN
-  screen: 04-playlist
+  screen: 03-search-results
   defects:
-  - element: playlist.updated
+  - element: results.r1.sub
     kind: clip_v
     category: LY
     subcategory: Vertical clipping (glyph tops/bottoms cut)
     check: clipped_v
     op: clip_v
-    report: The tops/bottoms of the glyphs in '6 நாட்களுக்கு முன்பு புதுப்பிக்கப்பட்டது' are clipped by a too-small line box.
-  - element: playlist.madefor
+    report: The tops/bottoms of the glyphs in 'கலைஞர்' are clipped by a too-small line box.
+  - element: results.r3.sub
+    kind: ellipsis
+    category: LY
+    subcategory: Truncation / ellipsis
+    check: clipped
+    op: ellipsis
+    report: '''ஆல்பம் • Arctic Monkeys • 2013'' is truncated with an ellipsis.'
+  - element: results.r5.sub
     kind: mojibake
     category: GL
     subcategory: Encoding error (mojibake)
     check: text
-    text: Neeraj-à®•à¯�à®•à®¾à®• à®‰à®°à¯�à®µà®¾à®•à¯�à®•à®ªà¯�à®ªà®Ÿà¯�à®Ÿà®¤à¯�
-    report: Text is garbled by an encoding error instead of 'Neeraj-க்காக உருவாக்கப்பட்டது'.
-- id: SP-TA-005
+    text: à®ªà®¾à®Ÿà®²à¯� â€¢ Arctic Monkeys
+    report: Text is garbled by an encoding error instead of 'பாடல் • Arctic Monkeys'.
+- id: SP-TA-004
   lang: ta-IN
-  screen: 05-premium
+  screen: 04-playlist
   defects:
-  - element: premium.cta.trial
+  - element: playlist.meta
     kind: offscreen
     category: LY
     subcategory: Text runs off-screen
     check: offscreen
     op: offscreen
-    report: '''1 மாதம் இலவசமாக முயற்சிக்கவும்'' runs off the edge of the screen.'
-  - element: tab.library
+    report: '''30 பாடல்கள், சுமார் 2 மணி 5 நிமி'' runs off the edge of the screen.'
+  - element: playlist.btn.save
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □□□□ □□□□
-    report: Characters render as empty boxes (missing font glyphs) instead of 'உங்கள் லைப்ரரி'.
-  - element: premium.plan.duo.feat
+    text: □□□□
+    report: Characters render as empty boxes (missing font glyphs) instead of 'சேமி'.
+- id: SP-TA-005
+  lang: ta-IN
+  screen: 05-premium
+  defects:
+  - element: premium.hero.title
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: '{count} Premium கணக்குகள்'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('2 Premium கணக்குகள்').
-- id: SP-TA-006
-  lang: ta-IN
-  screen: 06-now-playing
-  defects:
-  - element: np.lyrics.header
+    text: ₹{amount} கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்
+    report: An unresolved placeholder ('₹{amount} கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்') is shown instead of the value ('₹0 கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்').
+  - element: premium.plan.individual.feat
     kind: untranslated
     category: TR
     subcategory: Untranslated string
     check: text
-    text: Lyrics preview
-    report: '''Lyrics preview'' is shown in English instead of ''பாடல் வரிகள் முன்னோட்டம்''.'
-  - element: np.playingfrom
+    text: 1 Premium account
+    report: '''1 Premium account'' is shown in English instead of ''1 Premium கணக்கு''.'
+  - element: premium.plan.family.name
     kind: clip_v
     category: LY
     subcategory: Vertical clipping (glyph tops/bottoms cut)
     check: clipped_v
     op: clip_v
-    report: The tops/bottoms of the glyphs in 'பிளேலிஸ்ட்டிலிருந்து இயங்குகிறது' are clipped by a too-small line box.
+    report: The tops/bottoms of the glyphs in 'குடும்பம்' are clipped by a too-small line box.
+- id: SP-TA-006
+  lang: ta-IN
+  screen: 06-now-playing
+  defects:
   - element: np.devices
     kind: overlap
     category: LY
@@ -1486,74 +1453,81 @@ cases:
     check: overlap
     op: overlap
     report: '''கிடைக்கும் சாதனங்கள்'' overlaps the text element above it.'
+  - element: np.playingfrom
+    kind: clip_h
+    category: LY
+    subcategory: Truncation / clipping
+    check: clipped
+    op: clip_h
+    report: '''பிளேலிஸ்ட்டிலிருந்து இயக்கப்படுகிறது'' is cut off mid-word by its container (no ellipsis).'
+  - element: np.lyrics.header
+    kind: mojibake
+    category: GL
+    subcategory: Encoding error (mojibake)
+    check: text
+    text: à®ªà®¾à®Ÿà®²à¯� à®µà®°à®¿à®•à®³à¯� à®®à¯�à®©à¯�à®©à¯‹à®Ÿà¯�à®Ÿà®®à¯�
+    report: Text is garbled by an encoding error instead of 'பாடல் வரிகள் முன்னோட்டம்'.
 - id: SP-TA-007
   lang: ta-IN
   screen: 07-lyrics
   defects:
   - element: lyrics.translate
+    kind: untranslated
+    category: TR
+    subcategory: Untranslated string
+    check: text
+    text: Show translation
+    report: '''Show translation'' is shown in English instead of ''மொழிபெயர்ப்பைக் காட்டு''.'
+  - element: lyrics.share
     kind: clip_h
     category: LY
     subcategory: Truncation / clipping
     check: clipped
     op: clip_h
-    report: '''மொழிபெயர்ப்பைக் காட்டு'' is cut off mid-word by its container (no ellipsis).'
-  - element: lyrics.share
-    kind: tofu
-    category: GL
-    subcategory: Missing glyphs (tofu boxes)
-    check: text
-    text: □□□
-    report: Characters render as empty boxes (missing font glyphs) instead of 'பகிர்'.
+    report: '''பகிர்'' is cut off mid-word by its container (no ellipsis).'
 - id: SP-TA-008
   lang: ta-IN
   screen: 08-library
   defects:
   - element: library.liked.sub
-    kind: placeholder
-    category: TR
-    subcategory: Unresolved placeholder
-    check: text
-    text: 📌 பிளேலிஸ்ட் • {count} பாடல்கள்
-    report: An unresolved '{count}' placeholder is shown instead of the number ('📌 பிளேலிஸ்ட் • 248 பாடல்கள்').
-  - element: library.episodes.title
-    kind: raw_key
-    category: TR
-    subcategory: Raw resource key rendered
-    check: text
-    text: library.episodes.title
-    report: The raw resource key 'library.episodes.title' is shown instead of 'உங்கள் எபிசோடுகள்'.
-  - element: library.add.podcasts
-    kind: clip_h
-    category: LY
-    subcategory: Truncation / clipping
-    check: clipped
-    op: clip_h
-    report: '''பாட்காஸ்ட்கள் & நிகழ்ச்சிகளைச் சேர்'' is cut off mid-word by its container (no ellipsis).'
-- id: SP-TA-009
-  lang: ta-IN
-  screen: 09-artist
-  defects:
-  - element: artist.seemore
-    kind: ellipsis
-    category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''மேலும் காட்டு'' is truncated with an ellipsis.'
-  - element: artist.latest.sub
     kind: overlap
     category: LY
     subcategory: Overlapping text
     check: overlap
     op: overlap
-    report: '''17 அக்டோபர், 2025 • ஆல்பம்'' overlaps the text element above it.'
-  - element: artist.p3.plays
-    kind: format
-    category: FMT
-    subcategory: Number / date / currency not localized
+    report: '''📌 பிளேலிஸ்ட் • 248 பாடல்கள்'' overlaps the text element above it.'
+  - element: library.chip.podcasts
+    kind: offscreen
+    category: LY
+    subcategory: Text runs off-screen
+    check: offscreen
+    op: offscreen
+    report: '''பாட்காஸ்ட்கள் & நிகழ்ச்சிகள்'' runs off the edge of the screen.'
+  - element: library.episodes.title
+    kind: tofu
+    category: GL
+    subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: 301,227,560
-    report: Number/date/currency uses the US format ('301,227,560') instead of the local one ('30,12,27,560').
+    text: □□□□□□ □□□□□□□□□□
+    report: Characters render as empty boxes (missing font glyphs) instead of 'உங்கள் எபிசோடுகள்'.
+- id: SP-TA-009
+  lang: ta-IN
+  screen: 09-artist
+  defects:
+  - element: artist.listeners
+    kind: placeholder
+    category: TR
+    subcategory: Unresolved placeholder
+    check: text
+    text: '{count} மாதாந்திரக் கேட்போர்'
+    report: An unresolved placeholder ('{count} மாதாந்திரக் கேட்போர்') is shown instead of the value ('2,48,12,331 மாதாந்திரக் கேட்போர்').
+  - element: artist.p3.title
+    kind: raw_key
+    category: TR
+    subcategory: Raw resource key rendered
+    check: text
+    text: artist.p3.title
+    report: The raw resource key 'artist.p3.title' is shown instead of 'Borderline'.
 - id: SP-TA-010
   lang: ta-IN
   screen: 10-settings
@@ -1566,13 +1540,6 @@ cases:
     text: உங்கள் திட்டம் November 14, 2026 அன்று $11.99-க்குப் புதுப்பிக்கப்படும்.
     report: Number/date/currency uses the US format ('உங்கள் திட்டம் November 14, 2026 அன்று $11.99-க்குப் புதுப்பிக்கப்படும்.') instead of the local one ('உங்கள் திட்டம் 14 நவம்பர், 2026 அன்று ₹139-க்குப்
       புதுப்பிக்கப்படும்.').
-  - element: settings.datasaver.sub
-    kind: overlap
-    category: LY
-    subcategory: Overlapping text
-    check: overlap
-    op: overlap
-    report: '''உங்கள் இசைத் தரத்தைக் குறைவாக அமைத்து, கேன்வாஸை முடக்கும்.'' overlaps the text element above it.'
 - id: SP-TA-C01
   lang: ta-IN
   screen: 07-lyrics
@@ -1593,7 +1560,7 @@ cases:
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □□□□
+    text: □□□□□
     report: Characters render as empty boxes (missing font glyphs) instead of 'ค้นหา'.
   - element: home.sec.recent
     kind: clip_v
@@ -1637,7 +1604,7 @@ cases:
     subcategory: Truncation / ellipsis
     check: clipped
     op: ellipsis
-    report: '''อัลบั้ม • Arctic Monkeys • 2556'' is truncated with an ellipsis.'
+    report: '''อัลบั้ม • Arctic Monkeys • 2013'' is truncated with an ellipsis.'
   - element: results.chip.songs
     kind: untranslated
     category: TR
@@ -1687,7 +1654,7 @@ cases:
     subcategory: Unresolved placeholder
     check: text
     text: ทดลองใช้ Premium {count} เดือน ฟรี ฿0
-    report: An unresolved '{count}' placeholder is shown instead of the number ('ทดลองใช้ Premium 1 เดือน ฟรี ฿0').
+    report: An unresolved placeholder ('ทดลองใช้ Premium {count} เดือน ฟรี ฿0') is shown instead of the value ('ทดลองใช้ Premium 1 เดือน ฟรี ฿0').
   - element: premium.cta.trial
     kind: offscreen
     category: LY
@@ -1723,7 +1690,7 @@ cases:
     subcategory: Raw resource key rendered
     check: text
     text: lyrics.credit
-    report: The raw resource key 'lyrics.credit' is shown instead of 'เนื้อเพลงโดย Musixmatch'.
+    report: The raw resource key 'lyrics.credit' is shown instead of 'เนื้อเพลงจาก Musixmatch'.
   - element: lyrics.translate
     kind: overlap
     category: LY
@@ -1742,13 +1709,6 @@ cases:
   lang: th-TH
   screen: 08-library
   defects:
-  - element: tab.library
-    kind: tofu
-    category: GL
-    subcategory: Missing glyphs (tofu boxes)
-    check: text
-    text: □□□□□□□□□□□□□
-    report: Characters render as empty boxes (missing font glyphs) instead of 'คอลเลกชันของคุณ'.
   - element: library.episodes.title
     kind: mojibake
     category: GL
@@ -1756,35 +1716,35 @@ cases:
     check: text
     text: à¸•à¸­à¸™à¸‚à¸­à¸‡à¸„à¸¸à¸“
     report: Text is garbled by an encoding error instead of 'ตอนของคุณ'.
-  - element: library.chip.podcasts
+  - element: library.liked.sub
+    kind: placeholder
+    category: TR
+    subcategory: Unresolved placeholder
+    check: text
+    text: 📌 เพลย์ลิสต์ • {count} เพลง
+    report: An unresolved placeholder ('📌 เพลย์ลิสต์ • {count} เพลง') is shown instead of the value ('📌 เพลย์ลิสต์ • 248 เพลง').
+  - element: library.add.podcasts
     kind: offscreen
     category: LY
     subcategory: Text runs off-screen
     check: offscreen
     op: offscreen
-    report: '''พอดแคสต์และรายการ'' runs off the edge of the screen.'
+    report: '''เพิ่มพอดแคสต์และรายการ'' runs off the edge of the screen.'
 - id: SP-TH-009
   lang: th-TH
   screen: 09-artist
   defects:
-  - element: artist.latest.sub
-    kind: format
-    category: FMT
-    subcategory: Number / date / currency not localized
+  - element: artist.seemore
+    kind: tofu
+    category: GL
+    subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: October 17, 2025 • อัลบั้ม
-    report: Number/date/currency uses the US format ('October 17, 2025 • อัลบั้ม') instead of the local one ('17 ตุลาคม 2568 • อัลบั้ม').
+    text: □□□□□□□□□□□
+    report: Characters render as empty boxes (missing font glyphs) instead of 'ดูเพิ่มเติม'.
 - id: SP-TH-010
   lang: th-TH
   screen: 10-settings
   defects:
-  - element: settings.crossfade.val
-    kind: placeholder
-    category: TR
-    subcategory: Unresolved placeholder
-    check: text
-    text: '{count} วินาที'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('5 วินาที').
   - element: settings.plan.sub
     kind: format
     category: FMT
@@ -1793,13 +1753,6 @@ cases:
     text: แพ็กเกจของคุณจะต่ออายุในวันที่ November 14, 2026 ในราคา $11.99
     report: Number/date/currency uses the US format ('แพ็กเกจของคุณจะต่ออายุในวันที่ November 14, 2026 ในราคา $11.99') instead of the local one ('แพ็กเกจของคุณจะต่ออายุในวันที่ 14 พฤศจิกายน 2569 ในราคา
       ฿139').
-  - element: settings.language
-    kind: ellipsis
-    category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''ภาษาของแอป'' is truncated with an ellipsis.'
 - id: SP-TH-C01
   lang: th-TH
   screen: 08-library
@@ -1890,35 +1843,49 @@ cases:
     check: clipped_v
     op: clip_v
     report: The tops/bottoms of the glyphs in '30 ዘፈኖች፣ በግምት 2 ሰዓት 5 ደቂቃ' are clipped by a too-small line box.
-  - element: playlist.btn.save
-    kind: offscreen
-    category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''አስቀምጥ'' runs off the edge of the screen.'
-- id: SP-AM-005
-  lang: am-ET
-  screen: 05-premium
-  defects:
-  - element: premium.hero.title
+  - element: playlist.updated
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: Premium ለ{count} ወር በUS$ 0 ይሞክሩ
-    report: An unresolved '{count}' placeholder is shown instead of the number ('Premium ለ1 ወር በUS$ 0 ይሞክሩ').
-  - element: premium.plan.duo.feat
+    text: ከ{count} ቀናት በፊት ተዘምኗል
+    report: An unresolved placeholder ('ከ{count} ቀናት በፊት ተዘምኗል') is shown instead of the value ('ከ6 ቀናት በፊት ተዘምኗል').
+- id: SP-AM-005
+  lang: am-ET
+  screen: 05-premium
+  defects:
+  - element: premium.legal
     kind: overlap
     category: LY
     subcategory: Overlapping text
     check: overlap
     op: overlap
-    report: '''2 የPremium መለያዎች'' overlaps the text element above it.'
+    report: '''ውሎች ተፈጻሚ ይሆናሉ። ቅናሹ 31 ኦክቶበር 2026 ላይ ያበቃል። ለግለሰብ ዕቅድ ብቻ።'' overlaps the text element above it.'
+  - element: premium.plan.family.price
+    kind: raw_key
+    category: TR
+    subcategory: Raw resource key rendered
+    check: text
+    text: premium.plan.family.price
+    report: The raw resource key 'premium.plan.family.price' is shown instead of 'US$ 8.99 / ወር'.
 - id: SP-AM-006
   lang: am-ET
   screen: 06-now-playing
   defects:
+  - element: np.devices
+    kind: clip_h
+    category: LY
+    subcategory: Truncation / clipping
+    check: clipped
+    op: clip_h
+    report: '''የሚገኙ መሣሪያዎች'' is cut off mid-word by its container (no ellipsis).'
+  - element: np.playingfrom
+    kind: ellipsis
+    category: LY
+    subcategory: Truncation / ellipsis
+    check: clipped
+    op: ellipsis
+    report: '''ከአጫዋች ዝርዝር በመጫወት ላይ'' is truncated with an ellipsis.'
   - element: np.lyrics.header
     kind: untranslated
     category: TR
@@ -1926,63 +1893,49 @@ cases:
     check: text
     text: Lyrics preview
     report: '''Lyrics preview'' is shown in English instead of ''የግጥም ቅድመ-እይታ''.'
-  - element: np.devices
-    kind: offscreen
-    category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''የሚገኙ መሣሪያዎች'' runs off the edge of the screen.'
-  - element: np.lyrics.line1
-    kind: raw_key
-    category: TR
-    subcategory: Raw resource key rendered
-    check: text
-    text: np.lyrics.line1
-    report: The raw resource key 'np.lyrics.line1' is shown instead of 'Have you got colour in your cheeks?'.
 - id: SP-AM-007
   lang: am-ET
   screen: 07-lyrics
   defects:
   - element: lyrics.share
-    kind: clip_h
-    category: LY
-    subcategory: Truncation / clipping
-    check: clipped
-    op: clip_h
-    report: '''አጋራ'' is cut off mid-word by its container (no ellipsis).'
-  - element: lyrics.report
-    kind: ellipsis
-    category: LY
-    subcategory: Truncation / ellipsis
-    check: clipped
-    op: ellipsis
-    report: '''ችግር ሪፖርት አድርግ'' is truncated with an ellipsis.'
-  - element: lyrics.translate
-    kind: untranslated
-    category: TR
-    subcategory: Untranslated string
-    check: text
-    text: Show translation
-    report: '''Show translation'' is shown in English instead of ''ትርጉም አሳይ''.'
-- id: SP-AM-008
-  lang: am-ET
-  screen: 08-library
-  defects:
-  - element: library.chip.albums
     kind: tofu
     category: GL
     subcategory: Missing glyphs (tofu boxes)
     check: text
-    text: □□□□□
-    report: Characters render as empty boxes (missing font glyphs) instead of 'አልበሞች'.
-  - element: library.episodes.sub
-    kind: clip_h
+    text: □□□
+    report: Characters render as empty boxes (missing font glyphs) instead of 'አጋራ'.
+  - element: lyrics.translate
+    kind: offscreen
     category: LY
-    subcategory: Truncation / clipping
-    check: clipped
-    op: clip_h
-    report: '''የተቀመጡ እና የወረዱ ክፍሎች'' is cut off mid-word by its container (no ellipsis).'
+    subcategory: Text runs off-screen
+    check: offscreen
+    op: offscreen
+    report: '''ትርጉም አሳይ'' runs off the edge of the screen.'
+  - element: lyrics.report
+    kind: untranslated
+    category: TR
+    subcategory: Untranslated string
+    check: text
+    text: Report a problem
+    report: '''Report a problem'' is shown in English instead of ''ችግር ሪፖርት አድርግ''.'
+- id: SP-AM-008
+  lang: am-ET
+  screen: 08-library
+  defects:
+  - element: library.chip.podcasts
+    kind: offscreen
+    category: LY
+    subcategory: Text runs off-screen
+    check: offscreen
+    op: offscreen
+    report: '''ፖድካስቶች እና ትዕይንቶች'' runs off the edge of the screen.'
+  - element: library.liked.sub
+    kind: placeholder
+    category: TR
+    subcategory: Unresolved placeholder
+    check: text
+    text: 📌 አጫዋች ዝርዝር • {count} ዘፈኖች
+    report: An unresolved placeholder ('📌 አጫዋች ዝርዝር • {count} ዘፈኖች') is shown instead of the value ('📌 አጫዋች ዝርዝር • 248 ዘፈኖች').
 - id: SP-AM-009
   lang: am-ET
   screen: 09-artist
@@ -1995,12 +1948,12 @@ cases:
     text: October 17, 2025 • አልበም
     report: Number/date/currency uses the US format ('October 17, 2025 • አልበም') instead of the local one ('17 ኦክቶበር 2025 • አልበም').
   - element: artist.listeners
-    kind: placeholder
-    category: TR
-    subcategory: Unresolved placeholder
-    check: text
-    text: '{count},812,331 ወርሃዊ አድማጮች'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('24,812,331 ወርሃዊ አድማጮች').
+    kind: clip_h
+    category: LY
+    subcategory: Truncation / clipping
+    check: clipped
+    op: clip_h
+    report: '''24,812,331 ወርሃዊ አድማጮች'' is cut off mid-word by its container (no ellipsis).'
 - id: SP-AM-010
   lang: am-ET
   screen: 10-settings
@@ -2012,20 +1965,20 @@ cases:
     check: text
     text: ዕቅድዎ November 14, 2026 ላይ በ$5.49 ይታደሳል።
     report: Number/date/currency uses the US format ('ዕቅድዎ November 14, 2026 ላይ በ$5.49 ይታደሳል።') instead of the local one ('ዕቅድዎ 14 ኖቬምበር 2026 ላይ በUS$ 5.49 ይታደሳል።').
-  - element: settings.storage.sub
+  - element: settings.crossfade.val
     kind: placeholder
     category: TR
     subcategory: Unresolved placeholder
     check: text
-    text: '{count}.2 GB ጥቅም ላይ ውሏል • 48.6 GB ነፃ'
-    report: An unresolved '{count}' placeholder is shown instead of the number ('1.2 GB ጥቅም ላይ ውሏል • 48.6 GB ነፃ').
+    text: '{count} ሰከንድ'
+    report: An unresolved placeholder ('{count} ሰከንድ') is shown instead of the value ('5 ሰከንድ').
   - element: settings.datasaver
-    kind: offscreen
+    kind: clip_h
     category: LY
-    subcategory: Text runs off-screen
-    check: offscreen
-    op: offscreen
-    report: '''ውሂብ ቆጣቢ'' runs off the edge of the screen.'
+    subcategory: Truncation / clipping
+    check: clipped
+    op: clip_h
+    report: '''ውሂብ ቆጣቢ'' is cut off mid-word by its container (no ellipsis).'
 - id: SP-AM-C01
   lang: am-ET
   screen: 09-artist

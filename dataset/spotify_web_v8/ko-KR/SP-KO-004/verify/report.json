@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-KO-004",
+  "language": "ko-KR",
+  "screen": "04-playlist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "13",
+      "element_id": "playlist.updated",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 7px < font-size 11px, glyph tops/bottoms cut",
+      "base_text": "Updated 6 days ago",
+      "target_text": "6일 전 업데이트됨"
+    },
+    {
+      "box": "3",
+      "element_id": "playlist.madefor",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Made for Neeraj",
+      "target_text": "Neeraj님을 위해 제작됨"
+    },
+    {
+      "box": "2",
+      "element_id": "playlist.desc",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
+      "target_text": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday."
+    }
+  ]
+}

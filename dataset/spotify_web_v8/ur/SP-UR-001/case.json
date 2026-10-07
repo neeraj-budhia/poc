@@ -1,0 +1,44 @@
+{
+  "case_id": "SP-UR-001",
+  "platform": "web",
+  "language": "ur",
+  "screen": "01-home",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "13",
+    "21"
+  ],
+  "defects": [
+    {
+      "box": "11",
+      "element": "home.tile.episodes",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'آپ کی اقساط' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "14",
+      "element": "home.card1.sub",
+      "kind": "rtl_ltr",
+      "category": "LY",
+      "subcategory": "RTL not mirrored",
+      "op": "rtl_ltr",
+      "report": "'Arctic Monkeys، The Strokes، Tame Impala اور مزید' is left-aligned / LTR inside the right-to-left layout."
+    },
+    {
+      "box": "15",
+      "element": "home.card2.title",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□ □□ □□□ □□□□ 2026",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'آپ کے ٹاپ گانے 2026'."
+    }
+  ]
+}

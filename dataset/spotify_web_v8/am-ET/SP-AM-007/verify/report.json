@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-AM-007",
+  "language": "am-ET",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "lyrics.share",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Share",
+      "target_text": "□□□"
+    },
+    {
+      "box": "9",
+      "element_id": "lyrics.translate",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[314,391] extends past the 360px screen edge",
+      "base_text": "Show translation",
+      "target_text": "ትርጉም አሳይ"
+    },
+    {
+      "box": "12",
+      "element_id": "lyrics.report",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Report a problem",
+      "target_text": "Report a problem"
+    }
+  ]
+}

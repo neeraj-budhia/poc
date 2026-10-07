@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-ZH-008",
+  "language": "zh-TW",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "5",
+      "element_id": "library.chip.podcasts",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[290,407] extends past the 360px screen edge",
+      "base_text": "Podcasts & Shows",
+      "target_text": "Podcast 和節目"
+    },
+    {
+      "box": "1",
+      "element_id": "library.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 12px < font-size 20px, glyph tops/bottoms cut",
+      "base_text": "Your Library",
+      "target_text": "你的音樂庫"
+    },
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 播放清單 • {count} 首歌曲"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-KO-005",
+  "language": "ko-KR",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "14",
+      "element_id": "premium.plan.family.feat",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[283,412] extends past the 360px screen edge",
+      "base_text": "Up to 6 Premium accounts",
+      "target_text": "Premium 계정 최대 6개"
+    },
+    {
+      "box": "4",
+      "element_id": "premium.hero.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Only $11.99/month after. Cancel anytime.",
+      "target_text": "이후 월 $11.99. 언제든지 해지할 수 있습니다."
+    }
+  ]
+}

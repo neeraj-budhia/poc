@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TA-006",
+  "language": "ta-IN",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['np.elapsed']",
+      "base_text": "Devices available",
+      "target_text": "கிடைக்கும் சாதனங்கள்"
+    },
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Playing from playlist",
+      "target_text": "பிளேலிஸ்ட்டிலிருந்து இயக்கப்படுகிறது"
+    },
+    {
+      "box": "9",
+      "element_id": "np.lyrics.header",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Lyrics preview",
+      "target_text": "à®ªà®¾à®Ÿà®²à¯� à®µà®°à®¿à®•à®³à¯� à®®à¯�à®©à¯�à®©à¯‹à®Ÿà¯�à®Ÿà®®à¯�"
+    }
+  ]
+}

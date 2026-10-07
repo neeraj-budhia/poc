@@ -1,0 +1,40 @@
+{
+  "case_id": "SP-ZH-002",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "5",
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "10",
+      "element": "search.cat.charts",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "æŽ’è¡Œæ¦œ",
+      "report": "Text is garbled by an encoding error instead of '排行榜'."
+    },
+    {
+      "box": "9",
+      "element": "search.cat.newreleases",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'最新發行' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "16",
+      "element": "tab.search",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of '搜尋'."
+    }
+  ]
+}

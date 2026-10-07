@@ -1,0 +1,376 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-VI-001:01-home",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Vietnamese (vi-VN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "home.greeting": {
+        "desc": "Good evening",
+        "bbox_base": [
+          48,
+          50,
+          434,
+          118
+        ],
+        "bbox_head": [
+          48,
+          50,
+          417,
+          118
+        ],
+        "text_head": "Chào buổi tối",
+        "match": "stable_id"
+      },
+      "home.chip.all": {
+        "desc": "All",
+        "bbox_base": [
+          48,
+          192,
+          165,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          231,
+          276
+        ],
+        "text_head": "Tất cả",
+        "match": "stable_id"
+      },
+      "home.chip.music": {
+        "desc": "Music",
+        "bbox_base": [
+          189,
+          192,
+          369,
+          276
+        ],
+        "bbox_head": [
+          255,
+          192,
+          421,
+          276
+        ],
+        "text_head": "Nhạc",
+        "match": "stable_id"
+      },
+      "home.chip.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          393,
+          192,
+          632,
+          276
+        ],
+        "bbox_head": [
+          445,
+          192,
+          664,
+          276
+        ],
+        "text_head": "Podcast",
+        "match": "stable_id"
+      },
+      "home.chip.audiobooks": {
+        "desc": "Audiobooks",
+        "bbox_base": [
+          656,
+          192,
+          941,
+          276
+        ],
+        "bbox_head": [
+          688,
+          192,
+          916,
+          276
+        ],
+        "text_head": "Sách nói",
+        "match": "stable_id"
+      },
+      "home.tile.liked": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          216,
+          362,
+          453,
+          406
+        ],
+        "bbox_head": [
+          216,
+          339,
+          528,
+          429
+        ],
+        "text_head": "BÃ i hÃ¡t Ä‘Ã£ thÃ­ch",
+        "match": "stable_id"
+      },
+      "home.tile.dailymix1": {
+        "desc": "Daily Mix 1",
+        "bbox_base": [
+          720,
+          362,
+          929,
+          406
+        ],
+        "bbox_head": [
+          720,
+          362,
+          929,
+          406
+        ],
+        "text_head": "Daily Mix 1",
+        "match": "stable_id"
+      },
+      "home.tile.discover": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          216,
+          507,
+          528,
+          597
+        ],
+        "bbox_head": [
+          216,
+          507,
+          528,
+          597
+        ],
+        "text_head": "Discover Weekly",
+        "match": "stable_id"
+      },
+      "home.tile.release": {
+        "desc": "Release Radar",
+        "bbox_base": [
+          720,
+          530,
+          995,
+          574
+        ],
+        "bbox_head": [
+          720,
+          530,
+          995,
+          574
+        ],
+        "text_head": "Release Radar",
+        "match": "stable_id"
+      },
+      "home.tile.chill": {
+        "desc": "Chill Vibes",
+        "bbox_base": [
+          216,
+          698,
+          426,
+          742
+        ],
+        "bbox_head": [
+          216,
+          698,
+          426,
+          742
+        ],
+        "text_head": "Chill Vibes",
+        "match": "stable_id"
+      },
+      "home.tile.episodes": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          720,
+          698,
+          994,
+          742
+        ],
+        "bbox_head": [
+          720,
+          698,
+          955,
+          742
+        ],
+        "text_head": "Tập của bạn",
+        "match": "stable_id"
+      },
+      "home.sec.madeforyou": {
+        "desc": "Made for you",
+        "bbox_base": [
+          48,
+          840,
+          1032,
+          906
+        ],
+        "bbox_head": [
+          48,
+          840,
+          1032,
+          906
+        ],
+        "text_head": "Dành cho bạn",
+        "match": "stable_id"
+      },
+      "home.card1.title": {
+        "desc": "Daily Mix 2",
+        "bbox_base": [
+          48,
+          1410,
+          498,
+          1458
+        ],
+        "bbox_head": [
+          48,
+          1410,
+          498,
+          1458
+        ],
+        "text_head": "Daily Mix 2",
+        "match": "stable_id"
+      },
+      "home.card1.sub": {
+        "desc": "Arctic Monkeys, The Strokes, Tame Impala and more",
+        "bbox_base": [
+          48,
+          1464,
+          498,
+          1610
+        ],
+        "bbox_head": [
+          48,
+          1428,
+          498,
+          1574
+        ],
+        "text_head": "Arctic Monkeys, The Strokes, Tame Impala và nhiều nghệ sĩ khác",
+        "match": "stable_id"
+      },
+      "home.card2.title": {
+        "desc": "Your Top Songs 2026",
+        "bbox_base": [
+          534,
+          1410,
+          984,
+          1458
+        ],
+        "bbox_head": [
+          534,
+          1410,
+          984,
+          1506
+        ],
+        "text_head": "Bài hát hàng đầu của bạn năm 2026",
+        "match": "stable_id"
+      },
+      "home.card2.sub": {
+        "desc": "The songs you loved most this year, all wrapped up.",
+        "bbox_base": [
+          534,
+          1464,
+          984,
+          1561
+        ],
+        "bbox_head": [
+          534,
+          1512,
+          984,
+          1658
+        ],
+        "text_head": "Những bài hát bạn yêu thích nhất năm nay, gói gọn trong một danh sách.",
+        "match": "stable_id"
+      },
+      "home.sec.recent": {
+        "desc": "Recently played",
+        "bbox_base": [
+          48,
+          1658,
+          1032,
+          1724
+        ],
+        "bbox_head": [
+          48,
+          1706,
+          1032,
+          1772
+        ],
+        "text_head": "Mới phát gần đây",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          57,
+          2324,
+          213,
+          2362
+        ],
+        "text_head": "Trang chủ",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          333,
+          2324,
+          477,
+          2362
+        ],
+        "text_head": "Tìm kiếm",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          607,
+          2322,
+          743,
+          2361
+        ],
+        "text_head": "Thư viện",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

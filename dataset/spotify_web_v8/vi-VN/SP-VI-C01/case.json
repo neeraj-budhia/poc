@@ -1,0 +1,17 @@
+{
+  "case_id": "SP-VI-C01",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "01-home",
+  "is_control": true,
+  "do_not_translate_boxes": [
+    "4",
+    "7",
+    "8",
+    "9",
+    "10",
+    "13",
+    "21"
+  ],
+  "defects": []
+}

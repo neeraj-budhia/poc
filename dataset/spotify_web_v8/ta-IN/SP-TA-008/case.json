@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-TA-008",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "08-library",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "11",
+    "13",
+    "15",
+    "22"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "related_boxes": [
+        "7"
+      ],
+      "element": "library.liked.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'📌 பிளேலிஸ்ட் • 248 பாடல்கள்' overlaps the text element above it."
+    },
+    {
+      "box": "5",
+      "element": "library.chip.podcasts",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'பாட்காஸ்ட்கள் & நிகழ்ச்சிகள்' runs off the edge of the screen."
+    },
+    {
+      "box": "9",
+      "element": "library.episodes.title",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□□□□ □□□□□□□□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'உங்கள் எபிசோடுகள்'."
+    }
+  ]
+}

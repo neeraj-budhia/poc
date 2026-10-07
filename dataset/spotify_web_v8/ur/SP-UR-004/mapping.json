@@ -1,0 +1,471 @@
+{
+  "case_id": "SP-UR-004",
+  "screen": "04-playlist",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Urdu (ur)",
+  "case_elements": [
+    {
+      "box": "13",
+      "element_id": "playlist.updated",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "4",
+      "element_id": "playlist.meta",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "3",
+      "element_id": "playlist.madefor",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 13,
+    "with_target_box": 13,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "playlist.title",
+      "descriptor": "Discover Weekly",
+      "target_text": "Discover Weekly",
+      "base_box": [
+        48,
+        750,
+        1032,
+        828
+      ],
+      "target_box": [
+        48,
+        750,
+        1032,
+        828
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "playlist.desc",
+      "descriptor": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
+      "target_text": "تازہ موسیقی کا آپ کا ہفتہ وار مکس ٹیپ۔ آپ کے لیے منتخب کردہ نئی موسیقی اور کم سنے گئے گانوں کا لطف اٹھائیں۔ ہر پیر کو اپ ڈیٹ ہوتی ہے۔",
+      "base_box": [
+        48,
+        846,
+        1032,
+        947
+      ],
+      "target_box": [
+        48,
+        846,
+        1032,
+        983
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "playlist.madefor",
+      "descriptor": "Made for Neeraj",
+      "target_text": "Neeraj کے لیے تیار کردہ",
+      "base_box": [
+        120,
+        975,
+        407,
+        1020
+      ],
+      "target_box": [
+        0,
+        1007,
+        138,
+        1075
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "playlist.meta",
+      "descriptor": "30 songs, about 2 hr 5 min",
+      "target_text": "30 گانے، تقریباً 2 گھنٹے 5 منٹ",
+      "base_box": [
+        48,
+        1037,
+        1032,
+        1082
+      ],
+      "target_box": [
+        655,
+        1144,
+        1032,
+        1165
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "playlist.btn.save",
+      "descriptor": "Save",
+      "target_text": "محفوظ کریں",
+      "base_box": [
+        48,
+        1133,
+        231,
+        1223
+      ],
+      "target_box": [
+        763,
+        1233,
+        1032,
+        1349
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "playlist.btn.download",
+      "descriptor": "Download",
+      "target_text": "ڈاؤن لوڈ کریں",
+      "base_box": [
+        255,
+        1133,
+        537,
+        1223
+      ],
+      "target_box": [
+        438,
+        1233,
+        739,
+        1349
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "playlist.t1.title",
+      "descriptor": "Midnight City",
+      "target_text": "Midnight City",
+      "base_box": [
+        228,
+        1296,
+        1032,
+        1350
+      ],
+      "target_box": [
+        48,
+        1410,
+        852,
+        1464
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "playlist.t1.artist",
+      "descriptor": "M83",
+      "target_text": "M83",
+      "base_box": [
+        228,
+        1356,
+        1032,
+        1401
+      ],
+      "target_box": [
+        48,
+        1470,
+        852,
+        1515
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "playlist.t2.title",
+      "descriptor": "Electric Feel",
+      "target_text": "Electric Feel",
+      "base_box": [
+        228,
+        1482,
+        1032,
+        1536
+      ],
+      "target_box": [
+        48,
+        1596,
+        852,
+        1650
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "playlist.t2.artist",
+      "descriptor": "MGMT",
+      "target_text": "MGMT",
+      "base_box": [
+        228,
+        1542,
+        1032,
+        1587
+      ],
+      "target_box": [
+        48,
+        1656,
+        852,
+        1701
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "playlist.t3.title",
+      "descriptor": "Breathe Deeper",
+      "target_text": "Breathe Deeper",
+      "base_box": [
+        228,
+        1668,
+        1032,
+        1722
+      ],
+      "target_box": [
+        48,
+        1782,
+        852,
+        1836
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "playlist.t3.artist",
+      "descriptor": "Tame Impala",
+      "target_text": "Tame Impala",
+      "base_box": [
+        228,
+        1728,
+        1032,
+        1773
+      ],
+      "target_box": [
+        48,
+        1842,
+        852,
+        1887
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "playlist.updated",
+      "descriptor": "Updated 6 days ago",
+      "target_text": "Updated 6 days ago",
+      "base_box": [
+        48,
+        1832,
+        1032,
+        1871
+      ],
+      "target_box": [
+        48,
+        1945,
+        1032,
+        2008
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 4.444,
+      "y": 31.25,
+      "width": 91.111,
+      "height": 3.25
+    },
+    "2": {
+      "x": 4.444,
+      "y": 35.25,
+      "width": 91.111,
+      "height": 4.208
+    },
+    "3": {
+      "x": 11.111,
+      "y": 40.625,
+      "width": 26.574,
+      "height": 1.875
+    },
+    "4": {
+      "x": 4.444,
+      "y": 43.208,
+      "width": 91.111,
+      "height": 1.875
+    },
+    "5": {
+      "x": 4.444,
+      "y": 47.208,
+      "width": 16.944,
+      "height": 3.75
+    },
+    "6": {
+      "x": 23.611,
+      "y": 47.208,
+      "width": 26.111,
+      "height": 3.75
+    },
+    "7": {
+      "x": 21.111,
+      "y": 54.0,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "8": {
+      "x": 21.111,
+      "y": 56.5,
+      "width": 74.444,
+      "height": 1.875
+    },
+    "9": {
+      "x": 21.111,
+      "y": 61.75,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "10": {
+      "x": 21.111,
+      "y": 64.25,
+      "width": 74.444,
+      "height": 1.875
+    },
+    "11": {
+      "x": 21.111,
+      "y": 69.5,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 21.111,
+      "y": 72.0,
+      "width": 74.444,
+      "height": 1.875
+    },
+    "13": {
+      "x": 4.444,
+      "y": 76.333,
+      "width": 91.111,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 4.444,
+      "y": 31.25,
+      "width": 91.111,
+      "height": 3.25
+    },
+    "2": {
+      "x": 4.444,
+      "y": 35.25,
+      "width": 91.111,
+      "height": 5.708
+    },
+    "3": {
+      "x": 0.0,
+      "y": 41.958,
+      "width": 12.778,
+      "height": 2.833
+    },
+    "4": {
+      "x": 60.648,
+      "y": 47.667,
+      "width": 34.907,
+      "height": 0.875
+    },
+    "5": {
+      "x": 70.648,
+      "y": 51.375,
+      "width": 24.907,
+      "height": 4.833
+    },
+    "6": {
+      "x": 40.556,
+      "y": 51.375,
+      "width": 27.87,
+      "height": 4.833
+    },
+    "7": {
+      "x": 4.444,
+      "y": 58.75,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "8": {
+      "x": 4.444,
+      "y": 61.25,
+      "width": 74.444,
+      "height": 1.875
+    },
+    "9": {
+      "x": 4.444,
+      "y": 66.5,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "10": {
+      "x": 4.444,
+      "y": 69.0,
+      "width": 74.444,
+      "height": 1.875
+    },
+    "11": {
+      "x": 4.444,
+      "y": 74.25,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 4.444,
+      "y": 76.75,
+      "width": 74.444,
+      "height": 1.875
+    },
+    "13": {
+      "x": 4.444,
+      "y": 81.042,
+      "width": 91.111,
+      "height": 2.625
+    }
+  }
+}

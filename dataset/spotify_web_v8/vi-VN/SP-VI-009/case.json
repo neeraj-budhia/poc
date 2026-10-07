@@ -1,0 +1,34 @@
+{
+  "case_id": "SP-VI-009",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "7",
+    "9",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "4",
+      "element": "artist.sec.popular",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Popular",
+      "report": "'Popular' is shown in English instead of 'Phổ biến'."
+    },
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count} người nghe hằng tháng",
+      "report": "An unresolved placeholder ('{count} người nghe hằng tháng') is shown instead of the value ('24.812.331 người nghe hằng tháng')."
+    }
+  ]
+}

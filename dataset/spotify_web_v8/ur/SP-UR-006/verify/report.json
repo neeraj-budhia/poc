@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-UR-006",
+  "language": "ur",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Devices available",
+      "target_text": "Devices available"
+    },
+    {
+      "box": "8",
+      "element_id": "np.share",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[-23,16] extends past the 360px screen edge",
+      "base_text": "Share",
+      "target_text": "شیئر کریں"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TH-009:09-artist",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Thai (th-TH)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "artist.name": {
+        "desc": "Tame Impala",
+        "bbox_base": [
+          48,
+          489,
+          1032,
+          660
+        ],
+        "bbox_head": [
+          48,
+          489,
+          1032,
+          660
+        ],
+        "text_head": "Tame Impala",
+        "match": "stable_id"
+      },
+      "artist.listeners": {
+        "desc": "24,812,331 monthly listeners",
+        "bbox_base": [
+          48,
+          690,
+          1032,
+          738
+        ],
+        "bbox_head": [
+          48,
+          690,
+          1032,
+          744
+        ],
+        "text_head": "ผู้ฟังรายเดือน 24,812,331 คน",
+        "match": "stable_id"
+      },
+      "artist.follow": {
+        "desc": "Follow",
+        "bbox_base": [
+          48,
+          795,
+          263,
+          885
+        ],
+        "bbox_head": [
+          48,
+          798,
+          256,
+          894
+        ],
+        "text_head": "ติดตาม",
+        "match": "stable_id"
+      },
+      "artist.sec.popular": {
+        "desc": "Popular",
+        "bbox_base": [
+          48,
+          960,
+          1032,
+          1026
+        ],
+        "bbox_head": [
+          48,
+          966,
+          1032,
+          1044
+        ],
+        "text_head": "ยอดนิยม",
+        "match": "stable_id"
+      },
+      "artist.p1.title": {
+        "desc": "The Less I Know The Better",
+        "bbox_base": [
+          294,
+          1088,
+          856,
+          1142
+        ],
+        "bbox_head": [
+          294,
+          1106,
+          856,
+          1160
+        ],
+        "text_head": "The Less I Know The Better",
+        "match": "stable_id"
+      },
+      "artist.p1.plays": {
+        "desc": "2,104,553,201",
+        "bbox_base": [
+          294,
+          1148,
+          856,
+          1192
+        ],
+        "bbox_head": [
+          294,
+          1166,
+          856,
+          1210
+        ],
+        "text_head": "2,104,553,201",
+        "match": "stable_id"
+      },
+      "artist.p2.title": {
+        "desc": "Let It Happen",
+        "bbox_base": [
+          294,
+          1256,
+          570,
+          1310
+        ],
+        "bbox_head": [
+          294,
+          1274,
+          570,
+          1328
+        ],
+        "text_head": "Let It Happen",
+        "match": "stable_id"
+      },
+      "artist.p2.plays": {
+        "desc": "812,904,117",
+        "bbox_base": [
+          294,
+          1316,
+          570,
+          1360
+        ],
+        "bbox_head": [
+          294,
+          1334,
+          570,
+          1378
+        ],
+        "text_head": "812,904,117",
+        "match": "stable_id"
+      },
+      "artist.p3.title": {
+        "desc": "Borderline",
+        "bbox_base": [
+          294,
+          1424,
+          505,
+          1478
+        ],
+        "bbox_head": [
+          294,
+          1442,
+          505,
+          1496
+        ],
+        "text_head": "Borderline",
+        "match": "stable_id"
+      },
+      "artist.p3.plays": {
+        "desc": "301,227,560",
+        "bbox_base": [
+          294,
+          1484,
+          505,
+          1528
+        ],
+        "bbox_head": [
+          294,
+          1502,
+          505,
+          1546
+        ],
+        "text_head": "301,227,560",
+        "match": "stable_id"
+      },
+      "artist.seemore": {
+        "desc": "See more",
+        "bbox_base": [
+          48,
+          1584,
+          1032,
+          1632
+        ],
+        "bbox_head": [
+          48,
+          1602,
+          1032,
+          1650
+        ],
+        "text_head": "□□□□□□□□□□□",
+        "match": "stable_id"
+      },
+      "artist.sec.release": {
+        "desc": "Latest release",
+        "bbox_base": [
+          48,
+          1680,
+          1032,
+          1746
+        ],
+        "bbox_head": [
+          48,
+          1698,
+          1032,
+          1776
+        ],
+        "text_head": "ผลงานล่าสุด",
+        "match": "stable_id"
+      },
+      "artist.latest.title": {
+        "desc": "Deadbeat",
+        "bbox_base": [
+          228,
+          1816,
+          1032,
+          1870
+        ],
+        "bbox_head": [
+          228,
+          1844,
+          1032,
+          1898
+        ],
+        "text_head": "Deadbeat",
+        "match": "stable_id"
+      },
+      "artist.latest.sub": {
+        "desc": "October 17, 2025 • Album",
+        "bbox_base": [
+          228,
+          1876,
+          1032,
+          1922
+        ],
+        "bbox_head": [
+          228,
+          1904,
+          1032,
+          1954
+        ],
+        "text_head": "17 ตุลาคม 2568 • อัลบั้ม",
+        "match": "stable_id"
+      }
+    }
+  }
+}

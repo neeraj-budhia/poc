@@ -1,0 +1,33 @@
+{
+  "case_id": "SP-TA-009",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "7",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count} மாதாந்திரக் கேட்போர்",
+      "report": "An unresolved placeholder ('{count} மாதாந்திரக் கேட்போர்') is shown instead of the value ('2,48,12,331 மாதாந்திரக் கேட்போர்')."
+    },
+    {
+      "box": "9",
+      "element": "artist.p3.title",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "artist.p3.title",
+      "report": "The raw resource key 'artist.p3.title' is shown instead of 'Borderline'."
+    }
+  ]
+}

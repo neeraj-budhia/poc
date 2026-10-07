@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-ZH-003",
+  "language": "zh-TW",
+  "screen": "03-search-results",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "10",
+      "element_id": "results.r2.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['results.r2.title']",
+      "base_text": "Song • Arctic Monkeys",
+      "target_text": "歌曲 • Arctic Monkeys"
+    },
+    {
+      "box": "16",
+      "element_id": "results.r5.sub",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Song • Arctic Monkeys",
+      "target_text": "Song • Arctic Monkeys"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "SP-TH-009",
+  "language": "th-TH",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "artist.seemore",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "See more",
+      "target_text": "□□□□□□□□□□□"
+    }
+  ]
+}

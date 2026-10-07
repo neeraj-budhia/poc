@@ -1,0 +1,32 @@
+{
+  "case_id": "SP-KO-005",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "14",
+      "element": "premium.plan.family.feat",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'Premium 계정 최대 6개' runs off the edge of the screen."
+    },
+    {
+      "box": "4",
+      "element": "premium.hero.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "이후 월 $11.99. 언제든지 해지할 수 있습니다.",
+      "report": "Number/date/currency uses the US format ('이후 월 $11.99. 언제든지 해지할 수 있습니다.') instead of the local one ('이후 월 ₩10,900. 언제든지 해지할 수 있습니다.')."
+    }
+  ]
+}

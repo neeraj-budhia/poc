@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-HE-008",
+  "language": "he-IL",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "12",
+      "element_id": "library.pl1.sub",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Playlist • Neeraj",
+      "target_text": "Playlist • Neeraj"
+    },
+    {
+      "box": "7",
+      "element_id": "library.liked.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 9px < font-size 15px, glyph tops/bottoms cut",
+      "base_text": "Liked Songs",
+      "target_text": "שירים שאהבתי"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-UR-004",
+  "platform": "web",
+  "language": "ur",
+  "screen": "04-playlist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "defects": [
+    {
+      "box": "13",
+      "element": "playlist.updated",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Updated 6 days ago",
+      "report": "'Updated 6 days ago' is shown in English instead of '6 دن پہلے اپ ڈیٹ ہوئی'."
+    },
+    {
+      "box": "4",
+      "element": "playlist.meta",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in '30 گانے، تقریباً 2 گھنٹے 5 منٹ' are clipped by a too-small line box."
+    },
+    {
+      "box": "3",
+      "element": "playlist.madefor",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'Neeraj کے لیے تیار کردہ' runs off the edge of the screen."
+    }
+  ]
+}

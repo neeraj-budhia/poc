@@ -1,0 +1,42 @@
+{
+  "case_id": "SP-TH-008",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "08-library",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "11",
+    "13",
+    "15",
+    "22"
+  ],
+  "defects": [
+    {
+      "box": "9",
+      "element": "library.episodes.title",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "à¸•à¸­à¸™à¸‚à¸­à¸‡à¸„à¸¸à¸“",
+      "report": "Text is garbled by an encoding error instead of 'ตอนของคุณ'."
+    },
+    {
+      "box": "8",
+      "element": "library.liked.sub",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "📌 เพลย์ลิสต์ • {count} เพลง",
+      "report": "An unresolved placeholder ('📌 เพลย์ลิสต์ • {count} เพลง') is shown instead of the value ('📌 เพลย์ลิสต์ • 248 เพลง')."
+    },
+    {
+      "box": "18",
+      "element": "library.add.podcasts",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'เพิ่มพอดแคสต์และรายการ' runs off the edge of the screen."
+    }
+  ]
+}

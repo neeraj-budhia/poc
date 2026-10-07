@@ -1,0 +1,393 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TA-008:08-library",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Tamil (ta-IN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "library.title": {
+        "desc": "Your Library",
+        "bbox_base": [
+          180,
+          50,
+          523,
+          118
+        ],
+        "bbox_head": [
+          180,
+          46,
+          615,
+          122
+        ],
+        "text_head": "உங்கள் லைப்ரரி",
+        "match": "stable_id"
+      },
+      "library.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          48,
+          192,
+          268,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          374,
+          282
+        ],
+        "text_head": "பிளேலிஸ்ட்கள்",
+        "match": "stable_id"
+      },
+      "library.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          292,
+          192,
+          483,
+          276
+        ],
+        "bbox_head": [
+          398,
+          192,
+          680,
+          282
+        ],
+        "text_head": "கலைஞர்கள்",
+        "match": "stable_id"
+      },
+      "library.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          507,
+          192,
+          714,
+          276
+        ],
+        "bbox_head": [
+          704,
+          192,
+          967,
+          282
+        ],
+        "text_head": "ஆல்பங்கள்",
+        "match": "stable_id"
+      },
+      "library.chip.podcasts": {
+        "desc": "Podcasts & Shows",
+        "bbox_base": [
+          48,
+          300,
+          455,
+          384
+        ],
+        "bbox_head": [
+          738,
+          306,
+          1080,
+          396
+        ],
+        "text_head": "பாட்காஸ்ட்கள் & நிகழ்ச்சிகள்",
+        "match": "stable_id"
+      },
+      "library.sort.recents": {
+        "desc": "⇅ Recents",
+        "bbox_base": [
+          48,
+          420,
+          260,
+          468
+        ],
+        "bbox_head": [
+          48,
+          432,
+          334,
+          486
+        ],
+        "text_head": "⇅ சமீபத்தியவை",
+        "match": "stable_id"
+      },
+      "library.liked.title": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          228,
+          513,
+          1032,
+          567
+        ],
+        "bbox_head": [
+          228,
+          530,
+          1032,
+          586
+        ],
+        "text_head": "விரும்பிய பாடல்கள்",
+        "match": "stable_id"
+      },
+      "library.liked.sub": {
+        "desc": "📌 Playlist • 248 songs",
+        "bbox_base": [
+          228,
+          573,
+          1032,
+          633
+        ],
+        "bbox_head": [
+          228,
+          550,
+          1032,
+          610
+        ],
+        "text_head": "📌 பிளேலிஸ்ட் • 248 பாடல்கள்",
+        "match": "stable_id"
+      },
+      "library.episodes.title": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          760
+        ],
+        "bbox_head": [
+          228,
+          723,
+          1032,
+          777
+        ],
+        "text_head": "□□□□□□ □□□□□□□□□□",
+        "match": "stable_id"
+      },
+      "library.episodes.sub": {
+        "desc": "Saved & downloaded episodes",
+        "bbox_base": [
+          228,
+          766,
+          1032,
+          812
+        ],
+        "bbox_head": [
+          228,
+          783,
+          1032,
+          831
+        ],
+        "text_head": "சேமித்த & பதிவிறக்கிய எபிசோடுகள்",
+        "match": "stable_id"
+      },
+      "library.pl1.title": {
+        "desc": "Road Trip 2026",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          946
+        ],
+        "bbox_head": [
+          228,
+          909,
+          1032,
+          963
+        ],
+        "text_head": "Road Trip 2026",
+        "match": "stable_id"
+      },
+      "library.pl1.sub": {
+        "desc": "Playlist • Neeraj",
+        "bbox_base": [
+          228,
+          952,
+          1032,
+          998
+        ],
+        "bbox_head": [
+          228,
+          969,
+          1032,
+          1017
+        ],
+        "text_head": "பிளேலிஸ்ட் • Neeraj",
+        "match": "stable_id"
+      },
+      "library.artist1.title": {
+        "desc": "Tame Impala",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1132
+        ],
+        "bbox_head": [
+          228,
+          1095,
+          1032,
+          1149
+        ],
+        "text_head": "Tame Impala",
+        "match": "stable_id"
+      },
+      "library.artist1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          1138,
+          1032,
+          1184
+        ],
+        "bbox_head": [
+          228,
+          1155,
+          1032,
+          1203
+        ],
+        "text_head": "கலைஞர்",
+        "match": "stable_id"
+      },
+      "library.album1.title": {
+        "desc": "Currents",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1318
+        ],
+        "bbox_head": [
+          228,
+          1281,
+          1032,
+          1335
+        ],
+        "text_head": "Currents",
+        "match": "stable_id"
+      },
+      "library.album1.sub": {
+        "desc": "Album • Tame Impala",
+        "bbox_base": [
+          228,
+          1324,
+          1032,
+          1370
+        ],
+        "bbox_head": [
+          228,
+          1341,
+          1032,
+          1389
+        ],
+        "text_head": "ஆல்பம் • Tame Impala",
+        "match": "stable_id"
+      },
+      "library.add.artists": {
+        "desc": "Add artists",
+        "bbox_base": [
+          228,
+          1476,
+          1032,
+          1530
+        ],
+        "bbox_head": [
+          228,
+          1492,
+          1032,
+          1550
+        ],
+        "text_head": "கலைஞர்களைச் சேர்",
+        "match": "stable_id"
+      },
+      "library.add.podcasts": {
+        "desc": "Add podcasts & shows",
+        "bbox_base": [
+          228,
+          1662,
+          1032,
+          1716
+        ],
+        "bbox_head": [
+          228,
+          1678,
+          1032,
+          1736
+        ],
+        "text_head": "பாட்காஸ்ட்கள் & நிகழ்ச்சிகளைச் சேர்",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          87,
+          2320,
+          183,
+          2366
+        ],
+        "text_head": "முகப்பு",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          358,
+          2320,
+          452,
+          2366
+        ],
+        "text_head": "தேடல்",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          557,
+          2319,
+          793,
+          2364
+        ],
+        "text_head": "உங்கள் லைப்ரரி",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

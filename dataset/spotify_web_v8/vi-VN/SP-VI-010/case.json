@@ -1,0 +1,19 @@
+{
+  "case_id": "SP-VI-010",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "6",
+      "element": "settings.crossfade",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "Chuy□n ti□p bài hát",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'Chuyển tiếp bài hát'."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-VI-009",
+  "language": "vi-VN",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "4",
+      "element_id": "artist.sec.popular",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Popular",
+      "target_text": "Popular"
+    },
+    {
+      "box": "2",
+      "element_id": "artist.listeners",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "24,812,331 monthly listeners",
+      "target_text": "{count} người nghe hằng tháng"
+    }
+  ]
+}

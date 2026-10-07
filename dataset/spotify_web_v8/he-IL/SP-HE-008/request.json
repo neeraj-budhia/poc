@@ -1,0 +1,393 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-HE-008:08-library",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Hebrew (he-IL)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "library.title": {
+        "desc": "Your Library",
+        "bbox_base": [
+          180,
+          50,
+          523,
+          118
+        ],
+        "bbox_head": [
+          551,
+          48,
+          900,
+          120
+        ],
+        "text_head": "הספרייה שלך",
+        "match": "stable_id"
+      },
+      "library.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          48,
+          192,
+          268,
+          276
+        ],
+        "bbox_head": [
+          776,
+          192,
+          1032,
+          276
+        ],
+        "text_head": "פלייליסטים",
+        "match": "stable_id"
+      },
+      "library.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          292,
+          192,
+          483,
+          276
+        ],
+        "bbox_head": [
+          579,
+          192,
+          752,
+          276
+        ],
+        "text_head": "אמנים",
+        "match": "stable_id"
+      },
+      "library.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          507,
+          192,
+          714,
+          276
+        ],
+        "bbox_head": [
+          346,
+          192,
+          555,
+          276
+        ],
+        "text_head": "אלבומים",
+        "match": "stable_id"
+      },
+      "library.chip.podcasts": {
+        "desc": "Podcasts & Shows",
+        "bbox_base": [
+          48,
+          300,
+          455,
+          384
+        ],
+        "bbox_head": [
+          621,
+          300,
+          1032,
+          384
+        ],
+        "text_head": "פודקאסטים ותוכניות",
+        "match": "stable_id"
+      },
+      "library.sort.recents": {
+        "desc": "⇅ Recents",
+        "bbox_base": [
+          48,
+          420,
+          260,
+          468
+        ],
+        "bbox_head": [
+          823,
+          420,
+          1032,
+          468
+        ],
+        "text_head": "⇅ לאחרונה",
+        "match": "stable_id"
+      },
+      "library.liked.title": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          228,
+          513,
+          1032,
+          567
+        ],
+        "bbox_head": [
+          571,
+          531,
+          852,
+          558
+        ],
+        "text_head": "שירים שאהבתי",
+        "match": "stable_id"
+      },
+      "library.liked.sub": {
+        "desc": "📌 Playlist • 248 songs",
+        "bbox_base": [
+          228,
+          573,
+          1032,
+          633
+        ],
+        "bbox_head": [
+          48,
+          573,
+          852,
+          633
+        ],
+        "text_head": "📌 פלייליסט • 248 שירים",
+        "match": "stable_id"
+      },
+      "library.episodes.title": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          760
+        ],
+        "bbox_head": [
+          48,
+          705,
+          852,
+          762
+        ],
+        "text_head": "הפרקים שלך",
+        "match": "stable_id"
+      },
+      "library.episodes.sub": {
+        "desc": "Saved & downloaded episodes",
+        "bbox_base": [
+          228,
+          766,
+          1032,
+          812
+        ],
+        "bbox_head": [
+          48,
+          768,
+          852,
+          813
+        ],
+        "text_head": "פרקים שנשמרו והורדו",
+        "match": "stable_id"
+      },
+      "library.pl1.title": {
+        "desc": "Road Trip 2026",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          946
+        ],
+        "bbox_head": [
+          48,
+          892,
+          852,
+          946
+        ],
+        "text_head": "Road Trip 2026",
+        "match": "stable_id"
+      },
+      "library.pl1.sub": {
+        "desc": "Playlist • Neeraj",
+        "bbox_base": [
+          228,
+          952,
+          1032,
+          998
+        ],
+        "bbox_head": [
+          48,
+          952,
+          852,
+          998
+        ],
+        "text_head": "Playlist • Neeraj",
+        "match": "stable_id"
+      },
+      "library.artist1.title": {
+        "desc": "Tame Impala",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1132
+        ],
+        "bbox_head": [
+          48,
+          1078,
+          852,
+          1132
+        ],
+        "text_head": "Tame Impala",
+        "match": "stable_id"
+      },
+      "library.artist1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          1138,
+          1032,
+          1184
+        ],
+        "bbox_head": [
+          48,
+          1138,
+          852,
+          1184
+        ],
+        "text_head": "אמן",
+        "match": "stable_id"
+      },
+      "library.album1.title": {
+        "desc": "Currents",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1318
+        ],
+        "bbox_head": [
+          48,
+          1264,
+          852,
+          1318
+        ],
+        "text_head": "Currents",
+        "match": "stable_id"
+      },
+      "library.album1.sub": {
+        "desc": "Album • Tame Impala",
+        "bbox_base": [
+          228,
+          1324,
+          1032,
+          1370
+        ],
+        "bbox_head": [
+          48,
+          1324,
+          852,
+          1370
+        ],
+        "text_head": "אלבום • Tame Impala",
+        "match": "stable_id"
+      },
+      "library.add.artists": {
+        "desc": "Add artists",
+        "bbox_base": [
+          228,
+          1476,
+          1032,
+          1530
+        ],
+        "bbox_head": [
+          48,
+          1474,
+          852,
+          1532
+        ],
+        "text_head": "הוספת אמנים",
+        "match": "stable_id"
+      },
+      "library.add.podcasts": {
+        "desc": "Add podcasts & shows",
+        "bbox_base": [
+          228,
+          1662,
+          1032,
+          1716
+        ],
+        "bbox_head": [
+          48,
+          1660,
+          852,
+          1718
+        ],
+        "text_head": "הוספת פודקאסטים ותוכניות",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          883,
+          2322,
+          1007,
+          2364
+        ],
+        "text_head": "דף הבית",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          632,
+          2322,
+          718,
+          2364
+        ],
+        "text_head": "חיפוש",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          309,
+          2320,
+          501,
+          2362
+        ],
+        "text_head": "הספרייה שלך",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          66,
+          2328,
+          204,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

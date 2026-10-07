@@ -1,0 +1,376 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-ZH-001:01-home",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Chinese (zh-TW)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "home.greeting": {
+        "desc": "Good evening",
+        "bbox_base": [
+          48,
+          50,
+          434,
+          118
+        ],
+        "bbox_head": [
+          48,
+          42,
+          231,
+          126
+        ],
+        "text_head": "晚上好",
+        "match": "stable_id"
+      },
+      "home.chip.all": {
+        "desc": "All",
+        "bbox_base": [
+          48,
+          192,
+          165,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          200,
+          282
+        ],
+        "text_head": "全部",
+        "match": "stable_id"
+      },
+      "home.chip.music": {
+        "desc": "Music",
+        "bbox_base": [
+          189,
+          192,
+          369,
+          276
+        ],
+        "bbox_head": [
+          224,
+          192,
+          422,
+          282
+        ],
+        "text_head": "éŸ³æ¨‚",
+        "match": "stable_id"
+      },
+      "home.chip.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          393,
+          192,
+          632,
+          276
+        ],
+        "bbox_head": [
+          446,
+          192,
+          666,
+          282
+        ],
+        "text_head": "Podcast",
+        "match": "stable_id"
+      },
+      "home.chip.audiobooks": {
+        "desc": "Audiobooks",
+        "bbox_base": [
+          656,
+          192,
+          941,
+          276
+        ],
+        "bbox_head": [
+          690,
+          192,
+          881,
+          282
+        ],
+        "text_head": "有聲書",
+        "match": "stable_id"
+      },
+      "home.tile.liked": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          216,
+          362,
+          453,
+          406
+        ],
+        "bbox_head": [
+          216,
+          364,
+          455,
+          416
+        ],
+        "text_head": "已按讚的歌曲",
+        "match": "stable_id"
+      },
+      "home.tile.dailymix1": {
+        "desc": "Daily Mix 1",
+        "bbox_base": [
+          720,
+          362,
+          929,
+          406
+        ],
+        "bbox_head": [
+          720,
+          368,
+          929,
+          412
+        ],
+        "text_head": "Daily Mix 1",
+        "match": "stable_id"
+      },
+      "home.tile.discover": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          216,
+          507,
+          528,
+          597
+        ],
+        "bbox_head": [
+          216,
+          513,
+          528,
+          603
+        ],
+        "text_head": "Discover Weekly",
+        "match": "stable_id"
+      },
+      "home.tile.release": {
+        "desc": "Release Radar",
+        "bbox_base": [
+          720,
+          530,
+          995,
+          574
+        ],
+        "bbox_head": [
+          720,
+          536,
+          995,
+          580
+        ],
+        "text_head": "Release Radar",
+        "match": "stable_id"
+      },
+      "home.tile.chill": {
+        "desc": "Chill Vibes",
+        "bbox_base": [
+          216,
+          698,
+          426,
+          742
+        ],
+        "bbox_head": [
+          216,
+          704,
+          333,
+          748
+        ],
+        "text_head": "Chill Vibes",
+        "match": "stable_id"
+      },
+      "home.tile.episodes": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          720,
+          698,
+          994,
+          742
+        ],
+        "bbox_head": [
+          720,
+          700,
+          885,
+          752
+        ],
+        "text_head": "你的單集",
+        "match": "stable_id"
+      },
+      "home.sec.madeforyou": {
+        "desc": "Made for you",
+        "bbox_base": [
+          48,
+          840,
+          1032,
+          906
+        ],
+        "bbox_head": [
+          48,
+          846,
+          1032,
+          924
+        ],
+        "text_head": "為你打造",
+        "match": "stable_id"
+      },
+      "home.card1.title": {
+        "desc": "Daily Mix 2",
+        "bbox_base": [
+          48,
+          1410,
+          498,
+          1458
+        ],
+        "bbox_head": [
+          48,
+          1428,
+          498,
+          1476
+        ],
+        "text_head": "Daily Mix 2",
+        "match": "stable_id"
+      },
+      "home.card1.sub": {
+        "desc": "Arctic Monkeys, The Strokes, Tame Impala and more",
+        "bbox_base": [
+          48,
+          1464,
+          498,
+          1610
+        ],
+        "bbox_head": [
+          48,
+          1482,
+          498,
+          1579
+        ],
+        "text_head": "Arctic Monkeys、The Strokes、Tame Impala 等",
+        "match": "stable_id"
+      },
+      "home.card2.title": {
+        "desc": "Your Top Songs 2026",
+        "bbox_base": [
+          534,
+          1410,
+          984,
+          1458
+        ],
+        "bbox_head": [
+          534,
+          1428,
+          984,
+          1482
+        ],
+        "text_head": "你的 2026 年熱門歌曲",
+        "match": "stable_id"
+      },
+      "home.card2.sub": {
+        "desc": "The songs you loved most this year, all wrapped up.",
+        "bbox_base": [
+          534,
+          1464,
+          984,
+          1561
+        ],
+        "bbox_head": [
+          534,
+          1488,
+          984,
+          1585
+        ],
+        "text_head": "你今年最愛的歌曲，全都收錄在這裡。",
+        "match": "stable_id"
+      },
+      "home.sec.recent": {
+        "desc": "Recently played",
+        "bbox_base": [
+          48,
+          1658,
+          1032,
+          1724
+        ],
+        "bbox_head": [
+          48,
+          1633,
+          1032,
+          1711
+        ],
+        "text_head": "最近播放",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          101,
+          2319,
+          169,
+          2367
+        ],
+        "text_head": "首頁",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "text_head": "Search",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          591,
+          2318,
+          759,
+          2366
+        ],
+        "text_head": "你的音樂庫",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

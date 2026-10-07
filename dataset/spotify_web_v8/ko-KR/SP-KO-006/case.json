@@ -1,0 +1,44 @@
+{
+  "case_id": "SP-KO-006",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "06-now-playing",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "10",
+    "11"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "element": "np.share",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'공유하기' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "1",
+      "element": "np.playingfrom",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'플레이리스트에서 재생 중' is truncated with an ellipsis."
+    },
+    {
+      "box": "2",
+      "element": "np.source",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "np.source",
+      "report": "The raw resource key 'np.source' is shown instead of 'Discover Weekly'."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "case_id": "SP-UR-005",
+  "platform": "web",
+  "language": "ur",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "2",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "1",
+      "element": "premium.title",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "premium.title",
+      "report": "The raw resource key 'premium.title' is shown instead of 'Premium'."
+    },
+    {
+      "box": "11",
+      "related_boxes": [
+        "9",
+        "10"
+      ],
+      "element": "premium.plan.duo.feat",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'2 Premium اکاؤنٹس' overlaps the text element above it."
+    },
+    {
+      "box": "14",
+      "element": "premium.plan.family.feat",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "زیادہ سے زیادہ {count} Premium اکاؤنٹس",
+      "report": "An unresolved placeholder ('زیادہ سے زیادہ {count} Premium اکاؤنٹس') is shown instead of the value ('زیادہ سے زیادہ 6 Premium اکاؤنٹس')."
+    }
+  ]
+}

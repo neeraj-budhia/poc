@@ -1,0 +1,342 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TA-005:05-premium",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Tamil (ta-IN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "premium.title": {
+        "desc": "Premium",
+        "bbox_base": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "bbox_head": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "brand.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "bbox_head": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "premium.hero.title": {
+        "desc": "Try 1 month of Premium for $0",
+        "bbox_base": [
+          96,
+          324,
+          984,
+          489
+        ],
+        "bbox_head": [
+          96,
+          324,
+          984,
+          572
+        ],
+        "text_head": "₹{amount} கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்",
+        "match": "stable_id"
+      },
+      "premium.hero.sub": {
+        "desc": "Only $11.99/month after. Cancel anytime.",
+        "bbox_base": [
+          96,
+          513,
+          984,
+          568
+        ],
+        "bbox_head": [
+          96,
+          596,
+          984,
+          705
+        ],
+        "text_head": "அதன் பிறகு மாதம் ₹139 மட்டுமே. எப்போது வேண்டுமானாலும் ரத்துசெய்யலாம்.",
+        "match": "stable_id"
+      },
+      "premium.cta.trial": {
+        "desc": "Try free for 1 month",
+        "bbox_base": [
+          96,
+          616,
+          647,
+          742
+        ],
+        "bbox_head": [
+          96,
+          753,
+          877,
+          882
+        ],
+        "text_head": "1 மாதம் இலவசமாக முயற்சிக்கவும்",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.name": {
+        "desc": "Individual",
+        "bbox_base": [
+          108,
+          874,
+          346,
+          934
+        ],
+        "bbox_head": [
+          108,
+          1014,
+          296,
+          1077
+        ],
+        "text_head": "தனிநபர்",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.price": {
+        "desc": "$11.99 / month",
+        "bbox_base": [
+          686,
+          880,
+          984,
+          931
+        ],
+        "bbox_head": [
+          742,
+          1020,
+          984,
+          1077
+        ],
+        "text_head": "₹139 / மாதம்",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.feat": {
+        "desc": "1 Premium account",
+        "bbox_base": [
+          108,
+          952,
+          984,
+          1000
+        ],
+        "bbox_head": [
+          108,
+          1095,
+          984,
+          1143
+        ],
+        "text_head": "1 Premium account",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.name": {
+        "desc": "Duo",
+        "bbox_base": [
+          108,
+          1120,
+          206,
+          1180
+        ],
+        "bbox_head": [
+          108,
+          1263,
+          240,
+          1326
+        ],
+        "text_head": "டியோ",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.price": {
+        "desc": "$16.99 / month",
+        "bbox_base": [
+          679,
+          1126,
+          984,
+          1177
+        ],
+        "bbox_head": [
+          745,
+          1269,
+          984,
+          1326
+        ],
+        "text_head": "₹179 / மாதம்",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.feat": {
+        "desc": "2 Premium accounts",
+        "bbox_base": [
+          108,
+          1198,
+          984,
+          1246
+        ],
+        "bbox_head": [
+          108,
+          1344,
+          984,
+          1398
+        ],
+        "text_head": "2 Premium கணக்குகள்",
+        "match": "stable_id"
+      },
+      "premium.plan.family.name": {
+        "desc": "Family",
+        "bbox_base": [
+          108,
+          1366,
+          267,
+          1426
+        ],
+        "bbox_head": [
+          108,
+          1530,
+          289,
+          1560
+        ],
+        "text_head": "குடும்பம்",
+        "match": "stable_id"
+      },
+      "premium.plan.family.price": {
+        "desc": "$19.99 / month",
+        "bbox_base": [
+          679,
+          1372,
+          984,
+          1423
+        ],
+        "bbox_head": [
+          738,
+          1518,
+          984,
+          1575
+        ],
+        "text_head": "₹229 / மாதம்",
+        "match": "stable_id"
+      },
+      "premium.plan.family.feat": {
+        "desc": "Up to 6 Premium accounts",
+        "bbox_base": [
+          108,
+          1444,
+          984,
+          1492
+        ],
+        "bbox_head": [
+          108,
+          1593,
+          984,
+          1647
+        ],
+        "text_head": "6 Premium கணக்குகள் வரை",
+        "match": "stable_id"
+      },
+      "premium.legal": {
+        "desc": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+        "bbox_base": [
+          48,
+          1576,
+          1032,
+          1668
+        ],
+        "bbox_head": [
+          48,
+          1731,
+          1032,
+          1823
+        ],
+        "text_head": "நிபந்தனைகள் பொருந்தும். சலுகை 31 அக்டோபர், 2026 அன்று முடிவடைகிறது. தனிநபர் திட்டத்திற்கு மட்டும்.",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          87,
+          2320,
+          183,
+          2366
+        ],
+        "text_head": "முகப்பு",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          358,
+          2320,
+          452,
+          2366
+        ],
+        "text_head": "தேடல்",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          557,
+          2319,
+          793,
+          2364
+        ],
+        "text_head": "உங்கள் லைப்ரரி",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

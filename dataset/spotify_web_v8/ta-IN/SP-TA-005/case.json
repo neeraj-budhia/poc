@@ -1,0 +1,41 @@
+{
+  "case_id": "SP-TA-005",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "3",
+      "element": "premium.hero.title",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "₹{amount} கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்",
+      "report": "An unresolved placeholder ('₹{amount} கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்') is shown instead of the value ('₹0 கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்')."
+    },
+    {
+      "box": "8",
+      "element": "premium.plan.individual.feat",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "1 Premium account",
+      "report": "'1 Premium account' is shown in English instead of '1 Premium கணக்கு'."
+    },
+    {
+      "box": "12",
+      "element": "premium.plan.family.name",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'குடும்பம்' are clipped by a too-small line box."
+    }
+  ]
+}

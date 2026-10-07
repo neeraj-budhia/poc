@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-TA-009",
+  "language": "ta-IN",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "2",
+      "element_id": "artist.listeners",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "24,812,331 monthly listeners",
+      "target_text": "{count} மாதாந்திரக் கேட்போர்"
+    },
+    {
+      "box": "9",
+      "element_id": "artist.p3.title",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Borderline",
+      "target_text": "artist.p3.title"
+    }
+  ]
+}

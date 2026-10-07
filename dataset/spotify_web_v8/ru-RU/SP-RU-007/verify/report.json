@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-RU-007",
+  "language": "ru-RU",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "10",
+      "element_id": "lyrics.credit",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Lyrics provided by Musixmatch",
+      "target_text": "Ð¢ÐµÐºÑ�Ñ‚ Ð¿Ñ€ÐµÐ´Ð¾Ñ�Ñ‚Ð°Ð²Ð»ÐµÐ½ Musixmatch"
+    },
+    {
+      "box": "12",
+      "element_id": "lyrics.report",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[251,432] extends past the 360px screen edge",
+      "base_text": "Report a problem",
+      "target_text": "Сообщить о проблеме"
+    }
+  ]
+}

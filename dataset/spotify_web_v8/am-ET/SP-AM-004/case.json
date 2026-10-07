@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-AM-004",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "04-playlist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "defects": [
+    {
+      "box": "3",
+      "element": "playlist.madefor",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "áˆˆNeeraj á‹¨á‰°áˆ°áˆ«",
+      "report": "Text is garbled by an encoding error instead of 'ለNeeraj የተሰራ'."
+    },
+    {
+      "box": "4",
+      "element": "playlist.meta",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in '30 ዘፈኖች፣ በግምት 2 ሰዓት 5 ደቂቃ' are clipped by a too-small line box."
+    },
+    {
+      "box": "13",
+      "element": "playlist.updated",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "ከ{count} ቀናት በፊት ተዘምኗል",
+      "report": "An unresolved placeholder ('ከ{count} ቀናት በፊት ተዘምኗል') is shown instead of the value ('ከ6 ቀናት በፊት ተዘምኗል')."
+    }
+  ]
+}

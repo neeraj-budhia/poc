@@ -1,0 +1,667 @@
+{
+  "case_id": "SP-UR-005",
+  "screen": "05-premium",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Urdu (ur)",
+  "case_elements": [
+    {
+      "box": "1",
+      "element_id": "premium.title",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "11",
+      "element_id": "premium.plan.duo.feat",
+      "resolved_by": "planted",
+      "related_boxes": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "box": "14",
+      "element_id": "premium.plan.family.feat",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 19,
+    "with_target_box": 19,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "premium.title",
+      "descriptor": "Premium",
+      "target_text": "premium.title",
+      "base_box": [
+        119,
+        50,
+        372,
+        118
+      ],
+      "target_box": [
+        582,
+        50,
+        961,
+        118
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "brand.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        168,
+        236,
+        353,
+        286
+      ],
+      "target_box": [
+        727,
+        236,
+        912,
+        286
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "premium.hero.title",
+      "descriptor": "Try 1 month of Premium for $0",
+      "target_text": "صرف Rs 0 میں Premium کا 1 مہینہ آزمائیں",
+      "base_box": [
+        96,
+        324,
+        984,
+        489
+      ],
+      "target_box": [
+        96,
+        324,
+        984,
+        575
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "premium.hero.sub",
+      "descriptor": "Only $11.99/month after. Cancel anytime.",
+      "target_text": "اس کے بعد صرف Rs 349/مہینہ۔ کسی بھی وقت منسوخ کریں۔",
+      "base_box": [
+        96,
+        513,
+        984,
+        568
+      ],
+      "target_box": [
+        96,
+        599,
+        984,
+        673
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "premium.cta.trial",
+      "descriptor": "Try free for 1 month",
+      "target_text": "1 مہینے کے لیے مفت آزمائیں",
+      "base_box": [
+        96,
+        616,
+        647,
+        742
+      ],
+      "target_box": [
+        371,
+        721,
+        984,
+        878
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "premium.plan.individual.name",
+      "descriptor": "Individual",
+      "target_text": "انفرادی",
+      "base_box": [
+        108,
+        874,
+        346,
+        934
+      ],
+      "target_box": [
+        823,
+        1010,
+        972,
+        1107
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "premium.plan.individual.price",
+      "descriptor": "$11.99 / month",
+      "target_text": "Rs 349 / مہینہ",
+      "base_box": [
+        686,
+        880,
+        984,
+        931
+      ],
+      "target_box": [
+        96,
+        1025,
+        337,
+        1105
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "premium.plan.individual.feat",
+      "descriptor": "1 Premium account",
+      "target_text": "1 Premium اکاؤنٹ",
+      "base_box": [
+        108,
+        952,
+        984,
+        1000
+      ],
+      "target_box": [
+        96,
+        1125,
+        972,
+        1199
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "premium.plan.duo.name",
+      "descriptor": "Duo",
+      "target_text": "ڈیو",
+      "base_box": [
+        108,
+        1120,
+        206,
+        1180
+      ],
+      "target_box": [
+        916,
+        1319,
+        972,
+        1416
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "premium.plan.duo.price",
+      "descriptor": "$16.99 / month",
+      "target_text": "Rs 449 / مہینہ",
+      "base_box": [
+        679,
+        1126,
+        984,
+        1177
+      ],
+      "target_box": [
+        96,
+        1334,
+        337,
+        1414
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "premium.plan.duo.feat",
+      "descriptor": "2 Premium accounts",
+      "target_text": "2 Premium اکاؤنٹس",
+      "base_box": [
+        108,
+        1198,
+        984,
+        1246
+      ],
+      "target_box": [
+        96,
+        1353,
+        972,
+        1427
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "premium.plan.family.name",
+      "descriptor": "Family",
+      "target_text": "فیملی",
+      "base_box": [
+        108,
+        1366,
+        267,
+        1426
+      ],
+      "target_box": [
+        885,
+        1628,
+        972,
+        1725
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "premium.plan.family.price",
+      "descriptor": "$19.99 / month",
+      "target_text": "Rs 549 / مہینہ",
+      "base_box": [
+        679,
+        1372,
+        984,
+        1423
+      ],
+      "target_box": [
+        96,
+        1643,
+        337,
+        1723
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "premium.plan.family.feat",
+      "descriptor": "Up to 6 Premium accounts",
+      "target_text": "زیادہ سے زیادہ {count} Premium اکاؤنٹس",
+      "base_box": [
+        108,
+        1444,
+        984,
+        1492
+      ],
+      "target_box": [
+        96,
+        1743,
+        972,
+        1817
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "premium.legal",
+      "descriptor": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+      "target_text": "شرائط لاگو ہیں۔ پیشکش 31 اکتوبر 2026 کو ختم ہو جائے گی۔ صرف انفرادی پلان کے لیے۔",
+      "base_box": [
+        48,
+        1576,
+        1032,
+        1668
+      ],
+      "target_box": [
+        48,
+        1901,
+        1032,
+        2027
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "tab.home",
+      "descriptor": "Home",
+      "target_text": "ہوم",
+      "base_box": [
+        89,
+        2324,
+        181,
+        2362
+      ],
+      "target_box": [
+        921,
+        2301,
+        969,
+        2385
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "tab.search",
+      "descriptor": "Search",
+      "target_text": "تلاش",
+      "base_box": [
+        350,
+        2324,
+        460,
+        2362
+      ],
+      "target_box": [
+        645,
+        2301,
+        706,
+        2385
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "tab.library",
+      "descriptor": "Your Library",
+      "target_text": "آپ کی لائبریری",
+      "base_box": [
+        580,
+        2322,
+        770,
+        2361
+      ],
+      "target_box": [
+        318,
+        2300,
+        492,
+        2384
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "tab.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "target_box": [
+        66,
+        2328,
+        204,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 23.426,
+      "height": 2.833
+    },
+    "2": {
+      "x": 15.556,
+      "y": 9.833,
+      "width": 17.13,
+      "height": 2.083
+    },
+    "3": {
+      "x": 8.889,
+      "y": 13.5,
+      "width": 82.222,
+      "height": 6.875
+    },
+    "4": {
+      "x": 8.889,
+      "y": 21.375,
+      "width": 82.222,
+      "height": 2.292
+    },
+    "5": {
+      "x": 8.889,
+      "y": 25.667,
+      "width": 51.019,
+      "height": 5.25
+    },
+    "6": {
+      "x": 10.0,
+      "y": 36.417,
+      "width": 22.037,
+      "height": 2.5
+    },
+    "7": {
+      "x": 63.519,
+      "y": 36.667,
+      "width": 27.593,
+      "height": 2.125
+    },
+    "8": {
+      "x": 10.0,
+      "y": 39.667,
+      "width": 81.111,
+      "height": 2.0
+    },
+    "9": {
+      "x": 10.0,
+      "y": 46.667,
+      "width": 9.074,
+      "height": 2.5
+    },
+    "10": {
+      "x": 62.87,
+      "y": 46.917,
+      "width": 28.241,
+      "height": 2.125
+    },
+    "11": {
+      "x": 10.0,
+      "y": 49.917,
+      "width": 81.111,
+      "height": 2.0
+    },
+    "12": {
+      "x": 10.0,
+      "y": 56.917,
+      "width": 14.722,
+      "height": 2.5
+    },
+    "13": {
+      "x": 62.87,
+      "y": 57.167,
+      "width": 28.241,
+      "height": 2.125
+    },
+    "14": {
+      "x": 10.0,
+      "y": 60.167,
+      "width": 81.111,
+      "height": 2.0
+    },
+    "15": {
+      "x": 4.444,
+      "y": 65.667,
+      "width": 91.111,
+      "height": 3.833
+    },
+    "16": {
+      "x": 8.241,
+      "y": 96.833,
+      "width": 8.519,
+      "height": 1.583
+    },
+    "17": {
+      "x": 32.407,
+      "y": 96.833,
+      "width": 10.185,
+      "height": 1.583
+    },
+    "18": {
+      "x": 53.704,
+      "y": 96.75,
+      "width": 17.593,
+      "height": 1.625
+    },
+    "19": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 53.889,
+      "y": 2.083,
+      "width": 35.093,
+      "height": 2.833
+    },
+    "2": {
+      "x": 67.315,
+      "y": 9.833,
+      "width": 17.13,
+      "height": 2.083
+    },
+    "3": {
+      "x": 8.889,
+      "y": 13.5,
+      "width": 82.222,
+      "height": 10.458
+    },
+    "4": {
+      "x": 8.889,
+      "y": 24.958,
+      "width": 82.222,
+      "height": 3.083
+    },
+    "5": {
+      "x": 34.352,
+      "y": 30.042,
+      "width": 56.759,
+      "height": 6.542
+    },
+    "6": {
+      "x": 76.204,
+      "y": 42.083,
+      "width": 13.796,
+      "height": 4.042
+    },
+    "7": {
+      "x": 8.889,
+      "y": 42.708,
+      "width": 22.315,
+      "height": 3.333
+    },
+    "8": {
+      "x": 8.889,
+      "y": 46.875,
+      "width": 81.111,
+      "height": 3.083
+    },
+    "9": {
+      "x": 84.815,
+      "y": 54.958,
+      "width": 5.185,
+      "height": 4.042
+    },
+    "10": {
+      "x": 8.889,
+      "y": 55.583,
+      "width": 22.315,
+      "height": 3.333
+    },
+    "11": {
+      "x": 8.889,
+      "y": 56.375,
+      "width": 81.111,
+      "height": 3.083
+    },
+    "12": {
+      "x": 81.944,
+      "y": 67.833,
+      "width": 8.056,
+      "height": 4.042
+    },
+    "13": {
+      "x": 8.889,
+      "y": 68.458,
+      "width": 22.315,
+      "height": 3.333
+    },
+    "14": {
+      "x": 8.889,
+      "y": 72.625,
+      "width": 81.111,
+      "height": 3.083
+    },
+    "15": {
+      "x": 4.444,
+      "y": 79.208,
+      "width": 91.111,
+      "height": 5.25
+    },
+    "16": {
+      "x": 85.278,
+      "y": 95.875,
+      "width": 4.444,
+      "height": 3.5
+    },
+    "17": {
+      "x": 59.722,
+      "y": 95.875,
+      "width": 5.648,
+      "height": 3.5
+    },
+    "18": {
+      "x": 29.444,
+      "y": 95.833,
+      "width": 16.111,
+      "height": 3.5
+    },
+    "19": {
+      "x": 6.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  }
+}

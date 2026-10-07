@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-HE-010",
+  "platform": "web",
+  "language": "he-IL",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "8",
+      "element": "settings.crossfade.val",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count} שנ׳",
+      "report": "An unresolved placeholder ('{count} שנ׳') is shown instead of the value ('5 שנ׳')."
+    },
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "המינוי שלך יתחדש ב-November 14, 2026 בתשלום של $11.99.",
+      "report": "Number/date/currency uses the US format ('המינוי שלך יתחדש ב-November 14, 2026 בתשלום של $11.99.') instead of the local one ('המינוי שלך יתחדש ב-14 בנובמבר 2026 בתשלום של 21.90 ₪.')."
+    },
+    {
+      "box": "9",
+      "element": "settings.gapless",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'הפעלה ללא הפסקות' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

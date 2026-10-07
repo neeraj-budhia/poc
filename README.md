@@ -9,18 +9,18 @@ DOM/CSS of the target render. Output case packs use the same layout as the Andro
 vi-VN (Latin, stacked diacritics) · ur (Arabic-script, Nastaliq, RTL) · he-IL (Hebrew, RTL) · ru-RU (Cyrillic) ·
 zh-TW (CJK Traditional) · ko-KR (Hangul) · ta-IN (Indic, non-Devanagari) · th-TH (Thai) · am-ET (Ethiopic)
 
-10 screens × 9 languages = 90 defect cases (2–3 defects each, ~233 total) + 9 clean controls (`*-C01`).
+10 screens × 9 languages = 90 defect cases (2–3 defects each, 226 total) + 9 clean controls (`*-C01`).
 
 ## Pipeline
 ```
 strings/<code>.json   clean target strings (+ `_fmt`: en-US-formatted variants for FORMAT defects)
 screens/*.html        templates; every text element has data-k="<string key>"
 gen_cases.py          → cases.yml (generated ground truth; rotates 12 defect kinds per language)
-build.py              → dataset/spotify_web_v4/<code>/<ID>/ (renders, plants, verifies)
+build.py              → dataset/spotify_web_v8/<code>/<ID>/ (renders, plants, verifies)
 ```
 ```
 .venv/bin/python spotify_testbed/gen_cases.py
-.venv/bin/python spotify_testbed/build.py --out dataset/spotify_web_v4 [CASE_ID ...]
+.venv/bin/python spotify_testbed/build.py --out dataset/spotify_web_v8 [CASE_ID ...]
 ```
 `build.py` exits non-zero if any planted defect fails its render check (`verify/report.json`).
 

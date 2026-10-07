@@ -1,0 +1,44 @@
+{
+  "case_id": "SP-ZH-005",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "4",
+      "related_boxes": [
+        "3"
+      ],
+      "element": "premium.hero.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'之後每月只要 NT$149。可隨時取消。' overlaps the text element above it."
+    },
+    {
+      "box": "8",
+      "element": "premium.plan.individual.feat",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'1 個 Premium 帳戶' is truncated with an ellipsis."
+    },
+    {
+      "box": "13",
+      "element": "premium.plan.family.price",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "premium.plan.family.price",
+      "report": "The raw resource key 'premium.plan.family.price' is shown instead of 'NT$268 / 月'."
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-RU-003:03-search-results",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Russian (ru-RU)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "results.query": {
+        "desc": "arctic monkeys",
+        "bbox_base": [
+          133,
+          57,
+          444,
+          111
+        ],
+        "bbox_head": [
+          133,
+          57,
+          444,
+          111
+        ],
+        "text_head": "arctic monkeys",
+        "match": "stable_id"
+      },
+      "results.chip.top": {
+        "desc": "Top",
+        "bbox_base": [
+          48,
+          192,
+          187,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          188,
+          276
+        ],
+        "text_head": "Топ",
+        "match": "stable_id"
+      },
+      "results.chip.songs": {
+        "desc": "Songs",
+        "bbox_base": [
+          211,
+          192,
+          397,
+          276
+        ],
+        "bbox_head": [
+          212,
+          192,
+          397,
+          276
+        ],
+        "text_head": "Треки",
+        "match": "stable_id"
+      },
+      "results.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          421,
+          192,
+          611,
+          276
+        ],
+        "bbox_head": [
+          421,
+          192,
+          745,
+          276
+        ],
+        "text_head": "Исполнители",
+        "match": "stable_id"
+      },
+      "results.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          635,
+          192,
+          855,
+          276
+        ],
+        "bbox_head": [
+          48,
+          300,
+          331,
+          384
+        ],
+        "text_head": "Плейлисты",
+        "match": "stable_id"
+      },
+      "results.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          48,
+          300,
+          256,
+          384
+        ],
+        "bbox_head": [
+          355,
+          300,
+          600,
+          384
+        ],
+        "text_head": "Альбомы",
+        "match": "stable_id"
+      },
+      "results.r1.title": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          228,
+          460,
+          1032,
+          514
+        ],
+        "bbox_head": [
+          228,
+          460,
+          1032,
+          514
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          520,
+          1032,
+          566
+        ],
+        "bbox_head": [
+          228,
+          520,
+          1032,
+          566
+        ],
+        "text_head": "Исполнитель",
+        "match": "stable_id"
+      },
+      "results.r2.title": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          228,
+          646,
+          1032,
+          700
+        ],
+        "bbox_head": [
+          228,
+          646,
+          1032,
+          700
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "results.r2.sub": {
+        "desc": "Song • Arctic Monkeys",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          752
+        ],
+        "bbox_head": [
+          228,
+          706,
+          1032,
+          752
+        ],
+        "text_head": "Ð¢Ñ€ÐµÐº â€¢ Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r3.title": {
+        "desc": "AM",
+        "bbox_base": [
+          228,
+          832,
+          1032,
+          886
+        ],
+        "bbox_head": [
+          228,
+          831,
+          1032,
+          885
+        ],
+        "text_head": "AM",
+        "match": "stable_id"
+      },
+      "results.r3.sub": {
+        "desc": "Album • Arctic Monkeys • 2013",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          938
+        ],
+        "bbox_head": [
+          228,
+          894,
+          594,
+          939
+        ],
+        "text_head": "Альбом • Arctic Monkeys • 2013",
+        "match": "stable_id"
+      },
+      "results.r4.title": {
+        "desc": "This Is Arctic Monkeys",
+        "bbox_base": [
+          228,
+          1018,
+          1032,
+          1072
+        ],
+        "bbox_head": [
+          228,
+          1018,
+          1032,
+          1072
+        ],
+        "text_head": "This Is Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r4.sub": {
+        "desc": "Playlist • Spotify",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1124
+        ],
+        "bbox_head": [
+          228,
+          1078,
+          1032,
+          1124
+        ],
+        "text_head": "Плейлист • Spotify",
+        "match": "stable_id"
+      },
+      "results.r5.title": {
+        "desc": "505",
+        "bbox_base": [
+          228,
+          1204,
+          1032,
+          1258
+        ],
+        "bbox_head": [
+          228,
+          1204,
+          1032,
+          1258
+        ],
+        "text_head": "505",
+        "match": "stable_id"
+      },
+      "results.r5.sub": {
+        "desc": "Song • Arctic Monkeys",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1310
+        ],
+        "bbox_head": [
+          228,
+          1264,
+          1032,
+          1310
+        ],
+        "text_head": "Трек • Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r6.title": {
+        "desc": "Arctic Monkeys Radio",
+        "bbox_base": [
+          228,
+          1390,
+          1032,
+          1444
+        ],
+        "bbox_head": [
+          228,
+          1390,
+          1032,
+          1444
+        ],
+        "text_head": "Arctic Monkeys Radio",
+        "match": "stable_id"
+      },
+      "results.r6.sub": {
+        "desc": "Playlist • Spotify",
+        "bbox_base": [
+          228,
+          1450,
+          1032,
+          1496
+        ],
+        "bbox_head": [
+          228,
+          1450,
+          1032,
+          1496
+        ],
+        "text_head": "Плейлист • Spotify",
+        "match": "stable_id"
+      },
+      "results.seeall": {
+        "desc": "See all songs",
+        "bbox_base": [
+          48,
+          1566,
+          1032,
+          1614
+        ],
+        "bbox_head": [
+          48,
+          1566,
+          159,
+          1614
+        ],
+        "text_head": "Все треки",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          71,
+          2324,
+          199,
+          2362
+        ],
+        "text_head": "Главная",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          354,
+          2324,
+          456,
+          2362
+        ],
+        "text_head": "Поиск",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          549,
+          2322,
+          801,
+          2361
+        ],
+        "text_head": "Моя медиатека",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-AM-001:01-home",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Amharic (am-ET)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "home.greeting": {
+        "desc": "Good evening",
+        "bbox_base": [
+          48,
+          50,
+          434,
+          118
+        ],
+        "bbox_head": [
+          48,
+          66,
+          479,
+          102
+        ],
+        "text_head": "እንደምን አመሹ",
+        "match": "stable_id"
+      },
+      "home.chip.all": {
+        "desc": "All",
+        "bbox_base": [
+          48,
+          192,
+          165,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          230,
+          276
+        ],
+        "text_head": "ሁሉም",
+        "match": "stable_id"
+      },
+      "home.chip.music": {
+        "desc": "Music",
+        "bbox_base": [
+          189,
+          192,
+          369,
+          276
+        ],
+        "bbox_head": [
+          254,
+          192,
+          447,
+          276
+        ],
+        "text_head": "ሙዚቃ",
+        "match": "stable_id"
+      },
+      "home.chip.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          393,
+          192,
+          632,
+          276
+        ],
+        "bbox_head": [
+          471,
+          192,
+          727,
+          276
+        ],
+        "text_head": "ፖድካስቶች",
+        "match": "stable_id"
+      },
+      "home.chip.audiobooks": {
+        "desc": "Audiobooks",
+        "bbox_base": [
+          656,
+          192,
+          941,
+          276
+        ],
+        "bbox_head": [
+          48,
+          300,
+          404,
+          384
+        ],
+        "text_head": "ኦዲዮ መጽሐፍት",
+        "match": "stable_id"
+      },
+      "home.tile.liked": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          216,
+          362,
+          453,
+          406
+        ],
+        "bbox_head": [
+          216,
+          447,
+          528,
+          537
+        ],
+        "text_head": "የተወደዱ ዘፈኖች",
+        "match": "stable_id"
+      },
+      "home.tile.dailymix1": {
+        "desc": "Daily Mix 1",
+        "bbox_base": [
+          720,
+          362,
+          929,
+          406
+        ],
+        "bbox_head": [
+          720,
+          470,
+          929,
+          514
+        ],
+        "text_head": "Daily Mix 1",
+        "match": "stable_id"
+      },
+      "home.tile.discover": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          216,
+          507,
+          528,
+          597
+        ],
+        "bbox_head": [
+          216,
+          615,
+          528,
+          705
+        ],
+        "text_head": "Discover Weekly",
+        "match": "stable_id"
+      },
+      "home.tile.release": {
+        "desc": "Release Radar",
+        "bbox_base": [
+          720,
+          530,
+          995,
+          574
+        ],
+        "bbox_head": [
+          720,
+          638,
+          995,
+          682
+        ],
+        "text_head": "Release Radar",
+        "match": "stable_id"
+      },
+      "home.tile.chill": {
+        "desc": "Chill Vibes",
+        "bbox_base": [
+          216,
+          698,
+          426,
+          742
+        ],
+        "bbox_head": [
+          216,
+          806,
+          426,
+          850
+        ],
+        "text_head": "Chill Vibes",
+        "match": "stable_id"
+      },
+      "home.tile.episodes": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          720,
+          698,
+          994,
+          742
+        ],
+        "bbox_head": [
+          720,
+          806,
+          1017,
+          850
+        ],
+        "text_head": "የእርስዎ ክፍሎች",
+        "match": "stable_id"
+      },
+      "home.sec.madeforyou": {
+        "desc": "Made for you",
+        "bbox_base": [
+          48,
+          840,
+          1032,
+          906
+        ],
+        "bbox_head": [
+          48,
+          948,
+          1032,
+          1014
+        ],
+        "text_head": "ለእርስዎ የተሰራ",
+        "match": "stable_id"
+      },
+      "home.card1.title": {
+        "desc": "Daily Mix 2",
+        "bbox_base": [
+          48,
+          1410,
+          498,
+          1458
+        ],
+        "bbox_head": [
+          48,
+          1518,
+          498,
+          1566
+        ],
+        "text_head": "Daily Mix 2",
+        "match": "stable_id"
+      },
+      "home.card1.sub": {
+        "desc": "Arctic Monkeys, The Strokes, Tame Impala and more",
+        "bbox_base": [
+          48,
+          1464,
+          498,
+          1610
+        ],
+        "bbox_head": [
+          48,
+          1572,
+          498,
+          1718
+        ],
+        "text_head": "Arctic Monkeys፣ The Strokes፣ Tame Impala እና ሌሎችም",
+        "match": "stable_id"
+      },
+      "home.card2.title": {
+        "desc": "Your Top Songs 2026",
+        "bbox_base": [
+          534,
+          1410,
+          984,
+          1458
+        ],
+        "bbox_head": [
+          534,
+          1518,
+          984,
+          1614
+        ],
+        "text_head": "የእርስዎ ምርጥ ዘፈኖች 2026",
+        "match": "stable_id"
+      },
+      "home.card2.sub": {
+        "desc": "The songs you loved most this year, all wrapped up.",
+        "bbox_base": [
+          534,
+          1464,
+          984,
+          1561
+        ],
+        "bbox_head": [
+          534,
+          1551,
+          984,
+          1697
+        ],
+        "text_head": "በዚህ ዓመት በጣም የወደዷቸው ዘፈኖች፣ በአንድ ላይ።",
+        "match": "stable_id"
+      },
+      "home.sec.recent": {
+        "desc": "Recently played",
+        "bbox_base": [
+          48,
+          1658,
+          1032,
+          1724
+        ],
+        "bbox_head": [
+          48,
+          1814,
+          1032,
+          1880
+        ],
+        "text_head": "በቅርብ ጊዜ የተጫወቱ",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          96,
+          2324,
+          174,
+          2362
+        ],
+        "text_head": "መነሻ",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          360,
+          2324,
+          450,
+          2362
+        ],
+        "text_head": "□□□",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          552,
+          2322,
+          798,
+          2361
+        ],
+        "text_head": "ቤተ-መጻሕፍትዎ",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

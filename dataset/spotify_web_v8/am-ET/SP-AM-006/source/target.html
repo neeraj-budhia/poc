@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="am-ET" dir="ltr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="np-top"><span class="ico">⌄</span><div class="np-from"><span data-k="np.playingfrom" style="display: inline-block; white-space: nowrap; vertical-align: bottom; overflow: hidden; text-overflow: ellipsis; max-width: 86px;">ከአጫዋች ዝርዝር በመጫወት ላይ</span><b data-k="np.source">Discover Weekly</b></div><span class="ico">⋯</span></header>
+<main>
+  <div class="np-art art b"></div>
+  <div class="np-head"><div class="txt"><p class="np-title" data-k="np.title">Do I Wanna Know?</p><p class="np-artist" data-k="np.artist">Arctic Monkeys</p></div><span class="ico">＋</span></div>
+  <div class="bar"><span></span></div>
+  <div class="times"><span data-k="np.elapsed">1:24</span><span data-k="np.remaining">-3:08</span></div>
+  <div class="ctrls"><span>⤮</span><span>⏮</span><span class="pp">⏸</span><span>⏭</span><span>↻</span></div>
+  <div class="np-foot"><span data-k="np.devices" style="display: inline-block; white-space: nowrap; max-width: none; vertical-align: bottom; overflow: hidden; width: 71px;">የሚገኙ መሣሪያዎች</span><span data-k="np.share">አጋራ</span></div>
+  <div class="lyr"><p class="lyr-h" data-k="np.lyrics.header">Lyrics preview</p><p class="lyr-l" data-k="np.lyrics.line1">Have you got colour in your cheeks?</p><p class="lyr-l" data-k="np.lyrics.line2">Do you ever get the feeling that you can't shift the tide</p></div>
+</main>
+<style>
+body { background: linear-gradient(180deg, #7a2742 0%, #2b0f18 60%, #121212 100%); }
+.np-top { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; }
+.np-top .ico { font-size: 22px; }
+.np-from { text-align: center; font-size: 10px; letter-spacing: .5px; display: flex; flex-direction: column; gap: 2px; text-transform: uppercase; }
+.np-from b { font-size: 12px; text-transform: none; letter-spacing: 0; }
+.np-art { width: 300px; height: 300px; margin: 18px auto 0; border-radius: 6px; }
+.np-head { display: flex; align-items: center; justify-content: space-between; margin-top: 22px; gap: 10px; }
+.np-head .txt { min-width: 0; }
+.np-title { font-size: 21px; font-weight: 800; }
+.np-artist { font-size: 15px; color: #c8c8c8; margin-top: 2px; }
+/* media transport stays LTR in RTL locales (platform convention) */
+.bar, .times, .ctrls { direction: ltr; }
+.bar { height: 4px; background: #5a5a5a; border-radius: 2px; margin-top: 14px; }
+.bar span { display: block; width: 36%; height: 4px; background: #fff; border-radius: 2px; }
+[dir="rtl"] .bar span { margin-inline-start: 0; }
+.times { display: flex; justify-content: space-between; font-size: 11px; color: #c8c8c8; margin-top: 6px; }
+.ctrls { display: flex; justify-content: space-between; align-items: center; font-size: 24px; margin-top: 8px; }
+.ctrls .pp { width: 60px; height: 60px; border-radius: 50%; background: #fff; color: #000; display: flex; align-items: center; justify-content: center; }
+.np-foot { display: flex; justify-content: space-between; font-size: 12px; color: #c8c8c8; margin-top: 14px; }
+.lyr { background: #a33a5a; border-radius: 8px; padding: 12px 14px; margin-top: 14px; }
+.lyr-h { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.lyr-l { font-size: 16px; font-weight: 700; color: #2b0f18; }
+</style>
+
+</body></html>

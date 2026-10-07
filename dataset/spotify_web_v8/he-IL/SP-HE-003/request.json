@@ -1,0 +1,410 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-HE-003:03-search-results",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Hebrew (he-IL)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "results.query": {
+        "desc": "arctic monkeys",
+        "bbox_base": [
+          133,
+          57,
+          444,
+          111
+        ],
+        "bbox_head": [
+          636,
+          57,
+          947,
+          111
+        ],
+        "text_head": "arctic monkeys",
+        "match": "stable_id"
+      },
+      "results.chip.top": {
+        "desc": "Top",
+        "bbox_base": [
+          48,
+          192,
+          187,
+          276
+        ],
+        "bbox_head": [
+          809,
+          192,
+          1032,
+          276
+        ],
+        "text_head": "המובילים",
+        "match": "stable_id"
+      },
+      "results.chip.songs": {
+        "desc": "Songs",
+        "bbox_base": [
+          211,
+          192,
+          397,
+          276
+        ],
+        "bbox_head": [
+          618,
+          192,
+          785,
+          276
+        ],
+        "text_head": "שירים",
+        "match": "stable_id"
+      },
+      "results.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          421,
+          192,
+          611,
+          276
+        ],
+        "bbox_head": [
+          421,
+          192,
+          594,
+          276
+        ],
+        "text_head": "אמנים",
+        "match": "stable_id"
+      },
+      "results.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          635,
+          192,
+          855,
+          276
+        ],
+        "bbox_head": [
+          256,
+          192,
+          397,
+          276
+        ],
+        "text_head": "פלייליסטים",
+        "match": "stable_id"
+      },
+      "results.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          48,
+          300,
+          256,
+          384
+        ],
+        "bbox_head": [
+          824,
+          300,
+          1032,
+          384
+        ],
+        "text_head": "אלבומים",
+        "match": "stable_id"
+      },
+      "results.r1.title": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          228,
+          460,
+          1032,
+          514
+        ],
+        "bbox_head": [
+          48,
+          459,
+          852,
+          513
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          520,
+          1032,
+          566
+        ],
+        "bbox_head": [
+          796,
+          537,
+          852,
+          558
+        ],
+        "text_head": "אמן",
+        "match": "stable_id"
+      },
+      "results.r2.title": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          228,
+          646,
+          1032,
+          700
+        ],
+        "bbox_head": [
+          48,
+          646,
+          852,
+          700
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "results.r2.sub": {
+        "desc": "Song • Arctic Monkeys",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          752
+        ],
+        "bbox_head": [
+          48,
+          706,
+          852,
+          752
+        ],
+        "text_head": "שיר • Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r3.title": {
+        "desc": "AM",
+        "bbox_base": [
+          228,
+          832,
+          1032,
+          886
+        ],
+        "bbox_head": [
+          48,
+          832,
+          852,
+          886
+        ],
+        "text_head": "AM",
+        "match": "stable_id"
+      },
+      "results.r3.sub": {
+        "desc": "Album • Arctic Monkeys • 2013",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          938
+        ],
+        "bbox_head": [
+          48,
+          892,
+          852,
+          938
+        ],
+        "text_head": "אלבום • Arctic Monkeys • 2013",
+        "match": "stable_id"
+      },
+      "results.r4.title": {
+        "desc": "This Is Arctic Monkeys",
+        "bbox_base": [
+          228,
+          1018,
+          1032,
+          1072
+        ],
+        "bbox_head": [
+          48,
+          1018,
+          852,
+          1072
+        ],
+        "text_head": "This Is Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r4.sub": {
+        "desc": "Playlist • Spotify",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1124
+        ],
+        "bbox_head": [
+          48,
+          1078,
+          852,
+          1124
+        ],
+        "text_head": "□□□□□□□□ • Spotify",
+        "match": "stable_id"
+      },
+      "results.r5.title": {
+        "desc": "505",
+        "bbox_base": [
+          228,
+          1204,
+          1032,
+          1258
+        ],
+        "bbox_head": [
+          48,
+          1204,
+          852,
+          1258
+        ],
+        "text_head": "505",
+        "match": "stable_id"
+      },
+      "results.r5.sub": {
+        "desc": "Song • Arctic Monkeys",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1310
+        ],
+        "bbox_head": [
+          48,
+          1264,
+          852,
+          1310
+        ],
+        "text_head": "שיר • Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r6.title": {
+        "desc": "Arctic Monkeys Radio",
+        "bbox_base": [
+          228,
+          1390,
+          1032,
+          1444
+        ],
+        "bbox_head": [
+          48,
+          1390,
+          852,
+          1444
+        ],
+        "text_head": "Arctic Monkeys Radio",
+        "match": "stable_id"
+      },
+      "results.r6.sub": {
+        "desc": "Playlist • Spotify",
+        "bbox_base": [
+          228,
+          1450,
+          1032,
+          1496
+        ],
+        "bbox_head": [
+          48,
+          1450,
+          852,
+          1496
+        ],
+        "text_head": "פלייליסט • Spotify",
+        "match": "stable_id"
+      },
+      "results.seeall": {
+        "desc": "See all songs",
+        "bbox_base": [
+          48,
+          1566,
+          1032,
+          1614
+        ],
+        "bbox_head": [
+          48,
+          1566,
+          1032,
+          1614
+        ],
+        "text_head": "הצגת כל השירים",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          883,
+          2322,
+          1007,
+          2364
+        ],
+        "text_head": "דף הבית",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          632,
+          2322,
+          718,
+          2364
+        ],
+        "text_head": "חיפוש",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          309,
+          2320,
+          501,
+          2362
+        ],
+        "text_head": "הספרייה שלך",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          66,
+          2328,
+          204,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

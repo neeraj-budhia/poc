@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-AM-005",
+  "language": "am-ET",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "15",
+      "element_id": "premium.legal",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['premium.plan.family.feat']",
+      "base_text": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+      "target_text": "ውሎች ተፈጻሚ ይሆናሉ። ቅናሹ 31 ኦክቶበር 2026 ላይ ያበቃል። ለግለሰብ ዕቅድ ብቻ።"
+    },
+    {
+      "box": "13",
+      "element_id": "premium.plan.family.price",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "$19.99 / month",
+      "target_text": "premium.plan.family.price"
+    }
+  ]
+}

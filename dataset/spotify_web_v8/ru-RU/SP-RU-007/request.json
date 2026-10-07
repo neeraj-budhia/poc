@@ -1,0 +1,223 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-RU-007:07-lyrics",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Russian (ru-RU)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "lyrics.song": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          339,
+          30,
+          718,
+          81
+        ],
+        "bbox_head": [
+          339,
+          30,
+          718,
+          81
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "lyrics.artist": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          339,
+          87,
+          718,
+          132
+        ],
+        "bbox_head": [
+          339,
+          87,
+          718,
+          132
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "lyrics.l1": {
+        "desc": "Have you got colour in your cheeks?",
+        "bbox_base": [
+          48,
+          198,
+          1032,
+          385
+        ],
+        "bbox_head": [
+          48,
+          198,
+          1032,
+          385
+        ],
+        "text_head": "Have you got colour in your cheeks?",
+        "match": "stable_id"
+      },
+      "lyrics.l2": {
+        "desc": "Do you ever get the feeling that you can't shift the tide",
+        "bbox_base": [
+          48,
+          421,
+          1032,
+          608
+        ],
+        "bbox_head": [
+          48,
+          421,
+          1032,
+          608
+        ],
+        "text_head": "Do you ever get the feeling that you can't shift the tide",
+        "match": "stable_id"
+      },
+      "lyrics.l3": {
+        "desc": "That sticks around like something's in your teeth?",
+        "bbox_base": [
+          48,
+          644,
+          1032,
+          831
+        ],
+        "bbox_head": [
+          48,
+          644,
+          1032,
+          831
+        ],
+        "text_head": "That sticks around like something's in your teeth?",
+        "match": "stable_id"
+      },
+      "lyrics.l4": {
+        "desc": "Are there some aces up your sleeve?",
+        "bbox_base": [
+          48,
+          867,
+          1032,
+          1054
+        ],
+        "bbox_head": [
+          48,
+          867,
+          1032,
+          1054
+        ],
+        "text_head": "Are there some aces up your sleeve?",
+        "match": "stable_id"
+      },
+      "lyrics.l5": {
+        "desc": "Have you no idea that you're in deep?",
+        "bbox_base": [
+          48,
+          1090,
+          1032,
+          1278
+        ],
+        "bbox_head": [
+          48,
+          1090,
+          1032,
+          1278
+        ],
+        "text_head": "Have you no idea that you're in deep?",
+        "match": "stable_id"
+      },
+      "lyrics.l6": {
+        "desc": "I dreamt about you nearly every night this week",
+        "bbox_base": [
+          48,
+          1314,
+          1032,
+          1501
+        ],
+        "bbox_head": [
+          48,
+          1314,
+          1032,
+          1501
+        ],
+        "text_head": "I dreamt about you nearly every night this week",
+        "match": "stable_id"
+      },
+      "lyrics.translate": {
+        "desc": "Show translation",
+        "bbox_base": [
+          48,
+          1567,
+          1032,
+          1615
+        ],
+        "bbox_head": [
+          48,
+          1567,
+          1032,
+          1615
+        ],
+        "text_head": "Показать перевод",
+        "match": "stable_id"
+      },
+      "lyrics.credit": {
+        "desc": "Lyrics provided by Musixmatch",
+        "bbox_base": [
+          48,
+          1633,
+          1032,
+          1672
+        ],
+        "bbox_head": [
+          48,
+          1633,
+          1032,
+          1672
+        ],
+        "text_head": "Ð¢ÐµÐºÑ�Ñ‚ Ð¿Ñ€ÐµÐ´Ð¾Ñ�Ñ‚Ð°Ð²Ð»ÐµÐ½ Musixmatch",
+        "match": "stable_id"
+      },
+      "lyrics.share": {
+        "desc": "Share",
+        "bbox_base": [
+          48,
+          1714,
+          251,
+          1804
+        ],
+        "bbox_head": [
+          48,
+          1714,
+          379,
+          1804
+        ],
+        "text_head": "Поделиться",
+        "match": "stable_id"
+      },
+      "lyrics.report": {
+        "desc": "Report a problem",
+        "bbox_base": [
+          275,
+          1714,
+          700,
+          1804
+        ],
+        "bbox_head": [
+          754,
+          1714,
+          1080,
+          1804
+        ],
+        "text_head": "Сообщить о проблеме",
+        "match": "stable_id"
+      }
+    }
+  }
+}

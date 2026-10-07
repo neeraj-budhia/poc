@@ -1,0 +1,325 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-KO-002:02-search",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Korean (ko-KR)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "search.title": {
+        "desc": "Search",
+        "bbox_base": [
+          48,
+          50,
+          246,
+          118
+        ],
+        "bbox_head": [
+          48,
+          46,
+          152,
+          122
+        ],
+        "text_head": "검색",
+        "match": "stable_id"
+      },
+      "search.placeholder": {
+        "desc": "What do you want to listen to?",
+        "bbox_base": [
+          144,
+          207,
+          791,
+          261
+        ],
+        "bbox_head": [
+          144,
+          204,
+          747,
+          264
+        ],
+        "text_head": "어떤 콘텐츠를 감상하고 싶으세요?",
+        "match": "stable_id"
+      },
+      "search.sec.start": {
+        "desc": "Start browsing",
+        "bbox_base": [
+          48,
+          348,
+          1032,
+          414
+        ],
+        "bbox_head": [
+          48,
+          348,
+          1032,
+          420
+        ],
+        "text_head": "둘러보기 시작",
+        "match": "stable_id"
+      },
+      "search.cat.music": {
+        "desc": "Music",
+        "bbox_base": [
+          78,
+          474,
+          216,
+          528
+        ],
+        "bbox_head": [
+          78,
+          480,
+          161,
+          534
+        ],
+        "text_head": "음악",
+        "match": "stable_id"
+      },
+      "search.cat.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          585,
+          474,
+          800,
+          528
+        ],
+        "bbox_head": [
+          585,
+          480,
+          751,
+          534
+        ],
+        "text_head": "팟캐스트",
+        "match": "stable_id"
+      },
+      "search.cat.live": {
+        "desc": "Live Events",
+        "bbox_base": [
+          78,
+          762,
+          341,
+          816
+        ],
+        "bbox_head": [
+          78,
+          768,
+          339,
+          822
+        ],
+        "text_head": "라이브 이벤트",
+        "match": "stable_id"
+      },
+      "search.cat.madeforyou": {
+        "desc": "Made For You",
+        "bbox_base": [
+          585,
+          762,
+          899,
+          816
+        ],
+        "bbox_head": [
+          585,
+          768,
+          940,
+          822
+        ],
+        "text_head": "회원님을 위한 추천",
+        "match": "stable_id"
+      },
+      "search.sec.browse": {
+        "desc": "Browse all",
+        "bbox_base": [
+          48,
+          1038,
+          1032,
+          1104
+        ],
+        "bbox_head": [
+          48,
+          1044,
+          1032,
+          1116
+        ],
+        "text_head": "모두 둘러보기",
+        "match": "stable_id"
+      },
+      "search.cat.newreleases": {
+        "desc": "New Releases",
+        "bbox_base": [
+          78,
+          1164,
+          401,
+          1218
+        ],
+        "bbox_head": [
+          78,
+          1176,
+          256,
+          1230
+        ],
+        "text_head": "최신 발매",
+        "match": "stable_id"
+      },
+      "search.cat.charts": {
+        "desc": "Charts",
+        "bbox_base": [
+          585,
+          1164,
+          742,
+          1218
+        ],
+        "bbox_head": [
+          585,
+          1176,
+          668,
+          1230
+        ],
+        "text_head": "차트",
+        "match": "stable_id"
+      },
+      "search.cat.pop": {
+        "desc": "Pop",
+        "bbox_base": [
+          78,
+          1452,
+          168,
+          1506
+        ],
+        "bbox_head": [
+          78,
+          1464,
+          120,
+          1518
+        ],
+        "text_head": "팝",
+        "match": "stable_id"
+      },
+      "search.cat.hiphop": {
+        "desc": "Hip-Hop",
+        "bbox_base": [
+          585,
+          1452,
+          783,
+          1506
+        ],
+        "bbox_head": [
+          585,
+          1464,
+          668,
+          1518
+        ],
+        "text_head": "힙합",
+        "match": "stable_id"
+      },
+      "search.cat.workout": {
+        "desc": "Workout",
+        "bbox_base": [
+          78,
+          1740,
+          275,
+          1794
+        ],
+        "bbox_head": [
+          78,
+          1752,
+          99,
+          1812
+        ],
+        "text_head": "운동",
+        "match": "stable_id"
+      },
+      "search.cat.sleep": {
+        "desc": "Sleep",
+        "bbox_base": [
+          585,
+          1740,
+          716,
+          1794
+        ],
+        "bbox_head": [
+          585,
+          1752,
+          668,
+          1806
+        ],
+        "text_head": "수면",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          121,
+          2322,
+          149,
+          2364
+        ],
+        "text_head": "홈",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          376,
+          2322,
+          434,
+          2364
+        ],
+        "text_head": "검색",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          595,
+          2322,
+          755,
+          2361
+        ],
+        "text_head": "tab.library",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2325,
+          1014,
+          2364
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

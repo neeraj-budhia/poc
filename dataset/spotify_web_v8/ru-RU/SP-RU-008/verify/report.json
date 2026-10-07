@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-008",
+  "language": "ru-RU",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['library.liked.title']",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 Плейлист • 248 треков"
+    },
+    {
+      "box": "16",
+      "element_id": "library.album1.sub",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Album • Tame Impala",
+      "target_text": "Album • Tame Impala"
+    },
+    {
+      "box": "1",
+      "element_id": "library.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 12px < font-size 20px, glyph tops/bottoms cut",
+      "base_text": "Your Library",
+      "target_text": "Моя медиатека"
+    }
+  ]
+}

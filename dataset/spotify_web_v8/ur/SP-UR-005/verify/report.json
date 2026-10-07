@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-UR-005",
+  "language": "ur",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "1",
+      "element_id": "premium.title",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Premium",
+      "target_text": "premium.title"
+    },
+    {
+      "box": "11",
+      "element_id": "premium.plan.duo.feat",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['premium.plan.duo.name', 'premium.plan.duo.price']",
+      "base_text": "2 Premium accounts",
+      "target_text": "2 Premium اکاؤنٹس"
+    },
+    {
+      "box": "14",
+      "element_id": "premium.plan.family.feat",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Up to 6 Premium accounts",
+      "target_text": "زیادہ سے زیادہ {count} Premium اکاؤنٹس"
+    }
+  ]
+}

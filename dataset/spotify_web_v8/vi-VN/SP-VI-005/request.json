@@ -1,0 +1,342 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-VI-005:05-premium",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Vietnamese (vi-VN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "premium.title": {
+        "desc": "Premium",
+        "bbox_base": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "bbox_head": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "brand.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "bbox_head": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "premium.hero.title": {
+        "desc": "Try 1 month of Premium for $0",
+        "bbox_base": [
+          96,
+          324,
+          984,
+          489
+        ],
+        "bbox_head": [
+          96,
+          324,
+          984,
+          489
+        ],
+        "text_head": "Dùng thử 1 tháng gói Premium với giá 0 ₫",
+        "match": "stable_id"
+      },
+      "premium.hero.sub": {
+        "desc": "Only $11.99/month after. Cancel anytime.",
+        "bbox_base": [
+          96,
+          513,
+          984,
+          568
+        ],
+        "bbox_head": [
+          96,
+          513,
+          984,
+          568
+        ],
+        "text_head": "Sau đó chỉ 59.000 ₫/tháng. Hủy bất cứ lúc nào.",
+        "match": "stable_id"
+      },
+      "premium.cta.trial": {
+        "desc": "Try free for 1 month",
+        "bbox_base": [
+          96,
+          616,
+          647,
+          742
+        ],
+        "bbox_head": [
+          666,
+          616,
+          1080,
+          742
+        ],
+        "text_head": "Dùng thử miễn phí 1 tháng",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.name": {
+        "desc": "Individual",
+        "bbox_base": [
+          108,
+          874,
+          346,
+          934
+        ],
+        "bbox_head": [
+          108,
+          874,
+          306,
+          934
+        ],
+        "text_head": "Cá nhân",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.price": {
+        "desc": "$11.99 / month",
+        "bbox_base": [
+          686,
+          880,
+          984,
+          931
+        ],
+        "bbox_head": [
+          648,
+          880,
+          984,
+          931
+        ],
+        "text_head": "59.000 ₫ / tháng",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.feat": {
+        "desc": "1 Premium account",
+        "bbox_base": [
+          108,
+          952,
+          984,
+          1000
+        ],
+        "bbox_head": [
+          108,
+          952,
+          390,
+          1000
+        ],
+        "text_head": "1 tài khoản Premium",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.name": {
+        "desc": "Duo",
+        "bbox_base": [
+          108,
+          1120,
+          206,
+          1180
+        ],
+        "bbox_head": [
+          108,
+          1120,
+          206,
+          1180
+        ],
+        "text_head": "Duo",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.price": {
+        "desc": "$16.99 / month",
+        "bbox_base": [
+          679,
+          1126,
+          984,
+          1177
+        ],
+        "bbox_head": [
+          651,
+          1126,
+          984,
+          1177
+        ],
+        "text_head": "79.000 ₫ / tháng",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.feat": {
+        "desc": "2 Premium accounts",
+        "bbox_base": [
+          108,
+          1198,
+          984,
+          1246
+        ],
+        "bbox_head": [
+          108,
+          1198,
+          984,
+          1246
+        ],
+        "text_head": "2 tài khoản Premium",
+        "match": "stable_id"
+      },
+      "premium.plan.family.name": {
+        "desc": "Family",
+        "bbox_base": [
+          108,
+          1366,
+          267,
+          1426
+        ],
+        "bbox_head": [
+          108,
+          1366,
+          310,
+          1426
+        ],
+        "text_head": "Gia đình",
+        "match": "stable_id"
+      },
+      "premium.plan.family.price": {
+        "desc": "$19.99 / month",
+        "bbox_base": [
+          679,
+          1372,
+          984,
+          1423
+        ],
+        "bbox_head": [
+          692,
+          1372,
+          984,
+          1423
+        ],
+        "text_head": "$19.99 / tháng",
+        "match": "stable_id"
+      },
+      "premium.plan.family.feat": {
+        "desc": "Up to 6 Premium accounts",
+        "bbox_base": [
+          108,
+          1444,
+          984,
+          1492
+        ],
+        "bbox_head": [
+          108,
+          1444,
+          984,
+          1492
+        ],
+        "text_head": "Tối đa 6 tài khoản Premium",
+        "match": "stable_id"
+      },
+      "premium.legal": {
+        "desc": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+        "bbox_base": [
+          48,
+          1576,
+          1032,
+          1668
+        ],
+        "bbox_head": [
+          48,
+          1576,
+          1032,
+          1668
+        ],
+        "text_head": "Có áp dụng điều khoản. Ưu đãi kết thúc vào ngày 31 tháng 10, 2026. Chỉ áp dụng cho gói Cá nhân.",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          57,
+          2324,
+          213,
+          2362
+        ],
+        "text_head": "Trang chủ",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          333,
+          2324,
+          477,
+          2362
+        ],
+        "text_head": "Tìm kiếm",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          607,
+          2322,
+          743,
+          2361
+        ],
+        "text_head": "Thư viện",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

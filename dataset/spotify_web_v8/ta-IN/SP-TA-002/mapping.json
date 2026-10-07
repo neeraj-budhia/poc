@@ -1,0 +1,631 @@
+{
+  "case_id": "SP-TA-002",
+  "screen": "02-search",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Tamil (ta-IN)",
+  "case_elements": [
+    {
+      "box": "13",
+      "element_id": "search.cat.workout",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "2",
+      "element_id": "search.placeholder",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "6",
+      "element_id": "search.cat.live",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 18,
+    "with_target_box": 18,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "search.title",
+      "descriptor": "Search",
+      "target_text": "தேடல்",
+      "base_box": [
+        48,
+        50,
+        246,
+        118
+      ],
+      "target_box": [
+        48,
+        46,
+        220,
+        122
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "search.placeholder",
+      "descriptor": "What do you want to listen to?",
+      "target_text": "எதைக் கேட்க விரும்புகிறீர்கள்?",
+      "base_box": [
+        144,
+        207,
+        791,
+        261
+      ],
+      "target_box": [
+        144,
+        206,
+        594,
+        262
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "search.sec.start",
+      "descriptor": "Start browsing",
+      "target_text": "உலாவத் தொடங்குங்கள்",
+      "base_box": [
+        48,
+        348,
+        1032,
+        414
+      ],
+      "target_box": [
+        48,
+        348,
+        1032,
+        420
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "search.cat.music",
+      "descriptor": "Music",
+      "target_text": "இசை",
+      "base_box": [
+        78,
+        474,
+        216,
+        528
+      ],
+      "target_box": [
+        78,
+        480,
+        200,
+        534
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "search.cat.podcasts",
+      "descriptor": "Podcasts",
+      "target_text": "பாட்காஸ்ட்கள்",
+      "base_box": [
+        585,
+        474,
+        800,
+        528
+      ],
+      "target_box": [
+        585,
+        480,
+        894,
+        534
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "search.cat.live",
+      "descriptor": "Live Events",
+      "target_text": "நேரலை நிகழ்வுகள்",
+      "base_box": [
+        78,
+        762,
+        341,
+        816
+      ],
+      "target_box": [
+        78,
+        768,
+        300,
+        828
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "search.cat.madeforyou",
+      "descriptor": "Made For You",
+      "target_text": "உங்களுக்காக உருவாக்கப்பட்டது",
+      "base_box": [
+        585,
+        762,
+        899,
+        816
+      ],
+      "target_box": [
+        585,
+        768,
+        978,
+        882
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "search.sec.browse",
+      "descriptor": "Browse all",
+      "target_text": "அனைத்தையும் உலாவுக",
+      "base_box": [
+        48,
+        1038,
+        1032,
+        1104
+      ],
+      "target_box": [
+        48,
+        1044,
+        1032,
+        1116
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "search.cat.newreleases",
+      "descriptor": "New Releases",
+      "target_text": "புதிய வெளியீடுகள்",
+      "base_box": [
+        78,
+        1164,
+        401,
+        1218
+      ],
+      "target_box": [
+        78,
+        1176,
+        461,
+        1230
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "search.cat.charts",
+      "descriptor": "Charts",
+      "target_text": "தரவரிசைகள்",
+      "base_box": [
+        585,
+        1164,
+        742,
+        1218
+      ],
+      "target_box": [
+        585,
+        1176,
+        865,
+        1230
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "search.cat.pop",
+      "descriptor": "Pop",
+      "target_text": "பாப்",
+      "base_box": [
+        78,
+        1452,
+        168,
+        1506
+      ],
+      "target_box": [
+        78,
+        1464,
+        166,
+        1518
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "search.cat.hiphop",
+      "descriptor": "Hip-Hop",
+      "target_text": "ஹிப்-ஹாப்",
+      "base_box": [
+        585,
+        1452,
+        783,
+        1506
+      ],
+      "target_box": [
+        585,
+        1464,
+        818,
+        1518
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "search.cat.workout",
+      "descriptor": "Workout",
+      "target_text": "search.cat.workout",
+      "base_box": [
+        78,
+        1740,
+        275,
+        1794
+      ],
+      "target_box": [
+        78,
+        1752,
+        527,
+        1806
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "search.cat.sleep",
+      "descriptor": "Sleep",
+      "target_text": "தூக்கம்",
+      "base_box": [
+        585,
+        1740,
+        716,
+        1794
+      ],
+      "target_box": [
+        585,
+        1752,
+        740,
+        1806
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "tab.home",
+      "descriptor": "Home",
+      "target_text": "முகப்பு",
+      "base_box": [
+        89,
+        2324,
+        181,
+        2362
+      ],
+      "target_box": [
+        87,
+        2320,
+        183,
+        2366
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "tab.search",
+      "descriptor": "Search",
+      "target_text": "தேடல்",
+      "base_box": [
+        350,
+        2324,
+        460,
+        2362
+      ],
+      "target_box": [
+        358,
+        2320,
+        452,
+        2366
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "tab.library",
+      "descriptor": "Your Library",
+      "target_text": "உங்கள் லைப்ரரி",
+      "base_box": [
+        580,
+        2322,
+        770,
+        2361
+      ],
+      "target_box": [
+        557,
+        2319,
+        793,
+        2364
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "tab.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "target_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 4.444,
+      "y": 2.083,
+      "width": 18.333,
+      "height": 2.833
+    },
+    "2": {
+      "x": 13.333,
+      "y": 8.625,
+      "width": 59.907,
+      "height": 2.25
+    },
+    "3": {
+      "x": 4.444,
+      "y": 14.5,
+      "width": 91.111,
+      "height": 2.75
+    },
+    "4": {
+      "x": 7.222,
+      "y": 19.75,
+      "width": 12.778,
+      "height": 2.25
+    },
+    "5": {
+      "x": 54.167,
+      "y": 19.75,
+      "width": 19.907,
+      "height": 2.25
+    },
+    "6": {
+      "x": 7.222,
+      "y": 31.75,
+      "width": 24.352,
+      "height": 2.25
+    },
+    "7": {
+      "x": 54.167,
+      "y": 31.75,
+      "width": 29.074,
+      "height": 2.25
+    },
+    "8": {
+      "x": 4.444,
+      "y": 43.25,
+      "width": 91.111,
+      "height": 2.75
+    },
+    "9": {
+      "x": 7.222,
+      "y": 48.5,
+      "width": 29.907,
+      "height": 2.25
+    },
+    "10": {
+      "x": 54.167,
+      "y": 48.5,
+      "width": 14.537,
+      "height": 2.25
+    },
+    "11": {
+      "x": 7.222,
+      "y": 60.5,
+      "width": 8.333,
+      "height": 2.25
+    },
+    "12": {
+      "x": 54.167,
+      "y": 60.5,
+      "width": 18.333,
+      "height": 2.25
+    },
+    "13": {
+      "x": 7.222,
+      "y": 72.5,
+      "width": 18.241,
+      "height": 2.25
+    },
+    "14": {
+      "x": 54.167,
+      "y": 72.5,
+      "width": 12.13,
+      "height": 2.25
+    },
+    "15": {
+      "x": 8.241,
+      "y": 96.833,
+      "width": 8.519,
+      "height": 1.583
+    },
+    "16": {
+      "x": 32.407,
+      "y": 96.833,
+      "width": 10.185,
+      "height": 1.583
+    },
+    "17": {
+      "x": 53.704,
+      "y": 96.75,
+      "width": 17.593,
+      "height": 1.625
+    },
+    "18": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 4.444,
+      "y": 1.917,
+      "width": 15.926,
+      "height": 3.167
+    },
+    "2": {
+      "x": 13.333,
+      "y": 8.583,
+      "width": 41.667,
+      "height": 2.333
+    },
+    "3": {
+      "x": 4.444,
+      "y": 14.5,
+      "width": 91.111,
+      "height": 3.0
+    },
+    "4": {
+      "x": 7.222,
+      "y": 20.0,
+      "width": 11.296,
+      "height": 2.25
+    },
+    "5": {
+      "x": 54.167,
+      "y": 20.0,
+      "width": 28.611,
+      "height": 2.25
+    },
+    "6": {
+      "x": 7.222,
+      "y": 32.0,
+      "width": 20.556,
+      "height": 2.5
+    },
+    "7": {
+      "x": 54.167,
+      "y": 32.0,
+      "width": 36.389,
+      "height": 4.75
+    },
+    "8": {
+      "x": 4.444,
+      "y": 43.5,
+      "width": 91.111,
+      "height": 3.0
+    },
+    "9": {
+      "x": 7.222,
+      "y": 49.0,
+      "width": 35.463,
+      "height": 2.25
+    },
+    "10": {
+      "x": 54.167,
+      "y": 49.0,
+      "width": 25.926,
+      "height": 2.25
+    },
+    "11": {
+      "x": 7.222,
+      "y": 61.0,
+      "width": 8.148,
+      "height": 2.25
+    },
+    "12": {
+      "x": 54.167,
+      "y": 61.0,
+      "width": 21.574,
+      "height": 2.25
+    },
+    "13": {
+      "x": 7.222,
+      "y": 73.0,
+      "width": 41.574,
+      "height": 2.25
+    },
+    "14": {
+      "x": 54.167,
+      "y": 73.0,
+      "width": 14.352,
+      "height": 2.25
+    },
+    "15": {
+      "x": 8.056,
+      "y": 96.667,
+      "width": 8.889,
+      "height": 1.917
+    },
+    "16": {
+      "x": 33.148,
+      "y": 96.667,
+      "width": 8.704,
+      "height": 1.917
+    },
+    "17": {
+      "x": 51.574,
+      "y": 96.625,
+      "width": 21.852,
+      "height": 1.875
+    },
+    "18": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  }
+}

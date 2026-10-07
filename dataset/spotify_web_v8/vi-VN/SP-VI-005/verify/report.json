@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-VI-005",
+  "language": "vi-VN",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "5",
+      "element_id": "premium.cta.trial",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[222,452] extends past the 360px screen edge",
+      "base_text": "Try free for 1 month",
+      "target_text": "Dùng thử miễn phí 1 tháng"
+    },
+    {
+      "box": "8",
+      "element_id": "premium.plan.individual.feat",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "1 Premium account",
+      "target_text": "1 tài khoản Premium"
+    },
+    {
+      "box": "13",
+      "element_id": "premium.plan.family.price",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "$19.99 / month",
+      "target_text": "$19.99 / tháng"
+    }
+  ]
+}

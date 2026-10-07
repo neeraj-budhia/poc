@@ -83,18 +83,35 @@ CSS_KINDS = [k for k, v in KINDS.items() if v[0] == "css"]
 # strings whose number is a runtime variable ({count} etc.) — not titles/names that merely contain digits
 COUNT_KEYS = {"premium.hero.title", "premium.plan.individual.feat", "premium.plan.duo.feat", "premium.plan.family.feat",
               "premium.cta.trial", "playlist.meta", "playlist.updated", "library.liked.sub", "artist.listeners",
-              "settings.crossfade.val", "settings.storage.sub"}
+              "settings.crossfade.val"}
 DIGITS = re.compile(r"\d+")
+# a whole number incl. its group separators ("24,812,331", "24 812 331") — a runtime placeholder
+# bug replaces the entire value, not its first digit group
+NUMBER = re.compile(r"\d(?:[\d.,\u00a0\u202f ]*\d)?")
+MIN_ELLIPSIS_CHARS = 6  # shorter labels leave no room for "…" once cut to 55%
 TIME = re.compile(r"^-?\d+:\d\d$")
 
 
-def visible_keys(page, lang, screen):
-    """Elements fully on screen in BOTH the clean base and clean target render."""
-    seen = []
-    for code in ("en-US", lang):
-        els, _, _ = build.render(page, screen, code, [])
-        seen.append({e["key"] for e in els if e["visible"] and e["text"]})
-    return seen[0] & seen[1]
+def clean_target(page, lang, screen):
+    """(clean target elements by key, keys fully on screen in BOTH clean base and clean target)."""
+    base = {e["key"] for e in build.render(page, screen, "en-US", [])[0] if e["visible"] and e["text"]}
+    tgt = {e["key"]: e for e in build.render(page, screen, lang, [])[0]}
+    return tgt, {k for k, e in tgt.items() if e["visible"] and e["text"] and k in base}
+
+
+def clear_path(key, els, lang):
+    """True if nothing on the same row sits between the element and the edge it reads towards,
+    so pushing it off-screen cannot land it on a neighbour."""
+    x0, y0, x1, y1 = els[key]["box"]
+    for k, e in els.items():
+        if k == key or not e["visible"] or not (e["text"] or e.get("obstacle")):
+            continue
+        a0, b0, a1, b1 = e["box"]
+        if min(y1, b1) - max(y0, b0) <= 0.3 * min(y1 - y0, b1 - b0):
+            continue  # different row
+        if (lang in RTL and a1 <= x0 + 1) or (lang not in RTL and a0 >= x1 - 1):
+            return False
+    return True
 
 
 def kind_queue(lang, rng):
@@ -114,11 +131,15 @@ def defect_text(kind, key, en, tgt, fmt):
     if kind == "untranslated":
         return en[key] if en[key] != t else None
     if kind == "raw_key":
-        return key
+        return None if TIME.match(t) else key  # a timestamp is computed, never a string resource
     if kind == "placeholder":
         if key not in COUNT_KEYS or TIME.match(t) or not DIGITS.search(t):
             return None
-        return DIGITS.sub("{count}", t, count=1)
+        m = NUMBER.search(t)
+        # a number next to a currency sign is a price slot: the runtime variable is an amount
+        near = t[max(m.start() - 2, 0):m.start()] + t[m.end():m.end() + 2]
+        name = "{amount}" if any(c in near for c in "$€£¥₩₹₪₽฿₫") else "{count}"
+        return t[:m.start()] + name + t[m.end():]
     if kind == "mojibake":
         if t.isascii():
             return None
@@ -126,22 +147,23 @@ def defect_text(kind, key, en, tgt, fmt):
     if kind == "tofu":
         if t.isascii():
             return None
-        # every non-ASCII letter → box; combining marks (Indic/Thai vowel signs, Vietnamese
-        # tone marks) are dropped since a missing font has no glyph to attach them to
-        return "".join("" if unicodedata.category(c).startswith("M") else
-                       "□" if not c.isascii() and c.isalpha() else c
-                       for c in unicodedata.normalize("NFD", t))
+        # a missing font draws one box per code point it lacks. Every font has Latin-1, so only
+        # code points above U+00FF are boxed (Vietnamese ổ ư đ, not à á); NFC keeps precomposed
+        # letters whole, and Thai/Indic vowel signs (separate code points) get their own box
+        return "".join("□" if ord(c) > 0xFF and (c.isalpha() or unicodedata.category(c).startswith("M")) else c
+                       for c in unicodedata.normalize("NFC", t))
     if kind == "format":
         return fmt.get(key)
     raise ValueError(kind)
 
 
 def report_line(kind, key, en, tgt, text):
-    e, t = en[key], tgt[key]
+    # invisible layout characters (word joiners) never belong in human-readable report text
+    e, t = en[key], tgt[key].replace("\u2060", "")
     return {
         "untranslated": f"'{e}' is shown in English instead of '{t}'.",
         "raw_key": f"The raw resource key '{key}' is shown instead of '{t}'.",
-        "placeholder": f"An unresolved '{{count}}' placeholder is shown instead of the number ('{t}').",
+        "placeholder": f"An unresolved placeholder ('{text}') is shown instead of the value ('{t}').",
         "mojibake": f"Text is garbled by an encoding error instead of '{t}'.",
         "tofu": f"Characters render as empty boxes (missing font glyphs) instead of '{t}'.",
         "format": f"Number/date/currency uses the US format ('{text}') instead of the local one ('{t}').",
@@ -154,10 +176,14 @@ def report_line(kind, key, en, tgt, text):
     }[kind]
 
 
-def pick(kind, screen, visible, used, en, tgt, fmt, rng):
+def pick(kind, screen, visible, els, lang, used, en, tgt, fmt, rng):
     layer, cat, sub, check, role = KINDS[kind]
     pool = ROLES[screen][role] if role else sorted(visible)
     pool = [k for k in pool if k not in used and k in visible]
+    if kind == "ellipsis":
+        pool = [k for k in pool if len(tgt[k].strip()) >= MIN_ELLIPSIS_CHARS]
+    if kind == "offscreen":
+        pool = [k for k in pool if clear_path(k, els, lang)]
     rng.shuffle(pool)
     for key in pool:
         d = {"element": key, "kind": kind, "category": cat, "subcategory": sub, "check": check}
@@ -180,7 +206,7 @@ def cases_for(page, lang, li, en):
     queue = kind_queue(lang, rng)
     out = []
     for si, screen in enumerate(SCREENS):
-        visible = visible_keys(page, lang, screen)
+        els, visible = clean_target(page, lang, screen)
         n = 3 if (si + li) % 3 else 2
         defects, used = [], set()
         # at least one string-layer and one css-layer defect per case
@@ -197,8 +223,14 @@ def cases_for(page, lang, li, en):
                any(d["kind"] == kind for d in defects):
                 queue.append(kind)
                 continue
-            d = pick(kind, screen, visible, used, en, tgt, fmt, rng)
+            d = pick(kind, screen, visible, els, lang, used, en, tgt, fmt, rng)
             if d is None:
+                queue.append(kind)
+                continue
+            # trial render: reject a defect that damages anything it doesn't account for
+            trial = {e["key"]: e for e in build.render(page, screen, lang, defects + [d])[0]}
+            if build.collateral(els, trial, defects + [d]):
+                used.add(d["element"])
                 queue.append(kind)
                 continue
             defects.append(d)

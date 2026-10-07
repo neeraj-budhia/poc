@@ -34,7 +34,7 @@ DPR = 3
 TREE_SPACE = [VIEWPORT["width"] * DPR, VIEWPORT["height"] * DPR]
 ANNOT_WIDTH = 768
 BOX_COLOR = (236, 64, 152)
-DEFAULT_OUT = HERE.parent / "dataset/spotify_web_v4"
+DEFAULT_OUT = HERE.parent / "dataset/spotify_web_v8"
 
 # Fills strings, plants defects, returns every visible text element with its box.
 # String-layer defects arrive as d.text; CSS-layer defects as d.op and are sized from the
@@ -49,10 +49,12 @@ RENDER_JS = """
     // RTL UIs isolate Latin-only strings (names, titles, times) so bidi doesn't flip their punctuation
     if (dir === 'rtl' && !/[\u0590-\u08FF\uFB1D-\uFEFF]/.test(el.textContent)) {
       el.style.cssText += ';direction:ltr;unicode-bidi:isolate';
+      // Latin text must not inherit the Nastaliq font's very tall line box
+      if (lang === 'ur') el.style.fontFamily = 'system-ui, -apple-system, sans-serif';
       if (getComputedStyle(el).display === 'block') el.style.textAlign = 'right';
     }
     // Nastaliq is very tall: real Urdu UIs open up the line height of Urdu text
-    if (lang === 'ur' && /[\u0600-\u06FF]/.test(el.textContent)) el.style.lineHeight = '1.9';
+    if (lang === 'ur' && /[\u0600-\u06FF]/.test(el.textContent) && !el.closest('.tabbar')) el.style.lineHeight = '1.9';
   }
   // natural single-line width: measured after forcing one line, else block elements report the container width
   const natural = el => {
@@ -61,7 +63,35 @@ RENDER_JS = """
   };
   const textEls = () => [...document.querySelectorAll('[data-k]')];
   const OPS = {
-    clip_h: (el, r) => { const w = natural(el); el.style.cssText += `;overflow:hidden;width:${Math.round(w * 0.55)}px`; },
+    clip_h: (el, r) => {
+      // cut at ~55% but always inside a word: a cut on a word boundary leaves a complete,
+      // valid-looking label (Korean 번역|보기, Thai รายงาน|ปัญหา) and the defect is invisible
+      natural(el);
+      const box = el.getBoundingClientRect(), node = el.firstChild;
+      const text = el.textContent, rtl = getComputedStyle(el).direction === 'rtl';
+      const fromStart = x => rtl ? box.right - x : x - box.left;
+      const words = [...new Intl.Segmenter(lang, {granularity: 'word'}).segment(text)]
+        .filter(s => s.isWordLike && s.segment.length > 1).map(s => {
+          const rg = document.createRange();
+          rg.setStart(node, s.index); rg.setEnd(node, s.index + s.segment.length);
+          const rr = rg.getBoundingClientRect();
+          const a = fromStart(rtl ? rr.right : rr.left), z = fromStart(rtl ? rr.left : rr.right);
+          return {a, z};
+        });
+      const target = box.width * 0.55;
+      const w = words.find(x => target > x.a + 2 && target < x.z - 2)
+        || words.find(x => x.a >= target) || words[words.length - 1];
+      let cut = w ? (w.a + w.z) / 2 : target;
+      // then move the cut into the middle of a character: a cut between characters can still
+      // leave a complete word (Korean 공유|하기 = "Share"); a half-drawn glyph always reads as broken
+      for (let i = 0; i < text.length; i++) {
+        const rg = document.createRange(); rg.setStart(node, i); rg.setEnd(node, i + 1);
+        const rr = rg.getBoundingClientRect();
+        const a = fromStart(rtl ? rr.right : rr.left), z = fromStart(rtl ? rr.left : rr.right);
+        if (z - a > 3 && cut >= a && cut <= z) { cut = a + (z - a) * 0.5; break; }
+      }
+      el.style.cssText += `;overflow:hidden;width:${Math.round(cut)}px`;
+    },
     ellipsis: (el, r) => { const w = natural(el); el.style.cssText += `;overflow:hidden;text-overflow:ellipsis;max-width:${Math.round(w * 0.55)}px`; },
     clip_v: (el, r) => {
       // sized from font-size, not line height: tall scripts (Nastaliq, Tamil) have big line boxes
@@ -93,22 +123,41 @@ RENDER_JS = """
       OPS[d.op](el, el.getBoundingClientRect());
     }
   }
+  // clipped by an overflow:hidden ancestor (e.g. a fixed-height tile), not just by itself
+  const ancestorClipped = el => {
+    const r = el.getBoundingClientRect();
+    for (let p = el.parentElement; p && p !== document.body; p = p.parentElement) {
+      const cs = getComputedStyle(p);
+      if (cs.overflowX === 'visible' && cs.overflowY === 'visible') continue;
+      const q = p.getBoundingClientRect();
+      if (r.left < q.left - 1 || r.right > q.right + 1 || r.top < q.top - 1 || r.bottom > q.bottom + 1) return true;
+    }
+    return false;
+  };
   // only text fully on screen (and not hidden under the tab bar) is sent
   const tabbar = document.querySelector('.tabbar');
   const fold = tabbar ? tabbar.getBoundingClientRect().top : window.innerHeight;
-  return [...document.querySelectorAll('[data-k]')].map(el => {
+  // non-text obstacles (icons, play buttons, toggles) for the overlap / clear-path checks
+  const obstacles = [...document.querySelectorAll('.play, .pp, .tog, .ico, .x, .back, .logo, .avatar, .art.add')]
+    .map((el, i) => { const r = el.getBoundingClientRect();
+      return {key: `__obs:${i}`, text: '', box: [r.left, r.top, r.right, r.bottom],
+              visible: r.width > 0 && r.height > 0, clipped: false, obstacle: true}; });
+  return obstacles.concat([...document.querySelectorAll('[data-k]')].map(el => {
     const r = el.getBoundingClientRect();
     const cs = getComputedStyle(el);
     const bottomLimit = tabbar && tabbar.contains(el) ? window.innerHeight : fold;
     return {
-      key: el.dataset.k, text: el.textContent.trim(),
+      key: el.dataset.k, text: el.textContent.replace(/[\u2060\u200b]/g, '').trim(),
       box: [r.left, r.top, r.right, r.bottom],
       visible: r.width > 0 && r.height > 0 && cs.visibility !== 'hidden' && r.top >= 0 && r.bottom <= bottomLimit + 1,
-      clipped: el.scrollWidth > el.clientWidth + 1 || el.scrollHeight > el.clientHeight + 1,
+      // clipped = content actually hidden: overflow past the box only counts when the element hides
+      // overflow (tall scripts like Nastaliq paint outside their line box without being cut)
+      clipped: (cs.overflowX !== 'visible' && el.scrollWidth > el.clientWidth + 1)
+               || (cs.overflowY !== 'visible' && el.scrollHeight > el.clientHeight + 1) || ancestorClipped(el),
       direction: cs.direction, text_align: cs.textAlign, font_size: parseFloat(cs.fontSize),
       content_h: el.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom),
     };
-  });
+  }));
 }
 """
 
@@ -137,6 +186,66 @@ def overlap_ratio(a, b):
     iy = max(0, min(a[3], b[3]) - max(a[1], b[1]))
     area = max(min((a[2] - a[0]) * (a[3] - a[1]), (b[2] - b[0]) * (b[3] - b[1])), 1)
     return ix * iy / area
+
+
+def offscreen_x(box):
+    return box[2] > VIEWPORT["width"] + 1 or box[0] < -1
+
+
+def collateral(clean, defective, defects):
+    """Damage in the defective render that no planted defect accounts for.
+
+    clean/defective: {key: element} from render(). A planted layout defect may clip, move or
+    overlap its own element; a planted string defect may only change text. Returns
+    [(cause_key, message)] where cause_key is the planted element to blame when known.
+    """
+    layout = {d["element"]: d.get("op") for d in defects if d.get("op")}
+    planted = {d["element"] for d in defects}
+    issues = []
+    for k, e in defective.items():
+        c = clean[k]
+        if not c["visible"] or not c["text"]:
+            continue
+        if k in layout:
+            # an off-screen push must exit the screen, not get cut by its own tile/container first
+            if layout[k] == "offscreen" and e["clipped"]:
+                issues.append((k, f"{k} (offscreen) is clipped by its container before the screen edge"))
+            # a planted layout defect may clip/move its own element, but only "offscreen" may push it off-screen
+            if layout[k] != "offscreen" and offscreen_x(e["box"]) and not offscreen_x(c["box"]):
+                issues.append((k, f"{k} ({layout[k]}) also runs off the screen edge"))
+            continue
+        cause = k if k in planted else None
+        h_clean, h_def = c["box"][3] - c["box"][1], e["box"][3] - e["box"][1]
+        if k not in planted and h_def > h_clean + 0.5 * e.get("font_size", 12):
+            issues.append((None, f"{k} reflowed onto more lines"))
+        if not e["visible"]:
+            issues.append((cause, f"{k} pushed off screen / under the tab bar"))
+        elif e["clipped"] and not c["clipped"]:
+            issues.append((cause, f"{k} newly clipped"))
+        elif offscreen_x(e["box"]) and not offscreen_x(c["box"]):
+            issues.append((cause, f"{k} newly runs off the screen edge"))
+    keys = [k for k, e in defective.items() if e["visible"] and e["text"] and clean[k]["visible"]]
+    for i, a in enumerate(keys):
+        for b in keys[i + 1:]:
+            if layout.get(a) == "overlap" or layout.get(b) == "overlap":
+                # a planted overlap may cover a clean neighbour, never another planted defect
+                o, other = (a, b) if layout.get(a) == "overlap" else (b, a)
+                if other in planted and overlap_ratio(defective[a]["box"], defective[b]["box"]) > 0.15:
+                    issues.append((o, f"overlap on {o} covers planted defect {other}"))
+                continue
+            if overlap_ratio(defective[a]["box"], defective[b]["box"]) > 0.15 and \
+               overlap_ratio(clean[a]["box"], clean[b]["box"]) <= 0.15:
+                cause = a if a in planted else b if b in planted else None
+                issues.append((cause, f"{a} and {b} newly overlap"))
+    obstacles = [k for k, e in defective.items() if e.get("obstacle") and e["visible"]]
+    for a in keys:
+        if layout.get(a) == "overlap":
+            continue
+        for o in obstacles:
+            if overlap_ratio(defective[a]["box"], defective[o]["box"]) > 0.15 and \
+               overlap_ratio(clean[a]["box"], clean[o]["box"]) <= 0.15:
+                issues.append((a if a in planted else None, f"{a} newly overlaps an icon/button"))
+    return issues
 
 
 def pct_box(box):
@@ -213,6 +322,17 @@ def build_case(page, case, out_root):
         (case_dir / "source" / f"{side}.png").write_bytes(png)
         (case_dir / "source" / f"{side}.html").write_text(html)
         shots[side] = {e["key"]: e for e in els}
+    clean_target = {e["key"]: e for e in render(page, screen, code, [])[0]}
+    clean_clipped = [k for k, e in clean_target.items() if not e.get("obstacle") and e["visible"]
+                     and e["clipped"] and not shots["base"][k]["clipped"]]
+    if clean_clipped:
+        raise ValueError(f"{cid}: clean target clips text the English base does not: {clean_clipped}")
+    hidden_tabs = [k for k, e in clean_target.items() if k.startswith("tab.") and not e["visible"]]
+    if hidden_tabs:
+        raise ValueError(f"{cid}: tab bar labels not fully on screen in the clean target: {hidden_tabs}")
+    unplanned = [msg for _, msg in collateral(clean_target, shots["target"], case["defects"])]
+    if unplanned:
+        raise ValueError(f"{cid}: unplanned damage in target render: {unplanned}")
 
     # sent = text visible in both locales (tall scripts can push rows below the fold)
     keys = [k for k, e in shots["base"].items()
@@ -220,7 +340,7 @@ def build_case(page, case, out_root):
     off = [d["element"] for d in case["defects"] if d["element"] not in keys]
     if off:
         raise ValueError(f"{cid}: planted element(s) not on screen in both locales: {off}")
-    excluded = len(shots["base"]) - len(keys)
+    excluded = sum(not e.get("obstacle") for e in shots["base"].values()) - len(keys)
     num_of = {k: str(i) for i, k in enumerate(keys, 1)}
     elements = [{
         "id": num_of[k], "element_id": k, "descriptor": shots["base"][k]["text"],
@@ -235,7 +355,14 @@ def build_case(page, case, out_root):
         w, h = annotate(case_dir / "source" / f"{side}.png", boxes, case_dir / "annotated" / f"{side}.jpg")
         images[side] = {"file": f"annotated/{side}.jpg", "width": w, "height": h, "tree_space": TREE_SPACE}
 
-    case_elements = [{"box": num_of[d["element"]], "element_id": d["element"], "resolved_by": "planted"}
+    def covered(d):
+        # an overlap necessarily obscures what it lands on: that element is part of the same defect
+        if d.get("op") != "overlap":
+            return []
+        me = shots["target"][d["element"]]["box"]
+        return [num_of[k] for k in keys if k != d["element"] and overlap_ratio(me, shots["target"][k]["box"]) > 0.15]
+    case_elements = [{"box": num_of[d["element"]], "element_id": d["element"], "resolved_by": "planted",
+                      **({"related_boxes": covered(d)} if covered(d) else {})}
                      for d in case["defects"]]
     target_lang = target_lang_label(code)
     mapping = {
@@ -271,12 +398,17 @@ def build_case(page, case, out_root):
     report = {"case_id": cid, "language": code, "screen": screen, "verdict": verdict,
               "defects": [{"box": c["box"], **chk} for c, chk in zip(case_elements, checks)]}
     # brand / do-not-translate strings: identical in both locales and NOT a defect (FP probes)
-    dnt = [num_of[k] for k in keys if shots["target"][k]["text"] == shots["base"][k]["text"]
+    def kept_in_english(k):
+        t, e = shots["target"][k]["text"], shots["base"][k]["text"]
+        # identical, or an English loanword the locale keeps ("Podcast" for "Podcasts")
+        return t == e or (t.isascii() and len(t) >= 3 and t.lower() in e.lower())
+    dnt = [num_of[k] for k in keys if kept_in_english(k)
            and k not in {d["element"] for d in case["defects"]}]
     case_json = {"case_id": cid, "platform": "web", "language": code, "screen": screen,
                  "is_control": not case["defects"], "do_not_translate_boxes": dnt,
-                 "defects": [{"box": num_of[d["element"]], **{k: v for k, v in d.items() if k != "check"}}
-                             for d in case["defects"]]}
+                 "defects": [{"box": cel["box"], **({"related_boxes": cel["related_boxes"]} if "related_boxes" in cel else {}),
+                              **{k: v for k, v in d.items() if k != "check"}}
+                             for d, cel in zip(case["defects"], case_elements)]}
 
     for name, obj in (("mapping.json", mapping), ("request.json", request),
                       ("case.json", case_json), ("verify/report.json", report)):

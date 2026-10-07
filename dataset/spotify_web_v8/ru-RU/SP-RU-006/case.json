@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-RU-006",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "06-now-playing",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "10",
+    "11"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "element": "np.share",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Share",
+      "report": "'Share' is shown in English instead of 'Поделиться'."
+    },
+    {
+      "box": "1",
+      "element": "np.playingfrom",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□□□□□□□□□□□□□ □□ □□□□□□□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'Воспроизводится из плейлиста'."
+    },
+    {
+      "box": "7",
+      "element": "np.devices",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'Доступные устройства' is truncated with an ellipsis."
+    }
+  ]
+}

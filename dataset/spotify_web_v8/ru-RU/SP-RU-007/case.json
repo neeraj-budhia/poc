@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-RU-007",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "10",
+      "element": "lyrics.credit",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "Ð¢ÐµÐºÑ�Ñ‚ Ð¿Ñ€ÐµÐ´Ð¾Ñ�Ñ‚Ð°Ð²Ð»ÐµÐ½ Musixmatch",
+      "report": "Text is garbled by an encoding error instead of 'Текст предоставлен Musixmatch'."
+    },
+    {
+      "box": "12",
+      "element": "lyrics.report",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'Сообщить о проблеме' runs off the edge of the screen."
+    }
+  ]
+}

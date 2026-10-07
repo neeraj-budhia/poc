@@ -1,0 +1,46 @@
+{
+  "case_id": "SP-AM-007",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "11",
+      "element": "lyrics.share",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'አጋራ'."
+    },
+    {
+      "box": "9",
+      "element": "lyrics.translate",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'ትርጉም አሳይ' runs off the edge of the screen."
+    },
+    {
+      "box": "12",
+      "element": "lyrics.report",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Report a problem",
+      "report": "'Report a problem' is shown in English instead of 'ችግር ሪፖርት አድርግ'."
+    }
+  ]
+}

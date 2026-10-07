@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-ZH-007",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "9",
+      "element": "lyrics.translate",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of '顯示翻譯'."
+    },
+    {
+      "box": "12",
+      "element": "lyrics.report",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'回報問題' runs off the edge of the screen."
+    }
+  ]
+}

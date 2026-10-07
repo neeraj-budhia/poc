@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-005",
+  "language": "ru-RU",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "5",
+      "element_id": "premium.cta.trial",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[187,475] extends past the 360px screen edge",
+      "base_text": "Try free for 1 month",
+      "target_text": "Попробовать бесплатно 1 месяц"
+    },
+    {
+      "box": "18",
+      "element_id": "tab.library",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Library",
+      "target_text": "tab.library"
+    },
+    {
+      "box": "14",
+      "element_id": "premium.plan.family.feat",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Up to 6 Premium accounts",
+      "target_text": "До {count} аккаунтов Premium"
+    }
+  ]
+}

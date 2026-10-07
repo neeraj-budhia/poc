@@ -1,0 +1,393 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-VI-008:08-library",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Vietnamese (vi-VN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "library.title": {
+        "desc": "Your Library",
+        "bbox_base": [
+          180,
+          50,
+          523,
+          118
+        ],
+        "bbox_head": [
+          180,
+          50,
+          421,
+          118
+        ],
+        "text_head": "Thư viện",
+        "match": "stable_id"
+      },
+      "library.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          48,
+          192,
+          268,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          403,
+          276
+        ],
+        "text_head": "Danh sách phát",
+        "match": "stable_id"
+      },
+      "library.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          292,
+          192,
+          483,
+          276
+        ],
+        "bbox_head": [
+          427,
+          192,
+          637,
+          276
+        ],
+        "text_head": "Nghệ sĩ",
+        "match": "stable_id"
+      },
+      "library.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          507,
+          192,
+          714,
+          276
+        ],
+        "bbox_head": [
+          661,
+          192,
+          849,
+          276
+        ],
+        "text_head": "Album",
+        "match": "stable_id"
+      },
+      "library.chip.podcasts": {
+        "desc": "Podcasts & Shows",
+        "bbox_base": [
+          48,
+          300,
+          455,
+          384
+        ],
+        "bbox_head": [
+          774,
+          300,
+          1080,
+          384
+        ],
+        "text_head": "Podcast và chương trình",
+        "match": "stable_id"
+      },
+      "library.sort.recents": {
+        "desc": "⇅ Recents",
+        "bbox_base": [
+          48,
+          420,
+          260,
+          468
+        ],
+        "bbox_head": [
+          48,
+          420,
+          260,
+          468
+        ],
+        "text_head": "⇅ Gần đây",
+        "match": "stable_id"
+      },
+      "library.liked.title": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          228,
+          513,
+          1032,
+          567
+        ],
+        "bbox_head": [
+          228,
+          513,
+          1032,
+          567
+        ],
+        "text_head": "Bài hát đã thích",
+        "match": "stable_id"
+      },
+      "library.liked.sub": {
+        "desc": "📌 Playlist • 248 songs",
+        "bbox_base": [
+          228,
+          573,
+          1032,
+          633
+        ],
+        "bbox_head": [
+          228,
+          573,
+          1032,
+          633
+        ],
+        "text_head": "📌 Danh sách phát • 248 bài hát",
+        "match": "stable_id"
+      },
+      "library.episodes.title": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          760
+        ],
+        "bbox_head": [
+          228,
+          706,
+          1032,
+          760
+        ],
+        "text_head": "Your Episodes",
+        "match": "stable_id"
+      },
+      "library.episodes.sub": {
+        "desc": "Saved & downloaded episodes",
+        "bbox_base": [
+          228,
+          766,
+          1032,
+          812
+        ],
+        "bbox_head": [
+          228,
+          766,
+          1032,
+          812
+        ],
+        "text_head": "Tập đã lưu và đã tải xuống",
+        "match": "stable_id"
+      },
+      "library.pl1.title": {
+        "desc": "Road Trip 2026",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          946
+        ],
+        "bbox_head": [
+          228,
+          892,
+          1032,
+          946
+        ],
+        "text_head": "Road Trip 2026",
+        "match": "stable_id"
+      },
+      "library.pl1.sub": {
+        "desc": "Playlist • Neeraj",
+        "bbox_base": [
+          228,
+          952,
+          1032,
+          998
+        ],
+        "bbox_head": [
+          228,
+          952,
+          1032,
+          998
+        ],
+        "text_head": "Danh sách phát • Neeraj",
+        "match": "stable_id"
+      },
+      "library.artist1.title": {
+        "desc": "Tame Impala",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1132
+        ],
+        "bbox_head": [
+          228,
+          1078,
+          1032,
+          1132
+        ],
+        "text_head": "Tame Impala",
+        "match": "stable_id"
+      },
+      "library.artist1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          1138,
+          1032,
+          1184
+        ],
+        "bbox_head": [
+          228,
+          1138,
+          1032,
+          1184
+        ],
+        "text_head": "Nghệ sĩ",
+        "match": "stable_id"
+      },
+      "library.album1.title": {
+        "desc": "Currents",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1318
+        ],
+        "bbox_head": [
+          228,
+          1264,
+          1032,
+          1318
+        ],
+        "text_head": "Currents",
+        "match": "stable_id"
+      },
+      "library.album1.sub": {
+        "desc": "Album • Tame Impala",
+        "bbox_base": [
+          228,
+          1324,
+          1032,
+          1370
+        ],
+        "bbox_head": [
+          228,
+          1324,
+          1032,
+          1370
+        ],
+        "text_head": "Album • Tame Impala",
+        "match": "stable_id"
+      },
+      "library.add.artists": {
+        "desc": "Add artists",
+        "bbox_base": [
+          228,
+          1476,
+          1032,
+          1530
+        ],
+        "bbox_head": [
+          228,
+          1494,
+          505,
+          1521
+        ],
+        "text_head": "Thêm nghệ sĩ",
+        "match": "stable_id"
+      },
+      "library.add.podcasts": {
+        "desc": "Add podcasts & shows",
+        "bbox_base": [
+          228,
+          1662,
+          1032,
+          1716
+        ],
+        "bbox_head": [
+          228,
+          1662,
+          1032,
+          1716
+        ],
+        "text_head": "Thêm podcast và chương trình",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          57,
+          2324,
+          213,
+          2362
+        ],
+        "text_head": "Trang chủ",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          333,
+          2324,
+          477,
+          2362
+        ],
+        "text_head": "Tìm kiếm",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          607,
+          2322,
+          743,
+          2361
+        ],
+        "text_head": "Thư viện",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

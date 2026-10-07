@@ -1,0 +1,40 @@
+{
+  "case_id": "SP-KO-010",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "November 14, 2026에 $11.99로 요금제가 갱신됩니다.",
+      "report": "Number/date/currency uses the US format ('November 14, 2026에 $11.99로 요금제가 갱신됩니다.') instead of the local one ('2026년 11월 14일에 ₩10,900으로 요금제가 갱신됩니다.')."
+    },
+    {
+      "box": "19",
+      "element": "settings.logout",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "settings.logout",
+      "report": "The raw resource key 'settings.logout' is shown instead of '로그아웃'."
+    },
+    {
+      "box": "11",
+      "related_boxes": [
+        "10"
+      ],
+      "element": "settings.explicit.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'청소년 유해 콘텐츠를 재생하려면 켜세요. 청소년 유해 콘텐츠에는 19 태그가 표시됩니다.' overlaps the text element above it."
+    }
+  ]
+}

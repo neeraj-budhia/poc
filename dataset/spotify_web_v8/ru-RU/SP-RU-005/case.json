@@ -1,0 +1,42 @@
+{
+  "case_id": "SP-RU-005",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "9",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "5",
+      "element": "premium.cta.trial",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'Попробовать бесплатно 1 месяц' runs off the edge of the screen."
+    },
+    {
+      "box": "18",
+      "element": "tab.library",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "tab.library",
+      "report": "The raw resource key 'tab.library' is shown instead of 'Моя медиатека'."
+    },
+    {
+      "box": "14",
+      "element": "premium.plan.family.feat",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "До {count} аккаунтов Premium",
+      "report": "An unresolved placeholder ('До {count} аккаунтов Premium') is shown instead of the value ('До 6 аккаунтов Premium')."
+    }
+  ]
+}

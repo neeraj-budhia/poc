@@ -1,0 +1,36 @@
+{
+  "case_id": "SP-UR-006",
+  "platform": "web",
+  "language": "ur",
+  "screen": "06-now-playing",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "10",
+    "11"
+  ],
+  "defects": [
+    {
+      "box": "7",
+      "element": "np.devices",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Devices available",
+      "report": "'Devices available' is shown in English instead of 'آلات دستیاب ہیں'."
+    },
+    {
+      "box": "8",
+      "element": "np.share",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'شیئر کریں' runs off the edge of the screen."
+    }
+  ]
+}

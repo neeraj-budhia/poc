@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TA-001",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "01-home",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "13",
+    "21"
+  ],
+  "defects": [
+    {
+      "box": "15",
+      "element": "home.card2.title",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Your Top Songs 2026",
+      "report": "'Your Top Songs 2026' is shown in English instead of 'உங்கள் சிறந்த பாடல்கள் 2026'."
+    },
+    {
+      "box": "12",
+      "element": "home.sec.madeforyou",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'உங்களுக்காக உருவாக்கப்பட்டது' are clipped by a too-small line box."
+    }
+  ]
+}

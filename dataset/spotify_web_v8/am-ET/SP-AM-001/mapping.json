@@ -1,0 +1,730 @@
+{
+  "case_id": "SP-AM-001",
+  "screen": "01-home",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Amharic (am-ET)",
+  "case_elements": [
+    {
+      "box": "1",
+      "element_id": "home.greeting",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "16",
+      "element_id": "home.card2.sub",
+      "resolved_by": "planted",
+      "related_boxes": [
+        "15"
+      ]
+    },
+    {
+      "box": "19",
+      "element_id": "tab.search",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 21,
+    "with_target_box": 21,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "home.greeting",
+      "descriptor": "Good evening",
+      "target_text": "እንደምን አመሹ",
+      "base_box": [
+        48,
+        50,
+        434,
+        118
+      ],
+      "target_box": [
+        48,
+        66,
+        479,
+        102
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "home.chip.all",
+      "descriptor": "All",
+      "target_text": "ሁሉም",
+      "base_box": [
+        48,
+        192,
+        165,
+        276
+      ],
+      "target_box": [
+        48,
+        192,
+        230,
+        276
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "home.chip.music",
+      "descriptor": "Music",
+      "target_text": "ሙዚቃ",
+      "base_box": [
+        189,
+        192,
+        369,
+        276
+      ],
+      "target_box": [
+        254,
+        192,
+        447,
+        276
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "home.chip.podcasts",
+      "descriptor": "Podcasts",
+      "target_text": "ፖድካስቶች",
+      "base_box": [
+        393,
+        192,
+        632,
+        276
+      ],
+      "target_box": [
+        471,
+        192,
+        727,
+        276
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "home.chip.audiobooks",
+      "descriptor": "Audiobooks",
+      "target_text": "ኦዲዮ መጽሐፍት",
+      "base_box": [
+        656,
+        192,
+        941,
+        276
+      ],
+      "target_box": [
+        48,
+        300,
+        404,
+        384
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "home.tile.liked",
+      "descriptor": "Liked Songs",
+      "target_text": "የተወደዱ ዘፈኖች",
+      "base_box": [
+        216,
+        362,
+        453,
+        406
+      ],
+      "target_box": [
+        216,
+        447,
+        528,
+        537
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "home.tile.dailymix1",
+      "descriptor": "Daily Mix 1",
+      "target_text": "Daily Mix 1",
+      "base_box": [
+        720,
+        362,
+        929,
+        406
+      ],
+      "target_box": [
+        720,
+        470,
+        929,
+        514
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "home.tile.discover",
+      "descriptor": "Discover Weekly",
+      "target_text": "Discover Weekly",
+      "base_box": [
+        216,
+        507,
+        528,
+        597
+      ],
+      "target_box": [
+        216,
+        615,
+        528,
+        705
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "home.tile.release",
+      "descriptor": "Release Radar",
+      "target_text": "Release Radar",
+      "base_box": [
+        720,
+        530,
+        995,
+        574
+      ],
+      "target_box": [
+        720,
+        638,
+        995,
+        682
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "home.tile.chill",
+      "descriptor": "Chill Vibes",
+      "target_text": "Chill Vibes",
+      "base_box": [
+        216,
+        698,
+        426,
+        742
+      ],
+      "target_box": [
+        216,
+        806,
+        426,
+        850
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "home.tile.episodes",
+      "descriptor": "Your Episodes",
+      "target_text": "የእርስዎ ክፍሎች",
+      "base_box": [
+        720,
+        698,
+        994,
+        742
+      ],
+      "target_box": [
+        720,
+        806,
+        1017,
+        850
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "home.sec.madeforyou",
+      "descriptor": "Made for you",
+      "target_text": "ለእርስዎ የተሰራ",
+      "base_box": [
+        48,
+        840,
+        1032,
+        906
+      ],
+      "target_box": [
+        48,
+        948,
+        1032,
+        1014
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "home.card1.title",
+      "descriptor": "Daily Mix 2",
+      "target_text": "Daily Mix 2",
+      "base_box": [
+        48,
+        1410,
+        498,
+        1458
+      ],
+      "target_box": [
+        48,
+        1518,
+        498,
+        1566
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "home.card1.sub",
+      "descriptor": "Arctic Monkeys, The Strokes, Tame Impala and more",
+      "target_text": "Arctic Monkeys፣ The Strokes፣ Tame Impala እና ሌሎችም",
+      "base_box": [
+        48,
+        1464,
+        498,
+        1610
+      ],
+      "target_box": [
+        48,
+        1572,
+        498,
+        1718
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "home.card2.title",
+      "descriptor": "Your Top Songs 2026",
+      "target_text": "የእርስዎ ምርጥ ዘፈኖች 2026",
+      "base_box": [
+        534,
+        1410,
+        984,
+        1458
+      ],
+      "target_box": [
+        534,
+        1518,
+        984,
+        1614
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "home.card2.sub",
+      "descriptor": "The songs you loved most this year, all wrapped up.",
+      "target_text": "በዚህ ዓመት በጣም የወደዷቸው ዘፈኖች፣ በአንድ ላይ።",
+      "base_box": [
+        534,
+        1464,
+        984,
+        1561
+      ],
+      "target_box": [
+        534,
+        1551,
+        984,
+        1697
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "home.sec.recent",
+      "descriptor": "Recently played",
+      "target_text": "በቅርብ ጊዜ የተጫወቱ",
+      "base_box": [
+        48,
+        1658,
+        1032,
+        1724
+      ],
+      "target_box": [
+        48,
+        1814,
+        1032,
+        1880
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "tab.home",
+      "descriptor": "Home",
+      "target_text": "መነሻ",
+      "base_box": [
+        89,
+        2324,
+        181,
+        2362
+      ],
+      "target_box": [
+        96,
+        2324,
+        174,
+        2362
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "tab.search",
+      "descriptor": "Search",
+      "target_text": "□□□",
+      "base_box": [
+        350,
+        2324,
+        460,
+        2362
+      ],
+      "target_box": [
+        360,
+        2324,
+        450,
+        2362
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "20",
+      "element_id": "tab.library",
+      "descriptor": "Your Library",
+      "target_text": "ቤተ-መጻሕፍትዎ",
+      "base_box": [
+        580,
+        2322,
+        770,
+        2361
+      ],
+      "target_box": [
+        552,
+        2322,
+        798,
+        2361
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "21",
+      "element_id": "tab.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "target_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 4.444,
+      "y": 2.083,
+      "width": 35.741,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.0,
+      "width": 10.833,
+      "height": 3.5
+    },
+    "3": {
+      "x": 17.5,
+      "y": 8.0,
+      "width": 16.667,
+      "height": 3.5
+    },
+    "4": {
+      "x": 36.389,
+      "y": 8.0,
+      "width": 22.13,
+      "height": 3.5
+    },
+    "5": {
+      "x": 60.741,
+      "y": 8.0,
+      "width": 26.389,
+      "height": 3.5
+    },
+    "6": {
+      "x": 20.0,
+      "y": 15.083,
+      "width": 21.944,
+      "height": 1.833
+    },
+    "7": {
+      "x": 66.667,
+      "y": 15.083,
+      "width": 19.352,
+      "height": 1.833
+    },
+    "8": {
+      "x": 20.0,
+      "y": 21.125,
+      "width": 28.889,
+      "height": 3.75
+    },
+    "9": {
+      "x": 66.667,
+      "y": 22.083,
+      "width": 25.463,
+      "height": 1.833
+    },
+    "10": {
+      "x": 20.0,
+      "y": 29.083,
+      "width": 19.444,
+      "height": 1.833
+    },
+    "11": {
+      "x": 66.667,
+      "y": 29.083,
+      "width": 25.37,
+      "height": 1.833
+    },
+    "12": {
+      "x": 4.444,
+      "y": 35.0,
+      "width": 91.111,
+      "height": 2.75
+    },
+    "13": {
+      "x": 4.444,
+      "y": 58.75,
+      "width": 41.667,
+      "height": 2.0
+    },
+    "14": {
+      "x": 4.444,
+      "y": 61.0,
+      "width": 41.667,
+      "height": 6.083
+    },
+    "15": {
+      "x": 49.444,
+      "y": 58.75,
+      "width": 41.667,
+      "height": 2.0
+    },
+    "16": {
+      "x": 49.444,
+      "y": 61.0,
+      "width": 41.667,
+      "height": 4.042
+    },
+    "17": {
+      "x": 4.444,
+      "y": 69.083,
+      "width": 91.111,
+      "height": 2.75
+    },
+    "18": {
+      "x": 8.241,
+      "y": 96.833,
+      "width": 8.519,
+      "height": 1.583
+    },
+    "19": {
+      "x": 32.407,
+      "y": 96.833,
+      "width": 10.185,
+      "height": 1.583
+    },
+    "20": {
+      "x": 53.704,
+      "y": 96.75,
+      "width": 17.593,
+      "height": 1.625
+    },
+    "21": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 4.444,
+      "y": 2.75,
+      "width": 39.907,
+      "height": 1.5
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.0,
+      "width": 16.852,
+      "height": 3.5
+    },
+    "3": {
+      "x": 23.519,
+      "y": 8.0,
+      "width": 17.87,
+      "height": 3.5
+    },
+    "4": {
+      "x": 43.611,
+      "y": 8.0,
+      "width": 23.704,
+      "height": 3.5
+    },
+    "5": {
+      "x": 4.444,
+      "y": 12.5,
+      "width": 32.963,
+      "height": 3.5
+    },
+    "6": {
+      "x": 20.0,
+      "y": 18.625,
+      "width": 28.889,
+      "height": 3.75
+    },
+    "7": {
+      "x": 66.667,
+      "y": 19.583,
+      "width": 19.352,
+      "height": 1.833
+    },
+    "8": {
+      "x": 20.0,
+      "y": 25.625,
+      "width": 28.889,
+      "height": 3.75
+    },
+    "9": {
+      "x": 66.667,
+      "y": 26.583,
+      "width": 25.463,
+      "height": 1.833
+    },
+    "10": {
+      "x": 20.0,
+      "y": 33.583,
+      "width": 19.444,
+      "height": 1.833
+    },
+    "11": {
+      "x": 66.667,
+      "y": 33.583,
+      "width": 27.5,
+      "height": 1.833
+    },
+    "12": {
+      "x": 4.444,
+      "y": 39.5,
+      "width": 91.111,
+      "height": 2.75
+    },
+    "13": {
+      "x": 4.444,
+      "y": 63.25,
+      "width": 41.667,
+      "height": 2.0
+    },
+    "14": {
+      "x": 4.444,
+      "y": 65.5,
+      "width": 41.667,
+      "height": 6.083
+    },
+    "15": {
+      "x": 49.444,
+      "y": 63.25,
+      "width": 41.667,
+      "height": 4.0
+    },
+    "16": {
+      "x": 49.444,
+      "y": 64.625,
+      "width": 41.667,
+      "height": 6.083
+    },
+    "17": {
+      "x": 4.444,
+      "y": 75.583,
+      "width": 91.111,
+      "height": 2.75
+    },
+    "18": {
+      "x": 8.889,
+      "y": 96.833,
+      "width": 7.222,
+      "height": 1.583
+    },
+    "19": {
+      "x": 33.333,
+      "y": 96.833,
+      "width": 8.333,
+      "height": 1.583
+    },
+    "20": {
+      "x": 51.111,
+      "y": 96.75,
+      "width": 22.778,
+      "height": 1.625
+    },
+    "21": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  }
+}

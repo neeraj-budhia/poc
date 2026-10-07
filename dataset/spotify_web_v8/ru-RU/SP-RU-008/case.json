@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-RU-008",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "08-library",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "11",
+    "13",
+    "15",
+    "22"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "related_boxes": [
+        "7"
+      ],
+      "element": "library.liked.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'📌 Плейлист • 248 треков' overlaps the text element above it."
+    },
+    {
+      "box": "16",
+      "element": "library.album1.sub",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Album • Tame Impala",
+      "report": "'Album • Tame Impala' is shown in English instead of 'Альбом • Tame Impala'."
+    },
+    {
+      "box": "1",
+      "element": "library.title",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'Моя медиатека' are clipped by a too-small line box."
+    }
+  ]
+}

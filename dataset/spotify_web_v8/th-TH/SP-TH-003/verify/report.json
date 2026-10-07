@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-TH-003",
+  "language": "th-TH",
+  "screen": "03-search-results",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "12",
+      "element_id": "results.r3.sub",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Album • Arctic Monkeys • 2013",
+      "target_text": "อัลบั้ม • Arctic Monkeys • 2013"
+    },
+    {
+      "box": "3",
+      "element_id": "results.chip.songs",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Songs",
+      "target_text": "Songs"
+    }
+  ]
+}

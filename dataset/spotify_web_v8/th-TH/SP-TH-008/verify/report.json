@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TH-008",
+  "language": "th-TH",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "9",
+      "element_id": "library.episodes.title",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Episodes",
+      "target_text": "à¸•à¸­à¸™à¸‚à¸­à¸‡à¸„à¸¸à¸“"
+    },
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 เพลย์ลิสต์ • {count} เพลง"
+    },
+    {
+      "box": "18",
+      "element_id": "library.add.podcasts",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[263,425] extends past the 360px screen edge",
+      "base_text": "Add podcasts & shows",
+      "target_text": "เพิ่มพอดแคสต์และรายการ"
+    }
+  ]
+}

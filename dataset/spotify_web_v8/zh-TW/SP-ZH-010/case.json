@@ -1,0 +1,19 @@
+{
+  "case_id": "SP-ZH-010",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "你的方案將於 November 14, 2026 續訂，費用為 $11.99。",
+      "report": "Number/date/currency uses the US format ('你的方案將於 November 14, 2026 續訂，費用為 $11.99。') instead of the local one ('你的方案將於 2026年11月14日續訂，費用為 NT$149。')."
+    }
+  ]
+}

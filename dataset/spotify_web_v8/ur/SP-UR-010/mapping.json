@@ -1,0 +1,695 @@
+{
+  "case_id": "SP-UR-010",
+  "screen": "10-settings",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Urdu (ur)",
+  "case_elements": [
+    {
+      "box": "8",
+      "element_id": "settings.crossfade.val",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "1",
+      "element_id": "settings.title",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 20,
+    "with_target_box": 20,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "settings.title",
+      "descriptor": "Settings",
+      "target_text": "ترتیبات",
+      "base_box": [
+        119,
+        50,
+        356,
+        118
+      ],
+      "target_box": [
+        783,
+        66,
+        961,
+        102
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "settings.sec.account",
+      "descriptor": "Account",
+      "target_text": "اکاؤنٹ",
+      "base_box": [
+        48,
+        210,
+        1032,
+        270
+      ],
+      "target_box": [
+        48,
+        210,
+        1032,
+        307
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "settings.plan",
+      "descriptor": "Premium Individual",
+      "target_text": "Premium انفرادی",
+      "base_box": [
+        48,
+        306,
+        1032,
+        360
+      ],
+      "target_box": [
+        48,
+        343,
+        1032,
+        428
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "settings.plan.sub",
+      "descriptor": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "آپ کے پلان کی تجدید November 14, 2026 کو $11.99 میں ہو جائے گی۔",
+      "base_box": [
+        48,
+        366,
+        1032,
+        415
+      ],
+      "target_box": [
+        48,
+        434,
+        1032,
+        503
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "settings.sec.playback",
+      "descriptor": "Playback",
+      "target_text": "پلے بیک",
+      "base_box": [
+        48,
+        481,
+        1032,
+        541
+      ],
+      "target_box": [
+        48,
+        569,
+        1032,
+        666
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "settings.crossfade",
+      "descriptor": "Crossfade",
+      "target_text": "کراس فیڈ",
+      "base_box": [
+        48,
+        577,
+        898,
+        631
+      ],
+      "target_box": [
+        386,
+        702,
+        1032,
+        787
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "settings.crossfade.sub",
+      "descriptor": "Allows you to crossfade between songs",
+      "target_text": "آپ کو گانوں کے درمیان کراس فیڈ کرنے دیتا ہے",
+      "base_box": [
+        48,
+        637,
+        898,
+        685
+      ],
+      "target_box": [
+        386,
+        793,
+        1032,
+        862
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "settings.crossfade.val",
+      "descriptor": "5 sec",
+      "target_text": "5 Ø³ÛŒÚ©Ù†Úˆ",
+      "base_box": [
+        934,
+        607,
+        1032,
+        655
+      ],
+      "target_box": [
+        48,
+        745,
+        350,
+        819
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "settings.gapless",
+      "descriptor": "Gapless playback",
+      "target_text": "بلا وقفہ پلے بیک",
+      "base_box": [
+        48,
+        739,
+        876,
+        793
+      ],
+      "target_box": [
+        204,
+        910,
+        1032,
+        995
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "settings.explicit",
+      "descriptor": "Allow explicit content",
+      "target_text": "بالغانہ مواد کی اجازت دیں",
+      "base_box": [
+        48,
+        847,
+        876,
+        901
+      ],
+      "target_box": [
+        204,
+        1043,
+        1032,
+        1129
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "settings.explicit.sub",
+      "descriptor": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+      "target_text": "بالغانہ مواد چلانے کے لیے آن کریں۔ بالغانہ مواد پر E کا ٹیگ لگا ہوتا ہے۔",
+      "base_box": [
+        48,
+        907,
+        876,
+        1004
+      ],
+      "target_box": [
+        204,
+        1135,
+        1032,
+        1271
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "settings.sec.data",
+      "descriptor": "Data saving and offline",
+      "target_text": "ڈیٹا کی بچت اور آف لائن",
+      "base_box": [
+        48,
+        1070,
+        1032,
+        1130
+      ],
+      "target_box": [
+        48,
+        1337,
+        1032,
+        1434
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "settings.datasaver",
+      "descriptor": "Data Saver",
+      "target_text": "ڈیٹا سیور",
+      "base_box": [
+        48,
+        1166,
+        876,
+        1220
+      ],
+      "target_box": [
+        204,
+        1470,
+        1032,
+        1556
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "settings.datasaver.sub",
+      "descriptor": "Sets your music quality to low and disables canvas.",
+      "target_text": "آپ کی موسیقی کا معیار کم پر سیٹ کرتا ہے اور کینوس کو غیر فعال کرتا ہے۔",
+      "base_box": [
+        48,
+        1226,
+        876,
+        1323
+      ],
+      "target_box": [
+        204,
+        1562,
+        1032,
+        1699
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "settings.storage",
+      "descriptor": "Storage",
+      "target_text": "اسٹوریج",
+      "base_box": [
+        48,
+        1371,
+        1032,
+        1425
+      ],
+      "target_box": [
+        48,
+        1747,
+        1032,
+        1832
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "settings.storage.sub",
+      "descriptor": "1.2 GB used • 48.6 GB free",
+      "target_text": "1.2 GB استعمال شدہ • 48.6 GB خالی",
+      "base_box": [
+        48,
+        1431,
+        1032,
+        1480
+      ],
+      "target_box": [
+        48,
+        1838,
+        1032,
+        1906
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "settings.language",
+      "descriptor": "App language",
+      "target_text": "ایپ کی زبان",
+      "base_box": [
+        48,
+        1528,
+        865,
+        1582
+      ],
+      "target_box": [
+        141,
+        1954,
+        1032,
+        2040
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "settings.language.val",
+      "descriptor": "English",
+      "target_text": "اردو",
+      "base_box": [
+        901,
+        1531,
+        1032,
+        1579
+      ],
+      "target_box": [
+        48,
+        1960,
+        105,
+        2034
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "settings.logout",
+      "descriptor": "Log out",
+      "target_text": "لاگ آؤٹ کریں",
+      "base_box": [
+        48,
+        1648,
+        283,
+        1738
+      ],
+      "target_box": [
+        701,
+        2106,
+        1032,
+        2222
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "20",
+      "element_id": "settings.version",
+      "descriptor": "Version 9.0.82.512",
+      "target_text": "ورژن 9.0.82.512",
+      "base_box": [
+        48,
+        1768,
+        1032,
+        1807
+      ],
+      "target_box": [
+        48,
+        2252,
+        1032,
+        2315
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 21.944,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.75,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "3": {
+      "x": 4.444,
+      "y": 12.75,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "4": {
+      "x": 4.444,
+      "y": 15.25,
+      "width": 91.111,
+      "height": 2.042
+    },
+    "5": {
+      "x": 4.444,
+      "y": 20.042,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 24.042,
+      "width": 78.704,
+      "height": 2.25
+    },
+    "7": {
+      "x": 4.444,
+      "y": 26.542,
+      "width": 78.704,
+      "height": 2.0
+    },
+    "8": {
+      "x": 86.481,
+      "y": 25.292,
+      "width": 9.074,
+      "height": 2.0
+    },
+    "9": {
+      "x": 4.444,
+      "y": 30.792,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "10": {
+      "x": 4.444,
+      "y": 35.292,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "11": {
+      "x": 4.444,
+      "y": 37.792,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "12": {
+      "x": 4.444,
+      "y": 44.583,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "13": {
+      "x": 4.444,
+      "y": 48.583,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "14": {
+      "x": 4.444,
+      "y": 51.083,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "15": {
+      "x": 4.444,
+      "y": 57.125,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "16": {
+      "x": 4.444,
+      "y": 59.625,
+      "width": 91.111,
+      "height": 2.042
+    },
+    "17": {
+      "x": 4.444,
+      "y": 63.667,
+      "width": 75.648,
+      "height": 2.25
+    },
+    "18": {
+      "x": 83.426,
+      "y": 63.792,
+      "width": 12.13,
+      "height": 2.0
+    },
+    "19": {
+      "x": 4.444,
+      "y": 68.667,
+      "width": 21.759,
+      "height": 3.75
+    },
+    "20": {
+      "x": 4.444,
+      "y": 73.667,
+      "width": 91.111,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 72.5,
+      "y": 2.75,
+      "width": 16.481,
+      "height": 1.5
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.75,
+      "width": 91.111,
+      "height": 4.042
+    },
+    "3": {
+      "x": 4.444,
+      "y": 14.292,
+      "width": 91.111,
+      "height": 3.542
+    },
+    "4": {
+      "x": 4.444,
+      "y": 18.083,
+      "width": 91.111,
+      "height": 2.875
+    },
+    "5": {
+      "x": 4.444,
+      "y": 23.708,
+      "width": 91.111,
+      "height": 4.042
+    },
+    "6": {
+      "x": 35.741,
+      "y": 29.25,
+      "width": 59.815,
+      "height": 3.542
+    },
+    "7": {
+      "x": 35.741,
+      "y": 33.042,
+      "width": 59.815,
+      "height": 2.875
+    },
+    "8": {
+      "x": 4.444,
+      "y": 31.042,
+      "width": 27.963,
+      "height": 3.083
+    },
+    "9": {
+      "x": 18.889,
+      "y": 37.917,
+      "width": 76.667,
+      "height": 3.542
+    },
+    "10": {
+      "x": 18.889,
+      "y": 43.458,
+      "width": 76.667,
+      "height": 3.583
+    },
+    "11": {
+      "x": 18.889,
+      "y": 47.292,
+      "width": 76.667,
+      "height": 5.667
+    },
+    "12": {
+      "x": 4.444,
+      "y": 55.708,
+      "width": 91.111,
+      "height": 4.042
+    },
+    "13": {
+      "x": 18.889,
+      "y": 61.25,
+      "width": 76.667,
+      "height": 3.583
+    },
+    "14": {
+      "x": 18.889,
+      "y": 65.083,
+      "width": 76.667,
+      "height": 5.708
+    },
+    "15": {
+      "x": 4.444,
+      "y": 72.792,
+      "width": 91.111,
+      "height": 3.542
+    },
+    "16": {
+      "x": 4.444,
+      "y": 76.583,
+      "width": 91.111,
+      "height": 2.833
+    },
+    "17": {
+      "x": 13.056,
+      "y": 81.417,
+      "width": 82.5,
+      "height": 3.583
+    },
+    "18": {
+      "x": 4.444,
+      "y": 81.667,
+      "width": 5.278,
+      "height": 3.083
+    },
+    "19": {
+      "x": 64.907,
+      "y": 87.75,
+      "width": 30.648,
+      "height": 4.833
+    },
+    "20": {
+      "x": 4.444,
+      "y": 93.833,
+      "width": 91.111,
+      "height": 2.625
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-KO-008:08-library",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Korean (ko-KR)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "library.title": {
+        "desc": "Your Library",
+        "bbox_base": [
+          180,
+          50,
+          523,
+          118
+        ],
+        "bbox_head": [
+          180,
+          46,
+          505,
+          122
+        ],
+        "text_head": "내 라이브러리",
+        "match": "stable_id"
+      },
+      "library.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          48,
+          192,
+          268,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          168,
+          279
+        ],
+        "text_head": "플레이리스트",
+        "match": "stable_id"
+      },
+      "library.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          292,
+          192,
+          483,
+          276
+        ],
+        "bbox_head": [
+          192,
+          192,
+          399,
+          279
+        ],
+        "text_head": "아티스트",
+        "match": "stable_id"
+      },
+      "library.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          507,
+          192,
+          714,
+          276
+        ],
+        "bbox_head": [
+          423,
+          192,
+          562,
+          279
+        ],
+        "text_head": "앨범",
+        "match": "stable_id"
+      },
+      "library.chip.podcasts": {
+        "desc": "Podcasts & Shows",
+        "bbox_base": [
+          48,
+          300,
+          455,
+          384
+        ],
+        "bbox_head": [
+          586,
+          192,
+          882,
+          279
+        ],
+        "text_head": "팟캐스트 및 쇼",
+        "match": "stable_id"
+      },
+      "library.sort.recents": {
+        "desc": "⇅ Recents",
+        "bbox_base": [
+          48,
+          420,
+          260,
+          468
+        ],
+        "bbox_head": [
+          48,
+          315,
+          247,
+          366
+        ],
+        "text_head": "⇅ 최근 항목",
+        "match": "stable_id"
+      },
+      "library.liked.title": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          228,
+          513,
+          1032,
+          567
+        ],
+        "bbox_head": [
+          228,
+          408,
+          1032,
+          468
+        ],
+        "text_head": "좋아요 표시한 곡",
+        "match": "stable_id"
+      },
+      "library.liked.sub": {
+        "desc": "📌 Playlist • 248 songs",
+        "bbox_base": [
+          228,
+          573,
+          1032,
+          633
+        ],
+        "bbox_head": [
+          228,
+          474,
+          1032,
+          534
+        ],
+        "text_head": "📌 플레이리스트 • {count}곡",
+        "match": "stable_id"
+      },
+      "library.episodes.title": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          760
+        ],
+        "bbox_head": [
+          228,
+          600,
+          1032,
+          660
+        ],
+        "text_head": "내 에피소드",
+        "match": "stable_id"
+      },
+      "library.episodes.sub": {
+        "desc": "Saved & downloaded episodes",
+        "bbox_base": [
+          228,
+          766,
+          1032,
+          812
+        ],
+        "bbox_head": [
+          228,
+          666,
+          1032,
+          714
+        ],
+        "text_head": "저장 및 다운로드한 에피소드",
+        "match": "stable_id"
+      },
+      "library.pl1.title": {
+        "desc": "Road Trip 2026",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          946
+        ],
+        "bbox_head": [
+          228,
+          789,
+          1032,
+          843
+        ],
+        "text_head": "Road Trip 2026",
+        "match": "stable_id"
+      },
+      "library.pl1.sub": {
+        "desc": "Playlist • Neeraj",
+        "bbox_base": [
+          228,
+          952,
+          1032,
+          998
+        ],
+        "bbox_head": [
+          228,
+          849,
+          1032,
+          897
+        ],
+        "text_head": "플레이리스트 • Neeraj",
+        "match": "stable_id"
+      },
+      "library.artist1.title": {
+        "desc": "Tame Impala",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1132
+        ],
+        "bbox_head": [
+          228,
+          975,
+          1032,
+          1029
+        ],
+        "text_head": "Tame Impala",
+        "match": "stable_id"
+      },
+      "library.artist1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          1138,
+          1032,
+          1184
+        ],
+        "bbox_head": [
+          228,
+          1035,
+          1032,
+          1083
+        ],
+        "text_head": "아티스트",
+        "match": "stable_id"
+      },
+      "library.album1.title": {
+        "desc": "Currents",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1318
+        ],
+        "bbox_head": [
+          228,
+          1161,
+          1032,
+          1215
+        ],
+        "text_head": "Currents",
+        "match": "stable_id"
+      },
+      "library.album1.sub": {
+        "desc": "Album • Tame Impala",
+        "bbox_base": [
+          228,
+          1324,
+          1032,
+          1370
+        ],
+        "bbox_head": [
+          228,
+          1221,
+          1032,
+          1269
+        ],
+        "text_head": "앨범 • Tame Impala",
+        "match": "stable_id"
+      },
+      "library.add.artists": {
+        "desc": "Add artists",
+        "bbox_base": [
+          228,
+          1476,
+          1032,
+          1530
+        ],
+        "bbox_head": [
+          228,
+          1371,
+          1032,
+          1431
+        ],
+        "text_head": "아티스트 추가하기",
+        "match": "stable_id"
+      },
+      "library.add.podcasts": {
+        "desc": "Add podcasts & shows",
+        "bbox_base": [
+          228,
+          1662,
+          1032,
+          1716
+        ],
+        "bbox_head": [
+          228,
+          1557,
+          1032,
+          1617
+        ],
+        "text_head": "팟캐스트 및 쇼 추가하기",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          121,
+          2322,
+          149,
+          2364
+        ],
+        "text_head": "홈",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          376,
+          2322,
+          434,
+          2364
+        ],
+        "text_head": "검색",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          585,
+          2320,
+          765,
+          2362
+        ],
+        "text_head": "내 라이브러리",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2325,
+          1014,
+          2364
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

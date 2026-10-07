@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TA-008",
+  "language": "ta-IN",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['library.liked.title']",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 பிளேலிஸ்ட் • 248 பாடல்கள்"
+    },
+    {
+      "box": "5",
+      "element_id": "library.chip.podcasts",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[246,436] extends past the 360px screen edge",
+      "base_text": "Podcasts & Shows",
+      "target_text": "பாட்காஸ்ட்கள் & நிகழ்ச்சிகள்"
+    },
+    {
+      "box": "9",
+      "element_id": "library.episodes.title",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Episodes",
+      "target_text": "□□□□□□ □□□□□□□□□□"
+    }
+  ]
+}

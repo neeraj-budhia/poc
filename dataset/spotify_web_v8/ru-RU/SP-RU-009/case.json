@@ -1,0 +1,34 @@
+{
+  "case_id": "SP-RU-009",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "7",
+    "9",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count} слушатель за месяц",
+      "report": "An unresolved placeholder ('{count} слушатель за месяц') is shown instead of the value ('24 812 331 слушатель за месяц')."
+    },
+    {
+      "box": "10",
+      "element": "artist.p3.plays",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "301,227,560",
+      "report": "Number/date/currency uses the US format ('301,227,560') instead of the local one ('301 227 560')."
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "case_id": "SP-VI-006",
+  "screen": "06-now-playing",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Vietnamese (vi-VN)",
+  "case_elements": [
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "8",
+      "element_id": "np.share",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 11,
+    "with_target_box": 11,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "np.playingfrom",
+      "descriptor": "Playing from playlist",
+      "target_text": "Đang phát từ danh sách phát",
+      "base_box": [
+        326,
+        30,
+        731,
+        66
+      ],
+      "target_box": [
+        378,
+        30,
+        678,
+        66
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "np.source",
+      "descriptor": "Discover Weekly",
+      "target_text": "Discover Weekly",
+      "base_box": [
+        326,
+        72,
+        731,
+        117
+      ],
+      "target_box": [
+        378,
+        72,
+        678,
+        117
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "np.title",
+      "descriptor": "Do I Wanna Know?",
+      "target_text": "Do I Wanna Know?",
+      "base_box": [
+        48,
+        1167,
+        601,
+        1239
+      ],
+      "target_box": [
+        48,
+        1167,
+        601,
+        1239
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "np.artist",
+      "descriptor": "Arctic Monkeys",
+      "target_text": "Arctic Monkeys",
+      "base_box": [
+        48,
+        1245,
+        601,
+        1299
+      ],
+      "target_box": [
+        48,
+        1245,
+        601,
+        1299
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "np.elapsed",
+      "descriptor": "1:24",
+      "target_text": "1:24",
+      "base_box": [
+        48,
+        1371,
+        115,
+        1410
+      ],
+      "target_box": [
+        48,
+        1371,
+        115,
+        1410
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "np.remaining",
+      "descriptor": "-3:08",
+      "target_text": "-3:08",
+      "base_box": [
+        943,
+        1371,
+        1032,
+        1410
+      ],
+      "target_box": [
+        943,
+        1371,
+        1032,
+        1410
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "np.devices",
+      "descriptor": "Devices available",
+      "target_text": "Devices available",
+      "base_box": [
+        48,
+        1656,
+        340,
+        1701
+      ],
+      "target_box": [
+        48,
+        1656,
+        340,
+        1701
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "np.share",
+      "descriptor": "Share",
+      "target_text": "np.share",
+      "base_box": [
+        934,
+        1656,
+        1032,
+        1701
+      ],
+      "target_box": [
+        885,
+        1656,
+        1032,
+        1701
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "np.lyrics.header",
+      "descriptor": "Lyrics preview",
+      "target_text": "Xem trước lời bài hát",
+      "base_box": [
+        90,
+        1779,
+        990,
+        1830
+      ],
+      "target_box": [
+        90,
+        1779,
+        990,
+        1830
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "np.lyrics.line1",
+      "descriptor": "Have you got colour in your cheeks?",
+      "target_text": "Have you got colour in your cheeks?",
+      "base_box": [
+        90,
+        1848,
+        990,
+        1902
+      ],
+      "target_box": [
+        90,
+        1848,
+        990,
+        1902
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "np.lyrics.line2",
+      "descriptor": "Do you ever get the feeling that you can't shift the tide",
+      "target_text": "Do you ever get the feeling that you can't shift the tide",
+      "base_box": [
+        90,
+        1902,
+        990,
+        2010
+      ],
+      "target_box": [
+        90,
+        1902,
+        990,
+        2010
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 30.185,
+      "y": 1.25,
+      "width": 37.5,
+      "height": 1.5
+    },
+    "2": {
+      "x": 30.185,
+      "y": 3.0,
+      "width": 37.5,
+      "height": 1.875
+    },
+    "3": {
+      "x": 4.444,
+      "y": 48.625,
+      "width": 51.204,
+      "height": 3.0
+    },
+    "4": {
+      "x": 4.444,
+      "y": 51.875,
+      "width": 51.204,
+      "height": 2.25
+    },
+    "5": {
+      "x": 4.444,
+      "y": 57.125,
+      "width": 6.204,
+      "height": 1.625
+    },
+    "6": {
+      "x": 87.315,
+      "y": 57.125,
+      "width": 8.241,
+      "height": 1.625
+    },
+    "7": {
+      "x": 4.444,
+      "y": 69.0,
+      "width": 27.037,
+      "height": 1.875
+    },
+    "8": {
+      "x": 86.481,
+      "y": 69.0,
+      "width": 9.074,
+      "height": 1.875
+    },
+    "9": {
+      "x": 8.333,
+      "y": 74.125,
+      "width": 83.333,
+      "height": 2.125
+    },
+    "10": {
+      "x": 8.333,
+      "y": 77.0,
+      "width": 83.333,
+      "height": 2.25
+    },
+    "11": {
+      "x": 8.333,
+      "y": 79.25,
+      "width": 83.333,
+      "height": 4.5
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 35.0,
+      "y": 1.25,
+      "width": 27.778,
+      "height": 1.5
+    },
+    "2": {
+      "x": 35.0,
+      "y": 3.0,
+      "width": 27.778,
+      "height": 1.875
+    },
+    "3": {
+      "x": 4.444,
+      "y": 48.625,
+      "width": 51.204,
+      "height": 3.0
+    },
+    "4": {
+      "x": 4.444,
+      "y": 51.875,
+      "width": 51.204,
+      "height": 2.25
+    },
+    "5": {
+      "x": 4.444,
+      "y": 57.125,
+      "width": 6.204,
+      "height": 1.625
+    },
+    "6": {
+      "x": 87.315,
+      "y": 57.125,
+      "width": 8.241,
+      "height": 1.625
+    },
+    "7": {
+      "x": 4.444,
+      "y": 69.0,
+      "width": 27.037,
+      "height": 1.875
+    },
+    "8": {
+      "x": 81.944,
+      "y": 69.0,
+      "width": 13.611,
+      "height": 1.875
+    },
+    "9": {
+      "x": 8.333,
+      "y": 74.125,
+      "width": 83.333,
+      "height": 2.125
+    },
+    "10": {
+      "x": 8.333,
+      "y": 77.0,
+      "width": 83.333,
+      "height": 2.25
+    },
+    "11": {
+      "x": 8.333,
+      "y": 79.25,
+      "width": 83.333,
+      "height": 4.5
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="ko-KR" dir="ltr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="appbar"><span class="avatar"></span><h1 data-k="library.title">내 라이브러리</h1></header>
+<main>
+  <div class="chips"><span class="chip" data-k="library.chip.playlists" style="display: inline-block; white-space: nowrap; max-width: none; vertical-align: bottom; overflow: hidden; width: 40px;">플레이리스트</span><span class="chip" data-k="library.chip.artists">아티스트</span><span class="chip" data-k="library.chip.albums">앨범</span><span class="chip" data-k="library.chip.podcasts">팟캐스트 및 쇼</span></div>
+  <div class="sortbar"><span data-k="library.sort.recents">⇅ 최근 항목</span><span>▦</span></div>
+  <div class="row"><span class="art c"></span><span class="txt"><span class="t" data-k="library.liked.title">좋아요 표시한 곡</span><span class="s" data-k="library.liked.sub">📌 플레이리스트 • {count}곡</span></span></div>
+  <div class="row"><span class="art"></span><span class="txt"><span class="t" data-k="library.episodes.title">내 에피소드</span><span class="s" data-k="library.episodes.sub">저장 및 다운로드한 에피소드</span></span></div>
+  <div class="row"><span class="art b"></span><span class="txt"><span class="t" data-k="library.pl1.title">Road Trip 2026</span><span class="s" data-k="library.pl1.sub">플레이리스트 • Neeraj</span></span></div>
+  <div class="row"><span class="art round d"></span><span class="txt"><span class="t" data-k="library.artist1.title">Tame Impala</span><span class="s" data-k="library.artist1.sub">아티스트</span></span></div>
+  <div class="row"><span class="art"></span><span class="txt"><span class="t" data-k="library.album1.title">Currents</span><span class="s" data-k="library.album1.sub">앨범 • Tame Impala</span></span></div>
+  <div class="row"><span class="art round add">＋</span><span class="txt"><span class="t" data-k="library.add.artists">아티스트 추가하기</span></span></div>
+  <div class="row"><span class="art add">＋</span><span class="txt"><span class="t" data-k="library.add.podcasts">팟캐스트 및 쇼 추가하기</span></span></div>
+</main>
+<style>
+.avatar { width: 32px; height: 32px; border-radius: 50%; background: #f59b23; flex-shrink: 0; }
+.sortbar { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+.art.add { background: #2a2a2a; display: flex; align-items: center; justify-content: center; font-size: 22px; color: #b3b3b3; }
+</style>
+<nav class="tabbar">
+  <div class="tab"><span class="ico">⌂</span><span data-k="tab.home">홈</span></div>
+  <div class="tab"><span class="ico">⌕</span><span data-k="tab.search">검색</span></div>
+  <div class="tab on"><span class="ico">≡</span><span data-k="tab.library">내 라이브러리</span></div>
+  <div class="tab"><span class="ico">◉</span><span data-k="tab.premium">Premium</span></div>
+</nav>
+
+
+</body></html>

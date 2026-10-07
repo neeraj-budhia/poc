@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-TA-001",
+  "language": "ta-IN",
+  "screen": "01-home",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "15",
+      "element_id": "home.card2.title",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Top Songs 2026",
+      "target_text": "Your Top Songs 2026"
+    },
+    {
+      "box": "12",
+      "element_id": "home.sec.madeforyou",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 11px < font-size 19px, glyph tops/bottoms cut",
+      "base_text": "Made for you",
+      "target_text": "உங்களுக்காக உருவாக்கப்பட்டது"
+    }
+  ]
+}

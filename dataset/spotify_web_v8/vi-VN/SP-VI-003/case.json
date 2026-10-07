@@ -1,0 +1,51 @@
+{
+  "case_id": "SP-VI-003",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "6",
+    "7",
+    "9",
+    "11",
+    "12",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "14",
+      "related_boxes": [
+        "13"
+      ],
+      "element": "results.r4.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'Danh sách phát • Spotify' overlaps the text element above it."
+    },
+    {
+      "box": "19",
+      "element": "results.seeall",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'Xem tất cả bài hát' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "22",
+      "element": "tab.library",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "Th□ vi□n",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'Thư viện'."
+    }
+  ]
+}

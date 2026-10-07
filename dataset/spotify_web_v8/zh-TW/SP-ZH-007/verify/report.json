@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-ZH-007",
+  "language": "zh-TW",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "9",
+      "element_id": "lyrics.translate",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Show translation",
+      "target_text": "□□□□"
+    },
+    {
+      "box": "12",
+      "element_id": "lyrics.report",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[311,394] extends past the 360px screen edge",
+      "base_text": "Report a problem",
+      "target_text": "回報問題"
+    }
+  ]
+}

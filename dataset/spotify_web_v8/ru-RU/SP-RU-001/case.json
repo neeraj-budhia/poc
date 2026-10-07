@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-001",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "01-home",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "13",
+    "21"
+  ],
+  "defects": [
+    {
+      "box": "15",
+      "element": "home.card2.title",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Your Top Songs 2026",
+      "report": "'Your Top Songs 2026' is shown in English instead of 'Мои лучшие треки 2026'."
+    },
+    {
+      "box": "6",
+      "element": "home.tile.liked",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'Любимые треки' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "case_id": "SP-UR-007",
+  "platform": "web",
+  "language": "ur",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "9",
+      "related_boxes": [
+        "8"
+      ],
+      "element": "lyrics.translate",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'ترجمہ دکھائیں' overlaps the text element above it."
+    },
+    {
+      "box": "12",
+      "element": "lyrics.report",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□□□ □□ □□□□□ □□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'مسئلے کی اطلاع دیں'."
+    },
+    {
+      "box": "11",
+      "element": "lyrics.share",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "Ø´ÛŒØ¦Ø± Ú©Ø±ÛŒÚº",
+      "report": "Text is garbled by an encoding error instead of 'شیئر کریں'."
+    }
+  ]
+}

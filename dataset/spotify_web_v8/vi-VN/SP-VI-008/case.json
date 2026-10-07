@@ -1,0 +1,44 @@
+{
+  "case_id": "SP-VI-008",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "08-library",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "4",
+    "11",
+    "13",
+    "15",
+    "16",
+    "22"
+  ],
+  "defects": [
+    {
+      "box": "5",
+      "element": "library.chip.podcasts",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'Podcast và chương trình' runs off the edge of the screen."
+    },
+    {
+      "box": "9",
+      "element": "library.episodes.title",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Your Episodes",
+      "report": "'Your Episodes' is shown in English instead of 'Tập của bạn'."
+    },
+    {
+      "box": "17",
+      "element": "library.add.artists",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'Thêm nghệ sĩ' are clipped by a too-small line box."
+    }
+  ]
+}

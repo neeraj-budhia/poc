@@ -1,0 +1,17 @@
+{
+  "case_id": "SP-VI-010",
+  "language": "vi-VN",
+  "screen": "10-settings",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "6",
+      "element_id": "settings.crossfade",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Crossfade",
+      "target_text": "Chuy□n ti□p bài hát"
+    }
+  ]
+}

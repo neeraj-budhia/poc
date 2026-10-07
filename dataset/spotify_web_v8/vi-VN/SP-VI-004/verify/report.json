@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-VI-004",
+  "language": "vi-VN",
+  "screen": "04-playlist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "4",
+      "element_id": "playlist.meta",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "30 songs, about 2 hr 5 min",
+      "target_text": "{count} bài hát, khoảng 2 giờ 5 phút"
+    },
+    {
+      "box": "13",
+      "element_id": "playlist.updated",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 7px < font-size 11px, glyph tops/bottoms cut",
+      "base_text": "Updated 6 days ago",
+      "target_text": "Đã cập nhật 6 ngày trước"
+    }
+  ]
+}

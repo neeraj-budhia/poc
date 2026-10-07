@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-UR-010",
+  "platform": "web",
+  "language": "ur",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "8",
+      "element": "settings.crossfade.val",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "5 Ø³ÛŒÚ©Ù†Úˆ",
+      "report": "Text is garbled by an encoding error instead of '5 سیکنڈ'."
+    },
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "آپ کے پلان کی تجدید November 14, 2026 کو $11.99 میں ہو جائے گی۔",
+      "report": "Number/date/currency uses the US format ('آپ کے پلان کی تجدید November 14, 2026 کو $11.99 میں ہو جائے گی۔') instead of the local one ('آپ کے پلان کی تجدید 14 نومبر 2026 کو Rs 349 میں ہو جائے گی۔')."
+    },
+    {
+      "box": "1",
+      "element": "settings.title",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'ترتیبات' are clipped by a too-small line box."
+    }
+  ]
+}

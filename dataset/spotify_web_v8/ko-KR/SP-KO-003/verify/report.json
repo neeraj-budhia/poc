@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-KO-003",
+  "language": "ko-KR",
+  "screen": "03-search-results",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "12",
+      "element_id": "results.r3.sub",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Album • Arctic Monkeys • 2013",
+      "target_text": "ì•¨ë²” â€¢ Arctic Monkeys â€¢ 2013"
+    },
+    {
+      "box": "22",
+      "element_id": "tab.library",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Library",
+      "target_text": "□ □□□□□"
+    },
+    {
+      "box": "14",
+      "element_id": "results.r4.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['results.r4.title']",
+      "base_text": "Playlist • Spotify",
+      "target_text": "플레이리스트 • Spotify"
+    }
+  ]
+}

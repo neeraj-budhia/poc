@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-RU-009",
+  "language": "ru-RU",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "2",
+      "element_id": "artist.listeners",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "24,812,331 monthly listeners",
+      "target_text": "{count} слушатель за месяц"
+    },
+    {
+      "box": "10",
+      "element_id": "artist.p3.plays",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "301,227,560",
+      "target_text": "301,227,560"
+    }
+  ]
+}

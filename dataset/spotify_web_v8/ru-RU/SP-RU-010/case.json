@@ -1,0 +1,31 @@
+{
+  "case_id": "SP-RU-010",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "16",
+      "element": "settings.storage.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "Использовано: 1.2 GB • Свободно: 48.6 GB",
+      "report": "Number/date/currency uses the US format ('Использовано: 1.2 GB • Свободно: 48.6 GB') instead of the local one ('Использовано: 1,2 ГБ • Свободно: 48,6 ГБ')."
+    },
+    {
+      "box": "14",
+      "related_boxes": [
+        "13"
+      ],
+      "element": "settings.datasaver.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'Устанавливает низкое качество музыки и отключает Canvas.' overlaps the text element above it."
+    }
+  ]
+}

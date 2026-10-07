@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-HE-005",
+  "language": "he-IL",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "premium.plan.duo.feat",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['premium.plan.duo.name', 'premium.plan.duo.price']",
+      "base_text": "2 Premium accounts",
+      "target_text": "2 חשבונות Premium"
+    },
+    {
+      "box": "6",
+      "element_id": "premium.plan.individual.name",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Individual",
+      "target_text": "□□□□"
+    }
+  ]
+}

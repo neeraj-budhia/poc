@@ -1,0 +1,42 @@
+{
+  "case_id": "SP-VI-002",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "5",
+    "11",
+    "12",
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "1",
+      "element": "search.title",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'Tìm kiếm' are clipped by a too-small line box."
+    },
+    {
+      "box": "6",
+      "element": "search.cat.live",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'Sự kiện trực tiếp' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "4",
+      "element": "search.cat.music",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "Nháº¡c",
+      "report": "Text is garbled by an encoding error instead of 'Nhạc'."
+    }
+  ]
+}

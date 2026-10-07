@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="he-IL" dir="rtl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="appbar"><span class="back">‹</span><h1 data-k="settings.title">הגדרות</h1></header>
+<main>
+  <h2 class="set-h" data-k="settings.sec.account">חשבון</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.plan">Premium יחיד</p><p class="s" data-k="settings.plan.sub">המינוי שלך יתחדש ב-November 14, 2026 בתשלום של $11.99.</p></div></div>
+  <h2 class="set-h" data-k="settings.sec.playback">הפעלה</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.crossfade">מעבר הדרגתי</p><p class="s" data-k="settings.crossfade.sub">מאפשר מעבר הדרגתי בין שירים</p></div><span class="val" data-k="settings.crossfade.val">{count} שנ׳</span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.gapless" style="display: inline-block; white-space: nowrap; max-width: none; vertical-align: bottom; overflow: hidden; width: 61px;">הפעלה ללא הפסקות</p></div><span class="tog on"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.explicit">לאפשר תוכן בוטה</p><p class="s" data-k="settings.explicit.sub">יש להפעיל כדי להשמיע תוכן בוטה. תוכן בוטה מסומן בתג E.</p></div><span class="tog on"></span></div>
+  <h2 class="set-h" data-k="settings.sec.data">חיסכון בנתונים ומצב אופליין</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.datasaver">חיסכון בנתונים</p><p class="s" data-k="settings.datasaver.sub">מגדיר את איכות המוזיקה לנמוכה ומשבית את Canvas.</p></div><span class="tog"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.storage">אחסון</p><p class="s" data-k="settings.storage.sub">1.2 GB בשימוש • 48.6 GB פנויים</p></div></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.language">שפת האפליקציה</p></div><span class="val" data-k="settings.language.val">עברית</span></div>
+  <span class="btn-outline logout" data-k="settings.logout">התנתקות</span>
+  <p class="ver" data-k="settings.version">גרסה 9.0.82.512</p>
+</main>
+<style>
+.set-h { font-size: 17px; font-weight: 700; margin: 14px 0 4px; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; }
+.set-row .txt { min-width: 0; flex: 1; }
+.set-row .t { font-size: 15px; }
+.set-row .s { font-size: 12px; color: #a7a7a7; margin-top: 2px; line-height: 1.35; }
+.set-row .val { font-size: 13px; color: #a7a7a7; white-space: nowrap; }
+.tog { width: 40px; height: 22px; border-radius: 11px; background: #535353; flex-shrink: 0; position: relative; }
+.tog::after { content: ""; position: absolute; top: 3px; inset-inline-start: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+.tog.on { background: #1ed760; }
+.tog.on::after { inset-inline-start: 21px; }
+.logout { margin-top: 14px; }
+.ver { font-size: 11px; color: #a7a7a7; margin-top: 10px; }
+</style>
+
+</body></html>

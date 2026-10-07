@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-KO-004",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "04-playlist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "defects": [
+    {
+      "box": "13",
+      "element": "playlist.updated",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in '6일 전 업데이트됨' are clipped by a too-small line box."
+    },
+    {
+      "box": "3",
+      "element": "playlist.madefor",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'Neeraj님을 위해 제작됨' is truncated with an ellipsis."
+    },
+    {
+      "box": "2",
+      "element": "playlist.desc",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
+      "report": "'Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.' is shown in English instead of '매주 새로운 음악으로 채워지는 나만의 믹스테이프. 회원님을 위해 엄선한 신곡과 숨은 명곡을 즐겨 보세요. 매주 월요일에 업데이트됩니다.'."
+    }
+  ]
+}

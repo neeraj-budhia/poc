@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-KO-006",
+  "language": "ko-KR",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "8",
+      "element_id": "np.share",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Share",
+      "target_text": "공유하기"
+    },
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Playing from playlist",
+      "target_text": "플레이리스트에서 재생 중"
+    },
+    {
+      "box": "2",
+      "element_id": "np.source",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Discover Weekly",
+      "target_text": "np.source"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "case_id": "SP-KO-003",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "12",
+      "element": "results.r3.sub",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "ì•¨ë²” â€¢ Arctic Monkeys â€¢ 2013",
+      "report": "Text is garbled by an encoding error instead of '앨범 • Arctic Monkeys • 2013'."
+    },
+    {
+      "box": "22",
+      "element": "tab.library",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□ □□□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of '내 라이브러리'."
+    },
+    {
+      "box": "14",
+      "related_boxes": [
+        "13"
+      ],
+      "element": "results.r4.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'플레이리스트 • Spotify' overlaps the text element above it."
+    }
+  ]
+}

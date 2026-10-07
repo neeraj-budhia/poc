@@ -1,0 +1,206 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-UR-006:06-now-playing",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Urdu (ur)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "np.playingfrom": {
+        "desc": "Playing from playlist",
+        "bbox_base": [
+          326,
+          30,
+          731,
+          66
+        ],
+        "bbox_head": [
+          402,
+          30,
+          701,
+          87
+        ],
+        "text_head": "پلے لسٹ سے چل رہا ہے",
+        "match": "stable_id"
+      },
+      "np.source": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          326,
+          72,
+          731,
+          117
+        ],
+        "bbox_head": [
+          402,
+          93,
+          701,
+          138
+        ],
+        "text_head": "Discover Weekly",
+        "match": "stable_id"
+      },
+      "np.title": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          48,
+          1167,
+          601,
+          1239
+        ],
+        "bbox_head": [
+          479,
+          1188,
+          1032,
+          1260
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "np.artist": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          48,
+          1245,
+          601,
+          1299
+        ],
+        "bbox_head": [
+          479,
+          1266,
+          1032,
+          1320
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "np.elapsed": {
+        "desc": "1:24",
+        "bbox_base": [
+          48,
+          1371,
+          115,
+          1410
+        ],
+        "bbox_head": [
+          48,
+          1392,
+          115,
+          1431
+        ],
+        "text_head": "1:24",
+        "match": "stable_id"
+      },
+      "np.remaining": {
+        "desc": "-3:08",
+        "bbox_base": [
+          943,
+          1371,
+          1032,
+          1410
+        ],
+        "bbox_head": [
+          943,
+          1392,
+          1032,
+          1431
+        ],
+        "text_head": "-3:08",
+        "match": "stable_id"
+      },
+      "np.devices": {
+        "desc": "Devices available",
+        "bbox_base": [
+          48,
+          1656,
+          340,
+          1701
+        ],
+        "bbox_head": [
+          745,
+          1677,
+          1032,
+          1745
+        ],
+        "text_head": "Devices available",
+        "match": "stable_id"
+      },
+      "np.share": {
+        "desc": "Share",
+        "bbox_base": [
+          934,
+          1656,
+          1032,
+          1701
+        ],
+        "bbox_head": [
+          0,
+          1677,
+          47,
+          1745
+        ],
+        "text_head": "شیئر کریں",
+        "match": "stable_id"
+      },
+      "np.lyrics.header": {
+        "desc": "Lyrics preview",
+        "bbox_base": [
+          90,
+          1779,
+          990,
+          1830
+        ],
+        "bbox_head": [
+          90,
+          1823,
+          990,
+          1903
+        ],
+        "text_head": "بولوں کا پیش نظارہ",
+        "match": "stable_id"
+      },
+      "np.lyrics.line1": {
+        "desc": "Have you got colour in your cheeks?",
+        "bbox_base": [
+          90,
+          1848,
+          990,
+          1902
+        ],
+        "bbox_head": [
+          90,
+          1921,
+          990,
+          1975
+        ],
+        "text_head": "Have you got colour in your cheeks?",
+        "match": "stable_id"
+      },
+      "np.lyrics.line2": {
+        "desc": "Do you ever get the feeling that you can't shift the tide",
+        "bbox_base": [
+          90,
+          1902,
+          990,
+          2010
+        ],
+        "bbox_head": [
+          90,
+          1975,
+          990,
+          2083
+        ],
+        "text_head": "Do you ever get the feeling that you can't shift the tide",
+        "match": "stable_id"
+      }
+    }
+  }
+}

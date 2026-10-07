@@ -1,0 +1,342 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-HE-005:05-premium",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Hebrew (he-IL)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "premium.title": {
+        "desc": "Premium",
+        "bbox_base": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "bbox_head": [
+          708,
+          50,
+          961,
+          118
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "brand.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "bbox_head": [
+          727,
+          236,
+          912,
+          286
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "premium.hero.title": {
+        "desc": "Try 1 month of Premium for $0",
+        "bbox_base": [
+          96,
+          324,
+          984,
+          489
+        ],
+        "bbox_head": [
+          96,
+          324,
+          984,
+          406
+        ],
+        "text_head": "נסו חודש של Premium ב-0 ₪",
+        "match": "stable_id"
+      },
+      "premium.hero.sub": {
+        "desc": "Only $11.99/month after. Cancel anytime.",
+        "bbox_base": [
+          96,
+          513,
+          984,
+          568
+        ],
+        "bbox_head": [
+          96,
+          430,
+          984,
+          485
+        ],
+        "text_head": "לאחר מכן רק 21.90 ₪ לחודש. אפשר לבטל בכל עת.",
+        "match": "stable_id"
+      },
+      "premium.cta.trial": {
+        "desc": "Try free for 1 month",
+        "bbox_base": [
+          96,
+          616,
+          647,
+          742
+        ],
+        "bbox_head": [
+          359,
+          533,
+          984,
+          662
+        ],
+        "text_head": "לנסות בחינם למשך חודש",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.name": {
+        "desc": "Individual",
+        "bbox_base": [
+          108,
+          874,
+          346,
+          934
+        ],
+        "bbox_head": [
+          787,
+          794,
+          972,
+          854
+        ],
+        "text_head": "□□□□",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.price": {
+        "desc": "$11.99 / month",
+        "bbox_base": [
+          686,
+          880,
+          984,
+          931
+        ],
+        "bbox_head": [
+          96,
+          800,
+          389,
+          851
+        ],
+        "text_head": "21.90 ₪ / חודש",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.feat": {
+        "desc": "1 Premium account",
+        "bbox_base": [
+          108,
+          952,
+          984,
+          1000
+        ],
+        "bbox_head": [
+          96,
+          872,
+          972,
+          920
+        ],
+        "text_head": "חשבון Premium אחד",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.name": {
+        "desc": "Duo",
+        "bbox_base": [
+          108,
+          1120,
+          206,
+          1180
+        ],
+        "bbox_head": [
+          901,
+          1040,
+          972,
+          1100
+        ],
+        "text_head": "זוגי",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.price": {
+        "desc": "$16.99 / month",
+        "bbox_base": [
+          679,
+          1126,
+          984,
+          1177
+        ],
+        "bbox_head": [
+          96,
+          1046,
+          397,
+          1097
+        ],
+        "text_head": "28.90 ₪ / חודש",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.feat": {
+        "desc": "2 Premium accounts",
+        "bbox_base": [
+          108,
+          1198,
+          984,
+          1246
+        ],
+        "bbox_head": [
+          96,
+          1061,
+          972,
+          1109
+        ],
+        "text_head": "2 חשבונות Premium",
+        "match": "stable_id"
+      },
+      "premium.plan.family.name": {
+        "desc": "Family",
+        "bbox_base": [
+          108,
+          1366,
+          267,
+          1426
+        ],
+        "bbox_head": [
+          774,
+          1286,
+          972,
+          1346
+        ],
+        "text_head": "משפחתי",
+        "match": "stable_id"
+      },
+      "premium.plan.family.price": {
+        "desc": "$19.99 / month",
+        "bbox_base": [
+          679,
+          1372,
+          984,
+          1423
+        ],
+        "bbox_head": [
+          96,
+          1292,
+          398,
+          1343
+        ],
+        "text_head": "34.90 ₪ / חודש",
+        "match": "stable_id"
+      },
+      "premium.plan.family.feat": {
+        "desc": "Up to 6 Premium accounts",
+        "bbox_base": [
+          108,
+          1444,
+          984,
+          1492
+        ],
+        "bbox_head": [
+          96,
+          1364,
+          972,
+          1412
+        ],
+        "text_head": "עד 6 חשבונות Premium",
+        "match": "stable_id"
+      },
+      "premium.legal": {
+        "desc": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+        "bbox_base": [
+          48,
+          1576,
+          1032,
+          1668
+        ],
+        "bbox_head": [
+          48,
+          1496,
+          1032,
+          1588
+        ],
+        "text_head": "בכפוף לתנאים. המבצע מסתיים ב-31 באוקטובר 2026. למינוי יחיד בלבד.",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          883,
+          2322,
+          1007,
+          2364
+        ],
+        "text_head": "דף הבית",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          632,
+          2322,
+          718,
+          2364
+        ],
+        "text_head": "חיפוש",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          309,
+          2320,
+          501,
+          2362
+        ],
+        "text_head": "הספרייה שלך",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          66,
+          2328,
+          204,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

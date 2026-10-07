@@ -1,0 +1,786 @@
+{
+  "case_id": "SP-UR-003",
+  "screen": "03-search-results",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Urdu (ur)",
+  "case_elements": [
+    {
+      "box": "7",
+      "element_id": "results.r1.title",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "5",
+      "element_id": "results.chip.playlists",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 23,
+    "with_target_box": 23,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "results.query",
+      "descriptor": "arctic monkeys",
+      "target_text": "arctic monkeys",
+      "base_box": [
+        133,
+        57,
+        444,
+        111
+      ],
+      "target_box": [
+        636,
+        57,
+        947,
+        111
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "results.chip.top",
+      "descriptor": "Top",
+      "target_text": "سرفہرست",
+      "base_box": [
+        48,
+        192,
+        187,
+        276
+      ],
+      "target_box": [
+        823,
+        192,
+        1032,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "results.chip.songs",
+      "descriptor": "Songs",
+      "target_text": "گانے",
+      "base_box": [
+        211,
+        192,
+        397,
+        276
+      ],
+      "target_box": [
+        653,
+        192,
+        799,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "results.chip.artists",
+      "descriptor": "Artists",
+      "target_text": "فنکار",
+      "base_box": [
+        421,
+        192,
+        611,
+        276
+      ],
+      "target_box": [
+        497,
+        192,
+        629,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "results.chip.playlists",
+      "descriptor": "Playlists",
+      "target_text": "پلے لسٹس",
+      "base_box": [
+        635,
+        192,
+        855,
+        276
+      ],
+      "target_box": [
+        356,
+        192,
+        473,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "results.chip.albums",
+      "descriptor": "Albums",
+      "target_text": "البمز",
+      "base_box": [
+        48,
+        300,
+        256,
+        384
+      ],
+      "target_box": [
+        208,
+        192,
+        332,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "results.r1.title",
+      "descriptor": "Arctic Monkeys",
+      "target_text": "results.r1.title",
+      "base_box": [
+        228,
+        460,
+        1032,
+        514
+      ],
+      "target_box": [
+        48,
+        367,
+        852,
+        421
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "results.r1.sub",
+      "descriptor": "Artist",
+      "target_text": "فنکار",
+      "base_box": [
+        228,
+        520,
+        1032,
+        566
+      ],
+      "target_box": [
+        48,
+        427,
+        852,
+        495
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "results.r2.title",
+      "descriptor": "Do I Wanna Know?",
+      "target_text": "Do I Wanna Know?",
+      "base_box": [
+        228,
+        646,
+        1032,
+        700
+      ],
+      "target_box": [
+        48,
+        553,
+        852,
+        607
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "results.r2.sub",
+      "descriptor": "Song • Arctic Monkeys",
+      "target_text": "گانا • Arctic Monkeys",
+      "base_box": [
+        228,
+        706,
+        1032,
+        752
+      ],
+      "target_box": [
+        48,
+        613,
+        852,
+        681
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "results.r3.title",
+      "descriptor": "AM",
+      "target_text": "AM",
+      "base_box": [
+        228,
+        832,
+        1032,
+        886
+      ],
+      "target_box": [
+        48,
+        739,
+        852,
+        793
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "results.r3.sub",
+      "descriptor": "Album • Arctic Monkeys • 2013",
+      "target_text": "البم • Arctic Monkeys • 2013",
+      "base_box": [
+        228,
+        892,
+        1032,
+        938
+      ],
+      "target_box": [
+        48,
+        799,
+        852,
+        867
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "results.r4.title",
+      "descriptor": "This Is Arctic Monkeys",
+      "target_text": "This Is Arctic Monkeys",
+      "base_box": [
+        228,
+        1018,
+        1032,
+        1072
+      ],
+      "target_box": [
+        48,
+        925,
+        852,
+        979
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "results.r4.sub",
+      "descriptor": "Playlist • Spotify",
+      "target_text": "پلے لسٹ • Spotify",
+      "base_box": [
+        228,
+        1078,
+        1032,
+        1124
+      ],
+      "target_box": [
+        48,
+        985,
+        852,
+        1053
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "results.r5.title",
+      "descriptor": "505",
+      "target_text": "505",
+      "base_box": [
+        228,
+        1204,
+        1032,
+        1258
+      ],
+      "target_box": [
+        48,
+        1111,
+        852,
+        1165
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "results.r5.sub",
+      "descriptor": "Song • Arctic Monkeys",
+      "target_text": "گانا • Arctic Monkeys",
+      "base_box": [
+        228,
+        1264,
+        1032,
+        1310
+      ],
+      "target_box": [
+        48,
+        1171,
+        852,
+        1239
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "results.r6.title",
+      "descriptor": "Arctic Monkeys Radio",
+      "target_text": "Arctic Monkeys Radio",
+      "base_box": [
+        228,
+        1390,
+        1032,
+        1444
+      ],
+      "target_box": [
+        48,
+        1297,
+        852,
+        1351
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "results.r6.sub",
+      "descriptor": "Playlist • Spotify",
+      "target_text": "پلے لسٹ • Spotify",
+      "base_box": [
+        228,
+        1450,
+        1032,
+        1496
+      ],
+      "target_box": [
+        48,
+        1357,
+        852,
+        1425
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "results.seeall",
+      "descriptor": "See all songs",
+      "target_text": "تمام گانے دیکھیں",
+      "base_box": [
+        48,
+        1566,
+        1032,
+        1614
+      ],
+      "target_box": [
+        48,
+        1484,
+        1032,
+        1558
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "20",
+      "element_id": "tab.home",
+      "descriptor": "Home",
+      "target_text": "ہوم",
+      "base_box": [
+        89,
+        2324,
+        181,
+        2362
+      ],
+      "target_box": [
+        921,
+        2301,
+        969,
+        2385
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "21",
+      "element_id": "tab.search",
+      "descriptor": "Search",
+      "target_text": "تلاش",
+      "base_box": [
+        350,
+        2324,
+        460,
+        2362
+      ],
+      "target_box": [
+        645,
+        2301,
+        706,
+        2385
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "22",
+      "element_id": "tab.library",
+      "descriptor": "Your Library",
+      "target_text": "آپ کی لائبریری",
+      "base_box": [
+        580,
+        2322,
+        770,
+        2361
+      ],
+      "target_box": [
+        318,
+        2300,
+        492,
+        2384
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "23",
+      "element_id": "tab.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "target_box": [
+        66,
+        2328,
+        204,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 12.315,
+      "y": 2.375,
+      "width": 28.796,
+      "height": 2.25
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.0,
+      "width": 12.87,
+      "height": 3.5
+    },
+    "3": {
+      "x": 19.537,
+      "y": 8.0,
+      "width": 17.222,
+      "height": 3.5
+    },
+    "4": {
+      "x": 38.981,
+      "y": 8.0,
+      "width": 17.593,
+      "height": 3.5
+    },
+    "5": {
+      "x": 58.796,
+      "y": 8.0,
+      "width": 20.37,
+      "height": 3.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 12.5,
+      "width": 19.259,
+      "height": 3.5
+    },
+    "7": {
+      "x": 21.111,
+      "y": 19.167,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "8": {
+      "x": 21.111,
+      "y": 21.667,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "9": {
+      "x": 21.111,
+      "y": 26.917,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "10": {
+      "x": 21.111,
+      "y": 29.417,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "11": {
+      "x": 21.111,
+      "y": 34.667,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 21.111,
+      "y": 37.167,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "13": {
+      "x": 21.111,
+      "y": 42.417,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "14": {
+      "x": 21.111,
+      "y": 44.917,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "15": {
+      "x": 21.111,
+      "y": 50.167,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "16": {
+      "x": 21.111,
+      "y": 52.667,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "17": {
+      "x": 21.111,
+      "y": 57.917,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "18": {
+      "x": 21.111,
+      "y": 60.417,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "19": {
+      "x": 4.444,
+      "y": 65.25,
+      "width": 91.111,
+      "height": 2.0
+    },
+    "20": {
+      "x": 8.241,
+      "y": 96.833,
+      "width": 8.519,
+      "height": 1.583
+    },
+    "21": {
+      "x": 32.407,
+      "y": 96.833,
+      "width": 10.185,
+      "height": 1.583
+    },
+    "22": {
+      "x": 53.704,
+      "y": 96.75,
+      "width": 17.593,
+      "height": 1.625
+    },
+    "23": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 58.889,
+      "y": 2.375,
+      "width": 28.796,
+      "height": 2.25
+    },
+    "2": {
+      "x": 76.204,
+      "y": 8.0,
+      "width": 19.352,
+      "height": 4.583
+    },
+    "3": {
+      "x": 60.463,
+      "y": 8.0,
+      "width": 13.519,
+      "height": 4.583
+    },
+    "4": {
+      "x": 46.019,
+      "y": 8.0,
+      "width": 12.222,
+      "height": 4.583
+    },
+    "5": {
+      "x": 32.963,
+      "y": 8.0,
+      "width": 10.833,
+      "height": 4.583
+    },
+    "6": {
+      "x": 19.259,
+      "y": 8.0,
+      "width": 11.481,
+      "height": 4.583
+    },
+    "7": {
+      "x": 4.444,
+      "y": 15.292,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "8": {
+      "x": 4.444,
+      "y": 17.792,
+      "width": 74.444,
+      "height": 2.833
+    },
+    "9": {
+      "x": 4.444,
+      "y": 23.042,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "10": {
+      "x": 4.444,
+      "y": 25.542,
+      "width": 74.444,
+      "height": 2.833
+    },
+    "11": {
+      "x": 4.444,
+      "y": 30.792,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 4.444,
+      "y": 33.292,
+      "width": 74.444,
+      "height": 2.833
+    },
+    "13": {
+      "x": 4.444,
+      "y": 38.542,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "14": {
+      "x": 4.444,
+      "y": 41.042,
+      "width": 74.444,
+      "height": 2.833
+    },
+    "15": {
+      "x": 4.444,
+      "y": 46.292,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "16": {
+      "x": 4.444,
+      "y": 48.792,
+      "width": 74.444,
+      "height": 2.833
+    },
+    "17": {
+      "x": 4.444,
+      "y": 54.042,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "18": {
+      "x": 4.444,
+      "y": 56.542,
+      "width": 74.444,
+      "height": 2.833
+    },
+    "19": {
+      "x": 4.444,
+      "y": 61.833,
+      "width": 91.111,
+      "height": 3.083
+    },
+    "20": {
+      "x": 85.278,
+      "y": 95.875,
+      "width": 4.444,
+      "height": 3.5
+    },
+    "21": {
+      "x": 59.722,
+      "y": 95.875,
+      "width": 5.648,
+      "height": 3.5
+    },
+    "22": {
+      "x": 29.444,
+      "y": 95.833,
+      "width": 16.111,
+      "height": 3.5
+    },
+    "23": {
+      "x": 6.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  }
+}

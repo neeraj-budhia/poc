@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-KO-009",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "11",
+      "element": "artist.seemore",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "See more",
+      "report": "'See more' is shown in English instead of '더 보기'."
+    },
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "월별 청취자 {count}명",
+      "report": "An unresolved placeholder ('월별 청취자 {count}명') is shown instead of the value ('월별 청취자 24,812,331명')."
+    }
+  ]
+}

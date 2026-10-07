@@ -1,0 +1,36 @@
+{
+  "case_id": "SP-ZH-006",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "06-now-playing",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "10",
+    "11"
+  ],
+  "defects": [
+    {
+      "box": "1",
+      "element": "np.playingfrom",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'正在從播放清單播放' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "8",
+      "element": "np.share",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Share",
+      "report": "'Share' is shown in English instead of '分享'."
+    }
+  ]
+}

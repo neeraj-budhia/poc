@@ -1,0 +1,39 @@
+{
+  "case_id": "SP-TA-002",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "13",
+      "element": "search.cat.workout",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "search.cat.workout",
+      "report": "The raw resource key 'search.cat.workout' is shown instead of 'உடற்பயிற்சி'."
+    },
+    {
+      "box": "2",
+      "element": "search.placeholder",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'எதைக் கேட்க விரும்புகிறீர்கள்?' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "6",
+      "element": "search.cat.live",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'நேரலை நிகழ்வுகள்' is truncated with an ellipsis."
+    }
+  ]
+}

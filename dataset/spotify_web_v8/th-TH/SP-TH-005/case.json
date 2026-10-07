@@ -1,0 +1,42 @@
+{
+  "case_id": "SP-TH-005",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "9",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "11",
+      "element": "premium.plan.duo.feat",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "2 Premium accounts",
+      "report": "'2 Premium accounts' is shown in English instead of 'บัญชี Premium 2 บัญชี'."
+    },
+    {
+      "box": "3",
+      "element": "premium.hero.title",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "ทดลองใช้ Premium {count} เดือน ฟรี ฿0",
+      "report": "An unresolved placeholder ('ทดลองใช้ Premium {count} เดือน ฟรี ฿0') is shown instead of the value ('ทดลองใช้ Premium 1 เดือน ฟรี ฿0')."
+    },
+    {
+      "box": "5",
+      "element": "premium.cta.trial",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'ทดลองใช้ฟรี 1 เดือน' runs off the edge of the screen."
+    }
+  ]
+}

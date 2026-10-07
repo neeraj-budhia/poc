@@ -1,0 +1,11 @@
+{
+  "case_id": "SP-UR-C01",
+  "platform": "web",
+  "language": "ur",
+  "screen": "02-search",
+  "is_control": true,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": []
+}

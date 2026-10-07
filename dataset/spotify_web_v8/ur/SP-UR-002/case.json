@@ -1,0 +1,39 @@
+{
+  "case_id": "SP-UR-002",
+  "platform": "web",
+  "language": "ur",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "13",
+      "element": "search.cat.workout",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'ورزش' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "7",
+      "element": "search.cat.madeforyou",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'آپ کے لیے تیار کردہ' is truncated with an ellipsis."
+    },
+    {
+      "box": "12",
+      "element": "search.cat.hiphop",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Hip-Hop",
+      "report": "'Hip-Hop' is shown in English instead of 'ہپ ہاپ'."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "SP-UR-003",
+  "platform": "web",
+  "language": "ur",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "9",
+    "11",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "7",
+      "element": "results.r1.title",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "results.r1.title",
+      "report": "The raw resource key 'results.r1.title' is shown instead of 'Arctic Monkeys'."
+    },
+    {
+      "box": "5",
+      "element": "results.chip.playlists",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'پلے لسٹس' is truncated with an ellipsis."
+    }
+  ]
+}

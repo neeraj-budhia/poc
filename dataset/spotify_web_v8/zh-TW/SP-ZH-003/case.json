@@ -1,0 +1,40 @@
+{
+  "case_id": "SP-ZH-003",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "10",
+      "related_boxes": [
+        "9"
+      ],
+      "element": "results.r2.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'歌曲 • Arctic Monkeys' overlaps the text element above it."
+    },
+    {
+      "box": "16",
+      "element": "results.r5.sub",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Song • Arctic Monkeys",
+      "report": "'Song • Arctic Monkeys' is shown in English instead of '歌曲 • Arctic Monkeys'."
+    }
+  ]
+}

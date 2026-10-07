@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TA-005",
+  "language": "ta-IN",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "3",
+      "element_id": "premium.hero.title",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Try 1 month of Premium for $0",
+      "target_text": "₹{amount} கட்டணத்தில் 1 மாத Premium-ஐ முயற்சிக்கவும்"
+    },
+    {
+      "box": "8",
+      "element_id": "premium.plan.individual.feat",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "1 Premium account",
+      "target_text": "1 Premium account"
+    },
+    {
+      "box": "12",
+      "element_id": "premium.plan.family.name",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 10px < font-size 17px, glyph tops/bottoms cut",
+      "base_text": "Family",
+      "target_text": "குடும்பம்"
+    }
+  ]
+}

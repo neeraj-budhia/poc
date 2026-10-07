@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-VI-008",
+  "language": "vi-VN",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "5",
+      "element_id": "library.chip.podcasts",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[258,429] extends past the 360px screen edge",
+      "base_text": "Podcasts & Shows",
+      "target_text": "Podcast và chương trình"
+    },
+    {
+      "box": "9",
+      "element_id": "library.episodes.title",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Episodes",
+      "target_text": "Your Episodes"
+    },
+    {
+      "box": "17",
+      "element_id": "library.add.artists",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 9px < font-size 15px, glyph tops/bottoms cut",
+      "base_text": "Add artists",
+      "target_text": "Thêm nghệ sĩ"
+    }
+  ]
+}

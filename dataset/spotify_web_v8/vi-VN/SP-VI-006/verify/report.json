@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-VI-006",
+  "language": "vi-VN",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Devices available",
+      "target_text": "Devices available"
+    },
+    {
+      "box": "8",
+      "element_id": "np.share",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Share",
+      "target_text": "np.share"
+    },
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Playing from playlist",
+      "target_text": "Đang phát từ danh sách phát"
+    }
+  ]
+}

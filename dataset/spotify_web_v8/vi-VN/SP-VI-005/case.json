@@ -1,0 +1,42 @@
+{
+  "case_id": "SP-VI-005",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "9",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "5",
+      "element": "premium.cta.trial",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'Dùng thử miễn phí 1 tháng' runs off the edge of the screen."
+    },
+    {
+      "box": "8",
+      "element": "premium.plan.individual.feat",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'1 tài khoản Premium' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "13",
+      "element": "premium.plan.family.price",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "$19.99 / tháng",
+      "report": "Number/date/currency uses the US format ('$19.99 / tháng') instead of the local one ('95.000 ₫ / tháng')."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "case_id": "SP-KO-002",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "17",
+      "element": "tab.library",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "tab.library",
+      "report": "The raw resource key 'tab.library' is shown instead of '내 라이브러리'."
+    },
+    {
+      "box": "13",
+      "element": "search.cat.workout",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'운동' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-UR-002",
+  "language": "ur",
+  "screen": "02-search",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "13",
+      "element_id": "search.cat.workout",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Workout",
+      "target_text": "ورزش"
+    },
+    {
+      "box": "7",
+      "element_id": "search.cat.madeforyou",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Made For You",
+      "target_text": "آپ کے لیے تیار کردہ"
+    },
+    {
+      "box": "12",
+      "element_id": "search.cat.hiphop",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Hip-Hop",
+      "target_text": "Hip-Hop"
+    }
+  ]
+}

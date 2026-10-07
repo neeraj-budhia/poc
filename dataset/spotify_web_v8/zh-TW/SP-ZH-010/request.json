@@ -1,0 +1,359 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-ZH-010:10-settings",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Chinese (zh-TW)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "settings.title": {
+        "desc": "Settings",
+        "bbox_base": [
+          119,
+          50,
+          356,
+          118
+        ],
+        "bbox_head": [
+          119,
+          42,
+          241,
+          126
+        ],
+        "text_head": "設定",
+        "match": "stable_id"
+      },
+      "settings.sec.account": {
+        "desc": "Account",
+        "bbox_base": [
+          48,
+          210,
+          1032,
+          270
+        ],
+        "bbox_head": [
+          48,
+          210,
+          1032,
+          282
+        ],
+        "text_head": "帳戶",
+        "match": "stable_id"
+      },
+      "settings.plan": {
+        "desc": "Premium Individual",
+        "bbox_base": [
+          48,
+          306,
+          1032,
+          360
+        ],
+        "bbox_head": [
+          48,
+          318,
+          1032,
+          381
+        ],
+        "text_head": "Premium 個人",
+        "match": "stable_id"
+      },
+      "settings.plan.sub": {
+        "desc": "Your plan renews on November 14, 2026 for $11.99.",
+        "bbox_base": [
+          48,
+          366,
+          1032,
+          415
+        ],
+        "bbox_head": [
+          48,
+          387,
+          1032,
+          436
+        ],
+        "text_head": "你的方案將於 November 14, 2026 續訂，費用為 $11.99。",
+        "match": "stable_id"
+      },
+      "settings.sec.playback": {
+        "desc": "Playback",
+        "bbox_base": [
+          48,
+          481,
+          1032,
+          541
+        ],
+        "bbox_head": [
+          48,
+          502,
+          1032,
+          574
+        ],
+        "text_head": "播放",
+        "match": "stable_id"
+      },
+      "settings.crossfade": {
+        "desc": "Crossfade",
+        "bbox_base": [
+          48,
+          577,
+          898,
+          631
+        ],
+        "bbox_head": [
+          48,
+          610,
+          922,
+          673
+        ],
+        "text_head": "淡入淡出",
+        "match": "stable_id"
+      },
+      "settings.crossfade.sub": {
+        "desc": "Allows you to crossfade between songs",
+        "bbox_base": [
+          48,
+          637,
+          898,
+          685
+        ],
+        "bbox_head": [
+          48,
+          679,
+          922,
+          727
+        ],
+        "text_head": "讓歌曲之間淡入淡出",
+        "match": "stable_id"
+      },
+      "settings.crossfade.val": {
+        "desc": "5 sec",
+        "bbox_base": [
+          934,
+          607,
+          1032,
+          655
+        ],
+        "bbox_head": [
+          958,
+          641,
+          1032,
+          695
+        ],
+        "text_head": "5 秒",
+        "match": "stable_id"
+      },
+      "settings.gapless": {
+        "desc": "Gapless playback",
+        "bbox_base": [
+          48,
+          739,
+          876,
+          793
+        ],
+        "bbox_head": [
+          48,
+          777,
+          876,
+          840
+        ],
+        "text_head": "無間斷播放",
+        "match": "stable_id"
+      },
+      "settings.explicit": {
+        "desc": "Allow explicit content",
+        "bbox_base": [
+          48,
+          847,
+          876,
+          901
+        ],
+        "bbox_head": [
+          48,
+          889,
+          876,
+          952
+        ],
+        "text_head": "允許播放兒少不宜內容",
+        "match": "stable_id"
+      },
+      "settings.explicit.sub": {
+        "desc": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+        "bbox_base": [
+          48,
+          907,
+          876,
+          1004
+        ],
+        "bbox_head": [
+          48,
+          958,
+          876,
+          1055
+        ],
+        "text_head": "開啟即可播放兒少不宜內容。兒少不宜內容會標有 E 標籤。",
+        "match": "stable_id"
+      },
+      "settings.sec.data": {
+        "desc": "Data saving and offline",
+        "bbox_base": [
+          48,
+          1070,
+          1032,
+          1130
+        ],
+        "bbox_head": [
+          48,
+          1121,
+          1032,
+          1193
+        ],
+        "text_head": "節省數據和離線",
+        "match": "stable_id"
+      },
+      "settings.datasaver": {
+        "desc": "Data Saver",
+        "bbox_base": [
+          48,
+          1166,
+          876,
+          1220
+        ],
+        "bbox_head": [
+          48,
+          1229,
+          876,
+          1292
+        ],
+        "text_head": "數據節省模式",
+        "match": "stable_id"
+      },
+      "settings.datasaver.sub": {
+        "desc": "Sets your music quality to low and disables canvas.",
+        "bbox_base": [
+          48,
+          1226,
+          876,
+          1323
+        ],
+        "bbox_head": [
+          48,
+          1298,
+          876,
+          1347
+        ],
+        "text_head": "將音樂品質設為低，並停用 Canvas。",
+        "match": "stable_id"
+      },
+      "settings.storage": {
+        "desc": "Storage",
+        "bbox_base": [
+          48,
+          1371,
+          1032,
+          1425
+        ],
+        "bbox_head": [
+          48,
+          1395,
+          1032,
+          1458
+        ],
+        "text_head": "儲存空間",
+        "match": "stable_id"
+      },
+      "settings.storage.sub": {
+        "desc": "1.2 GB used • 48.6 GB free",
+        "bbox_base": [
+          48,
+          1431,
+          1032,
+          1480
+        ],
+        "bbox_head": [
+          48,
+          1464,
+          1032,
+          1512
+        ],
+        "text_head": "已使用 1.2 GB • 可用 48.6 GB",
+        "match": "stable_id"
+      },
+      "settings.language": {
+        "desc": "App language",
+        "bbox_base": [
+          48,
+          1528,
+          865,
+          1582
+        ],
+        "bbox_head": [
+          48,
+          1560,
+          757,
+          1623
+        ],
+        "text_head": "應用程式語言",
+        "match": "stable_id"
+      },
+      "settings.language.val": {
+        "desc": "English",
+        "bbox_base": [
+          901,
+          1531,
+          1032,
+          1579
+        ],
+        "bbox_head": [
+          793,
+          1565,
+          1032,
+          1619
+        ],
+        "text_head": "中文（繁體）",
+        "match": "stable_id"
+      },
+      "settings.logout": {
+        "desc": "Log out",
+        "bbox_base": [
+          48,
+          1648,
+          283,
+          1738
+        ],
+        "bbox_head": [
+          48,
+          1689,
+          218,
+          1785
+        ],
+        "text_head": "登出",
+        "match": "stable_id"
+      },
+      "settings.version": {
+        "desc": "Version 9.0.82.512",
+        "bbox_base": [
+          48,
+          1768,
+          1032,
+          1807
+        ],
+        "bbox_head": [
+          48,
+          1815,
+          1032,
+          1863
+        ],
+        "text_head": "版本 9.0.82.512",
+        "match": "stable_id"
+      }
+    }
+  }
+}

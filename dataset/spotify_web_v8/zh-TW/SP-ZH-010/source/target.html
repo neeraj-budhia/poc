@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="zh-TW" dir="ltr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="appbar"><span class="back">‹</span><h1 data-k="settings.title">設定</h1></header>
+<main>
+  <h2 class="set-h" data-k="settings.sec.account">帳戶</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.plan">Premium 個人</p><p class="s" data-k="settings.plan.sub">你的方案將於 November 14, 2026 續訂，費用為 $11.99。</p></div></div>
+  <h2 class="set-h" data-k="settings.sec.playback">播放</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.crossfade">淡入淡出</p><p class="s" data-k="settings.crossfade.sub">讓歌曲之間淡入淡出</p></div><span class="val" data-k="settings.crossfade.val">5 秒</span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.gapless">無間斷播放</p></div><span class="tog on"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.explicit">允許播放兒少不宜內容</p><p class="s" data-k="settings.explicit.sub">開啟即可播放兒少不宜內容。兒少不宜內容會標有 E 標籤。</p></div><span class="tog on"></span></div>
+  <h2 class="set-h" data-k="settings.sec.data">節省數據和離線</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.datasaver">數據節省模式</p><p class="s" data-k="settings.datasaver.sub">將音樂品質設為低，並停用 Canvas。</p></div><span class="tog"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.storage">儲存空間</p><p class="s" data-k="settings.storage.sub">已使用 1.2 GB • 可用 48.6 GB</p></div></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.language">應用程式語言</p></div><span class="val" data-k="settings.language.val">中文（繁體）</span></div>
+  <span class="btn-outline logout" data-k="settings.logout">登出</span>
+  <p class="ver" data-k="settings.version">版本 9.0.82.512</p>
+</main>
+<style>
+.set-h { font-size: 17px; font-weight: 700; margin: 14px 0 4px; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; }
+.set-row .txt { min-width: 0; flex: 1; }
+.set-row .t { font-size: 15px; }
+.set-row .s { font-size: 12px; color: #a7a7a7; margin-top: 2px; line-height: 1.35; }
+.set-row .val { font-size: 13px; color: #a7a7a7; white-space: nowrap; }
+.tog { width: 40px; height: 22px; border-radius: 11px; background: #535353; flex-shrink: 0; position: relative; }
+.tog::after { content: ""; position: absolute; top: 3px; inset-inline-start: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+.tog.on { background: #1ed760; }
+.tog.on::after { inset-inline-start: 21px; }
+.logout { margin-top: 14px; }
+.ver { font-size: 11px; color: #a7a7a7; margin-top: 10px; }
+</style>
+
+</body></html>

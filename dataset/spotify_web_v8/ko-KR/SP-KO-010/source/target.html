@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="ko-KR" dir="ltr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="appbar"><span class="back">‹</span><h1 data-k="settings.title">설정</h1></header>
+<main>
+  <h2 class="set-h" data-k="settings.sec.account">계정</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.plan">Premium 개인</p><p class="s" data-k="settings.plan.sub">November 14, 2026에 $11.99로 요금제가 갱신됩니다.</p></div></div>
+  <h2 class="set-h" data-k="settings.sec.playback">재생</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.crossfade">크로스페이드</p><p class="s" data-k="settings.crossfade.sub">곡 사이에 크로스페이드 효과를 적용합니다</p></div><span class="val" data-k="settings.crossfade.val">5초</span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.gapless">끊김 없는 재생</p></div><span class="tog on"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.explicit">청소년 유해 콘텐츠 허용</p><p class="s" data-k="settings.explicit.sub" style="position: relative; top: -15px;">청소년 유해 콘텐츠를 재생하려면 켜세요. 청소년 유해 콘텐츠에는 19 태그가 표시됩니다.</p></div><span class="tog on"></span></div>
+  <h2 class="set-h" data-k="settings.sec.data">데이터 절약 및 오프라인</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.datasaver">데이터 절약 모드</p><p class="s" data-k="settings.datasaver.sub">음악 음질을 낮음으로 설정하고 Canvas를 사용 중지합니다.</p></div><span class="tog"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.storage">저장 공간</p><p class="s" data-k="settings.storage.sub">1.2GB 사용 중 • 48.6GB 사용 가능</p></div></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.language">앱 언어</p></div><span class="val" data-k="settings.language.val">한국어</span></div>
+  <span class="btn-outline logout" data-k="settings.logout">settings.logout</span>
+  <p class="ver" data-k="settings.version">버전 9.0.82.512</p>
+</main>
+<style>
+.set-h { font-size: 17px; font-weight: 700; margin: 14px 0 4px; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; }
+.set-row .txt { min-width: 0; flex: 1; }
+.set-row .t { font-size: 15px; }
+.set-row .s { font-size: 12px; color: #a7a7a7; margin-top: 2px; line-height: 1.35; }
+.set-row .val { font-size: 13px; color: #a7a7a7; white-space: nowrap; }
+.tog { width: 40px; height: 22px; border-radius: 11px; background: #535353; flex-shrink: 0; position: relative; }
+.tog::after { content: ""; position: absolute; top: 3px; inset-inline-start: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+.tog.on { background: #1ed760; }
+.tog.on::after { inset-inline-start: 21px; }
+.logout { margin-top: 14px; }
+.ver { font-size: 11px; color: #a7a7a7; margin-top: 10px; }
+</style>
+
+</body></html>

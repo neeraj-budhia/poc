@@ -1,0 +1,36 @@
+{
+  "case_id": "SP-AM-005",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "9",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "15",
+      "related_boxes": [
+        "14"
+      ],
+      "element": "premium.legal",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'ውሎች ተፈጻሚ ይሆናሉ። ቅናሹ 31 ኦክቶበር 2026 ላይ ያበቃል። ለግለሰብ ዕቅድ ብቻ።' overlaps the text element above it."
+    },
+    {
+      "box": "13",
+      "element": "premium.plan.family.price",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "premium.plan.family.price",
+      "report": "The raw resource key 'premium.plan.family.price' is shown instead of 'US$ 8.99 / ወር'."
+    }
+  ]
+}

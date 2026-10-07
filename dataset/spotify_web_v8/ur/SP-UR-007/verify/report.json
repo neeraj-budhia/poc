@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-UR-007",
+  "language": "ur",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "9",
+      "element_id": "lyrics.translate",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['lyrics.l6']",
+      "base_text": "Show translation",
+      "target_text": "ترجمہ دکھائیں"
+    },
+    {
+      "box": "12",
+      "element_id": "lyrics.report",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Report a problem",
+      "target_text": "□□□□□ □□ □□□□□ □□□"
+    },
+    {
+      "box": "11",
+      "element_id": "lyrics.share",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Share",
+      "target_text": "Ø´ÛŒØ¦Ø± Ú©Ø±ÛŒÚº"
+    }
+  ]
+}

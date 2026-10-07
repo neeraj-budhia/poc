@@ -1,0 +1,46 @@
+{
+  "case_id": "SP-HE-003",
+  "platform": "web",
+  "language": "he-IL",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "14",
+      "element": "results.r4.sub",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□□□□□□ • Spotify",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'פלייליסט • Spotify'."
+    },
+    {
+      "box": "8",
+      "element": "results.r1.sub",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'אמן' are clipped by a too-small line box."
+    },
+    {
+      "box": "5",
+      "element": "results.chip.playlists",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'פלייליסטים' is truncated with an ellipsis."
+    }
+  ]
+}

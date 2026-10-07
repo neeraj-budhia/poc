@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-HE-006",
+  "language": "he-IL",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "9",
+      "element_id": "np.lyrics.header",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Lyrics preview",
+      "target_text": "np.lyrics.header"
+    },
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['np.remaining']",
+      "base_text": "Devices available",
+      "target_text": "מכשירים זמינים"
+    },
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Playing from playlist",
+      "target_text": "×ž×•×©×ž×¢ ×ž×¤×œ×™×™×œ×™×¡×˜"
+    }
+  ]
+}

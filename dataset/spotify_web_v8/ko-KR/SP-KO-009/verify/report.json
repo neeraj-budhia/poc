@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-KO-009",
+  "language": "ko-KR",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "artist.seemore",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "See more",
+      "target_text": "See more"
+    },
+    {
+      "box": "2",
+      "element_id": "artist.listeners",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "24,812,331 monthly listeners",
+      "target_text": "월별 청취자 {count}명"
+    }
+  ]
+}

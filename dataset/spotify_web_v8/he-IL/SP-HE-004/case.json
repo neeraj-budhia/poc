@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-HE-004",
+  "platform": "web",
+  "language": "he-IL",
+  "screen": "04-playlist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "defects": [
+    {
+      "box": "4",
+      "element": "playlist.meta",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count} שירים, בערך 2 שעות ו-5 דקות",
+      "report": "An unresolved placeholder ('{count} שירים, בערך 2 שעות ו-5 דקות') is shown instead of the value ('30 שירים, בערך 2 שעות ו-5 דקות')."
+    },
+    {
+      "box": "5",
+      "element": "playlist.btn.save",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'שמירה' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "3",
+      "element": "playlist.madefor",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'נוצר עבור Neeraj' runs off the edge of the screen."
+    }
+  ]
+}

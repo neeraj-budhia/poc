@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-VI-007",
+  "language": "vi-VN",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "1",
+      "element_id": "lyrics.song",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Do I Wanna Know?",
+      "target_text": "lyrics.song"
+    },
+    {
+      "box": "9",
+      "element_id": "lyrics.translate",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Show translation",
+      "target_text": "Hiện bản dịch"
+    }
+  ]
+}

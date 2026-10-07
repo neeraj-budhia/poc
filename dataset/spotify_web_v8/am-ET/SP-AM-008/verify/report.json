@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-AM-008",
+  "language": "am-ET",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "5",
+      "element_id": "library.chip.podcasts",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[259,427] extends past the 360px screen edge",
+      "base_text": "Podcasts & Shows",
+      "target_text": "ፖድካስቶች እና ትዕይንቶች"
+    },
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 አጫዋች ዝርዝር • {count} ዘፈኖች"
+    }
+  ]
+}

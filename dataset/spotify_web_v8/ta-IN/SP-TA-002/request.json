@@ -1,0 +1,325 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TA-002:02-search",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Tamil (ta-IN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "search.title": {
+        "desc": "Search",
+        "bbox_base": [
+          48,
+          50,
+          246,
+          118
+        ],
+        "bbox_head": [
+          48,
+          46,
+          220,
+          122
+        ],
+        "text_head": "தேடல்",
+        "match": "stable_id"
+      },
+      "search.placeholder": {
+        "desc": "What do you want to listen to?",
+        "bbox_base": [
+          144,
+          207,
+          791,
+          261
+        ],
+        "bbox_head": [
+          144,
+          206,
+          594,
+          262
+        ],
+        "text_head": "எதைக் கேட்க விரும்புகிறீர்கள்?",
+        "match": "stable_id"
+      },
+      "search.sec.start": {
+        "desc": "Start browsing",
+        "bbox_base": [
+          48,
+          348,
+          1032,
+          414
+        ],
+        "bbox_head": [
+          48,
+          348,
+          1032,
+          420
+        ],
+        "text_head": "உலாவத் தொடங்குங்கள்",
+        "match": "stable_id"
+      },
+      "search.cat.music": {
+        "desc": "Music",
+        "bbox_base": [
+          78,
+          474,
+          216,
+          528
+        ],
+        "bbox_head": [
+          78,
+          480,
+          200,
+          534
+        ],
+        "text_head": "இசை",
+        "match": "stable_id"
+      },
+      "search.cat.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          585,
+          474,
+          800,
+          528
+        ],
+        "bbox_head": [
+          585,
+          480,
+          894,
+          534
+        ],
+        "text_head": "பாட்காஸ்ட்கள்",
+        "match": "stable_id"
+      },
+      "search.cat.live": {
+        "desc": "Live Events",
+        "bbox_base": [
+          78,
+          762,
+          341,
+          816
+        ],
+        "bbox_head": [
+          78,
+          768,
+          300,
+          828
+        ],
+        "text_head": "நேரலை நிகழ்வுகள்",
+        "match": "stable_id"
+      },
+      "search.cat.madeforyou": {
+        "desc": "Made For You",
+        "bbox_base": [
+          585,
+          762,
+          899,
+          816
+        ],
+        "bbox_head": [
+          585,
+          768,
+          978,
+          882
+        ],
+        "text_head": "உங்களுக்காக உருவாக்கப்பட்டது",
+        "match": "stable_id"
+      },
+      "search.sec.browse": {
+        "desc": "Browse all",
+        "bbox_base": [
+          48,
+          1038,
+          1032,
+          1104
+        ],
+        "bbox_head": [
+          48,
+          1044,
+          1032,
+          1116
+        ],
+        "text_head": "அனைத்தையும் உலாவுக",
+        "match": "stable_id"
+      },
+      "search.cat.newreleases": {
+        "desc": "New Releases",
+        "bbox_base": [
+          78,
+          1164,
+          401,
+          1218
+        ],
+        "bbox_head": [
+          78,
+          1176,
+          461,
+          1230
+        ],
+        "text_head": "புதிய வெளியீடுகள்",
+        "match": "stable_id"
+      },
+      "search.cat.charts": {
+        "desc": "Charts",
+        "bbox_base": [
+          585,
+          1164,
+          742,
+          1218
+        ],
+        "bbox_head": [
+          585,
+          1176,
+          865,
+          1230
+        ],
+        "text_head": "தரவரிசைகள்",
+        "match": "stable_id"
+      },
+      "search.cat.pop": {
+        "desc": "Pop",
+        "bbox_base": [
+          78,
+          1452,
+          168,
+          1506
+        ],
+        "bbox_head": [
+          78,
+          1464,
+          166,
+          1518
+        ],
+        "text_head": "பாப்",
+        "match": "stable_id"
+      },
+      "search.cat.hiphop": {
+        "desc": "Hip-Hop",
+        "bbox_base": [
+          585,
+          1452,
+          783,
+          1506
+        ],
+        "bbox_head": [
+          585,
+          1464,
+          818,
+          1518
+        ],
+        "text_head": "ஹிப்-ஹாப்",
+        "match": "stable_id"
+      },
+      "search.cat.workout": {
+        "desc": "Workout",
+        "bbox_base": [
+          78,
+          1740,
+          275,
+          1794
+        ],
+        "bbox_head": [
+          78,
+          1752,
+          527,
+          1806
+        ],
+        "text_head": "search.cat.workout",
+        "match": "stable_id"
+      },
+      "search.cat.sleep": {
+        "desc": "Sleep",
+        "bbox_base": [
+          585,
+          1740,
+          716,
+          1794
+        ],
+        "bbox_head": [
+          585,
+          1752,
+          740,
+          1806
+        ],
+        "text_head": "தூக்கம்",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          87,
+          2320,
+          183,
+          2366
+        ],
+        "text_head": "முகப்பு",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          358,
+          2320,
+          452,
+          2366
+        ],
+        "text_head": "தேடல்",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          557,
+          2319,
+          793,
+          2364
+        ],
+        "text_head": "உங்கள் லைப்ரரி",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}
