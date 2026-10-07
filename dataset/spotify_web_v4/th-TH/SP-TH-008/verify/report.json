@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TH-008",
+  "language": "th-TH",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "21",
+      "element_id": "tab.library",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Library",
+      "target_text": "□□□□□□□□□□□□□"
+    },
+    {
+      "box": "9",
+      "element_id": "library.episodes.title",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Episodes",
+      "target_text": "à¸•à¸­à¸™à¸‚à¸­à¸‡à¸„à¸¸à¸“"
+    },
+    {
+      "box": "5",
+      "element_id": "library.chip.podcasts",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[274,418] extends past the 360px screen edge",
+      "base_text": "Podcasts & Shows",
+      "target_text": "พอดแคสต์และรายการ"
+    }
+  ]
+}

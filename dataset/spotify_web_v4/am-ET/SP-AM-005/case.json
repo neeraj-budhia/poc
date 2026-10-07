@@ -1,0 +1,33 @@
+{
+  "case_id": "SP-AM-005",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "9",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "3",
+      "element": "premium.hero.title",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "Premium ለ{count} ወር በUS$ 0 ይሞክሩ",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('Premium ለ1 ወር በUS$ 0 ይሞክሩ')."
+    },
+    {
+      "box": "11",
+      "element": "premium.plan.duo.feat",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'2 የPremium መለያዎች' overlaps the text element above it."
+    }
+  ]
+}

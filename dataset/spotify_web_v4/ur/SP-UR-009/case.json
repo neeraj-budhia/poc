@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-UR-009",
+  "platform": "web",
+  "language": "ur",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "rtl_ltr",
+      "category": "LY",
+      "subcategory": "RTL not mirrored",
+      "op": "rtl_ltr",
+      "report": "'24,812,331 ماہانہ سامعین' is left-aligned / LTR inside the right-to-left layout."
+    },
+    {
+      "box": "14",
+      "element": "artist.latest.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "October 17, 2025 • البم",
+      "report": "Number/date/currency uses the US format ('October 17, 2025 • البم') instead of the local one ('17 اکتوبر 2025 • البم')."
+    }
+  ]
+}

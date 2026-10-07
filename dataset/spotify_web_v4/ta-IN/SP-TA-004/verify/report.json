@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-TA-004",
+  "language": "ta-IN",
+  "screen": "04-playlist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "13",
+      "element_id": "playlist.updated",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 7px < font-size 11px, glyph tops/bottoms cut",
+      "base_text": "Updated 6 days ago",
+      "target_text": "6 நாட்களுக்கு முன்பு புதுப்பிக்கப்பட்டது"
+    },
+    {
+      "box": "3",
+      "element_id": "playlist.madefor",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Made for Neeraj",
+      "target_text": "Neeraj-à®•à¯�à®•à®¾à®• à®‰à®°à¯�à®µà®¾à®•à¯�à®•à®ªà¯�à®ªà®Ÿà¯�à®Ÿà®¤à¯�"
+    }
+  ]
+}

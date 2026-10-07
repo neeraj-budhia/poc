@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-AM-001",
+  "language": "am-ET",
+  "screen": "01-home",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "1",
+      "element_id": "home.greeting",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 12px < font-size 20px, glyph tops/bottoms cut",
+      "base_text": "Good evening",
+      "target_text": "እንደምን አመሹ"
+    },
+    {
+      "box": "16",
+      "element_id": "home.card2.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['home.card2.title']",
+      "base_text": "The songs you loved most this year, all wrapped up.",
+      "target_text": "በዚህ ዓመት በጣም የወደዷቸው ዘፈኖች፣ በአንድ ላይ።"
+    },
+    {
+      "box": "19",
+      "element_id": "tab.search",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Search",
+      "target_text": "□□□"
+    }
+  ]
+}

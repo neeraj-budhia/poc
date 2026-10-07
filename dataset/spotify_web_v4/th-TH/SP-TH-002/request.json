@@ -1,0 +1,325 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TH-002:02-search",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Thai (th-TH)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "search.title": {
+        "desc": "Search",
+        "bbox_base": [
+          48,
+          50,
+          246,
+          118
+        ],
+        "bbox_head": [
+          48,
+          66,
+          192,
+          102
+        ],
+        "text_head": "ค้นหา",
+        "match": "stable_id"
+      },
+      "search.placeholder": {
+        "desc": "What do you want to listen to?",
+        "bbox_base": [
+          144,
+          207,
+          791,
+          261
+        ],
+        "bbox_head": [
+          144,
+          204,
+          457,
+          264
+        ],
+        "text_head": "คุณอยากฟังอะไร",
+        "match": "stable_id"
+      },
+      "search.sec.start": {
+        "desc": "Start browsing",
+        "bbox_base": [
+          48,
+          348,
+          1032,
+          414
+        ],
+        "bbox_head": [
+          48,
+          348,
+          1032,
+          480
+        ],
+        "text_head": "à¹€à¸£à¸´à¹ˆà¸¡à¹€à¸¥à¸·à¸­à¸�à¸”à¸¹",
+        "match": "stable_id"
+      },
+      "search.cat.music": {
+        "desc": "Music",
+        "bbox_base": [
+          78,
+          474,
+          216,
+          528
+        ],
+        "bbox_head": [
+          78,
+          546,
+          177,
+          600
+        ],
+        "text_head": "เพลง",
+        "match": "stable_id"
+      },
+      "search.cat.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          585,
+          474,
+          800,
+          528
+        ],
+        "bbox_head": [
+          585,
+          546,
+          795,
+          600
+        ],
+        "text_head": "พอดแคสต์",
+        "match": "stable_id"
+      },
+      "search.cat.live": {
+        "desc": "Live Events",
+        "bbox_base": [
+          78,
+          762,
+          341,
+          816
+        ],
+        "bbox_head": [
+          78,
+          834,
+          266,
+          888
+        ],
+        "text_head": "อีเวนต์สด",
+        "match": "stable_id"
+      },
+      "search.cat.madeforyou": {
+        "desc": "Made For You",
+        "bbox_base": [
+          585,
+          762,
+          899,
+          816
+        ],
+        "bbox_head": [
+          585,
+          834,
+          884,
+          888
+        ],
+        "text_head": "สร้างมาเพื่อคุณ",
+        "match": "stable_id"
+      },
+      "search.sec.browse": {
+        "desc": "Browse all",
+        "bbox_base": [
+          48,
+          1038,
+          1032,
+          1104
+        ],
+        "bbox_head": [
+          48,
+          852,
+          1032,
+          930
+        ],
+        "text_head": "เลือกดูทั้งหมด",
+        "match": "stable_id"
+      },
+      "search.cat.newreleases": {
+        "desc": "New Releases",
+        "bbox_base": [
+          78,
+          1164,
+          401,
+          1218
+        ],
+        "bbox_head": [
+          78,
+          1248,
+          262,
+          1302
+        ],
+        "text_head": "เพลงใหม่",
+        "match": "stable_id"
+      },
+      "search.cat.charts": {
+        "desc": "Charts",
+        "bbox_base": [
+          585,
+          1164,
+          742,
+          1218
+        ],
+        "bbox_head": [
+          585,
+          1248,
+          694,
+          1302
+        ],
+        "text_head": "ชาร์ต",
+        "match": "stable_id"
+      },
+      "search.cat.pop": {
+        "desc": "Pop",
+        "bbox_base": [
+          78,
+          1452,
+          168,
+          1506
+        ],
+        "bbox_head": [
+          78,
+          1536,
+          168,
+          1590
+        ],
+        "text_head": "ป๊อป",
+        "match": "stable_id"
+      },
+      "search.cat.hiphop": {
+        "desc": "Hip-Hop",
+        "bbox_base": [
+          585,
+          1452,
+          783,
+          1506
+        ],
+        "bbox_head": [
+          585,
+          1536,
+          731,
+          1590
+        ],
+        "text_head": "ฮิปฮอป",
+        "match": "stable_id"
+      },
+      "search.cat.workout": {
+        "desc": "Workout",
+        "bbox_base": [
+          78,
+          1740,
+          275,
+          1794
+        ],
+        "bbox_head": [
+          78,
+          1824,
+          348,
+          1878
+        ],
+        "text_head": "ออกกำลังกาย",
+        "match": "stable_id"
+      },
+      "search.cat.sleep": {
+        "desc": "Sleep",
+        "bbox_base": [
+          585,
+          1740,
+          716,
+          1794
+        ],
+        "bbox_head": [
+          585,
+          1824,
+          763,
+          1878
+        ],
+        "text_head": "นอนหลับ",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          75,
+          2319,
+          195,
+          2367
+        ],
+        "text_head": "หน้าหลัก",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          365,
+          2319,
+          445,
+          2367
+        ],
+        "text_head": "ค้นหา",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          549,
+          2318,
+          801,
+          2366
+        ],
+        "text_head": "คอลเลกชันของคุณ",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

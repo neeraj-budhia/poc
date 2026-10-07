@@ -1,0 +1,36 @@
+{
+  "case_id": "SP-RU-004",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "04-playlist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "defects": [
+    {
+      "box": "4",
+      "element": "playlist.meta",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'30 треков, примерно 2 ч 5 мин' overlaps the text element above it."
+    },
+    {
+      "box": "6",
+      "element": "playlist.btn.download",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "playlist.btn.download",
+      "report": "The raw resource key 'playlist.btn.download' is shown instead of 'Скачать'."
+    }
+  ]
+}

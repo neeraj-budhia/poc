@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-VI-002",
+  "language": "vi-VN",
+  "screen": "02-search",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "7",
+      "element_id": "search.cat.madeforyou",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Made For You",
+      "target_text": "search.cat.madeforyou"
+    },
+    {
+      "box": "1",
+      "element_id": "search.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 12px < font-size 20px, glyph tops/bottoms cut",
+      "base_text": "Search",
+      "target_text": "Tìm kiếm"
+    },
+    {
+      "box": "6",
+      "element_id": "search.cat.live",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Live Events",
+      "target_text": "Sự kiện trực tiếp"
+    }
+  ]
+}

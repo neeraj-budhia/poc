@@ -1,0 +1,17 @@
+{
+  "case_id": "SP-KO-C01",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "06-now-playing",
+  "is_control": true,
+  "do_not_translate_boxes": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "10",
+    "11"
+  ],
+  "defects": []
+}

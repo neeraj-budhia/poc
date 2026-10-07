@@ -1,0 +1,43 @@
+{
+  "case_id": "SP-AM-001",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "01-home",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "7",
+    "8",
+    "9",
+    "13",
+    "21"
+  ],
+  "defects": [
+    {
+      "box": "1",
+      "element": "home.greeting",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'እንደምን አመሹ' are clipped by a too-small line box."
+    },
+    {
+      "box": "16",
+      "element": "home.card2.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'በዚህ ዓመት በጣም የወደዷቸው ዘፈኖች፣ በአንድ ላይ።' overlaps the text element above it."
+    },
+    {
+      "box": "19",
+      "element": "tab.search",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'ፈልግ'."
+    }
+  ]
+}

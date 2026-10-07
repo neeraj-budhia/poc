@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-KO-008",
+  "language": "ko-KR",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "2",
+      "element_id": "library.chip.playlists",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Playlists",
+      "target_text": "플레이리스트"
+    },
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 플레이리스트 • {count}곡"
+    }
+  ]
+}

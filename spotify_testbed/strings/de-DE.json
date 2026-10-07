@@ -1,0 +1,21 @@
+{
+  "brand.premium": "Premium",
+  "premium.title": "Premium",
+  "premium.hero.title": "Teste 1 Monat Premium für 0 €",
+  "premium.hero.sub": "Danach nur 10,99 €/Monat. Jederzeit kündbar.",
+  "premium.cta.trial": "1 Monat lang kostenlos testen",
+  "premium.plan.individual.name": "Individual",
+  "premium.plan.individual.price": "10,99 € / Monat",
+  "premium.plan.individual.feat": "1 Premium-Konto",
+  "premium.plan.duo.name": "Duo",
+  "premium.plan.duo.price": "14,99 € / Monat",
+  "premium.plan.duo.feat": "2 Premium-Konten",
+  "premium.plan.family.name": "Family",
+  "premium.plan.family.price": "17,99 € / Monat",
+  "premium.plan.family.feat": "Bis zu 6 Premium-Konten",
+  "premium.legal": "Es gelten die AGB. Angebot endet am 31.10.2026. Nur für das Individual-Abo.",
+  "tab.home": "Startseite",
+  "tab.search": "Suche",
+  "tab.library": "Bibliothek",
+  "tab.premium": "Premium"
+}

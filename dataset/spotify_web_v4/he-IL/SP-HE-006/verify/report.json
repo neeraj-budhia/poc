@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-HE-006",
+  "language": "he-IL",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "5",
+      "element_id": "np.elapsed",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "1:24",
+      "target_text": "np.elapsed"
+    },
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['np.elapsed']",
+      "base_text": "Devices available",
+      "target_text": "מכשירים זמינים"
+    },
+    {
+      "box": "8",
+      "element_id": "np.share",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Share",
+      "target_text": "×©×™×ª×•×£"
+    }
+  ]
+}

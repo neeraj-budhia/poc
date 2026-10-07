@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-ZH-005",
+  "language": "zh-TW",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "14",
+      "element_id": "premium.plan.family.feat",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Up to 6 Premium accounts",
+      "target_text": "premium.plan.family.feat"
+    },
+    {
+      "box": "3",
+      "element_id": "premium.hero.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 13px < font-size 22px, glyph tops/bottoms cut",
+      "base_text": "Try 1 month of Premium for $0",
+      "target_text": "以 NT$0 試用 Premium 1 個月"
+    },
+    {
+      "box": "15",
+      "element_id": "premium.legal",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+      "target_text": "適用相關條款。優惠於 October 31, 2026 結束。僅限個人方案。"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "case_id": "SP-KO-002",
+  "platform": "web",
+  "language": "ko-KR",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "12",
+      "element": "search.cat.hiphop",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of '힙합'."
+    },
+    {
+      "box": "6",
+      "element": "search.cat.live",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'라이브 이벤트' runs off the edge of the screen."
+    }
+  ]
+}

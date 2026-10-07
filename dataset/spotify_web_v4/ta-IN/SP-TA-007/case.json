@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-TA-007",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "9",
+      "element": "lyrics.translate",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'மொழிபெயர்ப்பைக் காட்டு' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "11",
+      "element": "lyrics.share",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'பகிர்'."
+    }
+  ]
+}

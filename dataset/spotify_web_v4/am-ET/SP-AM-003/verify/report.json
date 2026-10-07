@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-AM-003",
+  "language": "am-ET",
+  "screen": "03-search-results",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "18",
+      "element_id": "results.r6.sub",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Playlist • Spotify",
+      "target_text": "Playlist • Spotify"
+    },
+    {
+      "box": "12",
+      "element_id": "results.r3.sub",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Album • Arctic Monkeys • 2013",
+      "target_text": "results.r3.sub"
+    },
+    {
+      "box": "19",
+      "element_id": "results.seeall",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "See all songs",
+      "target_text": "ሁሉንም ዘፈኖች ይመልከቱ"
+    }
+  ]
+}

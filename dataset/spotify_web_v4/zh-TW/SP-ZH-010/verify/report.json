@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-ZH-010",
+  "language": "zh-TW",
+  "screen": "10-settings",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "你的方案將於 November 14, 2026 續訂，費用為 $11.99。"
+    },
+    {
+      "box": "17",
+      "element_id": "settings.language",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "App language",
+      "target_text": "□□□□□□"
+    },
+    {
+      "box": "7",
+      "element_id": "settings.crossfade.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['settings.crossfade']",
+      "base_text": "Allows you to crossfade between songs",
+      "target_text": "讓歌曲之間淡入淡出"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "case_id": "SP-TH-001",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "01-home",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "7",
+    "8",
+    "9",
+    "13",
+    "21"
+  ],
+  "defects": [
+    {
+      "box": "6",
+      "element": "home.tile.liked",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'เพลงที่ชอบ' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "19",
+      "element": "tab.search",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'ค้นหา'."
+    },
+    {
+      "box": "17",
+      "element": "home.sec.recent",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'เล่นล่าสุด' are clipped by a too-small line box."
+    }
+  ]
+}

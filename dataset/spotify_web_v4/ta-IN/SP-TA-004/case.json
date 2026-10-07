@@ -1,0 +1,36 @@
+{
+  "case_id": "SP-TA-004",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "04-playlist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "defects": [
+    {
+      "box": "13",
+      "element": "playlist.updated",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in '6 நாட்களுக்கு முன்பு புதுப்பிக்கப்பட்டது' are clipped by a too-small line box."
+    },
+    {
+      "box": "3",
+      "element": "playlist.madefor",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "Neeraj-à®•à¯�à®•à®¾à®• à®‰à®°à¯�à®µà®¾à®•à¯�à®•à®ªà¯�à®ªà®Ÿà¯�à®Ÿà®¤à¯�",
+      "report": "Text is garbled by an encoding error instead of 'Neeraj-க்காக உருவாக்கப்பட்டது'."
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TA-001:01-home",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Tamil (ta-IN)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "home.greeting": {
+        "desc": "Good evening",
+        "bbox_base": [
+          48,
+          50,
+          434,
+          118
+        ],
+        "bbox_head": [
+          48,
+          46,
+          479,
+          122
+        ],
+        "text_head": "மாலை வணக்கம்",
+        "match": "stable_id"
+      },
+      "home.chip.all": {
+        "desc": "All",
+        "bbox_base": [
+          48,
+          192,
+          165,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          312,
+          282
+        ],
+        "text_head": "அனைத்தும்",
+        "match": "stable_id"
+      },
+      "home.chip.music": {
+        "desc": "Music",
+        "bbox_base": [
+          189,
+          192,
+          369,
+          276
+        ],
+        "bbox_head": [
+          336,
+          192,
+          505,
+          282
+        ],
+        "text_head": "இசை",
+        "match": "stable_id"
+      },
+      "home.chip.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          393,
+          192,
+          632,
+          276
+        ],
+        "bbox_head": [
+          529,
+          192,
+          848,
+          282
+        ],
+        "text_head": "பாட்காஸ்ட்கள்",
+        "match": "stable_id"
+      },
+      "home.chip.audiobooks": {
+        "desc": "Audiobooks",
+        "bbox_base": [
+          656,
+          192,
+          941,
+          276
+        ],
+        "bbox_head": [
+          48,
+          306,
+          409,
+          396
+        ],
+        "text_head": "ஆடியோபுக்குகள்",
+        "match": "stable_id"
+      },
+      "home.tile.liked": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          216,
+          362,
+          453,
+          406
+        ],
+        "bbox_head": [
+          882,
+          480,
+          1080,
+          528
+        ],
+        "text_head": "விரும்பிய பாடல்கள்",
+        "match": "stable_id"
+      },
+      "home.tile.dailymix1": {
+        "desc": "Daily Mix 1",
+        "bbox_base": [
+          720,
+          362,
+          929,
+          406
+        ],
+        "bbox_head": [
+          720,
+          482,
+          929,
+          526
+        ],
+        "text_head": "Daily Mix 1",
+        "match": "stable_id"
+      },
+      "home.tile.discover": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          216,
+          507,
+          528,
+          597
+        ],
+        "bbox_head": [
+          216,
+          627,
+          528,
+          717
+        ],
+        "text_head": "Discover Weekly",
+        "match": "stable_id"
+      },
+      "home.tile.release": {
+        "desc": "Release Radar",
+        "bbox_base": [
+          720,
+          530,
+          995,
+          574
+        ],
+        "bbox_head": [
+          720,
+          650,
+          995,
+          694
+        ],
+        "text_head": "Release Radar",
+        "match": "stable_id"
+      },
+      "home.tile.chill": {
+        "desc": "Chill Vibes",
+        "bbox_base": [
+          216,
+          698,
+          426,
+          742
+        ],
+        "bbox_head": [
+          216,
+          792,
+          528,
+          888
+        ],
+        "text_head": "அமைதியான வைப்ஸ்",
+        "match": "stable_id"
+      },
+      "home.tile.episodes": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          720,
+          698,
+          994,
+          742
+        ],
+        "bbox_head": [
+          720,
+          792,
+          1032,
+          888
+        ],
+        "text_head": "உங்கள் எபிசோடுகள்",
+        "match": "stable_id"
+      },
+      "home.sec.madeforyou": {
+        "desc": "Made for you",
+        "bbox_base": [
+          48,
+          840,
+          1032,
+          906
+        ],
+        "bbox_head": [
+          48,
+          960,
+          1032,
+          1032
+        ],
+        "text_head": "உங்களுக்காக உருவாக்கப்பட்டது",
+        "match": "stable_id"
+      },
+      "home.card1.title": {
+        "desc": "Daily Mix 2",
+        "bbox_base": [
+          48,
+          1410,
+          498,
+          1458
+        ],
+        "bbox_head": [
+          48,
+          1536,
+          498,
+          1584
+        ],
+        "text_head": "Daily Mix 2",
+        "match": "stable_id"
+      },
+      "home.card1.sub": {
+        "desc": "Arctic Monkeys, The Strokes, Tame Impala and more",
+        "bbox_base": [
+          48,
+          1464,
+          498,
+          1610
+        ],
+        "bbox_head": [
+          48,
+          1590,
+          498,
+          1736
+        ],
+        "text_head": "Arctic Monkeys, The Strokes, Tame Impala மற்றும் பலர்",
+        "match": "stable_id"
+      },
+      "home.card2.title": {
+        "desc": "Your Top Songs 2026",
+        "bbox_base": [
+          534,
+          1410,
+          984,
+          1458
+        ],
+        "bbox_head": [
+          534,
+          1536,
+          984,
+          1584
+        ],
+        "text_head": "Your Top Songs 2026",
+        "match": "stable_id"
+      },
+      "home.card2.sub": {
+        "desc": "The songs you loved most this year, all wrapped up.",
+        "bbox_base": [
+          534,
+          1464,
+          984,
+          1561
+        ],
+        "bbox_head": [
+          534,
+          1590,
+          984,
+          1736
+        ],
+        "text_head": "இந்த ஆண்டு நீங்கள் அதிகம் விரும்பிய பாடல்கள், அனைத்தும் ஒரே இடத்தில்.",
+        "match": "stable_id"
+      },
+      "home.sec.recent": {
+        "desc": "Recently played",
+        "bbox_base": [
+          48,
+          1658,
+          1032,
+          1724
+        ],
+        "bbox_head": [
+          48,
+          1784,
+          1032,
+          1856
+        ],
+        "text_head": "சமீபத்தில் இயக்கியவை",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          87,
+          2320,
+          183,
+          2366
+        ],
+        "text_head": "முகப்பு",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          358,
+          2320,
+          452,
+          2366
+        ],
+        "text_head": "தேடல்",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          557,
+          2319,
+          793,
+          2364
+        ],
+        "text_head": "உங்கள் லைப்ரரி",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

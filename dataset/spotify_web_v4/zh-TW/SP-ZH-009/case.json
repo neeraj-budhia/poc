@@ -1,0 +1,28 @@
+{
+  "case_id": "SP-ZH-009",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count},812,331 位每月聽眾",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('24,812,331 位每月聽眾')."
+    }
+  ]
+}

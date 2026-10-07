@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-VI-005",
+  "language": "vi-VN",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "3",
+      "element_id": "premium.hero.title",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Try 1 month of Premium for $0",
+      "target_text": "Dùng thử {count} tháng gói Premium với giá 0 ₫"
+    },
+    {
+      "box": "18",
+      "element_id": "tab.library",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Library",
+      "target_text": "Your Library"
+    },
+    {
+      "box": "12",
+      "element_id": "premium.plan.family.name",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 10px < font-size 17px, glyph tops/bottoms cut",
+      "base_text": "Family",
+      "target_text": "Gia đình"
+    }
+  ]
+}

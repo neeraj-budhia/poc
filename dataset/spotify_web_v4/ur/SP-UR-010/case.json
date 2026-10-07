@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-UR-010",
+  "platform": "web",
+  "language": "ur",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "16",
+      "element": "settings.storage.sub",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count}.2 GB استعمال شدہ • 48.6 GB خالی",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('1.2 GB استعمال شدہ • 48.6 GB خالی')."
+    },
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "آپ کا پلان November 14, 2026 کو $11.99 میں تجدید ہو جائے گا۔",
+      "report": "Number/date/currency uses the US format ('آپ کا پلان November 14, 2026 کو $11.99 میں تجدید ہو جائے گا۔') instead of the local one ('آپ کا پلان 14 نومبر 2026 کو Rs 349 میں تجدید ہو جائے گا۔')."
+    },
+    {
+      "box": "1",
+      "element": "settings.title",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'ترتیبات' are clipped by a too-small line box."
+    }
+  ]
+}

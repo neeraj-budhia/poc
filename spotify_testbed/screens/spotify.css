@@ -1,0 +1,56 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 360px; height: 800px; overflow: hidden; }
+body { background: #121212; color: #fff; font-family: system-ui, -apple-system, "Noto Sans", sans-serif; position: relative; }
+.appbar { height: 56px; display: flex; align-items: center; gap: 12px; padding: 0 16px; }
+.appbar .back { font-size: 28px; color: #b3b3b3; }
+.appbar h1 { font-size: 20px; font-weight: 700; }
+[dir="rtl"] .appbar .back { transform: scaleX(-1); }
+main { padding: 0 16px; }
+.hero { background: linear-gradient(160deg, #6b2fa3 0%, #2a1550 100%); border-radius: 8px; padding: 18px 16px; margin-top: 4px; }
+.logo-row { display: flex; align-items: center; gap: 6px; }
+.logo { width: 18px; height: 18px; border-radius: 50%; background: #1ed760; display: inline-block; }
+.brand { font-size: 14px; font-weight: 700; }
+.hero h2 { font-size: 22px; font-weight: 800; line-height: 1.25; margin: 12px 0 8px; }
+.hero .sub { font-size: 13px; color: #e0d5ef; line-height: 1.4; }
+.cta { display: block; margin-top: 16px; background: #fff; color: #000; border: 0; border-radius: 24px; padding: 12px 20px; font-size: 15px; font-weight: 700; font-family: inherit; }
+.plan { background: #242424; border-radius: 8px; padding: 14px 16px; margin-top: 12px; border-inline-start: 4px solid #1ed760; }
+.plan.duo { border-inline-start-color: #ffc862; }
+.plan.family { border-inline-start-color: #a5bbd1; }
+.plan-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.plan h3 { font-size: 17px; font-weight: 700; }
+.plan h3 { min-width: 0; overflow-wrap: anywhere; }
+.plan .price { font-size: 14px; font-weight: 600; color: #fff; white-space: nowrap; flex-shrink: 0; }
+.plan .feat { font-size: 13px; color: #b3b3b3; margin-top: 6px; }
+.legal { font-size: 11px; color: #a7a7a7; line-height: 1.4; margin-top: 14px; }
+.tabbar { position: absolute; bottom: 0; left: 0; right: 0; height: 64px; background: #000; display: flex; }
+.tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 11px; color: #b3b3b3; min-width: 0; }
+.tab .ico { font-size: 20px; }
+.tab.on { color: #fff; }
+
+/* ---- shared pieces for screens 01–10 ---- */
+:lang(ur) body, body:lang(ur) { font-family: "Noto Nastaliq Urdu", system-ui, sans-serif; }
+.chips { display: flex; gap: 8px; margin: 8px 0 12px; flex-wrap: wrap; }
+.chip { background: #2a2a2a; border-radius: 16px; padding: 6px 12px; font-size: 13px; white-space: nowrap; }
+.chip.on { background: #1ed760; color: #000; }
+.h-sec { font-size: 19px; font-weight: 700; margin: 16px 0 10px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.tile { background: #2a2a2a; border-radius: 4px; display: flex; align-items: center; gap: 8px; height: 48px; overflow: hidden; }
+.tile .art { width: 48px; height: 48px; flex-shrink: 0; }
+.tile span:last-child { font-size: 12px; font-weight: 700; padding-inline-end: 6px; }
+.art { background: linear-gradient(135deg, #1ed760, #0b6b33); border-radius: 4px; }
+.art.b { background: linear-gradient(135deg, #e8115b, #5a0b2b); }
+.art.c { background: linear-gradient(135deg, #2d46b9, #10194a); }
+.art.d { background: linear-gradient(135deg, #f59b23, #6b3d05); }
+.cards { display: flex; gap: 12px; }
+.card { width: 150px; flex-shrink: 0; }
+.card .art { width: 150px; height: 150px; }
+.card .t { font-size: 13px; font-weight: 700; margin-top: 8px; }
+.card .s { font-size: 12px; color: #a7a7a7; margin-top: 2px; line-height: 1.35; }
+.row { display: flex; align-items: center; gap: 12px; padding: 7px 0; }
+.row .art { width: 48px; height: 48px; flex-shrink: 0; }
+.row .art.round { border-radius: 50%; }
+.row .txt { min-width: 0; flex: 1; }
+.row .t { font-size: 15px; display: block; }
+.row .s { font-size: 12px; color: #a7a7a7; display: block; margin-top: 2px; }
+.btn-outline { border: 1px solid #727272; border-radius: 16px; padding: 6px 14px; font-size: 13px; font-weight: 700; display: inline-block; }
+.btn-green { background: #1ed760; color: #000; border-radius: 24px; padding: 12px 24px; font-size: 15px; font-weight: 700; display: inline-block; }

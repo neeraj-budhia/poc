@@ -1,0 +1,690 @@
+{
+  "case_id": "SP-RU-010",
+  "screen": "10-settings",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Russian (ru-RU)",
+  "case_elements": [
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "17",
+      "element_id": "settings.language",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 20,
+    "with_target_box": 20,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "settings.title",
+      "descriptor": "Settings",
+      "target_text": "Настройки",
+      "base_box": [
+        119,
+        50,
+        356,
+        118
+      ],
+      "target_box": [
+        119,
+        50,
+        442,
+        118
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "settings.sec.account",
+      "descriptor": "Account",
+      "target_text": "Аккаунт",
+      "base_box": [
+        48,
+        210,
+        1032,
+        270
+      ],
+      "target_box": [
+        48,
+        210,
+        1032,
+        270
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "settings.plan",
+      "descriptor": "Premium Individual",
+      "target_text": "Premium Индивидуальный",
+      "base_box": [
+        48,
+        306,
+        1032,
+        360
+      ],
+      "target_box": [
+        48,
+        306,
+        1032,
+        360
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "settings.plan.sub",
+      "descriptor": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "Ваша подписка будет продлена November 14, 2026 за ₽299.",
+      "base_box": [
+        48,
+        366,
+        1032,
+        415
+      ],
+      "target_box": [
+        48,
+        366,
+        1032,
+        463
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "settings.sec.playback",
+      "descriptor": "Playback",
+      "target_text": "Воспроизведение",
+      "base_box": [
+        48,
+        481,
+        1032,
+        541
+      ],
+      "target_box": [
+        48,
+        529,
+        1032,
+        589
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "settings.crossfade",
+      "descriptor": "Crossfade",
+      "target_text": "Плавный переход",
+      "base_box": [
+        48,
+        577,
+        898,
+        631
+      ],
+      "target_box": [
+        48,
+        625,
+        885,
+        679
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "settings.crossfade.sub",
+      "descriptor": "Allows you to crossfade between songs",
+      "target_text": "Плавное переключение между треками",
+      "base_box": [
+        48,
+        637,
+        898,
+        685
+      ],
+      "target_box": [
+        48,
+        685,
+        885,
+        734
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "settings.crossfade.val",
+      "descriptor": "5 sec",
+      "target_text": "5 сек.",
+      "base_box": [
+        934,
+        607,
+        1032,
+        655
+      ],
+      "target_box": [
+        921,
+        655,
+        1032,
+        703
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "settings.gapless",
+      "descriptor": "Gapless playback",
+      "target_text": "Воспроизведение без пауз",
+      "base_box": [
+        48,
+        739,
+        876,
+        793
+      ],
+      "target_box": [
+        48,
+        788,
+        876,
+        842
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "settings.explicit",
+      "descriptor": "Allow explicit content",
+      "target_text": "Разрешить контент с ненормативной лексикой",
+      "base_box": [
+        48,
+        847,
+        876,
+        901
+      ],
+      "target_box": [
+        48,
+        896,
+        876,
+        1004
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "settings.explicit.sub",
+      "descriptor": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+      "target_text": "Включите, чтобы воспроизводить контент с ненормативной лексикой. Такой контент отмечен значком E.",
+      "base_box": [
+        48,
+        907,
+        876,
+        1004
+      ],
+      "target_box": [
+        48,
+        1010,
+        876,
+        1155
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "settings.sec.data",
+      "descriptor": "Data saving and offline",
+      "target_text": "Экономия трафика и офлайн-режим",
+      "base_box": [
+        48,
+        1070,
+        1032,
+        1130
+      ],
+      "target_box": [
+        48,
+        1221,
+        1032,
+        1281
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "settings.datasaver",
+      "descriptor": "Data Saver",
+      "target_text": "Экономия трафика",
+      "base_box": [
+        48,
+        1166,
+        876,
+        1220
+      ],
+      "target_box": [
+        48,
+        1317,
+        876,
+        1371
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "settings.datasaver.sub",
+      "descriptor": "Sets your music quality to low and disables canvas.",
+      "target_text": "Устанавливает низкое качество музыки и отключает Canvas.",
+      "base_box": [
+        48,
+        1226,
+        876,
+        1323
+      ],
+      "target_box": [
+        48,
+        1377,
+        876,
+        1474
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "settings.storage",
+      "descriptor": "Storage",
+      "target_text": "Хранилище",
+      "base_box": [
+        48,
+        1371,
+        1032,
+        1425
+      ],
+      "target_box": [
+        48,
+        1522,
+        1032,
+        1576
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "settings.storage.sub",
+      "descriptor": "1.2 GB used • 48.6 GB free",
+      "target_text": "Использовано: 1,2 ГБ • Свободно: 48,6 ГБ",
+      "base_box": [
+        48,
+        1431,
+        1032,
+        1480
+      ],
+      "target_box": [
+        48,
+        1582,
+        1032,
+        1631
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "settings.language",
+      "descriptor": "App language",
+      "target_text": "Язык приложения",
+      "base_box": [
+        48,
+        1528,
+        865,
+        1582
+      ],
+      "target_box": [
+        48,
+        1679,
+        261,
+        1733
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "settings.language.val",
+      "descriptor": "English",
+      "target_text": "Русский",
+      "base_box": [
+        901,
+        1531,
+        1032,
+        1579
+      ],
+      "target_box": [
+        875,
+        1682,
+        1032,
+        1730
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "settings.logout",
+      "descriptor": "Log out",
+      "target_text": "Выйти",
+      "base_box": [
+        48,
+        1648,
+        283,
+        1738
+      ],
+      "target_box": [
+        48,
+        1799,
+        268,
+        1889
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "20",
+      "element_id": "settings.version",
+      "descriptor": "Version 9.0.82.512",
+      "target_text": "Версия 9.0.82.512",
+      "base_box": [
+        48,
+        1768,
+        1032,
+        1807
+      ],
+      "target_box": [
+        48,
+        1919,
+        1032,
+        1958
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 21.944,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.75,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "3": {
+      "x": 4.444,
+      "y": 12.75,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "4": {
+      "x": 4.444,
+      "y": 15.25,
+      "width": 91.111,
+      "height": 2.042
+    },
+    "5": {
+      "x": 4.444,
+      "y": 20.042,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 24.042,
+      "width": 78.704,
+      "height": 2.25
+    },
+    "7": {
+      "x": 4.444,
+      "y": 26.542,
+      "width": 78.704,
+      "height": 2.0
+    },
+    "8": {
+      "x": 86.481,
+      "y": 25.292,
+      "width": 9.074,
+      "height": 2.0
+    },
+    "9": {
+      "x": 4.444,
+      "y": 30.792,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "10": {
+      "x": 4.444,
+      "y": 35.292,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "11": {
+      "x": 4.444,
+      "y": 37.792,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "12": {
+      "x": 4.444,
+      "y": 44.583,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "13": {
+      "x": 4.444,
+      "y": 48.583,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "14": {
+      "x": 4.444,
+      "y": 51.083,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "15": {
+      "x": 4.444,
+      "y": 57.125,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "16": {
+      "x": 4.444,
+      "y": 59.625,
+      "width": 91.111,
+      "height": 2.042
+    },
+    "17": {
+      "x": 4.444,
+      "y": 63.667,
+      "width": 75.648,
+      "height": 2.25
+    },
+    "18": {
+      "x": 83.426,
+      "y": 63.792,
+      "width": 12.13,
+      "height": 2.0
+    },
+    "19": {
+      "x": 4.444,
+      "y": 68.667,
+      "width": 21.759,
+      "height": 3.75
+    },
+    "20": {
+      "x": 4.444,
+      "y": 73.667,
+      "width": 91.111,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 29.907,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.75,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "3": {
+      "x": 4.444,
+      "y": 12.75,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "4": {
+      "x": 4.444,
+      "y": 15.25,
+      "width": 91.111,
+      "height": 4.042
+    },
+    "5": {
+      "x": 4.444,
+      "y": 22.042,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 26.042,
+      "width": 77.5,
+      "height": 2.25
+    },
+    "7": {
+      "x": 4.444,
+      "y": 28.542,
+      "width": 77.5,
+      "height": 2.042
+    },
+    "8": {
+      "x": 85.278,
+      "y": 27.292,
+      "width": 10.278,
+      "height": 2.0
+    },
+    "9": {
+      "x": 4.444,
+      "y": 32.833,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "10": {
+      "x": 4.444,
+      "y": 37.333,
+      "width": 76.667,
+      "height": 4.5
+    },
+    "11": {
+      "x": 4.444,
+      "y": 42.083,
+      "width": 76.667,
+      "height": 6.042
+    },
+    "12": {
+      "x": 4.444,
+      "y": 50.875,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "13": {
+      "x": 4.444,
+      "y": 54.875,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "14": {
+      "x": 4.444,
+      "y": 57.375,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "15": {
+      "x": 4.444,
+      "y": 63.417,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "16": {
+      "x": 4.444,
+      "y": 65.917,
+      "width": 91.111,
+      "height": 2.042
+    },
+    "17": {
+      "x": 4.444,
+      "y": 69.958,
+      "width": 19.722,
+      "height": 2.25
+    },
+    "18": {
+      "x": 81.019,
+      "y": 70.083,
+      "width": 14.537,
+      "height": 2.0
+    },
+    "19": {
+      "x": 4.444,
+      "y": 74.958,
+      "width": 20.37,
+      "height": 3.75
+    },
+    "20": {
+      "x": 4.444,
+      "y": 79.958,
+      "width": 91.111,
+      "height": 1.625
+    }
+  }
+}

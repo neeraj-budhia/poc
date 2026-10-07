@@ -1,0 +1,325 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-AM-002:02-search",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Amharic (am-ET)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "search.title": {
+        "desc": "Search",
+        "bbox_base": [
+          48,
+          50,
+          246,
+          118
+        ],
+        "bbox_head": [
+          48,
+          50,
+          205,
+          118
+        ],
+        "text_head": "ፈልግ",
+        "match": "stable_id"
+      },
+      "search.placeholder": {
+        "desc": "What do you want to listen to?",
+        "bbox_base": [
+          144,
+          207,
+          791,
+          261
+        ],
+        "bbox_head": [
+          144,
+          207,
+          650,
+          261
+        ],
+        "text_head": "ምን ማዳመጥ ይፈልጋሉ?",
+        "match": "stable_id"
+      },
+      "search.sec.start": {
+        "desc": "Start browsing",
+        "bbox_base": [
+          48,
+          348,
+          1032,
+          414
+        ],
+        "bbox_head": [
+          48,
+          348,
+          1032,
+          414
+        ],
+        "text_head": "ማሰስ ይጀምሩ",
+        "match": "stable_id"
+      },
+      "search.cat.music": {
+        "desc": "Music",
+        "bbox_base": [
+          78,
+          474,
+          216,
+          528
+        ],
+        "bbox_head": [
+          78,
+          474,
+          237,
+          528
+        ],
+        "text_head": "ሙዚቃ",
+        "match": "stable_id"
+      },
+      "search.cat.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          585,
+          474,
+          800,
+          528
+        ],
+        "bbox_head": [
+          585,
+          474,
+          829,
+          528
+        ],
+        "text_head": "ፖድካስቶች",
+        "match": "stable_id"
+      },
+      "search.cat.live": {
+        "desc": "Live Events",
+        "bbox_base": [
+          78,
+          762,
+          341,
+          816
+        ],
+        "bbox_head": [
+          78,
+          762,
+          483,
+          816
+        ],
+        "text_head": "የቀጥታ ዝግጅቶች",
+        "match": "stable_id"
+      },
+      "search.cat.madeforyou": {
+        "desc": "Made For You",
+        "bbox_base": [
+          585,
+          762,
+          899,
+          816
+        ],
+        "bbox_head": [
+          585,
+          762,
+          927,
+          816
+        ],
+        "text_head": "ለእርስዎ የተሰራ",
+        "match": "stable_id"
+      },
+      "search.sec.browse": {
+        "desc": "Browse all",
+        "bbox_base": [
+          48,
+          1038,
+          1032,
+          1104
+        ],
+        "bbox_head": [
+          48,
+          1038,
+          1032,
+          1104
+        ],
+        "text_head": "áˆ�áˆ‰áŠ•áˆ� á‹«áˆµáˆ±",
+        "match": "stable_id"
+      },
+      "search.cat.newreleases": {
+        "desc": "New Releases",
+        "bbox_base": [
+          78,
+          1164,
+          401,
+          1218
+        ],
+        "bbox_head": [
+          78,
+          1164,
+          435,
+          1218
+        ],
+        "text_head": "አዳዲስ የተለቀቁ",
+        "match": "stable_id"
+      },
+      "search.cat.charts": {
+        "desc": "Charts",
+        "bbox_base": [
+          585,
+          1164,
+          742,
+          1218
+        ],
+        "bbox_head": [
+          585,
+          1164,
+          791,
+          1218
+        ],
+        "text_head": "ደረጃዎች",
+        "match": "stable_id"
+      },
+      "search.cat.pop": {
+        "desc": "Pop",
+        "bbox_base": [
+          78,
+          1452,
+          168,
+          1506
+        ],
+        "bbox_head": [
+          78,
+          1452,
+          159,
+          1506
+        ],
+        "text_head": "ፖፕ",
+        "match": "stable_id"
+      },
+      "search.cat.hiphop": {
+        "desc": "Hip-Hop",
+        "bbox_base": [
+          585,
+          1452,
+          783,
+          1506
+        ],
+        "bbox_head": [
+          585,
+          1452,
+          766,
+          1506
+        ],
+        "text_head": "ሂፕ-ሆፕ",
+        "match": "stable_id"
+      },
+      "search.cat.workout": {
+        "desc": "Workout",
+        "bbox_base": [
+          78,
+          1740,
+          275,
+          1794
+        ],
+        "bbox_head": [
+          78,
+          1740,
+          369,
+          1797
+        ],
+        "text_head": "የአካል ብቃት እንቅስቃሴ",
+        "match": "stable_id"
+      },
+      "search.cat.sleep": {
+        "desc": "Sleep",
+        "bbox_base": [
+          585,
+          1740,
+          716,
+          1794
+        ],
+        "bbox_head": [
+          585,
+          1740,
+          781,
+          1794
+        ],
+        "text_head": "እንቅልፍ",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          96,
+          2324,
+          174,
+          2362
+        ],
+        "text_head": "መነሻ",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          366,
+          2324,
+          444,
+          2362
+        ],
+        "text_head": "ፈልግ",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          540,
+          2302,
+          810,
+          2380
+        ],
+        "text_head": "የእርስዎ ቤተ-መጻሕፍት",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

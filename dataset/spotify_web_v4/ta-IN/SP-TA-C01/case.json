@@ -1,0 +1,18 @@
+{
+  "case_id": "SP-TA-C01",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "07-lyrics",
+  "is_control": true,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": []
+}

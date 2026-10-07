@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-AM-010",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "ዕቅድዎ November 14, 2026 ላይ በ$5.49 ይታደሳል።",
+      "report": "Number/date/currency uses the US format ('ዕቅድዎ November 14, 2026 ላይ በ$5.49 ይታደሳል።') instead of the local one ('ዕቅድዎ 14 ኖቬምበር 2026 ላይ በUS$ 5.49 ይታደሳል።')."
+    },
+    {
+      "box": "16",
+      "element": "settings.storage.sub",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count}.2 GB ጥቅም ላይ ውሏል • 48.6 GB ነፃ",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('1.2 GB ጥቅም ላይ ውሏል • 48.6 GB ነፃ')."
+    },
+    {
+      "box": "13",
+      "element": "settings.datasaver",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'ውሂብ ቆጣቢ' runs off the edge of the screen."
+    }
+  ]
+}

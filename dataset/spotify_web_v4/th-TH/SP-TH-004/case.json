@@ -1,0 +1,45 @@
+{
+  "case_id": "SP-TH-004",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "04-playlist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "defects": [
+    {
+      "box": "3",
+      "element": "playlist.madefor",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'สร้างมาเพื่อ Neeraj' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "5",
+      "element": "playlist.btn.save",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'บันทึก' is truncated with an ellipsis."
+    },
+    {
+      "box": "13",
+      "element": "playlist.updated",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "playlist.updated",
+      "report": "The raw resource key 'playlist.updated' is shown instead of 'อัปเดตเมื่อ 6 วันที่แล้ว'."
+    }
+  ]
+}

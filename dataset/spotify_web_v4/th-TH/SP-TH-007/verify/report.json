@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TH-007",
+  "language": "th-TH",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "10",
+      "element_id": "lyrics.credit",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Lyrics provided by Musixmatch",
+      "target_text": "lyrics.credit"
+    },
+    {
+      "box": "9",
+      "element_id": "lyrics.translate",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['lyrics.l6']",
+      "base_text": "Show translation",
+      "target_text": "แสดงคำแปล"
+    },
+    {
+      "box": "12",
+      "element_id": "lyrics.report",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Report a problem",
+      "target_text": "รายงานปัญหา"
+    }
+  ]
+}

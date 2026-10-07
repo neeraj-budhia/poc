@@ -1,0 +1,46 @@
+{
+  "case_id": "SP-TH-007",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "10",
+      "element": "lyrics.credit",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "lyrics.credit",
+      "report": "The raw resource key 'lyrics.credit' is shown instead of 'เนื้อเพลงโดย Musixmatch'."
+    },
+    {
+      "box": "9",
+      "element": "lyrics.translate",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'แสดงคำแปล' overlaps the text element above it."
+    },
+    {
+      "box": "12",
+      "element": "lyrics.report",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'รายงานปัญหา' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

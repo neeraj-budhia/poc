@@ -1,0 +1,44 @@
+{
+  "case_id": "SP-AM-006",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "06-now-playing",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "11"
+  ],
+  "defects": [
+    {
+      "box": "9",
+      "element": "np.lyrics.header",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Lyrics preview",
+      "report": "'Lyrics preview' is shown in English instead of 'የግጥም ቅድመ-እይታ'."
+    },
+    {
+      "box": "7",
+      "element": "np.devices",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'የሚገኙ መሣሪያዎች' runs off the edge of the screen."
+    },
+    {
+      "box": "10",
+      "element": "np.lyrics.line1",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "np.lyrics.line1",
+      "report": "The raw resource key 'np.lyrics.line1' is shown instead of 'Have you got colour in your cheeks?'."
+    }
+  ]
+}

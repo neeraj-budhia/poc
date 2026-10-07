@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-TH-010",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "8",
+      "element": "settings.crossfade.val",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count} วินาที",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('5 วินาที')."
+    },
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "แพ็กเกจของคุณจะต่ออายุในวันที่ November 14, 2026 ในราคา $11.99",
+      "report": "Number/date/currency uses the US format ('แพ็กเกจของคุณจะต่ออายุในวันที่ November 14, 2026 ในราคา $11.99') instead of the local one ('แพ็กเกจของคุณจะต่ออายุในวันที่ 14 พฤศจิกายน 2569 ในราคา ฿139')."
+    },
+    {
+      "box": "17",
+      "element": "settings.language",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'ภาษาของแอป' is truncated with an ellipsis."
+    }
+  ]
+}

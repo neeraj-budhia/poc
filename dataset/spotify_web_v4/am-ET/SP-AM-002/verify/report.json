@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-AM-002",
+  "language": "am-ET",
+  "screen": "02-search",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "8",
+      "element_id": "search.sec.browse",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Browse all",
+      "target_text": "áˆ�áˆ‰áŠ•áˆ� á‹«áˆµáˆ±"
+    },
+    {
+      "box": "13",
+      "element_id": "search.cat.workout",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Workout",
+      "target_text": "የአካል ብቃት እንቅስቃሴ"
+    }
+  ]
+}

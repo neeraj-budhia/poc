@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-RU-010",
+  "language": "ru-RU",
+  "screen": "10-settings",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "Ваша подписка будет продлена November 14, 2026 за ₽299."
+    },
+    {
+      "box": "17",
+      "element_id": "settings.language",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "App language",
+      "target_text": "Язык приложения"
+    }
+  ]
+}

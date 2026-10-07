@@ -1,0 +1,32 @@
+{
+  "case_id": "SP-HE-005",
+  "platform": "web",
+  "language": "he-IL",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "11",
+      "element": "premium.plan.duo.feat",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'2 חשבונות Premium' overlaps the text element above it."
+    },
+    {
+      "box": "3",
+      "element": "premium.hero.title",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□ □□□□ □□ Premium □-0 ₪",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'נסו חודש של Premium ב-0 ₪'."
+    }
+  ]
+}

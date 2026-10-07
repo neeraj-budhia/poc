@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-VI-001",
+  "language": "vi-VN",
+  "screen": "01-home",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "14",
+      "element_id": "home.card1.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['home.card1.title']",
+      "base_text": "Arctic Monkeys, The Strokes, Tame Impala and more",
+      "target_text": "Arctic Monkeys, The Strokes, Tame Impala và nhiều nghệ sĩ khác"
+    },
+    {
+      "box": "6",
+      "element_id": "home.tile.liked",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Liked Songs",
+      "target_text": "BÃ i hÃ¡t Ä‘Ã£ thÃ­ch"
+    }
+  ]
+}

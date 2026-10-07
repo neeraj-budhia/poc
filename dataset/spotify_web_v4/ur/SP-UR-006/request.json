@@ -1,0 +1,189 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-UR-006:06-now-playing",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Urdu (ur)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "np.playingfrom": {
+        "desc": "Playing from playlist",
+        "bbox_base": [
+          326,
+          30,
+          731,
+          66
+        ],
+        "bbox_head": [
+          406,
+          36,
+          701,
+          93
+        ],
+        "text_head": "پلے لسٹ سے چل رہا ہے",
+        "match": "stable_id"
+      },
+      "np.source": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          326,
+          72,
+          731,
+          117
+        ],
+        "bbox_head": [
+          406,
+          99,
+          701,
+          189
+        ],
+        "text_head": "Discover Weekly",
+        "match": "stable_id"
+      },
+      "np.title": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          48,
+          1167,
+          601,
+          1239
+        ],
+        "bbox_head": [
+          491,
+          1245,
+          1032,
+          1404
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "np.artist": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          48,
+          1245,
+          601,
+          1299
+        ],
+        "bbox_head": [
+          491,
+          1410,
+          1032,
+          1524
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "np.elapsed": {
+        "desc": "1:24",
+        "bbox_base": [
+          48,
+          1371,
+          115,
+          1410
+        ],
+        "bbox_head": [
+          967,
+          1596,
+          1032,
+          1680
+        ],
+        "text_head": "1:24",
+        "match": "stable_id"
+      },
+      "np.remaining": {
+        "desc": "-3:08",
+        "bbox_base": [
+          943,
+          1371,
+          1032,
+          1410
+        ],
+        "bbox_head": [
+          48,
+          1596,
+          129,
+          1680
+        ],
+        "text_head": "-3:08",
+        "match": "stable_id"
+      },
+      "np.devices": {
+        "desc": "Devices available",
+        "bbox_base": [
+          48,
+          1656,
+          340,
+          1701
+        ],
+        "bbox_head": [
+          0,
+          1926,
+          90,
+          1994
+        ],
+        "text_head": "آلات دستیاب ہیں",
+        "match": "stable_id"
+      },
+      "np.share": {
+        "desc": "Share",
+        "bbox_base": [
+          934,
+          1656,
+          1032,
+          1701
+        ],
+        "bbox_head": [
+          48,
+          1926,
+          146,
+          1994
+        ],
+        "text_head": "Share",
+        "match": "stable_id"
+      },
+      "np.lyrics.header": {
+        "desc": "Lyrics preview",
+        "bbox_base": [
+          90,
+          1779,
+          990,
+          1830
+        ],
+        "bbox_head": [
+          90,
+          2072,
+          990,
+          2152
+        ],
+        "text_head": "بولوں کا پیش منظر",
+        "match": "stable_id"
+      },
+      "np.lyrics.line1": {
+        "desc": "Have you got colour in your cheeks?",
+        "bbox_base": [
+          90,
+          1848,
+          990,
+          1902
+        ],
+        "bbox_head": [
+          90,
+          2170,
+          990,
+          2290
+        ],
+        "text_head": "Have you got colour in your cheeks?",
+        "match": "stable_id"
+      }
+    }
+  }
+}

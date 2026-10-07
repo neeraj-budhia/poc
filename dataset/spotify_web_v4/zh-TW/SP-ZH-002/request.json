@@ -1,0 +1,325 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-ZH-002:02-search",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Chinese (zh-TW)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "search.title": {
+        "desc": "Search",
+        "bbox_base": [
+          48,
+          50,
+          246,
+          118
+        ],
+        "bbox_head": [
+          48,
+          42,
+          170,
+          126
+        ],
+        "text_head": "搜尋",
+        "match": "stable_id"
+      },
+      "search.placeholder": {
+        "desc": "What do you want to listen to?",
+        "bbox_base": [
+          144,
+          207,
+          791,
+          261
+        ],
+        "bbox_head": [
+          831,
+          202,
+          1080,
+          266
+        ],
+        "text_head": "你想播放什麼內容？",
+        "match": "stable_id"
+      },
+      "search.sec.start": {
+        "desc": "Start browsing",
+        "bbox_base": [
+          48,
+          348,
+          1032,
+          414
+        ],
+        "bbox_head": [
+          48,
+          348,
+          1032,
+          426
+        ],
+        "text_head": "開始瀏覽",
+        "match": "stable_id"
+      },
+      "search.cat.music": {
+        "desc": "Music",
+        "bbox_base": [
+          78,
+          474,
+          216,
+          528
+        ],
+        "bbox_head": [
+          78,
+          492,
+          176,
+          546
+        ],
+        "text_head": "音樂",
+        "match": "stable_id"
+      },
+      "search.cat.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          585,
+          474,
+          800,
+          528
+        ],
+        "bbox_head": [
+          585,
+          486,
+          774,
+          540
+        ],
+        "text_head": "Podcast",
+        "match": "stable_id"
+      },
+      "search.cat.live": {
+        "desc": "Live Events",
+        "bbox_base": [
+          78,
+          762,
+          341,
+          816
+        ],
+        "bbox_head": [
+          78,
+          780,
+          274,
+          834
+        ],
+        "text_head": "現場活動",
+        "match": "stable_id"
+      },
+      "search.cat.madeforyou": {
+        "desc": "Made For You",
+        "bbox_base": [
+          585,
+          762,
+          899,
+          816
+        ],
+        "bbox_head": [
+          585,
+          774,
+          693,
+          840
+        ],
+        "text_head": "為你打造",
+        "match": "stable_id"
+      },
+      "search.sec.browse": {
+        "desc": "Browse all",
+        "bbox_base": [
+          48,
+          1038,
+          1032,
+          1104
+        ],
+        "bbox_head": [
+          48,
+          1050,
+          1032,
+          1128
+        ],
+        "text_head": "瀏覽全部",
+        "match": "stable_id"
+      },
+      "search.cat.newreleases": {
+        "desc": "New Releases",
+        "bbox_base": [
+          78,
+          1164,
+          401,
+          1218
+        ],
+        "bbox_head": [
+          78,
+          1194,
+          274,
+          1248
+        ],
+        "text_head": "最新發行",
+        "match": "stable_id"
+      },
+      "search.cat.charts": {
+        "desc": "Charts",
+        "bbox_base": [
+          585,
+          1164,
+          742,
+          1218
+        ],
+        "bbox_head": [
+          585,
+          1194,
+          732,
+          1248
+        ],
+        "text_head": "排行榜",
+        "match": "stable_id"
+      },
+      "search.cat.pop": {
+        "desc": "Pop",
+        "bbox_base": [
+          78,
+          1452,
+          168,
+          1506
+        ],
+        "bbox_head": [
+          78,
+          1482,
+          225,
+          1536
+        ],
+        "text_head": "流行樂",
+        "match": "stable_id"
+      },
+      "search.cat.hiphop": {
+        "desc": "Hip-Hop",
+        "bbox_base": [
+          585,
+          1452,
+          783,
+          1506
+        ],
+        "bbox_head": [
+          585,
+          1482,
+          683,
+          1536
+        ],
+        "text_head": "嘻哈",
+        "match": "stable_id"
+      },
+      "search.cat.workout": {
+        "desc": "Workout",
+        "bbox_base": [
+          78,
+          1740,
+          275,
+          1794
+        ],
+        "bbox_head": [
+          78,
+          1770,
+          176,
+          1824
+        ],
+        "text_head": "健身",
+        "match": "stable_id"
+      },
+      "search.cat.sleep": {
+        "desc": "Sleep",
+        "bbox_base": [
+          585,
+          1740,
+          716,
+          1794
+        ],
+        "bbox_head": [
+          585,
+          1770,
+          683,
+          1824
+        ],
+        "text_head": "睡眠",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          101,
+          2319,
+          169,
+          2367
+        ],
+        "text_head": "首頁",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          371,
+          2319,
+          439,
+          2367
+        ],
+        "text_head": "搜尋",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          540,
+          2322,
+          810,
+          2361
+        ],
+        "text_head": "ä½ çš„éŸ³æ¨‚åº«",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

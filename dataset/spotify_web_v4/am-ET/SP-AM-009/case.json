@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-AM-009",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "14",
+      "element": "artist.latest.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "October 17, 2025 • አልበም",
+      "report": "Number/date/currency uses the US format ('October 17, 2025 • አልበም') instead of the local one ('17 ኦክቶበር 2025 • አልበም')."
+    },
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count},812,331 ወርሃዊ አድማጮች",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('24,812,331 ወርሃዊ አድማጮች')."
+    }
+  ]
+}

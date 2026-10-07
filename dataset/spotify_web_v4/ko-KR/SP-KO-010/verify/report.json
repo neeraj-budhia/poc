@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-KO-010",
+  "language": "ko-KR",
+  "screen": "10-settings",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "November 14, 2026에 $11.99로 요금제가 갱신됩니다."
+    },
+    {
+      "box": "17",
+      "element_id": "settings.language",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "App language",
+      "target_text": "앱 언어"
+    },
+    {
+      "box": "13",
+      "element_id": "settings.datasaver",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Data Saver",
+      "target_text": "데이터 절약 모드"
+    }
+  ]
+}

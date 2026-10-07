@@ -1,0 +1,342 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TH-005:05-premium",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Thai (th-TH)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "premium.title": {
+        "desc": "Premium",
+        "bbox_base": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "bbox_head": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "brand.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "bbox_head": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "premium.hero.title": {
+        "desc": "Try 1 month of Premium for $0",
+        "bbox_base": [
+          96,
+          324,
+          984,
+          489
+        ],
+        "bbox_head": [
+          96,
+          324,
+          984,
+          489
+        ],
+        "text_head": "ทดลองใช้ Premium {count} เดือน ฟรี ฿0",
+        "match": "stable_id"
+      },
+      "premium.hero.sub": {
+        "desc": "Only $11.99/month after. Cancel anytime.",
+        "bbox_base": [
+          96,
+          513,
+          984,
+          568
+        ],
+        "bbox_head": [
+          96,
+          513,
+          984,
+          568
+        ],
+        "text_head": "หลังจากนั้นเพียง ฿139/เดือน ยกเลิกได้ทุกเมื่อ",
+        "match": "stable_id"
+      },
+      "premium.cta.trial": {
+        "desc": "Try free for 1 month",
+        "bbox_base": [
+          96,
+          616,
+          647,
+          742
+        ],
+        "bbox_head": [
+          783,
+          616,
+          1080,
+          748
+        ],
+        "text_head": "ทดลองใช้ฟรี 1 เดือน",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.name": {
+        "desc": "Individual",
+        "bbox_base": [
+          108,
+          874,
+          346,
+          934
+        ],
+        "bbox_head": [
+          108,
+          880,
+          333,
+          949
+        ],
+        "text_head": "แบบบุคคล",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.price": {
+        "desc": "$11.99 / month",
+        "bbox_base": [
+          686,
+          880,
+          984,
+          931
+        ],
+        "bbox_head": [
+          756,
+          889,
+          984,
+          946
+        ],
+        "text_head": "฿139 / เดือน",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.feat": {
+        "desc": "1 Premium account",
+        "bbox_base": [
+          108,
+          952,
+          984,
+          1000
+        ],
+        "bbox_head": [
+          108,
+          967,
+          984,
+          1021
+        ],
+        "text_head": "บัญชี Premium 1 บัญชี",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.name": {
+        "desc": "Duo",
+        "bbox_base": [
+          108,
+          1120,
+          206,
+          1180
+        ],
+        "bbox_head": [
+          108,
+          1141,
+          206,
+          1201
+        ],
+        "text_head": "Duo",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.price": {
+        "desc": "$16.99 / month",
+        "bbox_base": [
+          679,
+          1126,
+          984,
+          1177
+        ],
+        "bbox_head": [
+          759,
+          1144,
+          984,
+          1201
+        ],
+        "text_head": "฿179 / เดือน",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.feat": {
+        "desc": "2 Premium accounts",
+        "bbox_base": [
+          108,
+          1198,
+          984,
+          1246
+        ],
+        "bbox_head": [
+          108,
+          1219,
+          984,
+          1267
+        ],
+        "text_head": "2 Premium accounts",
+        "match": "stable_id"
+      },
+      "premium.plan.family.name": {
+        "desc": "Family",
+        "bbox_base": [
+          108,
+          1366,
+          267,
+          1426
+        ],
+        "bbox_head": [
+          108,
+          1387,
+          410,
+          1456
+        ],
+        "text_head": "แบบครอบครัว",
+        "match": "stable_id"
+      },
+      "premium.plan.family.price": {
+        "desc": "$19.99 / month",
+        "bbox_base": [
+          679,
+          1372,
+          984,
+          1423
+        ],
+        "bbox_head": [
+          757,
+          1396,
+          984,
+          1453
+        ],
+        "text_head": "฿219 / เดือน",
+        "match": "stable_id"
+      },
+      "premium.plan.family.feat": {
+        "desc": "Up to 6 Premium accounts",
+        "bbox_base": [
+          108,
+          1444,
+          984,
+          1492
+        ],
+        "bbox_head": [
+          108,
+          1474,
+          984,
+          1528
+        ],
+        "text_head": "บัญชี Premium สูงสุด 6 บัญชี",
+        "match": "stable_id"
+      },
+      "premium.legal": {
+        "desc": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+        "bbox_base": [
+          48,
+          1576,
+          1032,
+          1668
+        ],
+        "bbox_head": [
+          48,
+          1612,
+          1032,
+          1704
+        ],
+        "text_head": "มีข้อกำหนดและเงื่อนไข ข้อเสนอสิ้นสุดวันที่ 31 ตุลาคม 2569 สำหรับแพ็กเกจแบบบุคคลเท่านั้น",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          75,
+          2319,
+          195,
+          2367
+        ],
+        "text_head": "หน้าหลัก",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          365,
+          2319,
+          445,
+          2367
+        ],
+        "text_head": "ค้นหา",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          549,
+          2318,
+          801,
+          2366
+        ],
+        "text_head": "คอลเลกชันของคุณ",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

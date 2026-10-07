@@ -1,0 +1,39 @@
+{
+  "case_id": "SP-RU-002",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "14",
+      "element": "search.cat.sleep",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "□□□",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'Сон'."
+    },
+    {
+      "box": "1",
+      "element": "search.title",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'Поиск' are clipped by a too-small line box."
+    },
+    {
+      "box": "13",
+      "element": "search.cat.workout",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'Тренировка' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

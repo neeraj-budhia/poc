@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-TH-006",
+  "language": "th-TH",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 6px < font-size 10px, glyph tops/bottoms cut",
+      "base_text": "Playing from playlist",
+      "target_text": "กำลังเล่นจากเพลย์ลิสต์"
+    },
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Devices available",
+      "target_text": "Devices available"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-VI-007",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "10",
+      "element": "lyrics.credit",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "lyrics.credit",
+      "report": "The raw resource key 'lyrics.credit' is shown instead of 'Lời bài hát do Musixmatch cung cấp'."
+    },
+    {
+      "box": "11",
+      "element": "lyrics.share",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'Chia sẻ' is truncated with an ellipsis."
+    }
+  ]
+}

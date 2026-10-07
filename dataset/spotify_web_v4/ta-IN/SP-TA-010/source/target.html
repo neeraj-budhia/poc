@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="ta-IN" dir="ltr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="appbar"><span class="back">‹</span><h1 data-k="settings.title">அமைப்புகள்</h1></header>
+<main>
+  <h2 class="set-h" data-k="settings.sec.account">கணக்கு</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.plan">Premium தனிநபர்</p><p class="s" data-k="settings.plan.sub">உங்கள் திட்டம் November 14, 2026 அன்று $11.99-க்குப் புதுப்பிக்கப்படும்.</p></div></div>
+  <h2 class="set-h" data-k="settings.sec.playback">இயக்கம்</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.crossfade">கிராஸ்ஃபேடு</p><p class="s" data-k="settings.crossfade.sub">பாடல்களுக்கு இடையே கிராஸ்ஃபேடு செய்ய அனுமதிக்கிறது</p></div><span class="val" data-k="settings.crossfade.val">5 வி</span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.gapless">இடைவெளியற்ற இயக்கம்</p></div><span class="tog on"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.explicit">வெளிப்படையான உள்ளடக்கத்தை அனுமதி</p><p class="s" data-k="settings.explicit.sub">வெளிப்படையான உள்ளடக்கத்தை இயக்க இதை இயக்கவும். வெளிப்படையான உள்ளடக்கம் E குறியுடன் குறிக்கப்பட்டிருக்கும்.</p></div><span class="tog on"></span></div>
+  <h2 class="set-h" data-k="settings.sec.data">டேட்டா சேமிப்பு &amp; ஆஃப்லைன்</h2>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.datasaver">டேட்டா சேமிப்பான்</p><p class="s" data-k="settings.datasaver.sub" style="position: relative; top: -14px;">உங்கள் இசைத் தரத்தைக் குறைவாக அமைத்து, கேன்வாஸை முடக்கும்.</p></div><span class="tog"></span></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.storage">சேமிப்பகம்</p><p class="s" data-k="settings.storage.sub">1.2 GB பயன்படுத்தப்பட்டது • 48.6 GB காலியாக உள்ளது</p></div></div>
+  <div class="set-row"><div class="txt"><p class="t" data-k="settings.language">ஆப்ஸ் மொழி</p></div><span class="val" data-k="settings.language.val">தமிழ்</span></div>
+  <span class="btn-outline logout" data-k="settings.logout">வெளியேறு</span>
+  <p class="ver" data-k="settings.version">பதிப்பு 9.0.82.512</p>
+</main>
+<style>
+.set-h { font-size: 17px; font-weight: 700; margin: 14px 0 4px; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; }
+.set-row .txt { min-width: 0; flex: 1; }
+.set-row .t { font-size: 15px; }
+.set-row .s { font-size: 12px; color: #a7a7a7; margin-top: 2px; line-height: 1.35; }
+.set-row .val { font-size: 13px; color: #a7a7a7; white-space: nowrap; }
+.tog { width: 40px; height: 22px; border-radius: 11px; background: #535353; flex-shrink: 0; position: relative; }
+.tog::after { content: ""; position: absolute; top: 3px; inset-inline-start: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+.tog.on { background: #1ed760; }
+.tog.on::after { inset-inline-start: 21px; }
+.logout { margin-top: 14px; }
+.ver { font-size: 11px; color: #a7a7a7; margin-top: 10px; }
+</style>
+
+</body></html>

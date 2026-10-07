@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-TA-010",
+  "language": "ta-IN",
+  "screen": "10-settings",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "உங்கள் திட்டம் November 14, 2026 அன்று $11.99-க்குப் புதுப்பிக்கப்படும்."
+    },
+    {
+      "box": "14",
+      "element_id": "settings.datasaver.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['settings.datasaver']",
+      "base_text": "Sets your music quality to low and disables canvas.",
+      "target_text": "உங்கள் இசைத் தரத்தைக் குறைவாக அமைத்து, கேன்வாஸை முடக்கும்."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "SP-TA-008",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "08-library",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "11",
+    "13",
+    "15",
+    "22"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "element": "library.liked.sub",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "📌 பிளேலிஸ்ட் • {count} பாடல்கள்",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('📌 பிளேலிஸ்ட் • 248 பாடல்கள்')."
+    },
+    {
+      "box": "9",
+      "element": "library.episodes.title",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "library.episodes.title",
+      "report": "The raw resource key 'library.episodes.title' is shown instead of 'உங்கள் எபிசோடுகள்'."
+    },
+    {
+      "box": "18",
+      "element": "library.add.podcasts",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'பாட்காஸ்ட்கள் & நிகழ்ச்சிகளைச் சேர்' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

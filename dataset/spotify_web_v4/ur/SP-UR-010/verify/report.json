@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-UR-010",
+  "language": "ur",
+  "screen": "10-settings",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "16",
+      "element_id": "settings.storage.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "1.2 GB used • 48.6 GB free",
+      "target_text": "{count}.2 GB استعمال شدہ • 48.6 GB خالی"
+    },
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "آپ کا پلان November 14, 2026 کو $11.99 میں تجدید ہو جائے گا۔"
+    },
+    {
+      "box": "1",
+      "element_id": "settings.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 12px < font-size 20px, glyph tops/bottoms cut",
+      "base_text": "Settings",
+      "target_text": "ترتیبات"
+    }
+  ]
+}

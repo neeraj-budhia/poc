@@ -1,0 +1,223 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-UR-007:07-lyrics",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Urdu (ur)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "lyrics.song": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          339,
+          30,
+          718,
+          81
+        ],
+        "bbox_head": [
+          370,
+          30,
+          737,
+          135
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "lyrics.artist": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          339,
+          87,
+          718,
+          132
+        ],
+        "bbox_head": [
+          370,
+          141,
+          737,
+          231
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "lyrics.l1": {
+        "desc": "Have you got colour in your cheeks?",
+        "bbox_base": [
+          48,
+          198,
+          1032,
+          385
+        ],
+        "bbox_head": [
+          48,
+          297,
+          1032,
+          484
+        ],
+        "text_head": "Have you got colour in your cheeks?",
+        "match": "stable_id"
+      },
+      "lyrics.l2": {
+        "desc": "Do you ever get the feeling that you can't shift the tide",
+        "bbox_base": [
+          48,
+          421,
+          1032,
+          608
+        ],
+        "bbox_head": [
+          48,
+          520,
+          1032,
+          707
+        ],
+        "text_head": "Do you ever get the feeling that you can't shift the tide",
+        "match": "stable_id"
+      },
+      "lyrics.l3": {
+        "desc": "That sticks around like something's in your teeth?",
+        "bbox_base": [
+          48,
+          644,
+          1032,
+          831
+        ],
+        "bbox_head": [
+          48,
+          743,
+          1032,
+          930
+        ],
+        "text_head": "That sticks around like something's in your teeth?",
+        "match": "stable_id"
+      },
+      "lyrics.l4": {
+        "desc": "Are there some aces up your sleeve?",
+        "bbox_base": [
+          48,
+          867,
+          1032,
+          1054
+        ],
+        "bbox_head": [
+          48,
+          966,
+          1032,
+          1154
+        ],
+        "text_head": "Are there some aces up your sleeve?",
+        "match": "stable_id"
+      },
+      "lyrics.l5": {
+        "desc": "Have you no idea that you're in deep?",
+        "bbox_base": [
+          48,
+          1090,
+          1032,
+          1278
+        ],
+        "bbox_head": [
+          48,
+          1190,
+          1032,
+          1377
+        ],
+        "text_head": "Have you no idea that you're in deep?",
+        "match": "stable_id"
+      },
+      "lyrics.l6": {
+        "desc": "I dreamt about you nearly every night this week",
+        "bbox_base": [
+          48,
+          1314,
+          1032,
+          1501
+        ],
+        "bbox_head": [
+          48,
+          1413,
+          1032,
+          1600
+        ],
+        "text_head": "I dreamt about you nearly every night this week",
+        "match": "stable_id"
+      },
+      "lyrics.translate": {
+        "desc": "Show translation",
+        "bbox_base": [
+          48,
+          1567,
+          1032,
+          1615
+        ],
+        "bbox_head": [
+          48,
+          1477,
+          1032,
+          1551
+        ],
+        "text_head": "ترجمہ دکھائیں",
+        "match": "stable_id"
+      },
+      "lyrics.credit": {
+        "desc": "Lyrics provided by Musixmatch",
+        "bbox_base": [
+          48,
+          1633,
+          1032,
+          1672
+        ],
+        "bbox_head": [
+          48,
+          1758,
+          1032,
+          1883
+        ],
+        "text_head": "Ø¨ÙˆÙ„ Musixmatch Ú©ÛŒ Ø¬Ø§Ù†Ø¨ Ø³Û’ Ù�Ø±Ø§Û�Ù… Ú©Ø±Ø¯Û�",
+        "match": "stable_id"
+      },
+      "lyrics.share": {
+        "desc": "Share",
+        "bbox_base": [
+          48,
+          1714,
+          251,
+          1804
+        ],
+        "bbox_head": [
+          793,
+          1925,
+          1032,
+          2041
+        ],
+        "text_head": "شیئر کریں",
+        "match": "stable_id"
+      },
+      "lyrics.report": {
+        "desc": "Report a problem",
+        "bbox_base": [
+          275,
+          1714,
+          700,
+          1804
+        ],
+        "bbox_head": [
+          119,
+          1925,
+          769,
+          2041
+        ],
+        "text_head": "□□□□□ □□ □□□□□ □□□",
+        "match": "stable_id"
+      }
+    }
+  }
+}

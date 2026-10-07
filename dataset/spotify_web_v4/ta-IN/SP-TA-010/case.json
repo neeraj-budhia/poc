@@ -1,0 +1,28 @@
+{
+  "case_id": "SP-TA-010",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "உங்கள் திட்டம் November 14, 2026 அன்று $11.99-க்குப் புதுப்பிக்கப்படும்.",
+      "report": "Number/date/currency uses the US format ('உங்கள் திட்டம் November 14, 2026 அன்று $11.99-க்குப் புதுப்பிக்கப்படும்.') instead of the local one ('உங்கள் திட்டம் 14 நவம்பர், 2026 அன்று ₹139-க்குப் புதுப்பிக்கப்படும்.')."
+    },
+    {
+      "box": "14",
+      "element": "settings.datasaver.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'உங்கள் இசைத் தரத்தைக் குறைவாக அமைத்து, கேன்வாஸை முடக்கும்.' overlaps the text element above it."
+    }
+  ]
+}

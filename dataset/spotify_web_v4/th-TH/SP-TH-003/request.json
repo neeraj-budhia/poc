@@ -1,0 +1,410 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-TH-003:03-search-results",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Thai (th-TH)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "results.query": {
+        "desc": "arctic monkeys",
+        "bbox_base": [
+          133,
+          57,
+          444,
+          111
+        ],
+        "bbox_head": [
+          133,
+          57,
+          444,
+          111
+        ],
+        "text_head": "arctic monkeys",
+        "match": "stable_id"
+      },
+      "results.chip.top": {
+        "desc": "Top",
+        "bbox_base": [
+          48,
+          192,
+          187,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          263,
+          282
+        ],
+        "text_head": "ยอดนิยม",
+        "match": "stable_id"
+      },
+      "results.chip.songs": {
+        "desc": "Songs",
+        "bbox_base": [
+          211,
+          192,
+          397,
+          276
+        ],
+        "bbox_head": [
+          287,
+          192,
+          473,
+          282
+        ],
+        "text_head": "Songs",
+        "match": "stable_id"
+      },
+      "results.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          421,
+          192,
+          611,
+          276
+        ],
+        "bbox_head": [
+          497,
+          192,
+          667,
+          282
+        ],
+        "text_head": "ศิลปิน",
+        "match": "stable_id"
+      },
+      "results.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          635,
+          192,
+          855,
+          276
+        ],
+        "bbox_head": [
+          691,
+          192,
+          920,
+          282
+        ],
+        "text_head": "เพลย์ลิสต์",
+        "match": "stable_id"
+      },
+      "results.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          48,
+          300,
+          256,
+          384
+        ],
+        "bbox_head": [
+          48,
+          306,
+          215,
+          396
+        ],
+        "text_head": "อัลบั้ม",
+        "match": "stable_id"
+      },
+      "results.r1.title": {
+        "desc": "Arctic Monkeys",
+        "bbox_base": [
+          228,
+          460,
+          1032,
+          514
+        ],
+        "bbox_head": [
+          228,
+          470,
+          1032,
+          524
+        ],
+        "text_head": "Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          520,
+          1032,
+          566
+        ],
+        "bbox_head": [
+          228,
+          530,
+          1032,
+          580
+        ],
+        "text_head": "ศิลปิน",
+        "match": "stable_id"
+      },
+      "results.r2.title": {
+        "desc": "Do I Wanna Know?",
+        "bbox_base": [
+          228,
+          646,
+          1032,
+          700
+        ],
+        "bbox_head": [
+          228,
+          656,
+          1032,
+          710
+        ],
+        "text_head": "Do I Wanna Know?",
+        "match": "stable_id"
+      },
+      "results.r2.sub": {
+        "desc": "Song • Arctic Monkeys",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          752
+        ],
+        "bbox_head": [
+          228,
+          716,
+          1032,
+          766
+        ],
+        "text_head": "เพลง • Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r3.title": {
+        "desc": "AM",
+        "bbox_base": [
+          228,
+          832,
+          1032,
+          886
+        ],
+        "bbox_head": [
+          228,
+          842,
+          1032,
+          896
+        ],
+        "text_head": "AM",
+        "match": "stable_id"
+      },
+      "results.r3.sub": {
+        "desc": "Album • Arctic Monkeys • 2013",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          938
+        ],
+        "bbox_head": [
+          228,
+          902,
+          510,
+          952
+        ],
+        "text_head": "อัลบั้ม • Arctic Monkeys • 2556",
+        "match": "stable_id"
+      },
+      "results.r4.title": {
+        "desc": "This Is Arctic Monkeys",
+        "bbox_base": [
+          228,
+          1018,
+          1032,
+          1072
+        ],
+        "bbox_head": [
+          228,
+          1028,
+          1032,
+          1082
+        ],
+        "text_head": "This Is Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r4.sub": {
+        "desc": "Playlist • Spotify",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1124
+        ],
+        "bbox_head": [
+          228,
+          1088,
+          1032,
+          1138
+        ],
+        "text_head": "เพลย์ลิสต์ • Spotify",
+        "match": "stable_id"
+      },
+      "results.r5.title": {
+        "desc": "505",
+        "bbox_base": [
+          228,
+          1204,
+          1032,
+          1258
+        ],
+        "bbox_head": [
+          228,
+          1214,
+          1032,
+          1268
+        ],
+        "text_head": "505",
+        "match": "stable_id"
+      },
+      "results.r5.sub": {
+        "desc": "Song • Arctic Monkeys",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1310
+        ],
+        "bbox_head": [
+          228,
+          1274,
+          1032,
+          1324
+        ],
+        "text_head": "เพลง • Arctic Monkeys",
+        "match": "stable_id"
+      },
+      "results.r6.title": {
+        "desc": "Arctic Monkeys Radio",
+        "bbox_base": [
+          228,
+          1390,
+          1032,
+          1444
+        ],
+        "bbox_head": [
+          228,
+          1400,
+          1032,
+          1454
+        ],
+        "text_head": "Arctic Monkeys Radio",
+        "match": "stable_id"
+      },
+      "results.r6.sub": {
+        "desc": "Playlist • Spotify",
+        "bbox_base": [
+          228,
+          1450,
+          1032,
+          1496
+        ],
+        "bbox_head": [
+          228,
+          1460,
+          1032,
+          1510
+        ],
+        "text_head": "เพลย์ลิสต์ • Spotify",
+        "match": "stable_id"
+      },
+      "results.seeall": {
+        "desc": "See all songs",
+        "bbox_base": [
+          48,
+          1566,
+          1032,
+          1614
+        ],
+        "bbox_head": [
+          48,
+          1578,
+          1032,
+          1632
+        ],
+        "text_head": "ดูเพลงทั้งหมด",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          75,
+          2319,
+          195,
+          2367
+        ],
+        "text_head": "หน้าหลัก",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          365,
+          2319,
+          445,
+          2367
+        ],
+        "text_head": "ค้นหา",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          549,
+          2318,
+          801,
+          2366
+        ],
+        "text_head": "คอลเลกชันของคุณ",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

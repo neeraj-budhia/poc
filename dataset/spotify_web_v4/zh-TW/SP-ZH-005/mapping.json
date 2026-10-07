@@ -1,0 +1,663 @@
+{
+  "case_id": "SP-ZH-005",
+  "screen": "05-premium",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Chinese (zh-TW)",
+  "case_elements": [
+    {
+      "box": "14",
+      "element_id": "premium.plan.family.feat",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "3",
+      "element_id": "premium.hero.title",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "15",
+      "element_id": "premium.legal",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 19,
+    "with_target_box": 19,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "premium.title",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        119,
+        50,
+        372,
+        118
+      ],
+      "target_box": [
+        119,
+        50,
+        372,
+        118
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "brand.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        168,
+        236,
+        353,
+        286
+      ],
+      "target_box": [
+        168,
+        236,
+        353,
+        286
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "premium.hero.title",
+      "descriptor": "Try 1 month of Premium for $0",
+      "target_text": "以 NT$0 試用 Premium 1 個月",
+      "base_box": [
+        96,
+        324,
+        984,
+        489
+      ],
+      "target_box": [
+        96,
+        324,
+        993,
+        363
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "premium.hero.sub",
+      "descriptor": "Only $11.99/month after. Cancel anytime.",
+      "target_text": "之後每月只要 NT$149。可隨時取消。",
+      "base_box": [
+        96,
+        513,
+        984,
+        568
+      ],
+      "target_box": [
+        96,
+        396,
+        984,
+        451
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "premium.cta.trial",
+      "descriptor": "Try free for 1 month",
+      "target_text": "免費試用 1 個月",
+      "base_box": [
+        96,
+        616,
+        647,
+        742
+      ],
+      "target_box": [
+        96,
+        499,
+        536,
+        634
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "premium.plan.individual.name",
+      "descriptor": "Individual",
+      "target_text": "個人",
+      "base_box": [
+        108,
+        874,
+        346,
+        934
+      ],
+      "target_box": [
+        108,
+        766,
+        212,
+        838
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "premium.plan.individual.price",
+      "descriptor": "$11.99 / month",
+      "target_text": "NT$149 / 月",
+      "base_box": [
+        686,
+        880,
+        984,
+        931
+      ],
+      "target_box": [
+        745,
+        775,
+        984,
+        835
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "premium.plan.individual.feat",
+      "descriptor": "1 Premium account",
+      "target_text": "1 個 Premium 帳戶",
+      "base_box": [
+        108,
+        952,
+        984,
+        1000
+      ],
+      "target_box": [
+        108,
+        856,
+        984,
+        910
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "premium.plan.duo.name",
+      "descriptor": "Duo",
+      "target_text": "雙人",
+      "base_box": [
+        108,
+        1120,
+        206,
+        1180
+      ],
+      "target_box": [
+        108,
+        1030,
+        212,
+        1102
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "premium.plan.duo.price",
+      "descriptor": "$16.99 / month",
+      "target_text": "NT$198 / 月",
+      "base_box": [
+        679,
+        1126,
+        984,
+        1177
+      ],
+      "target_box": [
+        745,
+        1039,
+        984,
+        1099
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "premium.plan.duo.feat",
+      "descriptor": "2 Premium accounts",
+      "target_text": "2 個 Premium 帳戶",
+      "base_box": [
+        108,
+        1198,
+        984,
+        1246
+      ],
+      "target_box": [
+        108,
+        1120,
+        984,
+        1174
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "premium.plan.family.name",
+      "descriptor": "Family",
+      "target_text": "家庭",
+      "base_box": [
+        108,
+        1366,
+        267,
+        1426
+      ],
+      "target_box": [
+        108,
+        1294,
+        212,
+        1366
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "premium.plan.family.price",
+      "descriptor": "$19.99 / month",
+      "target_text": "NT$268 / 月",
+      "base_box": [
+        679,
+        1372,
+        984,
+        1423
+      ],
+      "target_box": [
+        740,
+        1303,
+        984,
+        1363
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "premium.plan.family.feat",
+      "descriptor": "Up to 6 Premium accounts",
+      "target_text": "premium.plan.family.feat",
+      "base_box": [
+        108,
+        1444,
+        984,
+        1492
+      ],
+      "target_box": [
+        108,
+        1384,
+        984,
+        1432
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "premium.legal",
+      "descriptor": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+      "target_text": "適用相關條款。優惠於 October 31, 2026 結束。僅限個人方案。",
+      "base_box": [
+        48,
+        1576,
+        1032,
+        1668
+      ],
+      "target_box": [
+        48,
+        1516,
+        1032,
+        1562
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "tab.home",
+      "descriptor": "Home",
+      "target_text": "首頁",
+      "base_box": [
+        89,
+        2324,
+        181,
+        2362
+      ],
+      "target_box": [
+        101,
+        2319,
+        169,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "tab.search",
+      "descriptor": "Search",
+      "target_text": "搜尋",
+      "base_box": [
+        350,
+        2324,
+        460,
+        2362
+      ],
+      "target_box": [
+        371,
+        2319,
+        439,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "tab.library",
+      "descriptor": "Your Library",
+      "target_text": "你的音樂庫",
+      "base_box": [
+        580,
+        2322,
+        770,
+        2361
+      ],
+      "target_box": [
+        591,
+        2318,
+        759,
+        2366
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "tab.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "target_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 23.426,
+      "height": 2.833
+    },
+    "2": {
+      "x": 15.556,
+      "y": 9.833,
+      "width": 17.13,
+      "height": 2.083
+    },
+    "3": {
+      "x": 8.889,
+      "y": 13.5,
+      "width": 82.222,
+      "height": 6.875
+    },
+    "4": {
+      "x": 8.889,
+      "y": 21.375,
+      "width": 82.222,
+      "height": 2.292
+    },
+    "5": {
+      "x": 8.889,
+      "y": 25.667,
+      "width": 51.019,
+      "height": 5.25
+    },
+    "6": {
+      "x": 10.0,
+      "y": 36.417,
+      "width": 22.037,
+      "height": 2.5
+    },
+    "7": {
+      "x": 63.519,
+      "y": 36.667,
+      "width": 27.593,
+      "height": 2.125
+    },
+    "8": {
+      "x": 10.0,
+      "y": 39.667,
+      "width": 81.111,
+      "height": 2.0
+    },
+    "9": {
+      "x": 10.0,
+      "y": 46.667,
+      "width": 9.074,
+      "height": 2.5
+    },
+    "10": {
+      "x": 62.87,
+      "y": 46.917,
+      "width": 28.241,
+      "height": 2.125
+    },
+    "11": {
+      "x": 10.0,
+      "y": 49.917,
+      "width": 81.111,
+      "height": 2.0
+    },
+    "12": {
+      "x": 10.0,
+      "y": 56.917,
+      "width": 14.722,
+      "height": 2.5
+    },
+    "13": {
+      "x": 62.87,
+      "y": 57.167,
+      "width": 28.241,
+      "height": 2.125
+    },
+    "14": {
+      "x": 10.0,
+      "y": 60.167,
+      "width": 81.111,
+      "height": 2.0
+    },
+    "15": {
+      "x": 4.444,
+      "y": 65.667,
+      "width": 91.111,
+      "height": 3.833
+    },
+    "16": {
+      "x": 8.241,
+      "y": 96.833,
+      "width": 8.519,
+      "height": 1.583
+    },
+    "17": {
+      "x": 32.407,
+      "y": 96.833,
+      "width": 10.185,
+      "height": 1.583
+    },
+    "18": {
+      "x": 53.704,
+      "y": 96.75,
+      "width": 17.593,
+      "height": 1.625
+    },
+    "19": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 23.426,
+      "height": 2.833
+    },
+    "2": {
+      "x": 15.556,
+      "y": 9.833,
+      "width": 17.13,
+      "height": 2.083
+    },
+    "3": {
+      "x": 8.889,
+      "y": 13.5,
+      "width": 83.056,
+      "height": 1.625
+    },
+    "4": {
+      "x": 8.889,
+      "y": 16.5,
+      "width": 82.222,
+      "height": 2.292
+    },
+    "5": {
+      "x": 8.889,
+      "y": 20.792,
+      "width": 40.741,
+      "height": 5.625
+    },
+    "6": {
+      "x": 10.0,
+      "y": 31.917,
+      "width": 9.63,
+      "height": 3.0
+    },
+    "7": {
+      "x": 68.981,
+      "y": 32.292,
+      "width": 22.13,
+      "height": 2.5
+    },
+    "8": {
+      "x": 10.0,
+      "y": 35.667,
+      "width": 81.111,
+      "height": 2.25
+    },
+    "9": {
+      "x": 10.0,
+      "y": 42.917,
+      "width": 9.63,
+      "height": 3.0
+    },
+    "10": {
+      "x": 68.981,
+      "y": 43.292,
+      "width": 22.13,
+      "height": 2.5
+    },
+    "11": {
+      "x": 10.0,
+      "y": 46.667,
+      "width": 81.111,
+      "height": 2.25
+    },
+    "12": {
+      "x": 10.0,
+      "y": 53.917,
+      "width": 9.63,
+      "height": 3.0
+    },
+    "13": {
+      "x": 68.519,
+      "y": 54.292,
+      "width": 22.593,
+      "height": 2.5
+    },
+    "14": {
+      "x": 10.0,
+      "y": 57.667,
+      "width": 81.111,
+      "height": 2.0
+    },
+    "15": {
+      "x": 4.444,
+      "y": 63.167,
+      "width": 91.111,
+      "height": 1.917
+    },
+    "16": {
+      "x": 9.352,
+      "y": 96.625,
+      "width": 6.296,
+      "height": 2.0
+    },
+    "17": {
+      "x": 34.352,
+      "y": 96.625,
+      "width": 6.296,
+      "height": 2.0
+    },
+    "18": {
+      "x": 54.722,
+      "y": 96.583,
+      "width": 15.556,
+      "height": 2.0
+    },
+    "19": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  }
+}

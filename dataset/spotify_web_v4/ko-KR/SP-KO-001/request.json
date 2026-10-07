@@ -1,0 +1,376 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-KO-001:01-home",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Korean (ko-KR)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "home.greeting": {
+        "desc": "Good evening",
+        "bbox_base": [
+          48,
+          50,
+          434,
+          118
+        ],
+        "bbox_head": [
+          48,
+          66,
+          425,
+          102
+        ],
+        "text_head": "좋은 저녁이에요",
+        "match": "stable_id"
+      },
+      "home.chip.all": {
+        "desc": "All",
+        "bbox_base": [
+          48,
+          192,
+          165,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          188,
+          279
+        ],
+        "text_head": "전체",
+        "match": "stable_id"
+      },
+      "home.chip.music": {
+        "desc": "Music",
+        "bbox_base": [
+          189,
+          192,
+          369,
+          276
+        ],
+        "bbox_head": [
+          212,
+          192,
+          351,
+          279
+        ],
+        "text_head": "음악",
+        "match": "stable_id"
+      },
+      "home.chip.podcasts": {
+        "desc": "Podcasts",
+        "bbox_base": [
+          393,
+          192,
+          632,
+          276
+        ],
+        "bbox_head": [
+          375,
+          192,
+          582,
+          279
+        ],
+        "text_head": "팟캐스트",
+        "match": "stable_id"
+      },
+      "home.chip.audiobooks": {
+        "desc": "Audiobooks",
+        "bbox_base": [
+          656,
+          192,
+          941,
+          276
+        ],
+        "bbox_head": [
+          606,
+          192,
+          813,
+          279
+        ],
+        "text_head": "오디오북",
+        "match": "stable_id"
+      },
+      "home.tile.liked": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          216,
+          362,
+          453,
+          406
+        ],
+        "bbox_head": [
+          216,
+          363,
+          471,
+          411
+        ],
+        "text_head": "좋아요 표시한 곡",
+        "match": "stable_id"
+      },
+      "home.tile.dailymix1": {
+        "desc": "Daily Mix 1",
+        "bbox_base": [
+          720,
+          362,
+          929,
+          406
+        ],
+        "bbox_head": [
+          720,
+          364,
+          929,
+          410
+        ],
+        "text_head": "Daily Mix 1",
+        "match": "stable_id"
+      },
+      "home.tile.discover": {
+        "desc": "Discover Weekly",
+        "bbox_base": [
+          216,
+          507,
+          528,
+          597
+        ],
+        "bbox_head": [
+          216,
+          532,
+          570,
+          578
+        ],
+        "text_head": "home.tile.discover",
+        "match": "stable_id"
+      },
+      "home.tile.release": {
+        "desc": "Release Radar",
+        "bbox_base": [
+          720,
+          530,
+          995,
+          574
+        ],
+        "bbox_head": [
+          720,
+          532,
+          995,
+          578
+        ],
+        "text_head": "Release Radar",
+        "match": "stable_id"
+      },
+      "home.tile.chill": {
+        "desc": "Chill Vibes",
+        "bbox_base": [
+          216,
+          698,
+          426,
+          742
+        ],
+        "bbox_head": [
+          216,
+          699,
+          430,
+          747
+        ],
+        "text_head": "편안한 분위기",
+        "match": "stable_id"
+      },
+      "home.tile.episodes": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          720,
+          698,
+          994,
+          742
+        ],
+        "bbox_head": [
+          720,
+          699,
+          903,
+          747
+        ],
+        "text_head": "내 에피소드",
+        "match": "stable_id"
+      },
+      "home.sec.madeforyou": {
+        "desc": "Made for you",
+        "bbox_base": [
+          48,
+          840,
+          1032,
+          906
+        ],
+        "bbox_head": [
+          48,
+          843,
+          1032,
+          915
+        ],
+        "text_head": "회원님을 위한 추천",
+        "match": "stable_id"
+      },
+      "home.card1.title": {
+        "desc": "Daily Mix 2",
+        "bbox_base": [
+          48,
+          1410,
+          498,
+          1458
+        ],
+        "bbox_head": [
+          48,
+          1419,
+          498,
+          1467
+        ],
+        "text_head": "Daily Mix 2",
+        "match": "stable_id"
+      },
+      "home.card1.sub": {
+        "desc": "Arctic Monkeys, The Strokes, Tame Impala and more",
+        "bbox_base": [
+          48,
+          1464,
+          498,
+          1610
+        ],
+        "bbox_head": [
+          48,
+          1437,
+          498,
+          1534
+        ],
+        "text_head": "Arctic Monkeys, The Strokes, Tame Impala 외",
+        "match": "stable_id"
+      },
+      "home.card2.title": {
+        "desc": "Your Top Songs 2026",
+        "bbox_base": [
+          534,
+          1410,
+          984,
+          1458
+        ],
+        "bbox_head": [
+          534,
+          1419,
+          984,
+          1521
+        ],
+        "text_head": "2026년 내가 가장 많이 들은 곡",
+        "match": "stable_id"
+      },
+      "home.card2.sub": {
+        "desc": "The songs you loved most this year, all wrapped up.",
+        "bbox_base": [
+          534,
+          1464,
+          984,
+          1561
+        ],
+        "bbox_head": [
+          534,
+          1527,
+          984,
+          1624
+        ],
+        "text_head": "올해 가장 사랑한 곡들을 한데 모았어요.",
+        "match": "stable_id"
+      },
+      "home.sec.recent": {
+        "desc": "Recently played",
+        "bbox_base": [
+          48,
+          1658,
+          1032,
+          1724
+        ],
+        "bbox_head": [
+          48,
+          1672,
+          1032,
+          1744
+        ],
+        "text_head": "최근 재생한 항목",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          121,
+          2322,
+          149,
+          2364
+        ],
+        "text_head": "홈",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          376,
+          2322,
+          434,
+          2364
+        ],
+        "text_head": "검색",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          585,
+          2320,
+          765,
+          2362
+        ],
+        "text_head": "내 라이브러리",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2325,
+          1014,
+          2364
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

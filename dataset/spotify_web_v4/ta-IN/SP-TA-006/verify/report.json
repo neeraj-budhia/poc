@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TA-006",
+  "language": "ta-IN",
+  "screen": "06-now-playing",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "9",
+      "element_id": "np.lyrics.header",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Lyrics preview",
+      "target_text": "Lyrics preview"
+    },
+    {
+      "box": "1",
+      "element_id": "np.playingfrom",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 6px < font-size 10px, glyph tops/bottoms cut",
+      "base_text": "Playing from playlist",
+      "target_text": "பிளேலிஸ்ட்டிலிருந்து இயங்குகிறது"
+    },
+    {
+      "box": "7",
+      "element_id": "np.devices",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['np.elapsed']",
+      "base_text": "Devices available",
+      "target_text": "கிடைக்கும் சாதனங்கள்"
+    }
+  ]
+}

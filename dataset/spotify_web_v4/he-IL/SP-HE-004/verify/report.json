@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-HE-004",
+  "language": "he-IL",
+  "screen": "04-playlist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "13",
+      "element_id": "playlist.updated",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Updated 6 days ago",
+      "target_text": "עודכן לפני {count} ימים"
+    },
+    {
+      "box": "4",
+      "element_id": "playlist.meta",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "30 songs, about 2 hr 5 min",
+      "target_text": "30 שירים, בערך 2 שעות ו-5 דקות"
+    },
+    {
+      "box": "3",
+      "element_id": "playlist.madefor",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[-57,38] extends past the 360px screen edge",
+      "base_text": "Made for Neeraj",
+      "target_text": "נוצר עבור Neeraj"
+    }
+  ]
+}

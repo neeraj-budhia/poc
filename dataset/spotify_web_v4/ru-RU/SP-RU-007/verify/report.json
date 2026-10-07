@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-RU-007",
+  "language": "ru-RU",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "9",
+      "element_id": "lyrics.translate",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 8px < font-size 13px, glyph tops/bottoms cut",
+      "base_text": "Show translation",
+      "target_text": "Показать перевод"
+    },
+    {
+      "box": "11",
+      "element_id": "lyrics.share",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Share",
+      "target_text": "Share"
+    }
+  ]
+}

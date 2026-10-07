@@ -1,0 +1,30 @@
+{
+  "case_id": "SP-HE-002",
+  "platform": "web",
+  "language": "he-IL",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "element": "search.sec.browse",
+      "kind": "rtl_ltr",
+      "category": "LY",
+      "subcategory": "RTL not mirrored",
+      "op": "rtl_ltr",
+      "report": "'עיון בהכול' is left-aligned / LTR inside the right-to-left layout."
+    },
+    {
+      "box": "9",
+      "element": "search.cat.newreleases",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "×™×¦×�×• ×œ×�×—×¨×•× ×”",
+      "report": "Text is garbled by an encoding error instead of 'יצאו לאחרונה'."
+    }
+  ]
+}

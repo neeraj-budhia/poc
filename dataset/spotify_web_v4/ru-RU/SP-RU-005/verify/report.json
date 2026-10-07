@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-005",
+  "language": "ru-RU",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "5",
+      "element_id": "premium.cta.trial",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[187,475] extends past the 360px screen edge",
+      "base_text": "Try free for 1 month",
+      "target_text": "Попробовать бесплатно 1 месяц"
+    },
+    {
+      "box": "7",
+      "element_id": "premium.plan.individual.price",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "$11.99 / month",
+      "target_text": "299Â â‚½ Ð² Ð¼ÐµÑ�Ñ�Ñ†"
+    },
+    {
+      "box": "18",
+      "element_id": "tab.library",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Library",
+      "target_text": "tab.library"
+    }
+  ]
+}

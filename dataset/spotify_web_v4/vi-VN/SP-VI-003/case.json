@@ -1,0 +1,47 @@
+{
+  "case_id": "SP-VI-003",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "9",
+    "11",
+    "12",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "22",
+      "element": "tab.library",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "ThÆ° viá»‡n",
+      "report": "Text is garbled by an encoding error instead of 'Thư viện'."
+    },
+    {
+      "box": "14",
+      "element": "results.r4.sub",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'Danh sách phát • Spotify' overlaps the text element above it."
+    },
+    {
+      "box": "5",
+      "element": "results.chip.playlists",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'Danh sách phát' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

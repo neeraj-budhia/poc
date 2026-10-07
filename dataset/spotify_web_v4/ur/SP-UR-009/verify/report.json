@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-UR-009",
+  "language": "ur",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "2",
+      "element_id": "artist.listeners",
+      "subcategory": "RTL not mirrored",
+      "verdict": "present",
+      "why": "direction=ltr text-align=left inside rtl page",
+      "base_text": "24,812,331 monthly listeners",
+      "target_text": "24,812,331 ماہانہ سامعین"
+    },
+    {
+      "box": "14",
+      "element_id": "artist.latest.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "October 17, 2025 • Album",
+      "target_text": "October 17, 2025 • البم"
+    }
+  ]
+}

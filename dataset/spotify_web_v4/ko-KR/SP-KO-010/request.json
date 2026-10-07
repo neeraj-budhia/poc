@@ -1,0 +1,359 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-KO-010:10-settings",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Korean (ko-KR)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "settings.title": {
+        "desc": "Settings",
+        "bbox_base": [
+          119,
+          50,
+          356,
+          118
+        ],
+        "bbox_head": [
+          119,
+          46,
+          223,
+          122
+        ],
+        "text_head": "설정",
+        "match": "stable_id"
+      },
+      "settings.sec.account": {
+        "desc": "Account",
+        "bbox_base": [
+          48,
+          210,
+          1032,
+          270
+        ],
+        "bbox_head": [
+          48,
+          210,
+          1032,
+          273
+        ],
+        "text_head": "계정",
+        "match": "stable_id"
+      },
+      "settings.plan": {
+        "desc": "Premium Individual",
+        "bbox_base": [
+          48,
+          306,
+          1032,
+          360
+        ],
+        "bbox_head": [
+          48,
+          309,
+          1032,
+          369
+        ],
+        "text_head": "Premium 개인",
+        "match": "stable_id"
+      },
+      "settings.plan.sub": {
+        "desc": "Your plan renews on November 14, 2026 for $11.99.",
+        "bbox_base": [
+          48,
+          366,
+          1032,
+          415
+        ],
+        "bbox_head": [
+          48,
+          375,
+          1032,
+          424
+        ],
+        "text_head": "November 14, 2026에 $11.99로 요금제가 갱신됩니다.",
+        "match": "stable_id"
+      },
+      "settings.sec.playback": {
+        "desc": "Playback",
+        "bbox_base": [
+          48,
+          481,
+          1032,
+          541
+        ],
+        "bbox_head": [
+          48,
+          490,
+          1032,
+          553
+        ],
+        "text_head": "재생",
+        "match": "stable_id"
+      },
+      "settings.crossfade": {
+        "desc": "Crossfade",
+        "bbox_base": [
+          48,
+          577,
+          898,
+          631
+        ],
+        "bbox_head": [
+          48,
+          589,
+          938,
+          649
+        ],
+        "text_head": "크로스페이드",
+        "match": "stable_id"
+      },
+      "settings.crossfade.sub": {
+        "desc": "Allows you to crossfade between songs",
+        "bbox_base": [
+          48,
+          637,
+          898,
+          685
+        ],
+        "bbox_head": [
+          48,
+          655,
+          938,
+          703
+        ],
+        "text_head": "곡 사이에 크로스페이드 효과를 적용합니다",
+        "match": "stable_id"
+      },
+      "settings.crossfade.val": {
+        "desc": "5 sec",
+        "bbox_base": [
+          934,
+          607,
+          1032,
+          655
+        ],
+        "bbox_head": [
+          974,
+          620,
+          1032,
+          671
+        ],
+        "text_head": "5초",
+        "match": "stable_id"
+      },
+      "settings.gapless": {
+        "desc": "Gapless playback",
+        "bbox_base": [
+          48,
+          739,
+          876,
+          793
+        ],
+        "bbox_head": [
+          48,
+          754,
+          876,
+          814
+        ],
+        "text_head": "끊김 없는 재생",
+        "match": "stable_id"
+      },
+      "settings.explicit": {
+        "desc": "Allow explicit content",
+        "bbox_base": [
+          48,
+          847,
+          876,
+          901
+        ],
+        "bbox_head": [
+          48,
+          865,
+          876,
+          925
+        ],
+        "text_head": "청소년 유해 콘텐츠 허용",
+        "match": "stable_id"
+      },
+      "settings.explicit.sub": {
+        "desc": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+        "bbox_base": [
+          48,
+          907,
+          876,
+          1004
+        ],
+        "bbox_head": [
+          48,
+          931,
+          876,
+          1028
+        ],
+        "text_head": "청소년 유해 콘텐츠를 재생하려면 켜세요. 청소년 유해 콘텐츠에는 E 태그가 표시됩니다.",
+        "match": "stable_id"
+      },
+      "settings.sec.data": {
+        "desc": "Data saving and offline",
+        "bbox_base": [
+          48,
+          1070,
+          1032,
+          1130
+        ],
+        "bbox_head": [
+          48,
+          1094,
+          1032,
+          1157
+        ],
+        "text_head": "데이터 절약 및 오프라인",
+        "match": "stable_id"
+      },
+      "settings.datasaver": {
+        "desc": "Data Saver",
+        "bbox_base": [
+          48,
+          1166,
+          876,
+          1220
+        ],
+        "bbox_head": [
+          48,
+          1193,
+          210,
+          1253
+        ],
+        "text_head": "데이터 절약 모드",
+        "match": "stable_id"
+      },
+      "settings.datasaver.sub": {
+        "desc": "Sets your music quality to low and disables canvas.",
+        "bbox_base": [
+          48,
+          1226,
+          876,
+          1323
+        ],
+        "bbox_head": [
+          48,
+          1259,
+          876,
+          1356
+        ],
+        "text_head": "음악 음질을 낮음으로 설정하고 Canvas를 사용 중지합니다.",
+        "match": "stable_id"
+      },
+      "settings.storage": {
+        "desc": "Storage",
+        "bbox_base": [
+          48,
+          1371,
+          1032,
+          1425
+        ],
+        "bbox_head": [
+          48,
+          1404,
+          1032,
+          1464
+        ],
+        "text_head": "저장 공간",
+        "match": "stable_id"
+      },
+      "settings.storage.sub": {
+        "desc": "1.2 GB used • 48.6 GB free",
+        "bbox_base": [
+          48,
+          1431,
+          1032,
+          1480
+        ],
+        "bbox_head": [
+          48,
+          1470,
+          1032,
+          1519
+        ],
+        "text_head": "1.2GB 사용 중 • 48.6GB 사용 가능",
+        "match": "stable_id"
+      },
+      "settings.language": {
+        "desc": "App language",
+        "bbox_base": [
+          48,
+          1528,
+          865,
+          1582
+        ],
+        "bbox_head": [
+          48,
+          1567,
+          120,
+          1627
+        ],
+        "text_head": "앱 언어",
+        "match": "stable_id"
+      },
+      "settings.language.val": {
+        "desc": "English",
+        "bbox_base": [
+          901,
+          1531,
+          1032,
+          1579
+        ],
+        "bbox_head": [
+          931,
+          1571,
+          1032,
+          1622
+        ],
+        "text_head": "한국어",
+        "match": "stable_id"
+      },
+      "settings.logout": {
+        "desc": "Log out",
+        "bbox_base": [
+          48,
+          1648,
+          283,
+          1738
+        ],
+        "bbox_head": [
+          48,
+          1693,
+          273,
+          1786
+        ],
+        "text_head": "로그아웃",
+        "match": "stable_id"
+      },
+      "settings.version": {
+        "desc": "Version 9.0.82.512",
+        "bbox_base": [
+          48,
+          1768,
+          1032,
+          1807
+        ],
+        "bbox_head": [
+          48,
+          1816,
+          1032,
+          1858
+        ],
+        "text_head": "버전 9.0.82.512",
+        "match": "stable_id"
+      }
+    }
+  }
+}

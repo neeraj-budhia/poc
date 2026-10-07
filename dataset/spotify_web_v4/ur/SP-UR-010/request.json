@@ -1,0 +1,359 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-UR-010:10-settings",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Urdu (ur)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "settings.title": {
+        "desc": "Settings",
+        "bbox_base": [
+          119,
+          50,
+          356,
+          118
+        ],
+        "bbox_head": [
+          792,
+          66,
+          970,
+          102
+        ],
+        "text_head": "ترتیبات",
+        "match": "stable_id"
+      },
+      "settings.sec.account": {
+        "desc": "Account",
+        "bbox_base": [
+          48,
+          210,
+          1032,
+          270
+        ],
+        "bbox_head": [
+          48,
+          210,
+          1032,
+          307
+        ],
+        "text_head": "اکاؤنٹ",
+        "match": "stable_id"
+      },
+      "settings.plan": {
+        "desc": "Premium Individual",
+        "bbox_base": [
+          48,
+          306,
+          1032,
+          360
+        ],
+        "bbox_head": [
+          48,
+          343,
+          1032,
+          428
+        ],
+        "text_head": "Premium انفرادی",
+        "match": "stable_id"
+      },
+      "settings.plan.sub": {
+        "desc": "Your plan renews on November 14, 2026 for $11.99.",
+        "bbox_base": [
+          48,
+          366,
+          1032,
+          415
+        ],
+        "bbox_head": [
+          48,
+          434,
+          1032,
+          503
+        ],
+        "text_head": "آپ کا پلان November 14, 2026 کو $11.99 میں تجدید ہو جائے گا۔",
+        "match": "stable_id"
+      },
+      "settings.sec.playback": {
+        "desc": "Playback",
+        "bbox_base": [
+          48,
+          481,
+          1032,
+          541
+        ],
+        "bbox_head": [
+          48,
+          569,
+          1032,
+          666
+        ],
+        "text_head": "پلے بیک",
+        "match": "stable_id"
+      },
+      "settings.crossfade": {
+        "desc": "Crossfade",
+        "bbox_base": [
+          48,
+          577,
+          898,
+          631
+        ],
+        "bbox_head": [
+          181,
+          702,
+          1032,
+          787
+        ],
+        "text_head": "کراس فیڈ",
+        "match": "stable_id"
+      },
+      "settings.crossfade.sub": {
+        "desc": "Allows you to crossfade between songs",
+        "bbox_base": [
+          48,
+          637,
+          898,
+          685
+        ],
+        "bbox_head": [
+          181,
+          793,
+          1032,
+          862
+        ],
+        "text_head": "آپ کو گانوں کے درمیان کراس فیڈ کرنے دیتا ہے",
+        "match": "stable_id"
+      },
+      "settings.crossfade.val": {
+        "desc": "5 sec",
+        "bbox_base": [
+          934,
+          607,
+          1032,
+          655
+        ],
+        "bbox_head": [
+          48,
+          745,
+          145,
+          819
+        ],
+        "text_head": "5 سیکنڈ",
+        "match": "stable_id"
+      },
+      "settings.gapless": {
+        "desc": "Gapless playback",
+        "bbox_base": [
+          48,
+          739,
+          876,
+          793
+        ],
+        "bbox_head": [
+          204,
+          910,
+          1032,
+          995
+        ],
+        "text_head": "بلا وقفہ پلے بیک",
+        "match": "stable_id"
+      },
+      "settings.explicit": {
+        "desc": "Allow explicit content",
+        "bbox_base": [
+          48,
+          847,
+          876,
+          901
+        ],
+        "bbox_head": [
+          204,
+          1043,
+          1032,
+          1129
+        ],
+        "text_head": "واضح مواد کی اجازت دیں",
+        "match": "stable_id"
+      },
+      "settings.explicit.sub": {
+        "desc": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+        "bbox_base": [
+          48,
+          907,
+          876,
+          1004
+        ],
+        "bbox_head": [
+          204,
+          1135,
+          1032,
+          1271
+        ],
+        "text_head": "واضح مواد چلانے کے لیے آن کریں۔ واضح مواد پر E کا ٹیگ لگا ہوتا ہے۔",
+        "match": "stable_id"
+      },
+      "settings.sec.data": {
+        "desc": "Data saving and offline",
+        "bbox_base": [
+          48,
+          1070,
+          1032,
+          1130
+        ],
+        "bbox_head": [
+          48,
+          1337,
+          1032,
+          1434
+        ],
+        "text_head": "ڈیٹا کی بچت اور آف لائن",
+        "match": "stable_id"
+      },
+      "settings.datasaver": {
+        "desc": "Data Saver",
+        "bbox_base": [
+          48,
+          1166,
+          876,
+          1220
+        ],
+        "bbox_head": [
+          204,
+          1470,
+          1032,
+          1556
+        ],
+        "text_head": "ڈیٹا سیور",
+        "match": "stable_id"
+      },
+      "settings.datasaver.sub": {
+        "desc": "Sets your music quality to low and disables canvas.",
+        "bbox_base": [
+          48,
+          1226,
+          876,
+          1323
+        ],
+        "bbox_head": [
+          204,
+          1562,
+          1032,
+          1699
+        ],
+        "text_head": "آپ کی موسیقی کا معیار کم پر سیٹ کرتا ہے اور کینوس کو غیر فعال کرتا ہے۔",
+        "match": "stable_id"
+      },
+      "settings.storage": {
+        "desc": "Storage",
+        "bbox_base": [
+          48,
+          1371,
+          1032,
+          1425
+        ],
+        "bbox_head": [
+          48,
+          1747,
+          1032,
+          1832
+        ],
+        "text_head": "اسٹوریج",
+        "match": "stable_id"
+      },
+      "settings.storage.sub": {
+        "desc": "1.2 GB used • 48.6 GB free",
+        "bbox_base": [
+          48,
+          1431,
+          1032,
+          1480
+        ],
+        "bbox_head": [
+          48,
+          1838,
+          1032,
+          1906
+        ],
+        "text_head": "{count}.2 GB استعمال شدہ • 48.6 GB خالی",
+        "match": "stable_id"
+      },
+      "settings.language": {
+        "desc": "App language",
+        "bbox_base": [
+          48,
+          1528,
+          865,
+          1582
+        ],
+        "bbox_head": [
+          141,
+          1954,
+          1032,
+          2040
+        ],
+        "text_head": "ایپ کی زبان",
+        "match": "stable_id"
+      },
+      "settings.language.val": {
+        "desc": "English",
+        "bbox_base": [
+          901,
+          1531,
+          1032,
+          1579
+        ],
+        "bbox_head": [
+          48,
+          1960,
+          105,
+          2034
+        ],
+        "text_head": "اردو",
+        "match": "stable_id"
+      },
+      "settings.logout": {
+        "desc": "Log out",
+        "bbox_base": [
+          48,
+          1648,
+          283,
+          1738
+        ],
+        "bbox_head": [
+          701,
+          2106,
+          1032,
+          2222
+        ],
+        "text_head": "لاگ آؤٹ کریں",
+        "match": "stable_id"
+      },
+      "settings.version": {
+        "desc": "Version 9.0.82.512",
+        "bbox_base": [
+          48,
+          1768,
+          1032,
+          1807
+        ],
+        "bbox_head": [
+          48,
+          2252,
+          1032,
+          2315
+        ],
+        "text_head": "ورژن 9.0.82.512",
+        "match": "stable_id"
+      }
+    }
+  }
+}

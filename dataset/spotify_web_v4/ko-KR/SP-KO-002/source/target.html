@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="ko-KR" dir="ltr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="appbar"><h1 data-k="search.title">검색</h1></header>
+<main>
+  <div class="searchbox"><span class="ico">⌕</span><span data-k="search.placeholder">어떤 콘텐츠를 감상하고 싶으세요?</span></div>
+  <h2 class="h-sec" data-k="search.sec.start">둘러보기 시작</h2>
+  <div class="cats">
+    <div class="cat" style="background:#dc148c"><span data-k="search.cat.music">음악</span></div>
+    <div class="cat" style="background:#006450"><span data-k="search.cat.podcasts">팟캐스트</span></div>
+    <div class="cat" style="background:#8400e7"><span data-k="search.cat.live" style="display: inline-block; white-space: nowrap; max-width: none; vertical-align: bottom; transform: translateX(282px);">라이브 이벤트</span></div>
+    <div class="cat" style="background:#1e3264"><span data-k="search.cat.madeforyou">회원님을 위한 추천</span></div>
+  </div>
+  <h2 class="h-sec" data-k="search.sec.browse">모두 둘러보기</h2>
+  <div class="cats">
+    <div class="cat" style="background:#e8115b"><span data-k="search.cat.newreleases">최신 발매</span></div>
+    <div class="cat" style="background:#8d67ab"><span data-k="search.cat.charts">차트</span></div>
+    <div class="cat" style="background:#148a08"><span data-k="search.cat.pop">팝</span></div>
+    <div class="cat" style="background:#bc5900"><span data-k="search.cat.hiphop">□□□□□□</span></div>
+    <div class="cat" style="background:#477d95"><span data-k="search.cat.workout">운동</span></div>
+    <div class="cat" style="background:#509bf5"><span data-k="search.cat.sleep">수면</span></div>
+  </div>
+</main>
+<style>
+.searchbox { background: #fff; color: #535353; border-radius: 6px; height: 44px; display: flex; align-items: center; gap: 8px; padding: 0 12px; font-size: 15px; font-weight: 600; }
+.searchbox .ico { color: #000; font-size: 20px; }
+.cats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.cat { height: 86px; border-radius: 6px; padding: 10px; font-size: 16px; font-weight: 700; overflow: hidden; }
+</style>
+<nav class="tabbar">
+  <div class="tab"><span class="ico">⌂</span><span data-k="tab.home">홈</span></div>
+  <div class="tab on"><span class="ico">⌕</span><span data-k="tab.search">검색</span></div>
+  <div class="tab"><span class="ico">≡</span><span data-k="tab.library">내 라이브러리</span></div>
+  <div class="tab"><span class="ico">◉</span><span data-k="tab.premium">Premium</span></div>
+</nav>
+
+
+</body></html>

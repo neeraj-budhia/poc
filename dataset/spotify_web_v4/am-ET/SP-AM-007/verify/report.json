@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-AM-007",
+  "language": "am-ET",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "lyrics.share",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Share",
+      "target_text": "አጋራ"
+    },
+    {
+      "box": "12",
+      "element_id": "lyrics.report",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Report a problem",
+      "target_text": "ችግር ሪፖርት አድርግ"
+    },
+    {
+      "box": "9",
+      "element_id": "lyrics.translate",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Show translation",
+      "target_text": "Show translation"
+    }
+  ]
+}

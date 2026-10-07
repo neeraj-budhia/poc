@@ -1,0 +1,19 @@
+{
+  "case_id": "SP-VI-010",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "16",
+      "element": "settings.storage.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "Đã dùng 1.2 GB • Còn trống 48.6 GB",
+      "report": "Number/date/currency uses the US format ('Đã dùng 1.2 GB • Còn trống 48.6 GB') instead of the local one ('Đã dùng 1,2 GB • Còn trống 48,6 GB')."
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "case_id": "SP-HE-008",
+  "screen": "08-library",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Hebrew (he-IL)",
+  "case_elements": [
+    {
+      "box": "14",
+      "element_id": "library.artist1.sub",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "17",
+      "element_id": "library.add.artists",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 22,
+    "with_target_box": 22,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "library.title",
+      "descriptor": "Your Library",
+      "target_text": "הספרייה שלך",
+      "base_box": [
+        180,
+        50,
+        523,
+        118
+      ],
+      "target_box": [
+        551,
+        48,
+        900,
+        120
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "library.chip.playlists",
+      "descriptor": "Playlists",
+      "target_text": "פלייליסטים",
+      "base_box": [
+        48,
+        192,
+        268,
+        276
+      ],
+      "target_box": [
+        776,
+        192,
+        1032,
+        276
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "library.chip.artists",
+      "descriptor": "Artists",
+      "target_text": "אמנים",
+      "base_box": [
+        292,
+        192,
+        483,
+        276
+      ],
+      "target_box": [
+        579,
+        192,
+        752,
+        276
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "library.chip.albums",
+      "descriptor": "Albums",
+      "target_text": "אלבומים",
+      "base_box": [
+        507,
+        192,
+        714,
+        276
+      ],
+      "target_box": [
+        346,
+        192,
+        555,
+        276
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "library.chip.podcasts",
+      "descriptor": "Podcasts & Shows",
+      "target_text": "פודקאסטים ותוכניות",
+      "base_box": [
+        48,
+        300,
+        455,
+        384
+      ],
+      "target_box": [
+        621,
+        300,
+        1032,
+        384
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "library.sort.recents",
+      "descriptor": "⇅ Recents",
+      "target_text": "⇅ לאחרונה",
+      "base_box": [
+        48,
+        420,
+        260,
+        468
+      ],
+      "target_box": [
+        823,
+        420,
+        1032,
+        468
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "library.liked.title",
+      "descriptor": "Liked Songs",
+      "target_text": "שירים שאהבתי",
+      "base_box": [
+        228,
+        513,
+        1032,
+        567
+      ],
+      "target_box": [
+        48,
+        512,
+        852,
+        568
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "library.liked.sub",
+      "descriptor": "📌 Playlist • 248 songs",
+      "target_text": "📌 פלייליסט • 248 שירים",
+      "base_box": [
+        228,
+        573,
+        1032,
+        633
+      ],
+      "target_box": [
+        48,
+        574,
+        852,
+        634
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "library.episodes.title",
+      "descriptor": "Your Episodes",
+      "target_text": "הפרקים שלך",
+      "base_box": [
+        228,
+        706,
+        1032,
+        760
+      ],
+      "target_box": [
+        48,
+        705,
+        852,
+        762
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "library.episodes.sub",
+      "descriptor": "Saved & downloaded episodes",
+      "target_text": "פרקים שנשמרו והורדו",
+      "base_box": [
+        228,
+        766,
+        1032,
+        812
+      ],
+      "target_box": [
+        48,
+        768,
+        852,
+        813
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "library.pl1.title",
+      "descriptor": "Road Trip 2026",
+      "target_text": "Road Trip 2026",
+      "base_box": [
+        228,
+        892,
+        1032,
+        946
+      ],
+      "target_box": [
+        48,
+        892,
+        852,
+        946
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "library.pl1.sub",
+      "descriptor": "Playlist • Neeraj",
+      "target_text": "פלייליסט • Neeraj",
+      "base_box": [
+        228,
+        952,
+        1032,
+        998
+      ],
+      "target_box": [
+        48,
+        952,
+        852,
+        998
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "library.artist1.title",
+      "descriptor": "Tame Impala",
+      "target_text": "Tame Impala",
+      "base_box": [
+        228,
+        1078,
+        1032,
+        1132
+      ],
+      "target_box": [
+        48,
+        1078,
+        852,
+        1132
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "library.artist1.sub",
+      "descriptor": "Artist",
+      "target_text": "Artist",
+      "base_box": [
+        228,
+        1138,
+        1032,
+        1184
+      ],
+      "target_box": [
+        48,
+        1138,
+        852,
+        1184
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "library.album1.title",
+      "descriptor": "Currents",
+      "target_text": "Currents",
+      "base_box": [
+        228,
+        1264,
+        1032,
+        1318
+      ],
+      "target_box": [
+        48,
+        1264,
+        852,
+        1318
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "library.album1.sub",
+      "descriptor": "Album • Tame Impala",
+      "target_text": "אלבום • Tame Impala",
+      "base_box": [
+        228,
+        1324,
+        1032,
+        1370
+      ],
+      "target_box": [
+        48,
+        1324,
+        852,
+        1370
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "library.add.artists",
+      "descriptor": "Add artists",
+      "target_text": "הוספת אמנים",
+      "base_box": [
+        228,
+        1476,
+        1032,
+        1530
+      ],
+      "target_box": [
+        596,
+        1494,
+        852,
+        1521
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "library.add.podcasts",
+      "descriptor": "Add podcasts & shows",
+      "target_text": "הוספת פודקאסטים ותוכניות",
+      "base_box": [
+        228,
+        1662,
+        1032,
+        1716
+      ],
+      "target_box": [
+        48,
+        1660,
+        852,
+        1718
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "tab.home",
+      "descriptor": "Home",
+      "target_text": "דף הבית",
+      "base_box": [
+        89,
+        2324,
+        181,
+        2362
+      ],
+      "target_box": [
+        883,
+        2322,
+        1007,
+        2364
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "20",
+      "element_id": "tab.search",
+      "descriptor": "Search",
+      "target_text": "חיפוש",
+      "base_box": [
+        350,
+        2324,
+        460,
+        2362
+      ],
+      "target_box": [
+        632,
+        2322,
+        718,
+        2364
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "21",
+      "element_id": "tab.library",
+      "descriptor": "Your Library",
+      "target_text": "הספרייה שלך",
+      "base_box": [
+        580,
+        2322,
+        770,
+        2361
+      ],
+      "target_box": [
+        309,
+        2320,
+        501,
+        2362
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "22",
+      "element_id": "tab.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "target_box": [
+        66,
+        2328,
+        204,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 16.667,
+      "y": 2.083,
+      "width": 31.759,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.0,
+      "width": 20.37,
+      "height": 3.5
+    },
+    "3": {
+      "x": 27.037,
+      "y": 8.0,
+      "width": 17.685,
+      "height": 3.5
+    },
+    "4": {
+      "x": 46.944,
+      "y": 8.0,
+      "width": 19.167,
+      "height": 3.5
+    },
+    "5": {
+      "x": 4.444,
+      "y": 12.5,
+      "width": 37.685,
+      "height": 3.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 17.5,
+      "width": 19.63,
+      "height": 2.0
+    },
+    "7": {
+      "x": 21.111,
+      "y": 21.375,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "8": {
+      "x": 21.111,
+      "y": 23.875,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "9": {
+      "x": 21.111,
+      "y": 29.417,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "10": {
+      "x": 21.111,
+      "y": 31.917,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "11": {
+      "x": 21.111,
+      "y": 37.167,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 21.111,
+      "y": 39.667,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "13": {
+      "x": 21.111,
+      "y": 44.917,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "14": {
+      "x": 21.111,
+      "y": 47.417,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "15": {
+      "x": 21.111,
+      "y": 52.667,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "16": {
+      "x": 21.111,
+      "y": 55.167,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "17": {
+      "x": 21.111,
+      "y": 61.5,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "18": {
+      "x": 21.111,
+      "y": 69.25,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "19": {
+      "x": 8.241,
+      "y": 96.833,
+      "width": 8.519,
+      "height": 1.583
+    },
+    "20": {
+      "x": 32.407,
+      "y": 96.833,
+      "width": 10.185,
+      "height": 1.583
+    },
+    "21": {
+      "x": 53.704,
+      "y": 96.75,
+      "width": 17.593,
+      "height": 1.625
+    },
+    "22": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 51.019,
+      "y": 2.0,
+      "width": 32.315,
+      "height": 3.0
+    },
+    "2": {
+      "x": 71.852,
+      "y": 8.0,
+      "width": 23.704,
+      "height": 3.5
+    },
+    "3": {
+      "x": 53.611,
+      "y": 8.0,
+      "width": 16.019,
+      "height": 3.5
+    },
+    "4": {
+      "x": 32.037,
+      "y": 8.0,
+      "width": 19.352,
+      "height": 3.5
+    },
+    "5": {
+      "x": 57.5,
+      "y": 12.5,
+      "width": 38.056,
+      "height": 3.5
+    },
+    "6": {
+      "x": 76.204,
+      "y": 17.5,
+      "width": 19.352,
+      "height": 2.0
+    },
+    "7": {
+      "x": 4.444,
+      "y": 21.333,
+      "width": 74.444,
+      "height": 2.333
+    },
+    "8": {
+      "x": 4.444,
+      "y": 23.917,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "9": {
+      "x": 4.444,
+      "y": 29.375,
+      "width": 74.444,
+      "height": 2.375
+    },
+    "10": {
+      "x": 4.444,
+      "y": 32.0,
+      "width": 74.444,
+      "height": 1.875
+    },
+    "11": {
+      "x": 4.444,
+      "y": 37.167,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 4.444,
+      "y": 39.667,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "13": {
+      "x": 4.444,
+      "y": 44.917,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "14": {
+      "x": 4.444,
+      "y": 47.417,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "15": {
+      "x": 4.444,
+      "y": 52.667,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "16": {
+      "x": 4.444,
+      "y": 55.167,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "17": {
+      "x": 55.185,
+      "y": 62.25,
+      "width": 23.704,
+      "height": 1.125
+    },
+    "18": {
+      "x": 4.444,
+      "y": 69.167,
+      "width": 74.444,
+      "height": 2.417
+    },
+    "19": {
+      "x": 81.759,
+      "y": 96.75,
+      "width": 11.481,
+      "height": 1.75
+    },
+    "20": {
+      "x": 58.519,
+      "y": 96.75,
+      "width": 7.963,
+      "height": 1.75
+    },
+    "21": {
+      "x": 28.611,
+      "y": 96.667,
+      "width": 17.778,
+      "height": 1.75
+    },
+    "22": {
+      "x": 6.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  }
+}

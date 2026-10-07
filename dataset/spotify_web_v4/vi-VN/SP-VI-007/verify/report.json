@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-VI-007",
+  "language": "vi-VN",
+  "screen": "07-lyrics",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "10",
+      "element_id": "lyrics.credit",
+      "subcategory": "Raw resource key rendered",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Lyrics provided by Musixmatch",
+      "target_text": "lyrics.credit"
+    },
+    {
+      "box": "11",
+      "element_id": "lyrics.share",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Share",
+      "target_text": "Chia sẻ"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-ZH-008",
+  "language": "zh-TW",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "14",
+      "element_id": "library.artist1.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['library.artist1.title']",
+      "base_text": "Artist",
+      "target_text": "藝人"
+    },
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 播放清單 • {count} 首歌曲"
+    },
+    {
+      "box": "5",
+      "element_id": "library.chip.podcasts",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Podcasts & Shows",
+      "target_text": "Podcast 和節目"
+    }
+  ]
+}

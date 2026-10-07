@@ -1,0 +1,46 @@
+{
+  "case_id": "SP-AM-003",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "18",
+      "element": "results.r6.sub",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Playlist • Spotify",
+      "report": "'Playlist • Spotify' is shown in English instead of 'አጫዋች ዝርዝር • Spotify'."
+    },
+    {
+      "box": "12",
+      "element": "results.r3.sub",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "results.r3.sub",
+      "report": "The raw resource key 'results.r3.sub' is shown instead of 'አልበም • Arctic Monkeys • 2013'."
+    },
+    {
+      "box": "19",
+      "element": "results.seeall",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'ሁሉንም ዘፈኖች ይመልከቱ' is cut off mid-word by its container (no ellipsis)."
+    }
+  ]
+}

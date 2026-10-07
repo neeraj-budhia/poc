@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-002",
+  "language": "ru-RU",
+  "screen": "02-search",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "14",
+      "element_id": "search.cat.sleep",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Sleep",
+      "target_text": "□□□"
+    },
+    {
+      "box": "1",
+      "element_id": "search.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 12px < font-size 20px, glyph tops/bottoms cut",
+      "base_text": "Search",
+      "target_text": "Поиск"
+    },
+    {
+      "box": "13",
+      "element_id": "search.cat.workout",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Workout",
+      "target_text": "Тренировка"
+    }
+  ]
+}

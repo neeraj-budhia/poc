@@ -1,0 +1,13 @@
+{
+  "case_id": "SP-ZH-C01",
+  "platform": "web",
+  "language": "zh-TW",
+  "screen": "05-premium",
+  "is_control": true,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "19"
+  ],
+  "defects": []
+}

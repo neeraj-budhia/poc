@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-KO-004",
+  "language": "ko-KR",
+  "screen": "04-playlist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "2",
+      "element_id": "playlist.desc",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['playlist.title']",
+      "base_text": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
+      "target_text": "매주 새로운 음악으로 채워지는 나만의 믹스테이프. 회원님을 위해 엄선한 신곡과 숨은 명곡을 즐겨 보세요. 매주 월요일에 업데이트됩니다."
+    },
+    {
+      "box": "13",
+      "element_id": "playlist.updated",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 7px < font-size 11px, glyph tops/bottoms cut",
+      "base_text": "Updated 6 days ago",
+      "target_text": "6일 전 업데이트됨"
+    },
+    {
+      "box": "5",
+      "element_id": "playlist.btn.save",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Save",
+      "target_text": "Save"
+    }
+  ]
+}

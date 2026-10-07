@@ -1,0 +1,393 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-ZH-008:08-library",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Chinese (zh-TW)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "library.title": {
+        "desc": "Your Library",
+        "bbox_base": [
+          180,
+          50,
+          523,
+          118
+        ],
+        "bbox_head": [
+          180,
+          42,
+          486,
+          126
+        ],
+        "text_head": "你的音樂庫",
+        "match": "stable_id"
+      },
+      "library.chip.playlists": {
+        "desc": "Playlists",
+        "bbox_base": [
+          48,
+          192,
+          268,
+          276
+        ],
+        "bbox_head": [
+          48,
+          192,
+          279,
+          282
+        ],
+        "text_head": "播放清單",
+        "match": "stable_id"
+      },
+      "library.chip.artists": {
+        "desc": "Artists",
+        "bbox_base": [
+          292,
+          192,
+          483,
+          276
+        ],
+        "bbox_head": [
+          303,
+          192,
+          455,
+          282
+        ],
+        "text_head": "藝人",
+        "match": "stable_id"
+      },
+      "library.chip.albums": {
+        "desc": "Albums",
+        "bbox_base": [
+          507,
+          192,
+          714,
+          276
+        ],
+        "bbox_head": [
+          479,
+          192,
+          630,
+          282
+        ],
+        "text_head": "專輯",
+        "match": "stable_id"
+      },
+      "library.chip.podcasts": {
+        "desc": "Podcasts & Shows",
+        "bbox_base": [
+          48,
+          300,
+          455,
+          384
+        ],
+        "bbox_head": [
+          654,
+          192,
+          846,
+          282
+        ],
+        "text_head": "Podcast 和節目",
+        "match": "stable_id"
+      },
+      "library.sort.recents": {
+        "desc": "⇅ Recents",
+        "bbox_base": [
+          48,
+          420,
+          260,
+          468
+        ],
+        "bbox_head": [
+          48,
+          318,
+          182,
+          372
+        ],
+        "text_head": "⇅ 最近",
+        "match": "stable_id"
+      },
+      "library.liked.title": {
+        "desc": "Liked Songs",
+        "bbox_base": [
+          228,
+          513,
+          1032,
+          567
+        ],
+        "bbox_head": [
+          228,
+          412,
+          1032,
+          476
+        ],
+        "text_head": "已按讚的歌曲",
+        "match": "stable_id"
+      },
+      "library.liked.sub": {
+        "desc": "📌 Playlist • 248 songs",
+        "bbox_base": [
+          228,
+          573,
+          1032,
+          633
+        ],
+        "bbox_head": [
+          228,
+          482,
+          1032,
+          542
+        ],
+        "text_head": "📌 播放清單 • {count} 首歌曲",
+        "match": "stable_id"
+      },
+      "library.episodes.title": {
+        "desc": "Your Episodes",
+        "bbox_base": [
+          228,
+          706,
+          1032,
+          760
+        ],
+        "bbox_head": [
+          228,
+          603,
+          1032,
+          666
+        ],
+        "text_head": "你的單集",
+        "match": "stable_id"
+      },
+      "library.episodes.sub": {
+        "desc": "Saved & downloaded episodes",
+        "bbox_base": [
+          228,
+          766,
+          1032,
+          812
+        ],
+        "bbox_head": [
+          228,
+          672,
+          1032,
+          723
+        ],
+        "text_head": "已儲存和已下載的單集",
+        "match": "stable_id"
+      },
+      "library.pl1.title": {
+        "desc": "Road Trip 2026",
+        "bbox_base": [
+          228,
+          892,
+          1032,
+          946
+        ],
+        "bbox_head": [
+          228,
+          794,
+          1032,
+          848
+        ],
+        "text_head": "Road Trip 2026",
+        "match": "stable_id"
+      },
+      "library.pl1.sub": {
+        "desc": "Playlist • Neeraj",
+        "bbox_base": [
+          228,
+          952,
+          1032,
+          998
+        ],
+        "bbox_head": [
+          228,
+          854,
+          1032,
+          904
+        ],
+        "text_head": "播放清單 • Neeraj",
+        "match": "stable_id"
+      },
+      "library.artist1.title": {
+        "desc": "Tame Impala",
+        "bbox_base": [
+          228,
+          1078,
+          1032,
+          1132
+        ],
+        "bbox_head": [
+          228,
+          980,
+          1032,
+          1034
+        ],
+        "text_head": "Tame Impala",
+        "match": "stable_id"
+      },
+      "library.artist1.sub": {
+        "desc": "Artist",
+        "bbox_base": [
+          228,
+          1138,
+          1032,
+          1184
+        ],
+        "bbox_head": [
+          228,
+          998,
+          1032,
+          1048
+        ],
+        "text_head": "藝人",
+        "match": "stable_id"
+      },
+      "library.album1.title": {
+        "desc": "Currents",
+        "bbox_base": [
+          228,
+          1264,
+          1032,
+          1318
+        ],
+        "bbox_head": [
+          228,
+          1166,
+          1032,
+          1220
+        ],
+        "text_head": "Currents",
+        "match": "stable_id"
+      },
+      "library.album1.sub": {
+        "desc": "Album • Tame Impala",
+        "bbox_base": [
+          228,
+          1324,
+          1032,
+          1370
+        ],
+        "bbox_head": [
+          228,
+          1226,
+          1032,
+          1276
+        ],
+        "text_head": "專輯 • Tame Impala",
+        "match": "stable_id"
+      },
+      "library.add.artists": {
+        "desc": "Add artists",
+        "bbox_base": [
+          228,
+          1476,
+          1032,
+          1530
+        ],
+        "bbox_head": [
+          228,
+          1376,
+          1032,
+          1438
+        ],
+        "text_head": "新增藝人",
+        "match": "stable_id"
+      },
+      "library.add.podcasts": {
+        "desc": "Add podcasts & shows",
+        "bbox_base": [
+          228,
+          1662,
+          1032,
+          1716
+        ],
+        "bbox_head": [
+          228,
+          1562,
+          1032,
+          1624
+        ],
+        "text_head": "新增 Podcast 和節目",
+        "match": "stable_id"
+      },
+      "tab.home": {
+        "desc": "Home",
+        "bbox_base": [
+          89,
+          2324,
+          181,
+          2362
+        ],
+        "bbox_head": [
+          101,
+          2319,
+          169,
+          2367
+        ],
+        "text_head": "首頁",
+        "match": "stable_id"
+      },
+      "tab.search": {
+        "desc": "Search",
+        "bbox_base": [
+          350,
+          2324,
+          460,
+          2362
+        ],
+        "bbox_head": [
+          371,
+          2319,
+          439,
+          2367
+        ],
+        "text_head": "搜尋",
+        "match": "stable_id"
+      },
+      "tab.library": {
+        "desc": "Your Library",
+        "bbox_base": [
+          580,
+          2322,
+          770,
+          2361
+        ],
+        "bbox_head": [
+          591,
+          2318,
+          759,
+          2366
+        ],
+        "text_head": "你的音樂庫",
+        "match": "stable_id"
+      },
+      "tab.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "bbox_head": [
+          876,
+          2328,
+          1014,
+          2367
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      }
+    }
+  }
+}

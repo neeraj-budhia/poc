@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TA-009",
+  "language": "ta-IN",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "artist.seemore",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "See more",
+      "target_text": "மேலும் காட்டு"
+    },
+    {
+      "box": "14",
+      "element_id": "artist.latest.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['artist.latest.title']",
+      "base_text": "October 17, 2025 • Album",
+      "target_text": "17 அக்டோபர், 2025 • ஆல்பம்"
+    },
+    {
+      "box": "10",
+      "element_id": "artist.p3.plays",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "301,227,560",
+      "target_text": "301,227,560"
+    }
+  ]
+}

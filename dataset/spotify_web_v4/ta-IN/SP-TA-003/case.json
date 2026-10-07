@@ -1,0 +1,46 @@
+{
+  "case_id": "SP-TA-003",
+  "platform": "web",
+  "language": "ta-IN",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "4",
+      "element": "results.chip.artists",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "results.chip.artists",
+      "report": "The raw resource key 'results.chip.artists' is shown instead of 'கலைஞர்கள்'."
+    },
+    {
+      "box": "5",
+      "element": "results.chip.playlists",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'பிளேலிஸ்ட்கள்' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "19",
+      "element": "results.seeall",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'எல்லாப் பாடல்களையும் காட்டு' is truncated with an ellipsis."
+    }
+  ]
+}

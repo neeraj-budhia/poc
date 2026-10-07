@@ -1,0 +1,42 @@
+{
+  "case_id": "SP-VI-005",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "05-premium",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "9",
+    "19"
+  ],
+  "defects": [
+    {
+      "box": "3",
+      "element": "premium.hero.title",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "Dùng thử {count} tháng gói Premium với giá 0 ₫",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('Dùng thử 1 tháng gói Premium với giá 0 ₫')."
+    },
+    {
+      "box": "18",
+      "element": "tab.library",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Your Library",
+      "report": "'Your Library' is shown in English instead of 'Thư viện'."
+    },
+    {
+      "box": "12",
+      "element": "premium.plan.family.name",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'Gia đình' are clipped by a too-small line box."
+    }
+  ]
+}

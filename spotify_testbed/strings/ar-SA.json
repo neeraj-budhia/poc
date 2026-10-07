@@ -1,0 +1,21 @@
+{
+  "brand.premium": "Premium",
+  "premium.title": "Premium",
+  "premium.hero.title": "جرّب Premium لمدة شهر مقابل 0 ر.س",
+  "premium.hero.sub": "بعدها 21.99 ر.س فقط شهريًا. يمكنك الإلغاء في أي وقت.",
+  "premium.cta.trial": "جرّب مجانًا لمدة شهر",
+  "premium.plan.individual.name": "فردي",
+  "premium.plan.individual.price": "21.99 ر.س / شهريًا",
+  "premium.plan.individual.feat": "حساب Premium واحد",
+  "premium.plan.duo.name": "ثنائي",
+  "premium.plan.duo.price": "28.99 ر.س / شهريًا",
+  "premium.plan.duo.feat": "حسابا Premium",
+  "premium.plan.family.name": "عائلي",
+  "premium.plan.family.price": "34.99 ر.س / شهريًا",
+  "premium.plan.family.feat": "ما يصل إلى 6 حسابات Premium",
+  "premium.legal": "تُطبق الشروط. ينتهي العرض في 31 أكتوبر 2026. للخطة الفردية فقط.",
+  "tab.home": "الرئيسية",
+  "tab.search": "بحث",
+  "tab.library": "مكتبتك",
+  "tab.premium": "Premium"
+}

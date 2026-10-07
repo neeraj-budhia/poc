@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TH-002",
+  "language": "th-TH",
+  "screen": "02-search",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "8",
+      "element_id": "search.sec.browse",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['search.cat.live', 'search.cat.madeforyou']",
+      "base_text": "Browse all",
+      "target_text": "เลือกดูทั้งหมด"
+    },
+    {
+      "box": "1",
+      "element_id": "search.title",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 12px < font-size 20px, glyph tops/bottoms cut",
+      "base_text": "Search",
+      "target_text": "ค้นหา"
+    },
+    {
+      "box": "3",
+      "element_id": "search.sec.start",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Start browsing",
+      "target_text": "à¹€à¸£à¸´à¹ˆà¸¡à¹€à¸¥à¸·à¸­à¸�à¸”à¸¹"
+    }
+  ]
+}

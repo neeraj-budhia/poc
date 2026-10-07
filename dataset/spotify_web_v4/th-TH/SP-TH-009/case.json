@@ -1,0 +1,28 @@
+{
+  "case_id": "SP-TH-009",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "14",
+      "element": "artist.latest.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "October 17, 2025 • อัลบั้ม",
+      "report": "Number/date/currency uses the US format ('October 17, 2025 • อัลบั้ม') instead of the local one ('17 ตุลาคม 2568 • อัลบั้ม')."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-003",
+  "language": "ru-RU",
+  "screen": "03-search-results",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "19",
+      "element_id": "results.seeall",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "See all songs",
+      "target_text": "Все треки"
+    },
+    {
+      "box": "12",
+      "element_id": "results.r3.sub",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Album • Arctic Monkeys • 2013",
+      "target_text": "Альбом • Arctic Monkeys • 2013"
+    },
+    {
+      "box": "10",
+      "element_id": "results.r2.sub",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Song • Arctic Monkeys",
+      "target_text": "Ð¢Ñ€ÐµÐº â€¢ Arctic Monkeys"
+    }
+  ]
+}

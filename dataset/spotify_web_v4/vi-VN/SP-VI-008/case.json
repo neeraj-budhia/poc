@@ -1,0 +1,43 @@
+{
+  "case_id": "SP-VI-008",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "08-library",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "11",
+    "13",
+    "15",
+    "16",
+    "22"
+  ],
+  "defects": [
+    {
+      "box": "5",
+      "element": "library.chip.podcasts",
+      "kind": "offscreen",
+      "category": "LY",
+      "subcategory": "Text runs off-screen",
+      "op": "offscreen",
+      "report": "'Podcast và chương trình' runs off the edge of the screen."
+    },
+    {
+      "box": "18",
+      "element": "library.add.podcasts",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'Thêm podcast và chương trình' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "6",
+      "element": "library.sort.recents",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "⇅ Recents",
+      "report": "'⇅ Recents' is shown in English instead of '⇅ Gần đây'."
+    }
+  ]
+}

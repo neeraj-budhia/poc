@@ -1,0 +1,274 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-UR-005:05-premium",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Urdu (ur)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "premium.title": {
+        "desc": "Premium",
+        "bbox_base": [
+          119,
+          50,
+          372,
+          118
+        ],
+        "bbox_head": [
+          717,
+          9,
+          970,
+          159
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "brand.premium": {
+        "desc": "Premium",
+        "bbox_base": [
+          168,
+          236,
+          353,
+          286
+        ],
+        "bbox_head": [
+          727,
+          234,
+          912,
+          339
+        ],
+        "text_head": "Premium",
+        "match": "stable_id"
+      },
+      "premium.hero.title": {
+        "desc": "Try 1 month of Premium for $0",
+        "bbox_base": [
+          96,
+          324,
+          984,
+          489
+        ],
+        "bbox_head": [
+          96,
+          375,
+          984,
+          626
+        ],
+        "text_head": "صرف Rs 0 میں Premium کا 1 مہینہ آزمائیں",
+        "match": "stable_id"
+      },
+      "premium.hero.sub": {
+        "desc": "Only $11.99/month after. Cancel anytime.",
+        "bbox_base": [
+          96,
+          513,
+          984,
+          568
+        ],
+        "bbox_head": [
+          96,
+          650,
+          984,
+          724
+        ],
+        "text_head": "اس کے بعد صرف Rs 349/مہینہ۔ کسی بھی وقت منسوخ کریں۔",
+        "match": "stable_id"
+      },
+      "premium.cta.trial": {
+        "desc": "Try free for 1 month",
+        "bbox_base": [
+          96,
+          616,
+          647,
+          742
+        ],
+        "bbox_head": [
+          0,
+          772,
+          246,
+          929
+        ],
+        "text_head": "1 مہینے کے لیے مفت آزمائیں",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.name": {
+        "desc": "Individual",
+        "bbox_base": [
+          108,
+          874,
+          346,
+          934
+        ],
+        "bbox_head": [
+          361,
+          1061,
+          972,
+          1255
+        ],
+        "text_head": "premium.plan.individual.name",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.price": {
+        "desc": "$11.99 / month",
+        "bbox_base": [
+          686,
+          880,
+          984,
+          931
+        ],
+        "bbox_head": [
+          96,
+          1076,
+          337,
+          1156
+        ],
+        "text_head": "Rs 349 / مہینہ",
+        "match": "stable_id"
+      },
+      "premium.plan.individual.feat": {
+        "desc": "1 Premium account",
+        "bbox_base": [
+          108,
+          952,
+          984,
+          1000
+        ],
+        "bbox_head": [
+          96,
+          1273,
+          972,
+          1347
+        ],
+        "text_head": "1 Premium اکاؤنٹ",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.name": {
+        "desc": "Duo",
+        "bbox_base": [
+          108,
+          1120,
+          206,
+          1180
+        ],
+        "bbox_head": [
+          916,
+          1467,
+          972,
+          1564
+        ],
+        "text_head": "ڈیو",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.price": {
+        "desc": "$16.99 / month",
+        "bbox_base": [
+          679,
+          1126,
+          984,
+          1177
+        ],
+        "bbox_head": [
+          96,
+          1482,
+          337,
+          1562
+        ],
+        "text_head": "Rs 449 / مہینہ",
+        "match": "stable_id"
+      },
+      "premium.plan.duo.feat": {
+        "desc": "2 Premium accounts",
+        "bbox_base": [
+          108,
+          1198,
+          984,
+          1246
+        ],
+        "bbox_head": [
+          96,
+          1501,
+          972,
+          1575
+        ],
+        "text_head": "2 Premium اکاؤنٹس",
+        "match": "stable_id"
+      },
+      "premium.plan.family.name": {
+        "desc": "Family",
+        "bbox_base": [
+          108,
+          1366,
+          267,
+          1426
+        ],
+        "bbox_head": [
+          885,
+          1776,
+          972,
+          1873
+        ],
+        "text_head": "فیملی",
+        "match": "stable_id"
+      },
+      "premium.plan.family.price": {
+        "desc": "$19.99 / month",
+        "bbox_base": [
+          679,
+          1372,
+          984,
+          1423
+        ],
+        "bbox_head": [
+          96,
+          1791,
+          337,
+          1871
+        ],
+        "text_head": "Rs 549 / مہینہ",
+        "match": "stable_id"
+      },
+      "premium.plan.family.feat": {
+        "desc": "Up to 6 Premium accounts",
+        "bbox_base": [
+          108,
+          1444,
+          984,
+          1492
+        ],
+        "bbox_head": [
+          96,
+          1891,
+          972,
+          1965
+        ],
+        "text_head": "زیادہ سے زیادہ 6 Premium اکاؤنٹس",
+        "match": "stable_id"
+      },
+      "premium.legal": {
+        "desc": "Terms apply. Offer ends October 31, 2026. Individual plan only.",
+        "bbox_base": [
+          48,
+          1576,
+          1032,
+          1668
+        ],
+        "bbox_head": [
+          48,
+          2049,
+          1032,
+          2174
+        ],
+        "text_head": "شرائط لاگو ہیں۔ پیشکش 31 اکتوبر 2026 کو ختم ہو جائے گی۔ صرف انفرادی پلان کے لیے۔",
+        "match": "stable_id"
+      }
+    }
+  }
+}

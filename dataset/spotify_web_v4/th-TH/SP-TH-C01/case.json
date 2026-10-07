@@ -1,0 +1,14 @@
+{
+  "case_id": "SP-TH-C01",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "08-library",
+  "is_control": true,
+  "do_not_translate_boxes": [
+    "11",
+    "13",
+    "15",
+    "22"
+  ],
+  "defects": []
+}

@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-VI-003",
+  "language": "vi-VN",
+  "screen": "03-search-results",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "22",
+      "element_id": "tab.library",
+      "subcategory": "Encoding error (mojibake)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Library",
+      "target_text": "ThÆ° viá»‡n"
+    },
+    {
+      "box": "14",
+      "element_id": "results.r4.sub",
+      "subcategory": "Overlapping text",
+      "verdict": "present",
+      "why": "overlaps ['results.r4.title']",
+      "base_text": "Playlist • Spotify",
+      "target_text": "Danh sách phát • Spotify"
+    },
+    {
+      "box": "5",
+      "element_id": "results.chip.playlists",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Playlists",
+      "target_text": "Danh sách phát"
+    }
+  ]
+}

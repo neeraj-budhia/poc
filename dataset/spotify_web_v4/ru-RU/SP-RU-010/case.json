@@ -1,0 +1,28 @@
+{
+  "case_id": "SP-RU-010",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "10-settings",
+  "is_control": false,
+  "do_not_translate_boxes": [],
+  "defects": [
+    {
+      "box": "4",
+      "element": "settings.plan.sub",
+      "kind": "format",
+      "category": "FMT",
+      "subcategory": "Number / date / currency not localized",
+      "text": "Ваша подписка будет продлена November 14, 2026 за ₽299.",
+      "report": "Number/date/currency uses the US format ('Ваша подписка будет продлена November 14, 2026 за ₽299.') instead of the local one ('Ваша подписка будет продлена 14 ноября 2026 г. за 299 ₽.')."
+    },
+    {
+      "box": "17",
+      "element": "settings.language",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'Язык приложения' is truncated with an ellipsis."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-HE-009",
+  "language": "he-IL",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "14",
+      "element_id": "artist.latest.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "October 17, 2025 • Album",
+      "target_text": "October 17, 2025 • אלבום"
+    },
+    {
+      "box": "2",
+      "element_id": "artist.listeners",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "24,812,331 monthly listeners",
+      "target_text": "24,812,331 מאזינים חודשיים"
+    },
+    {
+      "box": "3",
+      "element_id": "artist.follow",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Follow",
+      "target_text": "Follow"
+    }
+  ]
+}

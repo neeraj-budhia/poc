@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-HE-001",
+  "language": "he-IL",
+  "screen": "01-home",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "home.tile.episodes",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Episodes",
+      "target_text": "Your Episodes"
+    },
+    {
+      "box": "16",
+      "element_id": "home.card2.sub",
+      "subcategory": "RTL not mirrored",
+      "verdict": "present",
+      "why": "direction=ltr text-align=left inside rtl page",
+      "base_text": "The songs you loved most this year, all wrapped up.",
+      "target_text": "השירים שהכי אהבת השנה, ארוזים יחד."
+    },
+    {
+      "box": "15",
+      "element_id": "home.card2.title",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[-101,67] extends past the 360px screen edge",
+      "base_text": "Your Top Songs 2026",
+      "target_text": "השירים המובילים שלך 2026"
+    }
+  ]
+}

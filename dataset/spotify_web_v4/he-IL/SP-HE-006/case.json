@@ -1,0 +1,44 @@
+{
+  "case_id": "SP-HE-006",
+  "platform": "web",
+  "language": "he-IL",
+  "screen": "06-now-playing",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "2",
+    "3",
+    "4",
+    "6",
+    "10",
+    "11"
+  ],
+  "defects": [
+    {
+      "box": "5",
+      "element": "np.elapsed",
+      "kind": "raw_key",
+      "category": "TR",
+      "subcategory": "Raw resource key rendered",
+      "text": "np.elapsed",
+      "report": "The raw resource key 'np.elapsed' is shown instead of '1:24'."
+    },
+    {
+      "box": "7",
+      "element": "np.devices",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'מכשירים זמינים' overlaps the text element above it."
+    },
+    {
+      "box": "8",
+      "element": "np.share",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "×©×™×ª×•×£",
+      "report": "Text is garbled by an encoding error instead of 'שיתוף'."
+    }
+  ]
+}

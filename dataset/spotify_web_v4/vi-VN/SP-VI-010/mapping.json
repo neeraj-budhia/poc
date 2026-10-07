@@ -1,0 +1,685 @@
+{
+  "case_id": "SP-VI-010",
+  "screen": "10-settings",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Vietnamese (vi-VN)",
+  "case_elements": [
+    {
+      "box": "16",
+      "element_id": "settings.storage.sub",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 20,
+    "with_target_box": 20,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "settings.title",
+      "descriptor": "Settings",
+      "target_text": "Cài đặt",
+      "base_box": [
+        119,
+        50,
+        356,
+        118
+      ],
+      "target_box": [
+        119,
+        50,
+        318,
+        118
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "settings.sec.account",
+      "descriptor": "Account",
+      "target_text": "Tài khoản",
+      "base_box": [
+        48,
+        210,
+        1032,
+        270
+      ],
+      "target_box": [
+        48,
+        210,
+        1032,
+        270
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "settings.plan",
+      "descriptor": "Premium Individual",
+      "target_text": "Premium Cá nhân",
+      "base_box": [
+        48,
+        306,
+        1032,
+        360
+      ],
+      "target_box": [
+        48,
+        306,
+        1032,
+        360
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "settings.plan.sub",
+      "descriptor": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "Gói của bạn sẽ được gia hạn vào ngày 14 tháng 11, 2026 với giá 59.000 ₫.",
+      "base_box": [
+        48,
+        366,
+        1032,
+        415
+      ],
+      "target_box": [
+        48,
+        366,
+        1032,
+        463
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "settings.sec.playback",
+      "descriptor": "Playback",
+      "target_text": "Phát lại",
+      "base_box": [
+        48,
+        481,
+        1032,
+        541
+      ],
+      "target_box": [
+        48,
+        529,
+        1032,
+        589
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "settings.crossfade",
+      "descriptor": "Crossfade",
+      "target_text": "Chuyển tiếp bài hát",
+      "base_box": [
+        48,
+        577,
+        898,
+        631
+      ],
+      "target_box": [
+        48,
+        625,
+        887,
+        679
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "settings.crossfade.sub",
+      "descriptor": "Allows you to crossfade between songs",
+      "target_text": "Cho phép bạn chuyển tiếp mượt mà giữa các bài hát",
+      "base_box": [
+        48,
+        637,
+        898,
+        685
+      ],
+      "target_box": [
+        48,
+        685,
+        887,
+        782
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "settings.crossfade.val",
+      "descriptor": "5 sec",
+      "target_text": "5 giây",
+      "base_box": [
+        934,
+        607,
+        1032,
+        655
+      ],
+      "target_box": [
+        923,
+        680,
+        1032,
+        728
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "settings.gapless",
+      "descriptor": "Gapless playback",
+      "target_text": "Phát liên tục",
+      "base_box": [
+        48,
+        739,
+        876,
+        793
+      ],
+      "target_box": [
+        48,
+        836,
+        876,
+        890
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "settings.explicit",
+      "descriptor": "Allow explicit content",
+      "target_text": "Cho phép nội dung phản cảm",
+      "base_box": [
+        48,
+        847,
+        876,
+        901
+      ],
+      "target_box": [
+        48,
+        944,
+        876,
+        998
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "settings.explicit.sub",
+      "descriptor": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+      "target_text": "Bật để phát nội dung phản cảm. Nội dung phản cảm được gắn nhãn E.",
+      "base_box": [
+        48,
+        907,
+        876,
+        1004
+      ],
+      "target_box": [
+        48,
+        1004,
+        876,
+        1101
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "settings.sec.data",
+      "descriptor": "Data saving and offline",
+      "target_text": "Tiết kiệm dữ liệu và ngoại tuyến",
+      "base_box": [
+        48,
+        1070,
+        1032,
+        1130
+      ],
+      "target_box": [
+        48,
+        1167,
+        1032,
+        1227
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "settings.datasaver",
+      "descriptor": "Data Saver",
+      "target_text": "Trình tiết kiệm dữ liệu",
+      "base_box": [
+        48,
+        1166,
+        876,
+        1220
+      ],
+      "target_box": [
+        48,
+        1263,
+        876,
+        1317
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "settings.datasaver.sub",
+      "descriptor": "Sets your music quality to low and disables canvas.",
+      "target_text": "Đặt chất lượng nhạc ở mức thấp và tắt canvas.",
+      "base_box": [
+        48,
+        1226,
+        876,
+        1323
+      ],
+      "target_box": [
+        48,
+        1323,
+        876,
+        1372
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "settings.storage",
+      "descriptor": "Storage",
+      "target_text": "Bộ nhớ",
+      "base_box": [
+        48,
+        1371,
+        1032,
+        1425
+      ],
+      "target_box": [
+        48,
+        1420,
+        1032,
+        1474
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "settings.storage.sub",
+      "descriptor": "1.2 GB used • 48.6 GB free",
+      "target_text": "Đã dùng 1.2 GB • Còn trống 48.6 GB",
+      "base_box": [
+        48,
+        1431,
+        1032,
+        1480
+      ],
+      "target_box": [
+        48,
+        1480,
+        1032,
+        1528
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "settings.language",
+      "descriptor": "App language",
+      "target_text": "Ngôn ngữ ứng dụng",
+      "base_box": [
+        48,
+        1528,
+        865,
+        1582
+      ],
+      "target_box": [
+        48,
+        1576,
+        812,
+        1630
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "settings.language.val",
+      "descriptor": "English",
+      "target_text": "Tiếng Việt",
+      "base_box": [
+        901,
+        1531,
+        1032,
+        1579
+      ],
+      "target_box": [
+        848,
+        1580,
+        1032,
+        1628
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "settings.logout",
+      "descriptor": "Log out",
+      "target_text": "Đăng xuất",
+      "base_box": [
+        48,
+        1648,
+        283,
+        1738
+      ],
+      "target_box": [
+        48,
+        1696,
+        335,
+        1786
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "20",
+      "element_id": "settings.version",
+      "descriptor": "Version 9.0.82.512",
+      "target_text": "Phiên bản 9.0.82.512",
+      "base_box": [
+        48,
+        1768,
+        1032,
+        1807
+      ],
+      "target_box": [
+        48,
+        1816,
+        1032,
+        1856
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 21.944,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.75,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "3": {
+      "x": 4.444,
+      "y": 12.75,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "4": {
+      "x": 4.444,
+      "y": 15.25,
+      "width": 91.111,
+      "height": 2.042
+    },
+    "5": {
+      "x": 4.444,
+      "y": 20.042,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 24.042,
+      "width": 78.704,
+      "height": 2.25
+    },
+    "7": {
+      "x": 4.444,
+      "y": 26.542,
+      "width": 78.704,
+      "height": 2.0
+    },
+    "8": {
+      "x": 86.481,
+      "y": 25.292,
+      "width": 9.074,
+      "height": 2.0
+    },
+    "9": {
+      "x": 4.444,
+      "y": 30.792,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "10": {
+      "x": 4.444,
+      "y": 35.292,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "11": {
+      "x": 4.444,
+      "y": 37.792,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "12": {
+      "x": 4.444,
+      "y": 44.583,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "13": {
+      "x": 4.444,
+      "y": 48.583,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "14": {
+      "x": 4.444,
+      "y": 51.083,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "15": {
+      "x": 4.444,
+      "y": 57.125,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "16": {
+      "x": 4.444,
+      "y": 59.625,
+      "width": 91.111,
+      "height": 2.042
+    },
+    "17": {
+      "x": 4.444,
+      "y": 63.667,
+      "width": 75.648,
+      "height": 2.25
+    },
+    "18": {
+      "x": 83.426,
+      "y": 63.792,
+      "width": 12.13,
+      "height": 2.0
+    },
+    "19": {
+      "x": 4.444,
+      "y": 68.667,
+      "width": 21.759,
+      "height": 3.75
+    },
+    "20": {
+      "x": 4.444,
+      "y": 73.667,
+      "width": 91.111,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 11.019,
+      "y": 2.083,
+      "width": 18.426,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.75,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "3": {
+      "x": 4.444,
+      "y": 12.75,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "4": {
+      "x": 4.444,
+      "y": 15.25,
+      "width": 91.111,
+      "height": 4.042
+    },
+    "5": {
+      "x": 4.444,
+      "y": 22.042,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 26.042,
+      "width": 77.685,
+      "height": 2.25
+    },
+    "7": {
+      "x": 4.444,
+      "y": 28.542,
+      "width": 77.685,
+      "height": 4.042
+    },
+    "8": {
+      "x": 85.463,
+      "y": 28.333,
+      "width": 10.093,
+      "height": 2.0
+    },
+    "9": {
+      "x": 4.444,
+      "y": 34.833,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "10": {
+      "x": 4.444,
+      "y": 39.333,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "11": {
+      "x": 4.444,
+      "y": 41.833,
+      "width": 76.667,
+      "height": 4.042
+    },
+    "12": {
+      "x": 4.444,
+      "y": 48.625,
+      "width": 91.111,
+      "height": 2.5
+    },
+    "13": {
+      "x": 4.444,
+      "y": 52.625,
+      "width": 76.667,
+      "height": 2.25
+    },
+    "14": {
+      "x": 4.444,
+      "y": 55.125,
+      "width": 76.667,
+      "height": 2.042
+    },
+    "15": {
+      "x": 4.444,
+      "y": 59.167,
+      "width": 91.111,
+      "height": 2.25
+    },
+    "16": {
+      "x": 4.444,
+      "y": 61.667,
+      "width": 91.111,
+      "height": 2.0
+    },
+    "17": {
+      "x": 4.444,
+      "y": 65.667,
+      "width": 70.741,
+      "height": 2.25
+    },
+    "18": {
+      "x": 78.519,
+      "y": 65.833,
+      "width": 17.037,
+      "height": 2.0
+    },
+    "19": {
+      "x": 4.444,
+      "y": 70.667,
+      "width": 26.574,
+      "height": 3.75
+    },
+    "20": {
+      "x": 4.444,
+      "y": 75.667,
+      "width": 91.111,
+      "height": 1.667
+    }
+  }
+}

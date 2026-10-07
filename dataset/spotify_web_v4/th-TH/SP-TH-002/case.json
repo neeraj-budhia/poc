@@ -1,0 +1,39 @@
+{
+  "case_id": "SP-TH-002",
+  "platform": "web",
+  "language": "th-TH",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "element": "search.sec.browse",
+      "kind": "overlap",
+      "category": "LY",
+      "subcategory": "Overlapping text",
+      "op": "overlap",
+      "report": "'เลือกดูทั้งหมด' overlaps the text element above it."
+    },
+    {
+      "box": "1",
+      "element": "search.title",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'ค้นหา' are clipped by a too-small line box."
+    },
+    {
+      "box": "3",
+      "element": "search.sec.start",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "à¹€à¸£à¸´à¹ˆà¸¡à¹€à¸¥à¸·à¸­à¸�à¸”à¸¹",
+      "report": "Text is garbled by an encoding error instead of 'เริ่มเลือกดู'."
+    }
+  ]
+}

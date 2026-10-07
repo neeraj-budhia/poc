@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-RU-001",
+  "language": "ru-RU",
+  "screen": "01-home",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "15",
+      "element_id": "home.card2.title",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Top Songs 2026",
+      "target_text": "Your Top Songs 2026"
+    },
+    {
+      "box": "6",
+      "element_id": "home.tile.liked",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Liked Songs",
+      "target_text": "Любимые треки"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "SP-RU-007",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "07-lyrics",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "defects": [
+    {
+      "box": "9",
+      "element": "lyrics.translate",
+      "kind": "clip_v",
+      "category": "LY",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "op": "clip_v",
+      "report": "The tops/bottoms of the glyphs in 'Показать перевод' are clipped by a too-small line box."
+    },
+    {
+      "box": "11",
+      "element": "lyrics.share",
+      "kind": "untranslated",
+      "category": "TR",
+      "subcategory": "Untranslated string",
+      "text": "Share",
+      "report": "'Share' is shown in English instead of 'Поделиться'."
+    }
+  ]
+}

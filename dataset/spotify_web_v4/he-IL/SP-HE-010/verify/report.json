@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-HE-010",
+  "language": "he-IL",
+  "screen": "10-settings",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "16",
+      "element_id": "settings.storage.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "1.2 GB used • 48.6 GB free",
+      "target_text": "{count}.2 GB בשימוש • 48.6 GB פנויים"
+    },
+    {
+      "box": "4",
+      "element_id": "settings.plan.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your plan renews on November 14, 2026 for $11.99.",
+      "target_text": "המינוי שלך יתחדש ב-November 14, 2026 בתשלום של $11.99."
+    },
+    {
+      "box": "9",
+      "element_id": "settings.gapless",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Gapless playback",
+      "target_text": "הפעלה ללא הפסקות"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "case_id": "SP-AM-009",
+  "language": "am-ET",
+  "screen": "09-artist",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "14",
+      "element_id": "artist.latest.sub",
+      "subcategory": "Number / date / currency not localized",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "October 17, 2025 • Album",
+      "target_text": "October 17, 2025 • አልበም"
+    },
+    {
+      "box": "2",
+      "element_id": "artist.listeners",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "24,812,331 monthly listeners",
+      "target_text": "{count},812,331 ወርሃዊ አድማጮች"
+    }
+  ]
+}

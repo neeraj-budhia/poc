@@ -1,0 +1,34 @@
+{
+  "case_id": "SP-VI-009",
+  "platform": "web",
+  "language": "vi-VN",
+  "screen": "09-artist",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "7",
+    "9",
+    "13"
+  ],
+  "defects": [
+    {
+      "box": "2",
+      "element": "artist.listeners",
+      "kind": "placeholder",
+      "category": "TR",
+      "subcategory": "Unresolved placeholder",
+      "text": "{count}.812.331 người nghe hằng tháng",
+      "report": "An unresolved '{count}' placeholder is shown instead of the number ('24.812.331 người nghe hằng tháng')."
+    },
+    {
+      "box": "4",
+      "element": "artist.sec.popular",
+      "kind": "tofu",
+      "category": "GL",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "text": "Pho bien",
+      "report": "Characters render as empty boxes (missing font glyphs) instead of 'Phổ biến'."
+    }
+  ]
+}

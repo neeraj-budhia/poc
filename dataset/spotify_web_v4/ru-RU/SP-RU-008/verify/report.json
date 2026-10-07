@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-RU-008",
+  "language": "ru-RU",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 Плейлист • {count} треков"
+    },
+    {
+      "box": "10",
+      "element_id": "library.episodes.sub",
+      "subcategory": "Truncation / ellipsis",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Saved & downloaded episodes",
+      "target_text": "Сохранённые и скачанные выпуски"
+    },
+    {
+      "box": "2",
+      "element_id": "library.chip.playlists",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[303,397] extends past the 360px screen edge",
+      "base_text": "Playlists",
+      "target_text": "Плейлисты"
+    }
+  ]
+}

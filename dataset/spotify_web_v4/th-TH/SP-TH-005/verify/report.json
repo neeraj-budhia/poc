@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-TH-005",
+  "language": "th-TH",
+  "screen": "05-premium",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "premium.plan.duo.feat",
+      "subcategory": "Untranslated string",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "2 Premium accounts",
+      "target_text": "2 Premium accounts"
+    },
+    {
+      "box": "3",
+      "element_id": "premium.hero.title",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Try 1 month of Premium for $0",
+      "target_text": "ทดลองใช้ Premium {count} เดือน ฟรี ฿0"
+    },
+    {
+      "box": "5",
+      "element_id": "premium.cta.trial",
+      "subcategory": "Text runs off-screen",
+      "verdict": "present",
+      "why": "text box x=[261,427] extends past the 360px screen edge",
+      "base_text": "Try free for 1 month",
+      "target_text": "ทดลองใช้ฟรี 1 เดือน"
+    }
+  ]
+}

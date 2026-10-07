@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-UR-001",
+  "language": "ur",
+  "screen": "01-home",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "11",
+      "element_id": "home.tile.episodes",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Your Episodes",
+      "target_text": "آپ کی اقساط"
+    },
+    {
+      "box": "14",
+      "element_id": "home.card1.sub",
+      "subcategory": "RTL not mirrored",
+      "verdict": "present",
+      "why": "direction=ltr text-align=left inside rtl page",
+      "base_text": "Arctic Monkeys, The Strokes, Tame Impala and more",
+      "target_text": "Arctic Monkeys، The Strokes، Tame Impala اور مزید"
+    },
+    {
+      "box": "15",
+      "element_id": "home.card2.title",
+      "subcategory": "Missing glyphs (tofu boxes)",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "Your Top Songs 2026",
+      "target_text": "□□ □□ □□□ □□□□ 2026"
+    }
+  ]
+}

@@ -1,0 +1,743 @@
+{
+  "case_id": "SP-TH-C01",
+  "screen": "08-library",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Thai (th-TH)",
+  "case_elements": [],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 22,
+    "with_target_box": 22,
+    "excluded_no_visible_text": 0,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "library.title",
+      "descriptor": "Your Library",
+      "target_text": "คอลเลกชันของคุณ",
+      "base_box": [
+        180,
+        50,
+        523,
+        118
+      ],
+      "target_box": [
+        180,
+        42,
+        642,
+        126
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "library.chip.playlists",
+      "descriptor": "Playlists",
+      "target_text": "เพลย์ลิสต์",
+      "base_box": [
+        48,
+        192,
+        268,
+        276
+      ],
+      "target_box": [
+        48,
+        192,
+        277,
+        282
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "library.chip.artists",
+      "descriptor": "Artists",
+      "target_text": "ศิลปิน",
+      "base_box": [
+        292,
+        192,
+        483,
+        276
+      ],
+      "target_box": [
+        301,
+        192,
+        471,
+        282
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "library.chip.albums",
+      "descriptor": "Albums",
+      "target_text": "อัลบั้ม",
+      "base_box": [
+        507,
+        192,
+        714,
+        276
+      ],
+      "target_box": [
+        495,
+        192,
+        662,
+        282
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "library.chip.podcasts",
+      "descriptor": "Podcasts & Shows",
+      "target_text": "พอดแคสต์และรายการ",
+      "base_box": [
+        48,
+        300,
+        455,
+        384
+      ],
+      "target_box": [
+        48,
+        306,
+        479,
+        396
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "library.sort.recents",
+      "descriptor": "⇅ Recents",
+      "target_text": "⇅ ล่าสุด",
+      "base_box": [
+        48,
+        420,
+        260,
+        468
+      ],
+      "target_box": [
+        48,
+        432,
+        193,
+        486
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "library.liked.title",
+      "descriptor": "Liked Songs",
+      "target_text": "เพลงที่ชอบ",
+      "base_box": [
+        228,
+        513,
+        1032,
+        567
+      ],
+      "target_box": [
+        228,
+        528,
+        1032,
+        588
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "library.liked.sub",
+      "descriptor": "📌 Playlist • 248 songs",
+      "target_text": "📌 เพลย์ลิสต์ • 248 เพลง",
+      "base_box": [
+        228,
+        573,
+        1032,
+        633
+      ],
+      "target_box": [
+        228,
+        594,
+        1032,
+        654
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "library.episodes.title",
+      "descriptor": "Your Episodes",
+      "target_text": "ตอนของคุณ",
+      "base_box": [
+        228,
+        706,
+        1032,
+        760
+      ],
+      "target_box": [
+        228,
+        718,
+        1032,
+        778
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "library.episodes.sub",
+      "descriptor": "Saved & downloaded episodes",
+      "target_text": "ตอนที่บันทึกและดาวน์โหลดไว้",
+      "base_box": [
+        228,
+        766,
+        1032,
+        812
+      ],
+      "target_box": [
+        228,
+        784,
+        1032,
+        836
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "library.pl1.title",
+      "descriptor": "Road Trip 2026",
+      "target_text": "Road Trip 2026",
+      "base_box": [
+        228,
+        892,
+        1032,
+        946
+      ],
+      "target_box": [
+        228,
+        908,
+        1032,
+        962
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "library.pl1.sub",
+      "descriptor": "Playlist • Neeraj",
+      "target_text": "เพลย์ลิสต์ • Neeraj",
+      "base_box": [
+        228,
+        952,
+        1032,
+        998
+      ],
+      "target_box": [
+        228,
+        968,
+        1032,
+        1018
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "library.artist1.title",
+      "descriptor": "Tame Impala",
+      "target_text": "Tame Impala",
+      "base_box": [
+        228,
+        1078,
+        1032,
+        1132
+      ],
+      "target_box": [
+        228,
+        1094,
+        1032,
+        1148
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "library.artist1.sub",
+      "descriptor": "Artist",
+      "target_text": "ศิลปิน",
+      "base_box": [
+        228,
+        1138,
+        1032,
+        1184
+      ],
+      "target_box": [
+        228,
+        1154,
+        1032,
+        1204
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "library.album1.title",
+      "descriptor": "Currents",
+      "target_text": "Currents",
+      "base_box": [
+        228,
+        1264,
+        1032,
+        1318
+      ],
+      "target_box": [
+        228,
+        1280,
+        1032,
+        1334
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "library.album1.sub",
+      "descriptor": "Album • Tame Impala",
+      "target_text": "อัลบั้ม • Tame Impala",
+      "base_box": [
+        228,
+        1324,
+        1032,
+        1370
+      ],
+      "target_box": [
+        228,
+        1340,
+        1032,
+        1390
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "library.add.artists",
+      "descriptor": "Add artists",
+      "target_text": "เพิ่มศิลปิน",
+      "base_box": [
+        228,
+        1476,
+        1032,
+        1530
+      ],
+      "target_box": [
+        228,
+        1491,
+        1032,
+        1551
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "18",
+      "element_id": "library.add.podcasts",
+      "descriptor": "Add podcasts & shows",
+      "target_text": "เพิ่มพอดแคสต์และรายการ",
+      "base_box": [
+        228,
+        1662,
+        1032,
+        1716
+      ],
+      "target_box": [
+        228,
+        1677,
+        1032,
+        1737
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "19",
+      "element_id": "tab.home",
+      "descriptor": "Home",
+      "target_text": "หน้าหลัก",
+      "base_box": [
+        89,
+        2324,
+        181,
+        2362
+      ],
+      "target_box": [
+        75,
+        2319,
+        195,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "20",
+      "element_id": "tab.search",
+      "descriptor": "Search",
+      "target_text": "ค้นหา",
+      "base_box": [
+        350,
+        2324,
+        460,
+        2362
+      ],
+      "target_box": [
+        365,
+        2319,
+        445,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "21",
+      "element_id": "tab.library",
+      "descriptor": "Your Library",
+      "target_text": "คอลเลกชันของคุณ",
+      "base_box": [
+        580,
+        2322,
+        770,
+        2361
+      ],
+      "target_box": [
+        549,
+        2318,
+        801,
+        2366
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "22",
+      "element_id": "tab.premium",
+      "descriptor": "Premium",
+      "target_text": "Premium",
+      "base_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "target_box": [
+        876,
+        2328,
+        1014,
+        2367
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 16.667,
+      "y": 2.083,
+      "width": 31.759,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.0,
+      "width": 20.37,
+      "height": 3.5
+    },
+    "3": {
+      "x": 27.037,
+      "y": 8.0,
+      "width": 17.685,
+      "height": 3.5
+    },
+    "4": {
+      "x": 46.944,
+      "y": 8.0,
+      "width": 19.167,
+      "height": 3.5
+    },
+    "5": {
+      "x": 4.444,
+      "y": 12.5,
+      "width": 37.685,
+      "height": 3.5
+    },
+    "6": {
+      "x": 4.444,
+      "y": 17.5,
+      "width": 19.63,
+      "height": 2.0
+    },
+    "7": {
+      "x": 21.111,
+      "y": 21.375,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "8": {
+      "x": 21.111,
+      "y": 23.875,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "9": {
+      "x": 21.111,
+      "y": 29.417,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "10": {
+      "x": 21.111,
+      "y": 31.917,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "11": {
+      "x": 21.111,
+      "y": 37.167,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 21.111,
+      "y": 39.667,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "13": {
+      "x": 21.111,
+      "y": 44.917,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "14": {
+      "x": 21.111,
+      "y": 47.417,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "15": {
+      "x": 21.111,
+      "y": 52.667,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "16": {
+      "x": 21.111,
+      "y": 55.167,
+      "width": 74.444,
+      "height": 1.917
+    },
+    "17": {
+      "x": 21.111,
+      "y": 61.5,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "18": {
+      "x": 21.111,
+      "y": 69.25,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "19": {
+      "x": 8.241,
+      "y": 96.833,
+      "width": 8.519,
+      "height": 1.583
+    },
+    "20": {
+      "x": 32.407,
+      "y": 96.833,
+      "width": 10.185,
+      "height": 1.583
+    },
+    "21": {
+      "x": 53.704,
+      "y": 96.75,
+      "width": 17.593,
+      "height": 1.625
+    },
+    "22": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 16.667,
+      "y": 1.75,
+      "width": 42.778,
+      "height": 3.5
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.0,
+      "width": 21.204,
+      "height": 3.75
+    },
+    "3": {
+      "x": 27.87,
+      "y": 8.0,
+      "width": 15.741,
+      "height": 3.75
+    },
+    "4": {
+      "x": 45.833,
+      "y": 8.0,
+      "width": 15.463,
+      "height": 3.75
+    },
+    "5": {
+      "x": 4.444,
+      "y": 12.75,
+      "width": 39.907,
+      "height": 3.75
+    },
+    "6": {
+      "x": 4.444,
+      "y": 18.0,
+      "width": 13.426,
+      "height": 2.25
+    },
+    "7": {
+      "x": 21.111,
+      "y": 22.0,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "8": {
+      "x": 21.111,
+      "y": 24.75,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "9": {
+      "x": 21.111,
+      "y": 29.917,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "10": {
+      "x": 21.111,
+      "y": 32.667,
+      "width": 74.444,
+      "height": 2.167
+    },
+    "11": {
+      "x": 21.111,
+      "y": 37.833,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "12": {
+      "x": 21.111,
+      "y": 40.333,
+      "width": 74.444,
+      "height": 2.083
+    },
+    "13": {
+      "x": 21.111,
+      "y": 45.583,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "14": {
+      "x": 21.111,
+      "y": 48.083,
+      "width": 74.444,
+      "height": 2.083
+    },
+    "15": {
+      "x": 21.111,
+      "y": 53.333,
+      "width": 74.444,
+      "height": 2.25
+    },
+    "16": {
+      "x": 21.111,
+      "y": 55.833,
+      "width": 74.444,
+      "height": 2.083
+    },
+    "17": {
+      "x": 21.111,
+      "y": 62.125,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "18": {
+      "x": 21.111,
+      "y": 69.875,
+      "width": 74.444,
+      "height": 2.5
+    },
+    "19": {
+      "x": 6.944,
+      "y": 96.625,
+      "width": 11.111,
+      "height": 2.0
+    },
+    "20": {
+      "x": 33.796,
+      "y": 96.625,
+      "width": 7.407,
+      "height": 2.0
+    },
+    "21": {
+      "x": 50.833,
+      "y": 96.583,
+      "width": 23.333,
+      "height": 2.0
+    },
+    "22": {
+      "x": 81.111,
+      "y": 97.0,
+      "width": 12.778,
+      "height": 1.625
+    }
+  }
+}

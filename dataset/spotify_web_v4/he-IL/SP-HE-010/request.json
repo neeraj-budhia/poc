@@ -1,0 +1,359 @@
+{
+  "product": "app-lca",
+  "workflow": "localization-check",
+  "client_ref": "SP-HE-010:10-settings",
+  "attachment_ids": [
+    "<source/base.png>",
+    "<source/target.png>"
+  ],
+  "payload": {
+    "base_lang": "English (en-US)",
+    "target_lang": "Hebrew (he-IL)",
+    "tree_space": [
+      1080,
+      2400
+    ],
+    "elements": {
+      "settings.title": {
+        "desc": "Settings",
+        "bbox_base": [
+          119,
+          50,
+          356,
+          118
+        ],
+        "bbox_head": [
+          766,
+          48,
+          961,
+          120
+        ],
+        "text_head": "הגדרות",
+        "match": "stable_id"
+      },
+      "settings.sec.account": {
+        "desc": "Account",
+        "bbox_base": [
+          48,
+          210,
+          1032,
+          270
+        ],
+        "bbox_head": [
+          48,
+          210,
+          1032,
+          270
+        ],
+        "text_head": "חשבון",
+        "match": "stable_id"
+      },
+      "settings.plan": {
+        "desc": "Premium Individual",
+        "bbox_base": [
+          48,
+          306,
+          1032,
+          360
+        ],
+        "bbox_head": [
+          48,
+          306,
+          1032,
+          363
+        ],
+        "text_head": "Premium יחיד",
+        "match": "stable_id"
+      },
+      "settings.plan.sub": {
+        "desc": "Your plan renews on November 14, 2026 for $11.99.",
+        "bbox_base": [
+          48,
+          366,
+          1032,
+          415
+        ],
+        "bbox_head": [
+          48,
+          369,
+          1032,
+          466
+        ],
+        "text_head": "המינוי שלך יתחדש ב-November 14, 2026 בתשלום של $11.99.",
+        "match": "stable_id"
+      },
+      "settings.sec.playback": {
+        "desc": "Playback",
+        "bbox_base": [
+          48,
+          481,
+          1032,
+          541
+        ],
+        "bbox_head": [
+          48,
+          532,
+          1032,
+          592
+        ],
+        "text_head": "הפעלה",
+        "match": "stable_id"
+      },
+      "settings.crossfade": {
+        "desc": "Crossfade",
+        "bbox_base": [
+          48,
+          577,
+          898,
+          631
+        ],
+        "bbox_head": [
+          173,
+          628,
+          1032,
+          685
+        ],
+        "text_head": "מעבר הדרגתי",
+        "match": "stable_id"
+      },
+      "settings.crossfade.sub": {
+        "desc": "Allows you to crossfade between songs",
+        "bbox_base": [
+          48,
+          637,
+          898,
+          685
+        ],
+        "bbox_head": [
+          173,
+          691,
+          1032,
+          740
+        ],
+        "text_head": "מאפשר מעבר הדרגתי בין שירים",
+        "match": "stable_id"
+      },
+      "settings.crossfade.val": {
+        "desc": "5 sec",
+        "bbox_base": [
+          934,
+          607,
+          1032,
+          655
+        ],
+        "bbox_head": [
+          48,
+          660,
+          137,
+          708
+        ],
+        "text_head": "5 שנ׳",
+        "match": "stable_id"
+      },
+      "settings.gapless": {
+        "desc": "Gapless playback",
+        "bbox_base": [
+          48,
+          739,
+          876,
+          793
+        ],
+        "bbox_head": [
+          816,
+          792,
+          1032,
+          849
+        ],
+        "text_head": "הפעלה ללא הפסקות",
+        "match": "stable_id"
+      },
+      "settings.explicit": {
+        "desc": "Allow explicit content",
+        "bbox_base": [
+          48,
+          847,
+          876,
+          901
+        ],
+        "bbox_head": [
+          204,
+          902,
+          1032,
+          959
+        ],
+        "text_head": "לאפשר תוכן בוטה",
+        "match": "stable_id"
+      },
+      "settings.explicit.sub": {
+        "desc": "Turn on to play explicit content. Explicit content is labeled with the E tag.",
+        "bbox_base": [
+          48,
+          907,
+          876,
+          1004
+        ],
+        "bbox_head": [
+          204,
+          965,
+          1032,
+          1062
+        ],
+        "text_head": "יש להפעיל כדי להשמיע תוכן בוטה. תוכן בוטה מסומן בתג E.",
+        "match": "stable_id"
+      },
+      "settings.sec.data": {
+        "desc": "Data saving and offline",
+        "bbox_base": [
+          48,
+          1070,
+          1032,
+          1130
+        ],
+        "bbox_head": [
+          48,
+          1128,
+          1032,
+          1188
+        ],
+        "text_head": "חיסכון בנתונים ומצב אופליין",
+        "match": "stable_id"
+      },
+      "settings.datasaver": {
+        "desc": "Data Saver",
+        "bbox_base": [
+          48,
+          1166,
+          876,
+          1220
+        ],
+        "bbox_head": [
+          204,
+          1224,
+          1032,
+          1281
+        ],
+        "text_head": "חוסך הנתונים",
+        "match": "stable_id"
+      },
+      "settings.datasaver.sub": {
+        "desc": "Sets your music quality to low and disables canvas.",
+        "bbox_base": [
+          48,
+          1226,
+          876,
+          1323
+        ],
+        "bbox_head": [
+          204,
+          1287,
+          1032,
+          1384
+        ],
+        "text_head": "מגדיר את איכות המוזיקה לנמוכה ומשבית את Canvas.",
+        "match": "stable_id"
+      },
+      "settings.storage": {
+        "desc": "Storage",
+        "bbox_base": [
+          48,
+          1371,
+          1032,
+          1425
+        ],
+        "bbox_head": [
+          48,
+          1432,
+          1032,
+          1489
+        ],
+        "text_head": "אחסון",
+        "match": "stable_id"
+      },
+      "settings.storage.sub": {
+        "desc": "1.2 GB used • 48.6 GB free",
+        "bbox_base": [
+          48,
+          1431,
+          1032,
+          1480
+        ],
+        "bbox_head": [
+          48,
+          1495,
+          1032,
+          1544
+        ],
+        "text_head": "{count}.2 GB בשימוש • 48.6 GB פנויים",
+        "match": "stable_id"
+      },
+      "settings.language": {
+        "desc": "App language",
+        "bbox_base": [
+          48,
+          1528,
+          865,
+          1582
+        ],
+        "bbox_head": [
+          190,
+          1592,
+          1032,
+          1648
+        ],
+        "text_head": "שפת האפליקציה",
+        "match": "stable_id"
+      },
+      "settings.language.val": {
+        "desc": "English",
+        "bbox_base": [
+          901,
+          1531,
+          1032,
+          1579
+        ],
+        "bbox_head": [
+          48,
+          1596,
+          154,
+          1644
+        ],
+        "text_head": "עברית",
+        "match": "stable_id"
+      },
+      "settings.logout": {
+        "desc": "Log out",
+        "bbox_base": [
+          48,
+          1648,
+          283,
+          1738
+        ],
+        "bbox_head": [
+          769,
+          1714,
+          1032,
+          1804
+        ],
+        "text_head": "התנתקות",
+        "match": "stable_id"
+      },
+      "settings.version": {
+        "desc": "Version 9.0.82.512",
+        "bbox_base": [
+          48,
+          1768,
+          1032,
+          1807
+        ],
+        "bbox_head": [
+          48,
+          1834,
+          1032,
+          1876
+        ],
+        "text_head": "גרסה 9.0.82.512",
+        "match": "stable_id"
+      }
+    }
+  }
+}

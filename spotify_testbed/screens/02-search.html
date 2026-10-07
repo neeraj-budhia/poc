@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=360">
+<link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+<header class="appbar"><h1 data-k="search.title"></h1></header>
+<main>
+  <div class="searchbox"><span class="ico">⌕</span><span data-k="search.placeholder"></span></div>
+  <h2 class="h-sec" data-k="search.sec.start"></h2>
+  <div class="cats">
+    <div class="cat" style="background:#dc148c"><span data-k="search.cat.music"></span></div>
+    <div class="cat" style="background:#006450"><span data-k="search.cat.podcasts"></span></div>
+    <div class="cat" style="background:#8400e7"><span data-k="search.cat.live"></span></div>
+    <div class="cat" style="background:#1e3264"><span data-k="search.cat.madeforyou"></span></div>
+  </div>
+  <h2 class="h-sec" data-k="search.sec.browse"></h2>
+  <div class="cats">
+    <div class="cat" style="background:#e8115b"><span data-k="search.cat.newreleases"></span></div>
+    <div class="cat" style="background:#8d67ab"><span data-k="search.cat.charts"></span></div>
+    <div class="cat" style="background:#148a08"><span data-k="search.cat.pop"></span></div>
+    <div class="cat" style="background:#bc5900"><span data-k="search.cat.hiphop"></span></div>
+    <div class="cat" style="background:#477d95"><span data-k="search.cat.workout"></span></div>
+    <div class="cat" style="background:#509bf5"><span data-k="search.cat.sleep"></span></div>
+  </div>
+</main>
+<style>
+.searchbox { background: #fff; color: #535353; border-radius: 6px; height: 44px; display: flex; align-items: center; gap: 8px; padding: 0 12px; font-size: 15px; font-weight: 600; }
+.searchbox .ico { color: #000; font-size: 20px; }
+.cats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.cat { height: 86px; border-radius: 6px; padding: 10px; font-size: 16px; font-weight: 700; overflow: hidden; }
+</style>
+<nav class="tabbar">
+  <div class="tab"><span class="ico">⌂</span><span data-k="tab.home"></span></div>
+  <div class="tab on"><span class="ico">⌕</span><span data-k="tab.search"></span></div>
+  <div class="tab"><span class="ico">≡</span><span data-k="tab.library"></span></div>
+  <div class="tab"><span class="ico">◉</span><span data-k="tab.premium"></span></div>
+</nav>
+</body>
+</html>

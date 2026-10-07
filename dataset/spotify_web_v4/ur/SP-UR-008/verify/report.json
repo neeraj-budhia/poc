@@ -1,0 +1,35 @@
+{
+  "case_id": "SP-UR-008",
+  "language": "ur",
+  "screen": "08-library",
+  "verdict": "present",
+  "defects": [
+    {
+      "box": "10",
+      "element_id": "library.episodes.sub",
+      "subcategory": "Truncation / clipping",
+      "verdict": "present",
+      "why": "element content overflows its box (scroll > client)",
+      "base_text": "Saved & downloaded episodes",
+      "target_text": "محفوظ اور ڈاؤن لوڈ کردہ اقساط"
+    },
+    {
+      "box": "17",
+      "element_id": "library.add.artists",
+      "subcategory": "Vertical clipping (glyph tops/bottoms cut)",
+      "verdict": "present",
+      "why": "line box 9px < font-size 15px, glyph tops/bottoms cut",
+      "base_text": "Add artists",
+      "target_text": "فنکار شامل کریں"
+    },
+    {
+      "box": "8",
+      "element_id": "library.liked.sub",
+      "subcategory": "Unresolved placeholder",
+      "verdict": "present",
+      "why": "target renders the planted string",
+      "base_text": "📌 Playlist • 248 songs",
+      "target_text": "📌 پلے لسٹ • {count} گانے"
+    }
+  ]
+}

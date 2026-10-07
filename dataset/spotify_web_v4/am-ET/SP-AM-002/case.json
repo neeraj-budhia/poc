@@ -1,0 +1,30 @@
+{
+  "case_id": "SP-AM-002",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "02-search",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "18"
+  ],
+  "defects": [
+    {
+      "box": "8",
+      "element": "search.sec.browse",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "áˆ�áˆ‰áŠ•áˆ� á‹«áˆµáˆ±",
+      "report": "Text is garbled by an encoding error instead of 'ሁሉንም ያስሱ'."
+    },
+    {
+      "box": "13",
+      "element": "search.cat.workout",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'የአካል ብቃት እንቅስቃሴ' is truncated with an ellipsis."
+    }
+  ]
+}

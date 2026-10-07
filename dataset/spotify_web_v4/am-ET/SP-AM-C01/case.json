@@ -1,0 +1,18 @@
+{
+  "case_id": "SP-AM-C01",
+  "platform": "web",
+  "language": "am-ET",
+  "screen": "09-artist",
+  "is_control": true,
+  "do_not_translate_boxes": [
+    "1",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "13"
+  ],
+  "defects": []
+}

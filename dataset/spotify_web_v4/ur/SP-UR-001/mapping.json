@@ -1,0 +1,599 @@
+{
+  "case_id": "SP-UR-001",
+  "screen": "01-home",
+  "corpus": "spotify_web (rendered)",
+  "base_lang": "English (en-US)",
+  "target_lang": "Urdu (ur)",
+  "case_elements": [
+    {
+      "box": "11",
+      "element_id": "home.tile.episodes",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "14",
+      "element_id": "home.card1.sub",
+      "resolved_by": "planted"
+    },
+    {
+      "box": "15",
+      "element_id": "home.card2.title",
+      "resolved_by": "planted"
+    }
+  ],
+  "base_image": {
+    "file": "annotated/base.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "target_image": {
+    "file": "annotated/target.jpg",
+    "width": 768,
+    "height": 1707,
+    "tree_space": [
+      1080,
+      2400
+    ]
+  },
+  "counts": {
+    "elements_sent": 17,
+    "with_target_box": 17,
+    "excluded_no_visible_text": 4,
+    "target_only_not_sent": 0
+  },
+  "elements": [
+    {
+      "id": "1",
+      "element_id": "home.greeting",
+      "descriptor": "Good evening",
+      "target_text": "شام بخیر",
+      "base_box": [
+        48,
+        50,
+        434,
+        118
+      ],
+      "target_box": [
+        844,
+        27,
+        1032,
+        141
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "2",
+      "element_id": "home.chip.all",
+      "descriptor": "All",
+      "target_text": "سبھی",
+      "base_box": [
+        48,
+        192,
+        165,
+        276
+      ],
+      "target_box": [
+        885,
+        192,
+        1032,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "3",
+      "element_id": "home.chip.music",
+      "descriptor": "Music",
+      "target_text": "موسیقی",
+      "base_box": [
+        189,
+        192,
+        369,
+        276
+      ],
+      "target_box": [
+        692,
+        192,
+        861,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "4",
+      "element_id": "home.chip.podcasts",
+      "descriptor": "Podcasts",
+      "target_text": "پوڈکاسٹس",
+      "base_box": [
+        393,
+        192,
+        632,
+        276
+      ],
+      "target_box": [
+        471,
+        192,
+        668,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "5",
+      "element_id": "home.chip.audiobooks",
+      "descriptor": "Audiobooks",
+      "target_text": "آڈیو بکس",
+      "base_box": [
+        656,
+        192,
+        941,
+        276
+      ],
+      "target_box": [
+        260,
+        192,
+        447,
+        302
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "6",
+      "element_id": "home.tile.liked",
+      "descriptor": "Liked Songs",
+      "target_text": "پسندیدہ گانے",
+      "base_box": [
+        216,
+        362,
+        453,
+        406
+      ],
+      "target_box": [
+        666,
+        376,
+        864,
+        444
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "7",
+      "element_id": "home.tile.dailymix1",
+      "descriptor": "Daily Mix 1",
+      "target_text": "Daily Mix 1",
+      "base_box": [
+        720,
+        362,
+        929,
+        406
+      ],
+      "target_box": [
+        156,
+        365,
+        360,
+        455
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "8",
+      "element_id": "home.tile.discover",
+      "descriptor": "Discover Weekly",
+      "target_text": "Discover Weekly",
+      "base_box": [
+        216,
+        507,
+        528,
+        597
+      ],
+      "target_box": [
+        552,
+        488,
+        864,
+        668
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "9",
+      "element_id": "home.tile.release",
+      "descriptor": "Release Radar",
+      "target_text": "Release Radar",
+      "base_box": [
+        720,
+        530,
+        995,
+        574
+      ],
+      "target_box": [
+        89,
+        533,
+        360,
+        623
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "10",
+      "element_id": "home.tile.chill",
+      "descriptor": "Chill Vibes",
+      "target_text": "پُرسکون موڈ",
+      "base_box": [
+        216,
+        698,
+        426,
+        742
+      ],
+      "target_box": [
+        687,
+        712,
+        864,
+        780
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "11",
+      "element_id": "home.tile.episodes",
+      "descriptor": "Your Episodes",
+      "target_text": "آپ کی اقساط",
+      "base_box": [
+        720,
+        698,
+        994,
+        742
+      ],
+      "target_box": [
+        252,
+        712,
+        360,
+        780
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "12",
+      "element_id": "home.sec.madeforyou",
+      "descriptor": "Made for you",
+      "target_text": "آپ کے لیے تیار کردہ",
+      "base_box": [
+        48,
+        840,
+        1032,
+        906
+      ],
+      "target_box": [
+        48,
+        866,
+        1032,
+        974
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "13",
+      "element_id": "home.card1.title",
+      "descriptor": "Daily Mix 2",
+      "target_text": "Daily Mix 2",
+      "base_box": [
+        48,
+        1410,
+        498,
+        1458
+      ],
+      "target_box": [
+        582,
+        1478,
+        1032,
+        1577
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "14",
+      "element_id": "home.card1.sub",
+      "descriptor": "Arctic Monkeys, The Strokes, Tame Impala and more",
+      "target_text": "Arctic Monkeys، The Strokes، Tame Impala اور مزید",
+      "base_box": [
+        48,
+        1464,
+        498,
+        1610
+      ],
+      "target_box": [
+        582,
+        1583,
+        1032,
+        1789
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "15",
+      "element_id": "home.card2.title",
+      "descriptor": "Your Top Songs 2026",
+      "target_text": "□□ □□ □□□ □□□□ 2026",
+      "base_box": [
+        534,
+        1410,
+        984,
+        1458
+      ],
+      "target_box": [
+        96,
+        1478,
+        546,
+        1626
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "16",
+      "element_id": "home.card2.sub",
+      "descriptor": "The songs you loved most this year, all wrapped up.",
+      "target_text": "اس سال آپ کے سب سے پسندیدہ گانے، ایک ہی جگہ۔",
+      "base_box": [
+        534,
+        1464,
+        984,
+        1561
+      ],
+      "target_box": [
+        96,
+        1632,
+        546,
+        1769
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    },
+    {
+      "id": "17",
+      "element_id": "home.sec.recent",
+      "descriptor": "Recently played",
+      "target_text": "حال ہی میں چلائے گئے",
+      "base_box": [
+        48,
+        1658,
+        1032,
+        1724
+      ],
+      "target_box": [
+        48,
+        1837,
+        1032,
+        1945
+      ],
+      "status": "matched",
+      "match_method": "stable_id"
+    }
+  ],
+  "target_only_elements": [],
+  "base_bounding_boxes": {
+    "1": {
+      "x": 4.444,
+      "y": 2.083,
+      "width": 35.741,
+      "height": 2.833
+    },
+    "2": {
+      "x": 4.444,
+      "y": 8.0,
+      "width": 10.833,
+      "height": 3.5
+    },
+    "3": {
+      "x": 17.5,
+      "y": 8.0,
+      "width": 16.667,
+      "height": 3.5
+    },
+    "4": {
+      "x": 36.389,
+      "y": 8.0,
+      "width": 22.13,
+      "height": 3.5
+    },
+    "5": {
+      "x": 60.741,
+      "y": 8.0,
+      "width": 26.389,
+      "height": 3.5
+    },
+    "6": {
+      "x": 20.0,
+      "y": 15.083,
+      "width": 21.944,
+      "height": 1.833
+    },
+    "7": {
+      "x": 66.667,
+      "y": 15.083,
+      "width": 19.352,
+      "height": 1.833
+    },
+    "8": {
+      "x": 20.0,
+      "y": 21.125,
+      "width": 28.889,
+      "height": 3.75
+    },
+    "9": {
+      "x": 66.667,
+      "y": 22.083,
+      "width": 25.463,
+      "height": 1.833
+    },
+    "10": {
+      "x": 20.0,
+      "y": 29.083,
+      "width": 19.444,
+      "height": 1.833
+    },
+    "11": {
+      "x": 66.667,
+      "y": 29.083,
+      "width": 25.37,
+      "height": 1.833
+    },
+    "12": {
+      "x": 4.444,
+      "y": 35.0,
+      "width": 91.111,
+      "height": 2.75
+    },
+    "13": {
+      "x": 4.444,
+      "y": 58.75,
+      "width": 41.667,
+      "height": 2.0
+    },
+    "14": {
+      "x": 4.444,
+      "y": 61.0,
+      "width": 41.667,
+      "height": 6.083
+    },
+    "15": {
+      "x": 49.444,
+      "y": 58.75,
+      "width": 41.667,
+      "height": 2.0
+    },
+    "16": {
+      "x": 49.444,
+      "y": 61.0,
+      "width": 41.667,
+      "height": 4.042
+    },
+    "17": {
+      "x": 4.444,
+      "y": 69.083,
+      "width": 91.111,
+      "height": 2.75
+    }
+  },
+  "target_bounding_boxes": {
+    "1": {
+      "x": 78.148,
+      "y": 1.125,
+      "width": 17.407,
+      "height": 4.75
+    },
+    "2": {
+      "x": 81.944,
+      "y": 8.0,
+      "width": 13.611,
+      "height": 4.583
+    },
+    "3": {
+      "x": 64.074,
+      "y": 8.0,
+      "width": 15.648,
+      "height": 4.583
+    },
+    "4": {
+      "x": 43.611,
+      "y": 8.0,
+      "width": 18.241,
+      "height": 4.583
+    },
+    "5": {
+      "x": 24.074,
+      "y": 8.0,
+      "width": 17.315,
+      "height": 4.583
+    },
+    "6": {
+      "x": 61.667,
+      "y": 15.667,
+      "width": 18.333,
+      "height": 2.833
+    },
+    "7": {
+      "x": 14.444,
+      "y": 15.208,
+      "width": 18.889,
+      "height": 3.75
+    },
+    "8": {
+      "x": 51.111,
+      "y": 20.333,
+      "width": 28.889,
+      "height": 7.5
+    },
+    "9": {
+      "x": 8.241,
+      "y": 22.208,
+      "width": 25.093,
+      "height": 3.75
+    },
+    "10": {
+      "x": 63.611,
+      "y": 29.667,
+      "width": 16.389,
+      "height": 2.833
+    },
+    "11": {
+      "x": 23.333,
+      "y": 29.667,
+      "width": 10.0,
+      "height": 2.833
+    },
+    "12": {
+      "x": 4.444,
+      "y": 36.083,
+      "width": 91.111,
+      "height": 4.5
+    },
+    "13": {
+      "x": 53.889,
+      "y": 61.583,
+      "width": 41.667,
+      "height": 4.125
+    },
+    "14": {
+      "x": 53.889,
+      "y": 65.958,
+      "width": 41.667,
+      "height": 8.583
+    },
+    "15": {
+      "x": 8.889,
+      "y": 61.583,
+      "width": 41.667,
+      "height": 6.167
+    },
+    "16": {
+      "x": 8.889,
+      "y": 68.0,
+      "width": 41.667,
+      "height": 5.708
+    },
+    "17": {
+      "x": 4.444,
+      "y": 76.542,
+      "width": 91.111,
+      "height": 4.5
+    }
+  }
+}

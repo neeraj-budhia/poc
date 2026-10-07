@@ -1,0 +1,46 @@
+{
+  "case_id": "SP-RU-003",
+  "platform": "web",
+  "language": "ru-RU",
+  "screen": "03-search-results",
+  "is_control": false,
+  "do_not_translate_boxes": [
+    "1",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15",
+    "17",
+    "23"
+  ],
+  "defects": [
+    {
+      "box": "19",
+      "element": "results.seeall",
+      "kind": "ellipsis",
+      "category": "LY",
+      "subcategory": "Truncation / ellipsis",
+      "op": "ellipsis",
+      "report": "'Все треки' is truncated with an ellipsis."
+    },
+    {
+      "box": "12",
+      "element": "results.r3.sub",
+      "kind": "clip_h",
+      "category": "LY",
+      "subcategory": "Truncation / clipping",
+      "op": "clip_h",
+      "report": "'Альбом • Arctic Monkeys • 2013' is cut off mid-word by its container (no ellipsis)."
+    },
+    {
+      "box": "10",
+      "element": "results.r2.sub",
+      "kind": "mojibake",
+      "category": "GL",
+      "subcategory": "Encoding error (mojibake)",
+      "text": "Ð¢Ñ€ÐµÐº â€¢ Arctic Monkeys",
+      "report": "Text is garbled by an encoding error instead of 'Трек • Arctic Monkeys'."
+    }
+  ]
+}
